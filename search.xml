@@ -1,501 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Javee</title>
-    <url>/2021/HDAEA4/</url>
-    <content><![CDATA[<h1>解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码</h1>
-<p><a href="https://www.jianshu.com/p/43061e0b5703">https://www.jianshu.com/p/43061e0b5703</a></p>
-<p><a href="https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710">https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710</a></p>
-<p><a href="https://blog.csdn.net/weixin_45673401/article/details/104446105">https://blog.csdn.net/weixin_45673401/article/details/104446105</a></p>
-<h1>Eclipse中java和Xml文件字体大小调整：</h1>
-<p>Eclipse字体大小调整：</p>
-<p>Window / Preferences / General / Appearance / ColorsAnd Fonts ，在右边的对话框里选择Java - Java Editor Text Font，点击出现的编辑（Edit）按钮，可以设置显示在在主窗体中程序的字体大小，设置完之后点击右下角的应用(Apply)，最后点击确定（OK）即可。</p>
-<p>Xml文件字体大小的调整： window / preferences / General / appearance / colors and fonts / Basic /  &quot;Text font &quot; ，然后点击Edit，可以设置字体的大小。</p>
-<h1>@Resource注解错误，无法导入javax.annotation.Resource包的问题</h1>
-<p><a href="http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm</a></p>
-<p>下载后进入项目buildpath</p>
-<p><img src="/../source/images/Javee/image-20200913204513394.png" alt="image-20200913204513394"></p>
-<p>导入即可</p>
-<h1><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">如何用Eclipse将普通的JavaWeb项目转为Maven项目</a></h1>
-<p><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">https://www.cnblogs.com/qlqwjy/p/8386188.html</a></p>
-<h1>解决idea中xml文件资源路径问题</h1>
-<p>如果该项目是maven项目：</p>
-<p>配置maven的pom文件配置，在pom文件中找到<build>节点，添加下列代码：</build></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1>Intellij IDEA 创建main函数 和 输出语句的快捷键</h1>
-<ol>
-<li>main函数：</li>
-</ol>
-<p>输入public static void main的首字母：psvm 然后按tab或者enter，就会写好main方法</p>
-<p><img src="/../source/images/Javee/20180331183744410" alt="img"></p>
-<ol start="2">
-<li>输出语句：</li>
-</ol>
-<p>System.out.print(); 键入：sout</p>
-<ol start="3">
-<li>for循环：</li>
-</ol>
-<p>输入： fori</p>
-<p><img src="/../source/images/Javee/20180331183150826" alt="img"></p>
-<h1>IDEA运行junit测试用例时控制台中文输出乱码</h1>
-<p>最近遇到在IDEA运行测试用例(junit4)时System.out.println中文时总是乱码,设置好编码后还是不行,后来总算解决了,这里记录下解决办法:</p>
-<p>1.设置好编码:</p>
-<p><img src="/../source/images/Javee/20191107144238841.png" alt="img"></p>
-<p>2.删除原来的 Run/Debug Configurations (这步很总要,就是很多时候就是因为没有做这边就会无效)</p>
-<p><img src="/../source/images/Javee/20191107144427568.png" alt="img"></p>
-<p>3.重新运行 junit</p>
-<p><img src="/../source/images/Javee/20191107144526220.png" alt="img"></p>
-<h1>IDEA中如何打开Run/Debug Configurations</h1>
-<p>工具栏–&gt;Run–&gt;Edit Configurations<br>
-<img src="/../source/images/Javee/20200317193324690.png" alt="在这里插入图片描述"><br>
-<img src="/../source/images/Javee/20200317193541919.png" alt="在这里插入图片描述"></p>
-<p><img src="/../source/images/Javee/image-20201028001014226.png" alt="image-20201028001014226"></p>
-<h1>IntelliJ IDEA 控制台中文乱码解决方案</h1>
-<p>参考链接：<a href="https://blog.csdn.net/wo541075754/article/details/51150035">https://blog.csdn.net/wo541075754/article/details/51150035</a><br>
-参考链接：<a href="http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral">http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral</a><br>
-相关设置<br>
-1、打开IDEA安装目录找到 idea.exe.vmoptions（64位为idea64.exe.vmoptions）文件， 在文件末尾加上 -Dfile.encoding=UTF-8<br>
-2、最后，在 IntelliJ IDEA 中的“Run/Debug Configurations”中，修改虚拟机参数“ VM options ”，内容与在文件idea.vmoptions中追加的内容相同，皆为-Dfile.encoding=UTF-8<br>
-3、打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8，如下图（红框的地方），然后重新rebuild一下，基本就行了<br>
-4、打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行<br>
-5、 打开Run/Debug Configuration,选择你的tomcat，在 Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
-<p>解决的是其中的第四点</p>
-<p><img src="/../source/images/Javee/image-20201028001623948.png" alt="image-20201028001623948"></p>
-<p>然后rebuild一下重新运行</p>
-<h1>Idea连接数据库时出现serverTimezone问题</h1>
-<p><img src="/../source/images/Javee/20200907102200827.png" alt="在这里插入图片描述"></p>
-<p>没有设置serverTimezone属性导致连接失败<br>
-<img src="/../source/images/Javee/20200907102317616.png" alt="在这里插入图片描述"><br>
-不一定要设为UTC，可以根据实际情况设置</p>
-<p>连接成功：</p>
-<p><img src="/../source/images/Javee/image-20201028135844679.png" alt="image-20201028135844679"></p>
-<h1>快捷键</h1>
-<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">Alt+<span class="built_in">insert</span>快速生成有参无参构造方法和setget方法</span><br></pre></td></tr></table></figure>
-<h1>解决修改数据不能插入中文问题</h1>
-<p><img src="/../source/images/Javee/image-20201111141733502.png" alt="image-20201111141733502"></p>
-<p><img src="/../source/images/Javee/image-20201111141910728.png" alt="image-20201111141910728"></p>
-<p>修改defaultcharset为utf8</p>
-<h1>com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 1字节的 UTF-8 序列的字节 1 无效。</h1>
-<ul>
-<li>修改pom.xml文件，加入下面配置</li>
-</ul>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;properties&gt;</span></span><br><span class="line">	<span class="section">&lt;project.build.sourceEncoding&gt;</span><span class="attribute">UTF</span>-<span class="number">8</span>&lt;/project.build.sourceEncoding&gt;</span><br><span class="line"><span class="section">&lt;/properties&gt;</span></span><br></pre></td></tr></table></figure>
-<h1>intelij idea 使用maven打包报错 Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1</h1>
-<p>缺少这个插件，在pom.xml中加入相应的版本即可</p>
-<p><img src="/../source/images/Javee/image-20201123200045002.png" alt="image-20201123200045002"></p>
-<p>打包成功</p>
-<p><img src="/../source/images/Javee/image-20201123200101686.png" alt="image-20201123200101686"></p>
-<h1>springboot打包错误：Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0…</h1>
-<p>解决方法：修改maven-resources-plugin的版本</p>
-<p><img src="/../source/images/Javee/image-20201123200523720.png" alt="image-20201123200523720"></p>
-<h1>解决jrebel热部署错误问题</h1>
-<p>报错：</p>
-<p><img src="/../source/images/Javee/image-20201123220910872.png" alt="image-20201123220910872"></p>
-<p>依赖包冲突：</p>
-<p><img src="/../source/images/Javee/image-20201123221948421.png" alt="image-20201123221948421"></p>
-<p>原因在于版本的不对，把下面的版本删掉即可</p>
-<p><img src="/../source/images/Javee/image-20201123222058403.png" alt="image-20201123222058403"></p>
-<p>解决后：</p>
-<p><img src="/../source/images/Javee/image-20201123222246700.png" alt="image-20201123222246700"></p>
-<h1>解决idea中通过路径找不到页面404的问题</h1>
-<p>首先在pom中加入各类资源的路径：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;resources&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span><br><span class="line">        &lt;filtering&gt;<span class="keyword">true</span>&lt;/filtering&gt;</span><br><span class="line">        &lt;excludes&gt;</span><br><span class="line">          &lt;exclude&gt;application-dev.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-test.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-prod.yml&lt;/exclude&gt;</span><br><span class="line">        &lt;/excludes&gt;</span><br><span class="line">      &lt;/resource&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/java&lt;/directory&gt;</span><br><span class="line">        &lt;includes&gt;</span><br><span class="line">          &lt;include&gt;**<span class="comment">/*.xml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">      &lt;resource&gt;</span></span><br><span class="line"><span class="comment">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span></span><br><span class="line"><span class="comment">        &lt;filtering&gt;true&lt;/filtering&gt;</span></span><br><span class="line"><span class="comment">        &lt;includes&gt;</span></span><br><span class="line"><span class="comment">          &lt;!--suppress UnresolvedMavenProperty --&gt;</span></span><br><span class="line"><span class="comment">          &lt;include&gt;application-$&#123;activeProfile&#125;.yml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">    &lt;/resources&gt;</span></span><br></pre></td></tr></table></figure>
-<p>目录要放到相应的资源目录下：</p>
-<p><img src="/../source/images/Javee/image-20201202144159760.png" alt="image-20201202144159760"></p>
-<p>重点是部署到tomcat上时Deployment要为war exploded形式</p>
-<p><img src="/../source/images/Javee/image-20201202144242880.png" alt="image-20201202144242880"></p>
-<p>下方的application context路径要为/加项目名，运行后可在浏览器中通过各类路径接口访问</p>
-<p><img src="/../source/images/Javee/image-20201202144414351.png" alt="image-20201202144414351"></p>
-]]></content>
-      <categories>
-        <category>Javee</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2021/2JD9E5R/</url>
-    <content><![CDATA[<h1>列表List</h1>
-<p>随机生成列表：</p>
-<p>n=list（range（10））</p>
-<p>切片还可以更换索引值</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">n</span><br></pre></td></tr></table></figure>
-<p>词频统计：</p>
-<p><img src="/../source/images/python/20210523142308.png" alt="image-20200615104058100"></p>
-<p><img src="/../source/images/python/20210523142723.png" alt="image-20200615104053055"></p>
-<p><img src="/../source/images/python/20210523142743.png" alt="image-20200615110115241"></p>
-<h1>复习</h1>
-<p><img src="/../source/images/python/20210523142821.png" alt="image-20200706083644250"></p>
-<p>第一章</p>
-<p>print（sep,end）</p>
-<p>sep默认空格，end是以什么结尾</p>
-<p>标识符</p>
-<p>变量的定义中不需要先定义类型，付给什么值就什么值</p>
-<p>回顾多个变量赋值</p>
-<p>重点是复杂的数据类型——字符串，列表，元组，字典，集合</p>
-<p>运算符中注意下/和//的情况，水仙花数的分解，单/等同于5/3=1.66666666667</p>
-<p>5//3=1</p>
-<p>5.0//3=1.0</p>
-<p>1!=0     true</p>
-<p>逻辑运算：</p>
-<p>控制语句：</p>
-<p>重点是分支结构和循环结构  while和for/in后面都可以带else</p>
-<p>range(6)代表从0到5</p>
-<p>range(1,6)代表从1到5</p>
-<p>常用数据结构分了序列和非序列</p>
-<p>列表：</p>
-<p>切片考得比较多，注意</p>
-<p>a[:4]代表从第一个开始取</p>
-<p>a[2:]代表从这个一直到尾</p>
-<p>a[2:4]代表从第2个到第3个结束，和range一样不包含尾</p>
-<p>a[:]代表对整个字符串操作</p>
-<p>追加新的列表用extend，追加一个用append</p>
-<p>排序：</p>
-<p>进行逆序：reversed，排序sorted</p>
-<p>方法是用对象.方法</p>
-<p>函数时直接调用的如len，max，不要把排序搞混了</p>
-<p>列表遍历用for循环遍历</p>
-<p>空字典创建{}，键：值</p>
-<p>value=a[key]</p>
-<p>del a[key]删除字典中的某一组值</p>
-<p>扩展</p>
-<p>如果输入的字符串中有中文字符的话怎么统计？</p>
-<p>查一查中文字符的unicode编码是多少</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>第一章第一节</title>
-    <url>/2021/1FBDEJR/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<ol>
-<li>
-<p>【填空题】查找关键字文件在哪儿  whereis ls</p>
-</li>
-<li>
-<p>【填空题】查找ls命令可执行文件在哪儿   which ls</p>
-</li>
-<li>
-<p>【单选题】查看历史记录命令 A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>history</p>
-</li>
-<li>
-<p>B：</p>
-<p>pwd</p>
-</li>
-</ul>
-</li>
-</ol>
-<p>课后：</p>
-<p>目标：登录Linux系统并使用shell运行简单的命令。<br>
-1.在Linux控制台使用Bash shell语法输入命令。<br>
-2.在GVONE桌面环境中启动应用。<br>
-3.借助Bash功能，使用较少的击键次数在shell提示符下运行命令。</p>
-<p>【单选题】什么按键可以补全命令   A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>TAB键</p>
-</li>
-<li>
-<p>B：</p>
-<p>回车键</p>
-</li>
-<li>
-<p>C：</p>
-<p>空格键</p>
-</li>
-</ul>
-<p>基于foundationX，在此环境中，共有3台虚拟机，分别为classroom，serverX，desktopX</p>
-<ol>
-<li>classroom:上课环境，包含：DNS服务器、NTP服务器、DHCP服务器、HTTP服务器等</li>
-<li>serverX：作为服务端的练习环境</li>
-<li>desktopX：作为客户端的练习环境</li>
-</ol>
-<p>关于虚拟机的控制：</p>
-<p>rht-vmctl fullreset desktop</p>
-<p>fullreset 恢复较慢</p>
-<p>reset直接回复快照，恢复较快</p>
-<p>KVM虚拟化管理工具：</p>
-<p>virt-manager</p>
-<p>virsh list</p>
-<p>virsh list --all</p>
-<p>virsh start server/desktop</p>
-<p>virsh shutdown desktop</p>
-<p>ssh:远程连接</p>
-<p>​	ssh root@ip地址</p>
-<p>关于虚拟机的</p>
-<p>virsh</p>
-<h3 id="1-1-linux内核"><a class="header-anchor" href="#1-1-linux内核">¶</a>1.1. linux内核</h3>
-<p>查看linux内核版本的命令：</p>
-<p>uname -a</p>
-<p>uname -r</p>
-<p>#注意：linux版本号主要看主版本号和次版本号，次版本号为偶数，表示稳定版，奇数表示测试版</p>
-<p>linux基于模块化，比如：驱动当做一个模块的方式加载</p>
-<p>lsmod | grep usb_storage</p>
-<p>#可以发现，默认没有加载usb驱动，当插入一个U盘，就自动加载了</p>
-<h3 id="1-2-shell"><a class="header-anchor" href="#1-2-shell">¶</a>1.2 shell</h3>
-<p>linux不是系统，是个内核，加上CLI等才为系统</p>
-<p>因为内核不提供和用户的交互功能，所以需要一个程序提供这种功能，这种程序分为两种：命令行（CLI）和图形界面（GUI），在linux提供CLI的交互程序，我们称之为shell</p>
-<p>cat /etc/shells  #可以看到多种shell，对于红帽系统来说，默认采用的是bash这个shell</p>
-<p>chsh -l #查看系统所有的shell</p>
-<p>echo $SHELL #查看当前使用的shell</p>
-<p>ps #ps命令用于查看当前进程，可以发现，有一个bash进程</p>
-<ol>
-<li>打开一个终端就可以打开一个shell</li>
-<li>得到一个命令行界面，就触发一个shell</li>
-</ol>
-<p>ls /dev/可以看到登录方式</p>
-<p>触发一个shell，可以得到一个提示符：</p>
-<p>登录用户名@主机名 当前目录</p>
-<ul>
-<li>#表示的是root用户</li>
-<li>$表示的是普通用户</li>
-<li>方括号里的提示符是由PS1变量展示</li>
-</ul>
-<p>echo $PS1 #查看命令提示符的格式</p>
-<p>echo $$  #查看当前shell的ID</p>
-<p>图形界面中</p>
-<p>ctrl+alt+F2 ：切换成了命令行界面 第二个tty</p>
-<p>ctrl+alt+F1:默认的图形界面登录</p>
-<p>可以通过hostname命令查看主机名</p>
-<p>~ 代表当前用户的家目录</p>
-<h3 id="1-3终端"><a class="header-anchor" href="#1-3终端">¶</a>1.3终端</h3>
-<p>物理终端：一个键盘、一个鼠标、一个显示器就是一个物理终端</p>
-<p>​		设备文件：/dev/console</p>
-<p>虚拟终端（tty）：附加在物理终端之上，以软件方式虚拟出来的终端</p>
-<p>​		设备文件：/dev/tty</p>
-<p>模拟终端（pts）: 纯软件实现的终端，比如：在图形界面打开的terminal，使用SSH、telnet等远程打开的界面。</p>
-<p>​		设备文件：/dev/pts/*</p>
-<p>系统启动过程中，以物理终端提供</p>
-<p>系统启动之后，就以虚拟终端提供</p>
-<p><strong>虚拟终端切换</strong></p>
-<p>ctrl+alt+f</p>
-<ul>
-<li>如果有图形环境，共有六个控制台，图形界面运行在第一个；文本界面运行在第二至第六个。</li>
-<li>如果没有线图形界面，则只有5个细腻控制台，全是文本界面。</li>
-<li>提示：rhel5之前的版本，都有7个虚拟控制台，前6个为文本界面，第7个为图形界面。</li>
-</ul>
-<p>tty  #查看当前终端设备</p>
-<p>who  #查看有哪些用户登录到当前系统</p>
-<p>echo aaa &gt; /dev/tty2  #就会在tty2上显示这串字符</p>
-<p>echo hello &gt; /dev/pts/5  #在pts5上显示hello</p>
-<h3 id="1-4命令行"><a class="header-anchor" href="#1-4命令行">¶</a>1.4命令行</h3>
-<p>命令 【选项】【参数】</p>
-<p>命令：</p>
-<p>​		所谓命令就是一个可执行文件，文件本身包含了可执行的程序代码</p>
-<p>​		输入命令，并回车，就是将这个程序提交给内核，有内核分配资源将其运行起来。运行中的程序需，我们称之为进程。</p>
-<p>​		最左边，必须是一个命令</p>
-<p>选项：</p>
-<p>​		用于启用或关闭命令的某个或某些功能</p>
-<p>​		短选项： -表示，可合并使用</p>
-<p>​		长选项： --表示，一般不可合并使用</p>
-<p>参数：</p>
-<p>​		命令作用的对象，向命令提供数据。</p>
-<p>注意：</p>
-<ol>
-<li>​	命令，选项，参数中间使用空格隔开</li>
-<li>多上选项之间、多参数之间，使用空格隔开</li>
-<li>一行执行多个命令，使用分号（；）隔开</li>
-</ol>
-<p>man+命令查看帮助</p>
-<p>在shell中有两类命令：</p>
-<ol>
-<li>内建命令：shell自带，找不到，比如：cd命令，使用which cd 是找不到的</li>
-<li>外部命令：非shell自大，外部的一个可执行文件</li>
-</ol>
-<p>type cd  #查看一个命令的类型，是内建还是外部</p>
-<p>which ls  #查看ls命令可执行文件在哪里</p>
-<p>whereis ls  #查找关键字文件在哪里</p>
-<p>使用/usr/bin/ls是没有颜色的，默认ls是‘ls --color=auto’</p>
-<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419231735533.png" alt="image-20210419231735533"></p>
-<p><strong>那为什么无论在什么位置都可以执行命令呢？</strong></p>
-<p>echo $PATH</p>
-<p>​		#查看PATH变量的值</p>
-<p>​		#执行命令时，就会在这个PATH变量指定的路径，从左到右去寻找，一直到找到为止，如果没找到，会提示找不到这个命令</p>
-<p>​		#shell搜寻到的外部命令的路径，会被缓存下来，下次就不用再去搜索了</p>
-<p>hash</p>
-<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419232907350.png" alt="image-20210419232907350"></p>
-<p>​		#查看缓存的命令</p>
-<p>​		#hits.   表示命中次数，也就是被执行了多少次。</p>
-<p>hash -r</p>
-<p>​		#清除所有缓存</p>
-<p>​		#比如：将ls程序文件移到/usr/bin目录下，如果有缓存存在，还会到/bin/下去找ls这个命令，找不到就会报错，这时，就需要清一下缓存，重新去搜寻。</p>
-<h3 id="1-5-命令演示"><a class="header-anchor" href="#1-5-命令演示">¶</a>1.5 命令演示</h3>
-<p>shutdown</p>
-<ol>
-<li>
-<p>作用：关闭计算机，它的使用权限是超级用户。</p>
-</li>
-<li>
-<p>格式：</p>
-<p>shutdown [-h] [-i] [-k] [-m] [-t]</p>
-</li>
-<li>
-<p>重要参数</p>
-<p>-t：在改变到其它运行级别之前，告诉init程序多久以后关机。</p>
-<p>-k：并不真正关机，只是送警告信号给每位登录者。</p>
-<p>-h: 关机后关闭电源。</p>
-<p>-c：cancel current process 取消目前正在执行的关机程序。所以这个选项当然没有时间参数，但是可是输入一个用来解释的讯息，而这信息将会送到每位使用者。</p>
-<p>-F：在重启计算机时强迫fsck。</p>
-<p>-time：设定关机前的时间。</p>
-<p>-m：将系统改为单用户模式</p>
-<p>-i: 关机时显示系统信息。</p>
-</li>
-<li>
-<p>命令说明</p>
-<p>shutdown  命令可以安全地将系统关机。有些用户会使用直接断掉电源的方式来关闭linux系统，这是十分危险的。因为Linux与Windows不同，其后台运行着许多进程，所以强制关机可能会导致进程的数据丢失，使系统处于不稳定的状态，甚至在有的系统中会损坏硬件宿舍（硬盘）。在系统关机前使用shutdown命令，系统管理员会通知所有登录的用户系统将要关闭，并且login指令会被冻结，即新的用户不能再登录。</p>
-</li>
-<li>
-<p>举例</p>
-<p>shutdown -h 3:40</p>
-<p>现在关机  shutdown -h now</p>
-</li>
-</ol>
-<p>halt</p>
-<ol>
-<li>
-<p>作用：关闭系统，它的使用权限是超级用户。</p>
-</li>
-<li>
-<p>格式</p>
-<p>halt [-n] [-w] [-d] [-f] [-i] [-p]</p>
-</li>
-<li>
-<p>主要参数说明</p>
-<p>-n: 防止sync系统调用，它用在用fsck修补根分区之后，以阻止内核用老版本的超级块覆盖修补过的超级块</p>
-<p>-w：并不是真正的重启或关机，知识写wtmp（/var/log/wtmp）记录。</p>
-<p>-f：没有调用shutdown，而强制关机或重启。</p>
-<p>-i：关机（或重启）前，关掉所有的网络接口。</p>
-<p>-f：强迫关机，不呼叫shutdown这个命令。</p>
-<p>-p：当关机的时候随便做关闭电源的动作。</p>
-<p>-d：关闭系统，但不留下记录。</p>
-</li>
-<li>
-<p>命令说明</p>
-<p>halt就是调用shutdown -h。halt执行时，杀死应用进程，执行sync（将存于buffer中的资料强制写入硬盘中）系统调用，文件系统写操作完成后就会停止内核。若系统的运行级别为0或6，则关闭系统；否则以shutdown指令（加上-h参数）来取代。</p>
-</li>
-</ol>
-<p>reboot</p>
-<ol>
-<li>
-<p>​	作用：重启计算机，它的使用权限是系统管理者。</p>
-</li>
-<li>
-<p>格式</p>
-<p>reboot [-n] [-w] [-d] [-f] [-i]</p>
-</li>
-<li>
-<p>主要参数</p>
-<p>-n：在重开机前不做将记忆体资料写回硬盘的动作。</p>
-<p>-w：并不会真的重开机，只要把记录写到/var/log/wtmp/文件里。</p>
-<p>-d：不把记录写到/var/log/wtmp文件里（-n这个参数包含了-d）。</p>
-<p>-i：在重开机之前先把所有与网络相关的装置停止。</p>
-</li>
-</ol>
-<p>exit</p>
-<ol>
-<li>
-<p>​	作用：退出系统，它的使用权限是所有用户</p>
-</li>
-<li>
-<p>格式</p>
-<p>exit</p>
-</li>
-<li>
-<p>参数</p>
-<p>exit命令没有参数，运行后退出系统进入登录界面。</p>
-</li>
-</ol>
-<p>last</p>
-<ol>
-<li>
-<p>作用：是显示近期用户或终端的登录情况，它的使用权限是所有用户。通过last命令查看该程序的log，管理员可以获知谁曾经或企图连接系统。</p>
-</li>
-<li>
-<p>格式</p>
-<p>last [-n] [-f file] [-t tty] [-h 节点] [-l -Ip] [-1] [-y] [1D]</p>
-</li>
-<li>
-<p>主要参数</p>
-<p>-n：指定输出记录的条数。</p>
-<p>-f file：指定用文件file作为查询用的log文件。</p>
-<p>-t tty：只显示指定的虚拟控制台上登录情况。</p>
-<p>-h 节点：只显示指定的节点上登陆的情况、</p>
-<p>-i IP：只显示指定的IP上登录的情况。</p>
-<p>-1 ：用IP来显示远端地址。</p>
-<p>-y：显示记录的年、月、日。</p>
-<p>-ID:知道查询的用户名。</p>
-<p>-x：显示系统关闭、用户登录和退出的历史。</p>
-</li>
-</ol>
-<p>id  #查看当前用户</p>
-<p>root不是真正的超级用户，超级用户为uid为0的用户</p>
-<p>uid可以理解为身份证号</p>
-<p>hostname  #查看当前主机名</p>
-<p>pwd   #查看当前路径</p>
-<p>date  #查看日期时间</p>
-<p>cal 2016 #查看2016年的日历</p>
-<p>bc  #计算器  crtl+d  退出</p>
-<h3 id="1-6-TAB补全"><a class="header-anchor" href="#1-6-TAB补全">¶</a>1.6 TAB补全</h3>
-<p>​		输入命令、选项、参数时，可以通过tab键补全功能来减轻输入压力。键入的内容如果足够使其唯一，按一次tab键即可补全，如果键入的内容不够十七唯一，按两次tab键，既可以显示以键入的字符为开头的所有命令。</p>
-<p>​		在RHEL7/CentOS7以前的版本中，bash自动补全功能仅限于命令和文件名，然而网络设备往往可以自动补全命令的参数，常常让搞网络出身的工程师唏嘘不已。</p>
-<p>​		在新出的RHEL7/CentOS7 中的Bash已经可以自动补全命令参数了，需要注意的是RHEL7/CentOS7的默认安装类型是最小安装，他是没有这个功能的。要启用这个功能，你需要安装一个bash-completion包，然后退出bash，重新登陆即可（为重启bash的情况下继续使用可能出现补全功能异常，出现一堆代码）。</p>
-<p>RHEL7收费，CentOS免费开源</p>
-<p>因为RHEL其中的图标注册了商标，所以收费</p>
-<p>bash-2.05及以后的版本提供了自动补齐的编程接口，通过安装bash-completion来使用TAB键自动补齐几乎任何内容，包括参数、文件、目录甚至包名称等等。</p>
-<p>rpm -qa | grep bash-completion</p>
-<h3 id="1-7-命令历史记录"><a class="header-anchor" href="#1-7-命令历史记录">¶</a>1.7 命令历史记录</h3>
-<p>在每个用户的家目录，都有自己的历史记录文件：.bash_history</p>
-<p>登陆shell时，会从登陆用户的家目录中，读取.bash_history文件。</p>
-<p>登录后，执行的命令历史记录，会先记录到缓存中。</p>
-<p>登出时，会将缓存中的历史记录，以追加方式写到.bash_history文件中。</p>
-<p>vim /root/.bash_history</p>
-<p>history  #查看历史命令记录</p>
-<p>history -a #立即将缓存中的记录，协会文件</p>
-<p>history -c  #清除历史</p>
-<p>echo  $HISTSIZE #查看命令历史记录的条数</p>
-<p>echo  $HISTFILE  #历史文件路径</p>
-<p>echo  $HISTFILESIZE   #命令历史文件记录历史的条数</p>
-<p>echo  $HISTCONTROL</p>
-<p>​			#历史记录的控制</p>
-<p>​			#ignoredups，忽略连续且相同的重复的命令</p>
-<p>​			#ignorespace，忽略所有以空白开头的命令</p>
-<p>​			#ignoreboth，上面两项全部</p>
-<p>!数字   #调用历史记录中对应编号的命令</p>
-<p>!字符串    #调用历史记录中最近的一个以指定字符串开头的命令</p>
-<p>!!       #调用上一条命令</p>
-<p>!$       #表示上一个命令的最后一段字符</p>
-<p>上、下箭头      #可以上下查阅历史记录</p>
-<p>左、右箭头      #在当前命令行中左右移动光标</p>
-<p>esc+.      #将上一命令的最后一个参数复制到当前命令行光标处,重复使用，将继续到更早的命令。</p>
-<p>alt+.        #将上一个命令的最后一段字符复制到当前，重复使用。</p>
-<p>ctrl+r      #在历史记录列表中搜索某一模式的命令</p>
-<h3 id="1-8-快捷键"><a class="header-anchor" href="#1-8-快捷键">¶</a>1.8  快捷键</h3>
-<p>ctrl+a		光标定位到命令行首</p>
-<p>ctrl+e		光标定位到命令行尾</p>
-<p>ctrl+u		将光标处前面的内容清楚</p>
-<p>ctrl+k		将光标处后面的内容清楚</p>
-<p>ctrl+左箭头			调到命令行中前一字的开头</p>
-<p>ctrl+右箭头			跳到命令行中下一字的末尾</p>
-<p>ctrl+c		阶段过程</p>
-<p>ctrl+l		清空屏幕</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>红帽挑战赛初赛试题</title>
     <url>/2021/24P3Z49/</url>
     <content><![CDATA[<h2 id="笔试："><a class="header-anchor" href="#笔试：">¶</a>笔试：</h2>
@@ -890,6 +395,447 @@
       </tags>
   </entry>
   <entry>
+    <title>第一章第一节</title>
+    <url>/2021/1FBDEJR/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<ol>
+<li>
+<p>【填空题】查找关键字文件在哪儿  whereis ls</p>
+</li>
+<li>
+<p>【填空题】查找ls命令可执行文件在哪儿   which ls</p>
+</li>
+<li>
+<p>【单选题】查看历史记录命令 A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>history</p>
+</li>
+<li>
+<p>B：</p>
+<p>pwd</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>课后：</p>
+<p>目标：登录Linux系统并使用shell运行简单的命令。<br>
+1.在Linux控制台使用Bash shell语法输入命令。<br>
+2.在GVONE桌面环境中启动应用。<br>
+3.借助Bash功能，使用较少的击键次数在shell提示符下运行命令。</p>
+<p>【单选题】什么按键可以补全命令   A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>TAB键</p>
+</li>
+<li>
+<p>B：</p>
+<p>回车键</p>
+</li>
+<li>
+<p>C：</p>
+<p>空格键</p>
+</li>
+</ul>
+<p>基于foundationX，在此环境中，共有3台虚拟机，分别为classroom，serverX，desktopX</p>
+<ol>
+<li>classroom:上课环境，包含：DNS服务器、NTP服务器、DHCP服务器、HTTP服务器等</li>
+<li>serverX：作为服务端的练习环境</li>
+<li>desktopX：作为客户端的练习环境</li>
+</ol>
+<p>关于虚拟机的控制：</p>
+<p>rht-vmctl fullreset desktop</p>
+<p>fullreset 恢复较慢</p>
+<p>reset直接回复快照，恢复较快</p>
+<p>KVM虚拟化管理工具：</p>
+<p>virt-manager</p>
+<p>virsh list</p>
+<p>virsh list --all</p>
+<p>virsh start server/desktop</p>
+<p>virsh shutdown desktop</p>
+<p>ssh:远程连接</p>
+<p>​	ssh root@ip地址</p>
+<p>关于虚拟机的</p>
+<p>virsh</p>
+<h3 id="1-1-linux内核"><a class="header-anchor" href="#1-1-linux内核">¶</a>1.1. linux内核</h3>
+<p>查看linux内核版本的命令：</p>
+<p>uname -a</p>
+<p>uname -r</p>
+<p>#注意：linux版本号主要看主版本号和次版本号，次版本号为偶数，表示稳定版，奇数表示测试版</p>
+<p>linux基于模块化，比如：驱动当做一个模块的方式加载</p>
+<p>lsmod | grep usb_storage</p>
+<p>#可以发现，默认没有加载usb驱动，当插入一个U盘，就自动加载了</p>
+<h3 id="1-2-shell"><a class="header-anchor" href="#1-2-shell">¶</a>1.2 shell</h3>
+<p>linux不是系统，是个内核，加上CLI等才为系统</p>
+<p>因为内核不提供和用户的交互功能，所以需要一个程序提供这种功能，这种程序分为两种：命令行（CLI）和图形界面（GUI），在linux提供CLI的交互程序，我们称之为shell</p>
+<p>cat /etc/shells  #可以看到多种shell，对于红帽系统来说，默认采用的是bash这个shell</p>
+<p>chsh -l #查看系统所有的shell</p>
+<p>echo $SHELL #查看当前使用的shell</p>
+<p>ps #ps命令用于查看当前进程，可以发现，有一个bash进程</p>
+<ol>
+<li>打开一个终端就可以打开一个shell</li>
+<li>得到一个命令行界面，就触发一个shell</li>
+</ol>
+<p>ls /dev/可以看到登录方式</p>
+<p>触发一个shell，可以得到一个提示符：</p>
+<p>登录用户名@主机名 当前目录</p>
+<ul>
+<li>#表示的是root用户</li>
+<li>$表示的是普通用户</li>
+<li>方括号里的提示符是由PS1变量展示</li>
+</ul>
+<p>echo $PS1 #查看命令提示符的格式</p>
+<p>echo $$  #查看当前shell的ID</p>
+<p>图形界面中</p>
+<p>ctrl+alt+F2 ：切换成了命令行界面 第二个tty</p>
+<p>ctrl+alt+F1:默认的图形界面登录</p>
+<p>可以通过hostname命令查看主机名</p>
+<p>~ 代表当前用户的家目录</p>
+<h3 id="1-3终端"><a class="header-anchor" href="#1-3终端">¶</a>1.3终端</h3>
+<p>物理终端：一个键盘、一个鼠标、一个显示器就是一个物理终端</p>
+<p>​		设备文件：/dev/console</p>
+<p>虚拟终端（tty）：附加在物理终端之上，以软件方式虚拟出来的终端</p>
+<p>​		设备文件：/dev/tty</p>
+<p>模拟终端（pts）: 纯软件实现的终端，比如：在图形界面打开的terminal，使用SSH、telnet等远程打开的界面。</p>
+<p>​		设备文件：/dev/pts/*</p>
+<p>系统启动过程中，以物理终端提供</p>
+<p>系统启动之后，就以虚拟终端提供</p>
+<p><strong>虚拟终端切换</strong></p>
+<p>ctrl+alt+f</p>
+<ul>
+<li>如果有图形环境，共有六个控制台，图形界面运行在第一个；文本界面运行在第二至第六个。</li>
+<li>如果没有线图形界面，则只有5个细腻控制台，全是文本界面。</li>
+<li>提示：rhel5之前的版本，都有7个虚拟控制台，前6个为文本界面，第7个为图形界面。</li>
+</ul>
+<p>tty  #查看当前终端设备</p>
+<p>who  #查看有哪些用户登录到当前系统</p>
+<p>echo aaa &gt; /dev/tty2  #就会在tty2上显示这串字符</p>
+<p>echo hello &gt; /dev/pts/5  #在pts5上显示hello</p>
+<h3 id="1-4命令行"><a class="header-anchor" href="#1-4命令行">¶</a>1.4命令行</h3>
+<p>命令 【选项】【参数】</p>
+<p>命令：</p>
+<p>​		所谓命令就是一个可执行文件，文件本身包含了可执行的程序代码</p>
+<p>​		输入命令，并回车，就是将这个程序提交给内核，有内核分配资源将其运行起来。运行中的程序需，我们称之为进程。</p>
+<p>​		最左边，必须是一个命令</p>
+<p>选项：</p>
+<p>​		用于启用或关闭命令的某个或某些功能</p>
+<p>​		短选项： -表示，可合并使用</p>
+<p>​		长选项： --表示，一般不可合并使用</p>
+<p>参数：</p>
+<p>​		命令作用的对象，向命令提供数据。</p>
+<p>注意：</p>
+<ol>
+<li>​	命令，选项，参数中间使用空格隔开</li>
+<li>多上选项之间、多参数之间，使用空格隔开</li>
+<li>一行执行多个命令，使用分号（；）隔开</li>
+</ol>
+<p>man+命令查看帮助</p>
+<p>在shell中有两类命令：</p>
+<ol>
+<li>内建命令：shell自带，找不到，比如：cd命令，使用which cd 是找不到的</li>
+<li>外部命令：非shell自大，外部的一个可执行文件</li>
+</ol>
+<p>type cd  #查看一个命令的类型，是内建还是外部</p>
+<p>which ls  #查看ls命令可执行文件在哪里</p>
+<p>whereis ls  #查找关键字文件在哪里</p>
+<p>使用/usr/bin/ls是没有颜色的，默认ls是‘ls --color=auto’</p>
+<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419231735533.png" alt="image-20210419231735533"></p>
+<p><strong>那为什么无论在什么位置都可以执行命令呢？</strong></p>
+<p>echo $PATH</p>
+<p>​		#查看PATH变量的值</p>
+<p>​		#执行命令时，就会在这个PATH变量指定的路径，从左到右去寻找，一直到找到为止，如果没找到，会提示找不到这个命令</p>
+<p>​		#shell搜寻到的外部命令的路径，会被缓存下来，下次就不用再去搜索了</p>
+<p>hash</p>
+<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419232907350.png" alt="image-20210419232907350"></p>
+<p>​		#查看缓存的命令</p>
+<p>​		#hits.   表示命中次数，也就是被执行了多少次。</p>
+<p>hash -r</p>
+<p>​		#清除所有缓存</p>
+<p>​		#比如：将ls程序文件移到/usr/bin目录下，如果有缓存存在，还会到/bin/下去找ls这个命令，找不到就会报错，这时，就需要清一下缓存，重新去搜寻。</p>
+<h3 id="1-5-命令演示"><a class="header-anchor" href="#1-5-命令演示">¶</a>1.5 命令演示</h3>
+<p>shutdown</p>
+<ol>
+<li>
+<p>作用：关闭计算机，它的使用权限是超级用户。</p>
+</li>
+<li>
+<p>格式：</p>
+<p>shutdown [-h] [-i] [-k] [-m] [-t]</p>
+</li>
+<li>
+<p>重要参数</p>
+<p>-t：在改变到其它运行级别之前，告诉init程序多久以后关机。</p>
+<p>-k：并不真正关机，只是送警告信号给每位登录者。</p>
+<p>-h: 关机后关闭电源。</p>
+<p>-c：cancel current process 取消目前正在执行的关机程序。所以这个选项当然没有时间参数，但是可是输入一个用来解释的讯息，而这信息将会送到每位使用者。</p>
+<p>-F：在重启计算机时强迫fsck。</p>
+<p>-time：设定关机前的时间。</p>
+<p>-m：将系统改为单用户模式</p>
+<p>-i: 关机时显示系统信息。</p>
+</li>
+<li>
+<p>命令说明</p>
+<p>shutdown  命令可以安全地将系统关机。有些用户会使用直接断掉电源的方式来关闭linux系统，这是十分危险的。因为Linux与Windows不同，其后台运行着许多进程，所以强制关机可能会导致进程的数据丢失，使系统处于不稳定的状态，甚至在有的系统中会损坏硬件宿舍（硬盘）。在系统关机前使用shutdown命令，系统管理员会通知所有登录的用户系统将要关闭，并且login指令会被冻结，即新的用户不能再登录。</p>
+</li>
+<li>
+<p>举例</p>
+<p>shutdown -h 3:40</p>
+<p>现在关机  shutdown -h now</p>
+</li>
+</ol>
+<p>halt</p>
+<ol>
+<li>
+<p>作用：关闭系统，它的使用权限是超级用户。</p>
+</li>
+<li>
+<p>格式</p>
+<p>halt [-n] [-w] [-d] [-f] [-i] [-p]</p>
+</li>
+<li>
+<p>主要参数说明</p>
+<p>-n: 防止sync系统调用，它用在用fsck修补根分区之后，以阻止内核用老版本的超级块覆盖修补过的超级块</p>
+<p>-w：并不是真正的重启或关机，知识写wtmp（/var/log/wtmp）记录。</p>
+<p>-f：没有调用shutdown，而强制关机或重启。</p>
+<p>-i：关机（或重启）前，关掉所有的网络接口。</p>
+<p>-f：强迫关机，不呼叫shutdown这个命令。</p>
+<p>-p：当关机的时候随便做关闭电源的动作。</p>
+<p>-d：关闭系统，但不留下记录。</p>
+</li>
+<li>
+<p>命令说明</p>
+<p>halt就是调用shutdown -h。halt执行时，杀死应用进程，执行sync（将存于buffer中的资料强制写入硬盘中）系统调用，文件系统写操作完成后就会停止内核。若系统的运行级别为0或6，则关闭系统；否则以shutdown指令（加上-h参数）来取代。</p>
+</li>
+</ol>
+<p>reboot</p>
+<ol>
+<li>
+<p>​	作用：重启计算机，它的使用权限是系统管理者。</p>
+</li>
+<li>
+<p>格式</p>
+<p>reboot [-n] [-w] [-d] [-f] [-i]</p>
+</li>
+<li>
+<p>主要参数</p>
+<p>-n：在重开机前不做将记忆体资料写回硬盘的动作。</p>
+<p>-w：并不会真的重开机，只要把记录写到/var/log/wtmp/文件里。</p>
+<p>-d：不把记录写到/var/log/wtmp文件里（-n这个参数包含了-d）。</p>
+<p>-i：在重开机之前先把所有与网络相关的装置停止。</p>
+</li>
+</ol>
+<p>exit</p>
+<ol>
+<li>
+<p>​	作用：退出系统，它的使用权限是所有用户</p>
+</li>
+<li>
+<p>格式</p>
+<p>exit</p>
+</li>
+<li>
+<p>参数</p>
+<p>exit命令没有参数，运行后退出系统进入登录界面。</p>
+</li>
+</ol>
+<p>last</p>
+<ol>
+<li>
+<p>作用：是显示近期用户或终端的登录情况，它的使用权限是所有用户。通过last命令查看该程序的log，管理员可以获知谁曾经或企图连接系统。</p>
+</li>
+<li>
+<p>格式</p>
+<p>last [-n] [-f file] [-t tty] [-h 节点] [-l -Ip] [-1] [-y] [1D]</p>
+</li>
+<li>
+<p>主要参数</p>
+<p>-n：指定输出记录的条数。</p>
+<p>-f file：指定用文件file作为查询用的log文件。</p>
+<p>-t tty：只显示指定的虚拟控制台上登录情况。</p>
+<p>-h 节点：只显示指定的节点上登陆的情况、</p>
+<p>-i IP：只显示指定的IP上登录的情况。</p>
+<p>-1 ：用IP来显示远端地址。</p>
+<p>-y：显示记录的年、月、日。</p>
+<p>-ID:知道查询的用户名。</p>
+<p>-x：显示系统关闭、用户登录和退出的历史。</p>
+</li>
+</ol>
+<p>id  #查看当前用户</p>
+<p>root不是真正的超级用户，超级用户为uid为0的用户</p>
+<p>uid可以理解为身份证号</p>
+<p>hostname  #查看当前主机名</p>
+<p>pwd   #查看当前路径</p>
+<p>date  #查看日期时间</p>
+<p>cal 2016 #查看2016年的日历</p>
+<p>bc  #计算器  crtl+d  退出</p>
+<h3 id="1-6-TAB补全"><a class="header-anchor" href="#1-6-TAB补全">¶</a>1.6 TAB补全</h3>
+<p>​		输入命令、选项、参数时，可以通过tab键补全功能来减轻输入压力。键入的内容如果足够使其唯一，按一次tab键即可补全，如果键入的内容不够十七唯一，按两次tab键，既可以显示以键入的字符为开头的所有命令。</p>
+<p>​		在RHEL7/CentOS7以前的版本中，bash自动补全功能仅限于命令和文件名，然而网络设备往往可以自动补全命令的参数，常常让搞网络出身的工程师唏嘘不已。</p>
+<p>​		在新出的RHEL7/CentOS7 中的Bash已经可以自动补全命令参数了，需要注意的是RHEL7/CentOS7的默认安装类型是最小安装，他是没有这个功能的。要启用这个功能，你需要安装一个bash-completion包，然后退出bash，重新登陆即可（为重启bash的情况下继续使用可能出现补全功能异常，出现一堆代码）。</p>
+<p>RHEL7收费，CentOS免费开源</p>
+<p>因为RHEL其中的图标注册了商标，所以收费</p>
+<p>bash-2.05及以后的版本提供了自动补齐的编程接口，通过安装bash-completion来使用TAB键自动补齐几乎任何内容，包括参数、文件、目录甚至包名称等等。</p>
+<p>rpm -qa | grep bash-completion</p>
+<h3 id="1-7-命令历史记录"><a class="header-anchor" href="#1-7-命令历史记录">¶</a>1.7 命令历史记录</h3>
+<p>在每个用户的家目录，都有自己的历史记录文件：.bash_history</p>
+<p>登陆shell时，会从登陆用户的家目录中，读取.bash_history文件。</p>
+<p>登录后，执行的命令历史记录，会先记录到缓存中。</p>
+<p>登出时，会将缓存中的历史记录，以追加方式写到.bash_history文件中。</p>
+<p>vim /root/.bash_history</p>
+<p>history  #查看历史命令记录</p>
+<p>history -a #立即将缓存中的记录，协会文件</p>
+<p>history -c  #清除历史</p>
+<p>echo  $HISTSIZE #查看命令历史记录的条数</p>
+<p>echo  $HISTFILE  #历史文件路径</p>
+<p>echo  $HISTFILESIZE   #命令历史文件记录历史的条数</p>
+<p>echo  $HISTCONTROL</p>
+<p>​			#历史记录的控制</p>
+<p>​			#ignoredups，忽略连续且相同的重复的命令</p>
+<p>​			#ignorespace，忽略所有以空白开头的命令</p>
+<p>​			#ignoreboth，上面两项全部</p>
+<p>!数字   #调用历史记录中对应编号的命令</p>
+<p>!字符串    #调用历史记录中最近的一个以指定字符串开头的命令</p>
+<p>!!       #调用上一条命令</p>
+<p>!$       #表示上一个命令的最后一段字符</p>
+<p>上、下箭头      #可以上下查阅历史记录</p>
+<p>左、右箭头      #在当前命令行中左右移动光标</p>
+<p>esc+.      #将上一命令的最后一个参数复制到当前命令行光标处,重复使用，将继续到更早的命令。</p>
+<p>alt+.        #将上一个命令的最后一段字符复制到当前，重复使用。</p>
+<p>ctrl+r      #在历史记录列表中搜索某一模式的命令</p>
+<h3 id="1-8-快捷键"><a class="header-anchor" href="#1-8-快捷键">¶</a>1.8  快捷键</h3>
+<p>ctrl+a		光标定位到命令行首</p>
+<p>ctrl+e		光标定位到命令行尾</p>
+<p>ctrl+u		将光标处前面的内容清楚</p>
+<p>ctrl+k		将光标处后面的内容清楚</p>
+<p>ctrl+左箭头			调到命令行中前一字的开头</p>
+<p>ctrl+右箭头			跳到命令行中下一字的末尾</p>
+<p>ctrl+c		阶段过程</p>
+<p>ctrl+l		清空屏幕</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Javee</title>
+    <url>/2021/HDAEA4/</url>
+    <content><![CDATA[<h1>解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码</h1>
+<p><a href="https://www.jianshu.com/p/43061e0b5703">https://www.jianshu.com/p/43061e0b5703</a></p>
+<p><a href="https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710">https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710</a></p>
+<p><a href="https://blog.csdn.net/weixin_45673401/article/details/104446105">https://blog.csdn.net/weixin_45673401/article/details/104446105</a></p>
+<h1>Eclipse中java和Xml文件字体大小调整：</h1>
+<p>Eclipse字体大小调整：</p>
+<p>Window / Preferences / General / Appearance / ColorsAnd Fonts ，在右边的对话框里选择Java - Java Editor Text Font，点击出现的编辑（Edit）按钮，可以设置显示在在主窗体中程序的字体大小，设置完之后点击右下角的应用(Apply)，最后点击确定（OK）即可。</p>
+<p>Xml文件字体大小的调整： window / preferences / General / appearance / colors and fonts / Basic /  &quot;Text font &quot; ，然后点击Edit，可以设置字体的大小。</p>
+<h1>@Resource注解错误，无法导入javax.annotation.Resource包的问题</h1>
+<p><a href="http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm</a></p>
+<p>下载后进入项目buildpath</p>
+<p><img src="/../source/images/Javee/image-20200913204513394.png" alt="image-20200913204513394"></p>
+<p>导入即可</p>
+<h1><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">如何用Eclipse将普通的JavaWeb项目转为Maven项目</a></h1>
+<p><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">https://www.cnblogs.com/qlqwjy/p/8386188.html</a></p>
+<h1>解决idea中xml文件资源路径问题</h1>
+<p>如果该项目是maven项目：</p>
+<p>配置maven的pom文件配置，在pom文件中找到<build>节点，添加下列代码：</build></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1>Intellij IDEA 创建main函数 和 输出语句的快捷键</h1>
+<ol>
+<li>main函数：</li>
+</ol>
+<p>输入public static void main的首字母：psvm 然后按tab或者enter，就会写好main方法</p>
+<p><img src="/../source/images/Javee/20180331183744410" alt="img"></p>
+<ol start="2">
+<li>输出语句：</li>
+</ol>
+<p>System.out.print(); 键入：sout</p>
+<ol start="3">
+<li>for循环：</li>
+</ol>
+<p>输入： fori</p>
+<p><img src="/../source/images/Javee/20180331183150826" alt="img"></p>
+<h1>IDEA运行junit测试用例时控制台中文输出乱码</h1>
+<p>最近遇到在IDEA运行测试用例(junit4)时System.out.println中文时总是乱码,设置好编码后还是不行,后来总算解决了,这里记录下解决办法:</p>
+<p>1.设置好编码:</p>
+<p><img src="/../source/images/Javee/20191107144238841.png" alt="img"></p>
+<p>2.删除原来的 Run/Debug Configurations (这步很总要,就是很多时候就是因为没有做这边就会无效)</p>
+<p><img src="/../source/images/Javee/20191107144427568.png" alt="img"></p>
+<p>3.重新运行 junit</p>
+<p><img src="/../source/images/Javee/20191107144526220.png" alt="img"></p>
+<h1>IDEA中如何打开Run/Debug Configurations</h1>
+<p>工具栏–&gt;Run–&gt;Edit Configurations<br>
+<img src="/../source/images/Javee/20200317193324690.png" alt="在这里插入图片描述"><br>
+<img src="/../source/images/Javee/20200317193541919.png" alt="在这里插入图片描述"></p>
+<p><img src="/../source/images/Javee/image-20201028001014226.png" alt="image-20201028001014226"></p>
+<h1>IntelliJ IDEA 控制台中文乱码解决方案</h1>
+<p>参考链接：<a href="https://blog.csdn.net/wo541075754/article/details/51150035">https://blog.csdn.net/wo541075754/article/details/51150035</a><br>
+参考链接：<a href="http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral">http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral</a><br>
+相关设置<br>
+1、打开IDEA安装目录找到 idea.exe.vmoptions（64位为idea64.exe.vmoptions）文件， 在文件末尾加上 -Dfile.encoding=UTF-8<br>
+2、最后，在 IntelliJ IDEA 中的“Run/Debug Configurations”中，修改虚拟机参数“ VM options ”，内容与在文件idea.vmoptions中追加的内容相同，皆为-Dfile.encoding=UTF-8<br>
+3、打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8，如下图（红框的地方），然后重新rebuild一下，基本就行了<br>
+4、打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行<br>
+5、 打开Run/Debug Configuration,选择你的tomcat，在 Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
+<p>解决的是其中的第四点</p>
+<p><img src="/../source/images/Javee/image-20201028001623948.png" alt="image-20201028001623948"></p>
+<p>然后rebuild一下重新运行</p>
+<h1>Idea连接数据库时出现serverTimezone问题</h1>
+<p><img src="/../source/images/Javee/20200907102200827.png" alt="在这里插入图片描述"></p>
+<p>没有设置serverTimezone属性导致连接失败<br>
+<img src="/../source/images/Javee/20200907102317616.png" alt="在这里插入图片描述"><br>
+不一定要设为UTC，可以根据实际情况设置</p>
+<p>连接成功：</p>
+<p><img src="/../source/images/Javee/image-20201028135844679.png" alt="image-20201028135844679"></p>
+<h1>快捷键</h1>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">Alt+<span class="built_in">insert</span>快速生成有参无参构造方法和setget方法</span><br></pre></td></tr></table></figure>
+<h1>解决修改数据不能插入中文问题</h1>
+<p><img src="/../source/images/Javee/image-20201111141733502.png" alt="image-20201111141733502"></p>
+<p><img src="/../source/images/Javee/image-20201111141910728.png" alt="image-20201111141910728"></p>
+<p>修改defaultcharset为utf8</p>
+<h1>com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 1字节的 UTF-8 序列的字节 1 无效。</h1>
+<ul>
+<li>修改pom.xml文件，加入下面配置</li>
+</ul>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;properties&gt;</span></span><br><span class="line">	<span class="section">&lt;project.build.sourceEncoding&gt;</span><span class="attribute">UTF</span>-<span class="number">8</span>&lt;/project.build.sourceEncoding&gt;</span><br><span class="line"><span class="section">&lt;/properties&gt;</span></span><br></pre></td></tr></table></figure>
+<h1>intelij idea 使用maven打包报错 Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1</h1>
+<p>缺少这个插件，在pom.xml中加入相应的版本即可</p>
+<p><img src="/../source/images/Javee/image-20201123200045002.png" alt="image-20201123200045002"></p>
+<p>打包成功</p>
+<p><img src="/../source/images/Javee/image-20201123200101686.png" alt="image-20201123200101686"></p>
+<h1>springboot打包错误：Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0…</h1>
+<p>解决方法：修改maven-resources-plugin的版本</p>
+<p><img src="/../source/images/Javee/image-20201123200523720.png" alt="image-20201123200523720"></p>
+<h1>解决jrebel热部署错误问题</h1>
+<p>报错：</p>
+<p><img src="/../source/images/Javee/image-20201123220910872.png" alt="image-20201123220910872"></p>
+<p>依赖包冲突：</p>
+<p><img src="/../source/images/Javee/image-20201123221948421.png" alt="image-20201123221948421"></p>
+<p>原因在于版本的不对，把下面的版本删掉即可</p>
+<p><img src="/../source/images/Javee/image-20201123222058403.png" alt="image-20201123222058403"></p>
+<p>解决后：</p>
+<p><img src="/../source/images/Javee/image-20201123222246700.png" alt="image-20201123222246700"></p>
+<h1>解决idea中通过路径找不到页面404的问题</h1>
+<p>首先在pom中加入各类资源的路径：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;resources&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span><br><span class="line">        &lt;filtering&gt;<span class="keyword">true</span>&lt;/filtering&gt;</span><br><span class="line">        &lt;excludes&gt;</span><br><span class="line">          &lt;exclude&gt;application-dev.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-test.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-prod.yml&lt;/exclude&gt;</span><br><span class="line">        &lt;/excludes&gt;</span><br><span class="line">      &lt;/resource&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/java&lt;/directory&gt;</span><br><span class="line">        &lt;includes&gt;</span><br><span class="line">          &lt;include&gt;**<span class="comment">/*.xml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">      &lt;resource&gt;</span></span><br><span class="line"><span class="comment">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span></span><br><span class="line"><span class="comment">        &lt;filtering&gt;true&lt;/filtering&gt;</span></span><br><span class="line"><span class="comment">        &lt;includes&gt;</span></span><br><span class="line"><span class="comment">          &lt;!--suppress UnresolvedMavenProperty --&gt;</span></span><br><span class="line"><span class="comment">          &lt;include&gt;application-$&#123;activeProfile&#125;.yml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">    &lt;/resources&gt;</span></span><br></pre></td></tr></table></figure>
+<p>目录要放到相应的资源目录下：</p>
+<p><img src="/../source/images/Javee/image-20201202144159760.png" alt="image-20201202144159760"></p>
+<p>重点是部署到tomcat上时Deployment要为war exploded形式</p>
+<p><img src="/../source/images/Javee/image-20201202144242880.png" alt="image-20201202144242880"></p>
+<p>下方的application context路径要为/加项目名，运行后可在浏览器中通过各类路径接口访问</p>
+<p><img src="/../source/images/Javee/image-20201202144414351.png" alt="image-20201202144414351"></p>
+]]></content>
+      <categories>
+        <category>Javee</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网络编程</title>
     <url>/2021/3V4J77V/</url>
     <content><![CDATA[<h1>解决代码C4996问题</h1>
@@ -948,6 +894,60 @@
 ]]></content>
       <categories>
         <category>网络编程</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>python</title>
+    <url>/2021/2JD9E5R/</url>
+    <content><![CDATA[<h1>列表List</h1>
+<p>随机生成列表：</p>
+<p>n=list（range（10））</p>
+<p>切片还可以更换索引值</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">n</span><br></pre></td></tr></table></figure>
+<p>词频统计：</p>
+<p><img src="/../source/images/python/20210523142308.png" alt="image-20200615104058100"></p>
+<p><img src="/../source/images/python/20210523142723.png" alt="image-20200615104053055"></p>
+<p><img src="/../source/images/python/20210523142743.png" alt="image-20200615110115241"></p>
+<h1>复习</h1>
+<p><img src="/../source/images/python/20210523142821.png" alt="image-20200706083644250"></p>
+<p>第一章</p>
+<p>print（sep,end）</p>
+<p>sep默认空格，end是以什么结尾</p>
+<p>标识符</p>
+<p>变量的定义中不需要先定义类型，付给什么值就什么值</p>
+<p>回顾多个变量赋值</p>
+<p>重点是复杂的数据类型——字符串，列表，元组，字典，集合</p>
+<p>运算符中注意下/和//的情况，水仙花数的分解，单/等同于5/3=1.66666666667</p>
+<p>5//3=1</p>
+<p>5.0//3=1.0</p>
+<p>1!=0     true</p>
+<p>逻辑运算：</p>
+<p>控制语句：</p>
+<p>重点是分支结构和循环结构  while和for/in后面都可以带else</p>
+<p>range(6)代表从0到5</p>
+<p>range(1,6)代表从1到5</p>
+<p>常用数据结构分了序列和非序列</p>
+<p>列表：</p>
+<p>切片考得比较多，注意</p>
+<p>a[:4]代表从第一个开始取</p>
+<p>a[2:]代表从这个一直到尾</p>
+<p>a[2:4]代表从第2个到第3个结束，和range一样不包含尾</p>
+<p>a[:]代表对整个字符串操作</p>
+<p>追加新的列表用extend，追加一个用append</p>
+<p>排序：</p>
+<p>进行逆序：reversed，排序sorted</p>
+<p>方法是用对象.方法</p>
+<p>函数时直接调用的如len，max，不要把排序搞混了</p>
+<p>列表遍历用for循环遍历</p>
+<p>空字典创建{}，键：值</p>
+<p>value=a[key]</p>
+<p>del a[key]删除字典中的某一组值</p>
+<p>扩展</p>
+<p>如果输入的字符串中有中文字符的话怎么统计？</p>
+<p>查一查中文字符的unicode编码是多少</p>
+]]></content>
+      <categories>
+        <category>Python</category>
       </categories>
   </entry>
   <entry>
