@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>记录屋</title>
+  <icon>http://yemingqing.github.io/icon.png</icon>
+  <subtitle>LimeY</subtitle>
+  <link href="http://yemingqing.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://yemingqing.github.io/"/>
+  <updated>2021-05-23T16:42:37.826Z</updated>
+  <id>http://yemingqing.github.io/</id>
+  
+  <author>
+    <name>LimeY</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>红帽挑战赛初赛试题</title>
+    <link href="http://yemingqing.github.io/2021/24P3Z49/"/>
+    <id>http://yemingqing.github.io/2021/24P3Z49/</id>
+    <published>2021-05-23T07:55:22.000Z</published>
+    <updated>2021-05-23T16:42:37.826Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;笔试：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#笔试：&quot;&gt;¶&lt;/a&gt;笔试：&lt;/h2&gt;
+&lt;h3 id=&quot;单选题，共34题，每题2分，共68分。&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#单选题，共34题，每题2分，共68分。&quot;&gt;¶&lt;/a&gt;单选题，共34题，每题2分，共68分。&lt;/h3&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1、哪个Linux命令可以一次显示一页内容？&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;pause&lt;/li&gt;
+&lt;li&gt;more&lt;/li&gt;
+&lt;li&gt;cat&lt;/li&gt;
+&lt;li&gt;grep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="http://yemingqing.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="http://yemingqing.github.io/tags/linux/"/>
+    
+    <category term="redhat" scheme="http://yemingqing.github.io/tags/redhat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一章第一节</title>
+    <link href="http://yemingqing.github.io/2021/1FBDEJR/"/>
+    <id>http://yemingqing.github.io/2021/1FBDEJR/</id>
+    <published>2021-05-23T07:24:15.000Z</published>
+    <updated>2021-05-23T16:45:38.906Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;【填空题】查找关键字文件在哪儿  whereis ls&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;【填空题】查找ls命令可执行文件在哪儿   which ls&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;【单选题】查看历史记录命令 A&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;history&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;pwd&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：登录Linux系统并使用shell运行简单的命令。&lt;br&gt;
+1.在Linux控制台使用Bash shell语法输入命令。&lt;br&gt;
+2.在GVONE桌面环境中启动应用。&lt;br&gt;
+3.借助Bash功能，使用较少的击键次数在shell提示符下运行命令。&lt;/p&gt;
+&lt;p&gt;【单选题】什么按键可以补全命令   A&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="http://yemingqing.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="http://yemingqing.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javee</title>
+    <link href="http://yemingqing.github.io/2021/HDAEA4/"/>
+    <id>http://yemingqing.github.io/2021/HDAEA4/</id>
+    <published>2021-05-23T07:23:33.000Z</published>
+    <updated>2021-05-23T16:11:35.723Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/43061e0b5703&quot;&gt;https://www.jianshu.com/p/43061e0b5703&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710&quot;&gt;https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/weixin_45673401/article/details/104446105&quot;&gt;https://blog.csdn.net/weixin_45673401/article/details/104446105&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Eclipse中java和Xml文件字体大小调整：&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="Javee" scheme="http://yemingqing.github.io/categories/Javee/"/>
+    
+    
+    <category term="Java" scheme="http://yemingqing.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络编程</title>
+    <link href="http://yemingqing.github.io/2021/3V4J77V/"/>
+    <id>http://yemingqing.github.io/2021/3V4J77V/</id>
+    <published>2021-05-23T07:06:18.000Z</published>
+    <updated>2021-05-23T16:05:33.948Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;解决代码C4996问题&lt;/h1&gt;
+&lt;p&gt;严重性	代码	说明	项目	文件	行	禁止显示状态&lt;br&gt;
+错误	C4996	‘gethostbyname’: Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings	Project1	d:\visual studio\project1\project1\p2-4.cpp	31&lt;/p&gt;
+&lt;p&gt;VS编译代码是遇到如上问题，vs准备弃用strcpy的，安全性较低，所以微软提供了strcpy_s来代替，如果想继续使用strcpy的，main前面加上&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;meta-keyword&quot;&gt;warning&lt;/span&gt;(disable:4996)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181229541.png&quot; alt=&quot;image-20200918181229541&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="网络编程" scheme="http://yemingqing.github.io/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python</title>
+    <link href="http://yemingqing.github.io/2021/2JD9E5R/"/>
+    <id>http://yemingqing.github.io/2021/2JD9E5R/</id>
+    <published>2021-05-23T06:21:31.000Z</published>
+    <updated>2021-05-23T15:35:16.872Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;列表List&lt;/h1&gt;
+&lt;p&gt;随机生成列表：&lt;/p&gt;
+&lt;p&gt;n=list（range（10））&lt;/p&gt;
+&lt;p&gt;切片还可以更换索引值&lt;/p&gt;
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;n&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="http://yemingqing.github.io/categories/Python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>红帽周末上课笔记</title>
+    <link href="http://yemingqing.github.io/2021/3JFWP8Z/"/>
+    <id>http://yemingqing.github.io/2021/3JFWP8Z/</id>
+    <published>2021-05-23T04:32:15.000Z</published>
+    <updated>2021-05-23T16:49:37.617Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;XShell中的配置&lt;/h1&gt;
+&lt;p&gt;窗口透明化&lt;/p&gt;
+&lt;p&gt;关闭自动更新&lt;/p&gt;
+&lt;p&gt;复制粘贴文本&lt;/p&gt;
+&lt;p&gt;隐藏上方菜单栏&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="http://yemingqing.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="http://yemingqing.github.io/tags/linux/"/>
+    
+    <category term="redhat" scheme="http://yemingqing.github.io/tags/redhat/"/>
+    
+  </entry>
+  
+</feed>
