@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python</title>
+    <url>/2021/2JD9E5R/</url>
+    <content><![CDATA[<h1>列表List</h1>
+<p>随机生成列表：</p>
+<p>n=list（range（10））</p>
+<p>切片还可以更换索引值</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">n</span><br></pre></td></tr></table></figure>
+<p>词频统计：</p>
+<p><img src="/../source/images/python/20210523142308.png" alt="image-20200615104058100"></p>
+<p><img src="/../source/images/python/20210523142723.png" alt="image-20200615104053055"></p>
+<p><img src="/../source/images/python/20210523142743.png" alt="image-20200615110115241"></p>
+<h1>复习</h1>
+<p><img src="/../source/images/python/20210523142821.png" alt="image-20200706083644250"></p>
+<p>第一章</p>
+<p>print（sep,end）</p>
+<p>sep默认空格，end是以什么结尾</p>
+<p>标识符</p>
+<p>变量的定义中不需要先定义类型，付给什么值就什么值</p>
+<p>回顾多个变量赋值</p>
+<p>重点是复杂的数据类型——字符串，列表，元组，字典，集合</p>
+<p>运算符中注意下/和//的情况，水仙花数的分解，单/等同于5/3=1.66666666667</p>
+<p>5//3=1</p>
+<p>5.0//3=1.0</p>
+<p>1!=0     true</p>
+<p>逻辑运算：</p>
+<p>控制语句：</p>
+<p>重点是分支结构和循环结构  while和for/in后面都可以带else</p>
+<p>range(6)代表从0到5</p>
+<p>range(1,6)代表从1到5</p>
+<p>常用数据结构分了序列和非序列</p>
+<p>列表：</p>
+<p>切片考得比较多，注意</p>
+<p>a[:4]代表从第一个开始取</p>
+<p>a[2:]代表从这个一直到尾</p>
+<p>a[2:4]代表从第2个到第3个结束，和range一样不包含尾</p>
+<p>a[:]代表对整个字符串操作</p>
+<p>追加新的列表用extend，追加一个用append</p>
+<p>排序：</p>
+<p>进行逆序：reversed，排序sorted</p>
+<p>方法是用对象.方法</p>
+<p>函数时直接调用的如len，max，不要把排序搞混了</p>
+<p>列表遍历用for循环遍历</p>
+<p>空字典创建{}，键：值</p>
+<p>value=a[key]</p>
+<p>del a[key]删除字典中的某一组值</p>
+<p>扩展</p>
+<p>如果输入的字符串中有中文字符的话怎么统计？</p>
+<p>查一查中文字符的unicode编码是多少</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Javee</title>
     <url>/2021/HDAEA4/</url>
     <content><![CDATA[<h1>解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码</h1>
@@ -113,60 +167,6 @@
       <tags>
         <tag>Java</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2021/2JD9E5R/</url>
-    <content><![CDATA[<h1>列表List</h1>
-<p>随机生成列表：</p>
-<p>n=list（range（10））</p>
-<p>切片还可以更换索引值</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">n</span><br></pre></td></tr></table></figure>
-<p>词频统计：</p>
-<p><img src="/../source/images/python/20210523142308.png" alt="image-20200615104058100"></p>
-<p><img src="/../source/images/python/20210523142723.png" alt="image-20200615104053055"></p>
-<p><img src="/../source/images/python/20210523142743.png" alt="image-20200615110115241"></p>
-<h1>复习</h1>
-<p><img src="/../source/images/python/20210523142821.png" alt="image-20200706083644250"></p>
-<p>第一章</p>
-<p>print（sep,end）</p>
-<p>sep默认空格，end是以什么结尾</p>
-<p>标识符</p>
-<p>变量的定义中不需要先定义类型，付给什么值就什么值</p>
-<p>回顾多个变量赋值</p>
-<p>重点是复杂的数据类型——字符串，列表，元组，字典，集合</p>
-<p>运算符中注意下/和//的情况，水仙花数的分解，单/等同于5/3=1.66666666667</p>
-<p>5//3=1</p>
-<p>5.0//3=1.0</p>
-<p>1!=0     true</p>
-<p>逻辑运算：</p>
-<p>控制语句：</p>
-<p>重点是分支结构和循环结构  while和for/in后面都可以带else</p>
-<p>range(6)代表从0到5</p>
-<p>range(1,6)代表从1到5</p>
-<p>常用数据结构分了序列和非序列</p>
-<p>列表：</p>
-<p>切片考得比较多，注意</p>
-<p>a[:4]代表从第一个开始取</p>
-<p>a[2:]代表从这个一直到尾</p>
-<p>a[2:4]代表从第2个到第3个结束，和range一样不包含尾</p>
-<p>a[:]代表对整个字符串操作</p>
-<p>追加新的列表用extend，追加一个用append</p>
-<p>排序：</p>
-<p>进行逆序：reversed，排序sorted</p>
-<p>方法是用对象.方法</p>
-<p>函数时直接调用的如len，max，不要把排序搞混了</p>
-<p>列表遍历用for循环遍历</p>
-<p>空字典创建{}，键：值</p>
-<p>value=a[key]</p>
-<p>del a[key]删除字典中的某一组值</p>
-<p>扩展</p>
-<p>如果输入的字符串中有中文字符的话怎么统计？</p>
-<p>查一查中文字符的unicode编码是多少</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
   </entry>
   <entry>
     <title>第一章第一节</title>
