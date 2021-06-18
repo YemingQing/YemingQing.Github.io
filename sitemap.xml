@@ -102,7 +102,7 @@
 
   <url>
     <loc>https://blog.forlearn.top/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,21 +110,21 @@
   
   <url>
     <loc>https://blog.forlearn.top/tags/Java/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.forlearn.top/tags/linux/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.forlearn.top/tags/redhat/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -133,28 +133,28 @@
   
   <url>
     <loc>https://blog.forlearn.top/categories/Javee/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.forlearn.top/categories/Python/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.forlearn.top/categories/linux/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.forlearn.top/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
