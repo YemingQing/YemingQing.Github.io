@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>欢迎到访</title>
+    <url>/2021/3560SE9/</url>
+    <content><![CDATA[<h1>欢迎到访：写在前面</h1>
+<p>不知不觉，建站已有不少日子了，无论是内容还是界面，都逐渐丰富了起来。觉得有必要补充一篇类似于导言的文字，今天抽出点时间写一下，日后继续完善。</p>
+<span id="more"></span>
+<h1>关于博客</h1>
+<p>对于这个博客网站，可以把它看作一个技术博客，而我更多的把它看成一个自己的空间，所以偶尔也会加入一些学习和生活中的元素，此外，我会尽我所能提升文章的质量，在发布后也会不断地查漏补缺，小幅修正与大幅补充结合，使每篇文章尽可能更规范易懂、更丰富充实。<br>
+或许在这个移动端主导的时代，搭网站写博客的价值有所降低。但当我写了一段时间之后，发现驱使我写博客的动力不减反增。最大的收获就是我每写一篇文章就会不断地想把相关的知识彻底搞懂，这就不断促使我去深究（哪怕钻牛角尖），因此总能收获好多写之前根本没想到的内容。</p>
+<h1>关于订阅</h1>
+<p>如果你觉得我写的内容或者方向对你有一点用处的话，非常欢迎收藏或订阅我的博客！如果你也在写博客的话，我们可以互相关注！<br>
+在侧栏，你可能会发现这样一个图标。点击之后，你会进入一个看不懂的atom.xml文件。</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210626143022.png" alt="RSS"></p>
+<p>其实，看不懂是正常的，因为这个是给电脑看的。一个便捷的办法就是使用chrome的扩展程序添加feed（或者使用一些具有同样功能的手机app），然后打开网页时，就可以直接点击浏览器右上角的图标（会显示加号）进行订阅。这样以后每次更新了新的博文，你就可以收到提醒。</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210626143057.png" alt="扩展程序"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>红帽挑战赛初赛试题</title>
     <url>/2021/24P3Z49/</url>
     <content><![CDATA[<h2 id="笔试："><a class="header-anchor" href="#笔试：">¶</a>笔试：</h2>
@@ -395,6 +412,1563 @@
       </tags>
   </entry>
   <entry>
+    <title>Javee</title>
+    <url>/2021/HDAEA4/</url>
+    <content><![CDATA[<h1>解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码</h1>
+<p><a href="https://www.jianshu.com/p/43061e0b5703">https://www.jianshu.com/p/43061e0b5703</a></p>
+<p><a href="https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710">https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710</a></p>
+<p><a href="https://blog.csdn.net/weixin_45673401/article/details/104446105">https://blog.csdn.net/weixin_45673401/article/details/104446105</a></p>
+<h1>Eclipse中java和Xml文件字体大小调整：</h1>
+<p>Eclipse字体大小调整：</p>
+<p>Window / Preferences / General / Appearance / ColorsAnd Fonts ，在右边的对话框里选择Java - Java Editor Text Font，点击出现的编辑（Edit）按钮，可以设置显示在在主窗体中程序的字体大小，设置完之后点击右下角的应用(Apply)，最后点击确定（OK）即可。</p>
+<p>Xml文件字体大小的调整： window / preferences / General / appearance / colors and fonts / Basic /  &quot;Text font &quot; ，然后点击Edit，可以设置字体的大小。</p>
+<h1>@Resource注解错误，无法导入javax.annotation.Resource包的问题</h1>
+<p><a href="http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm</a></p>
+<p>下载后进入项目buildpath</p>
+<p><img src="/../source/images/Javee/image-20200913204513394.png" alt="image-20200913204513394"></p>
+<p>导入即可</p>
+<h1><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">如何用Eclipse将普通的JavaWeb项目转为Maven项目</a></h1>
+<p><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">https://www.cnblogs.com/qlqwjy/p/8386188.html</a></p>
+<h1>解决idea中xml文件资源路径问题</h1>
+<p>如果该项目是maven项目：</p>
+<p>配置maven的pom文件配置，在pom文件中找到<build>节点，添加下列代码：</build></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1>Intellij IDEA 创建main函数 和 输出语句的快捷键</h1>
+<ol>
+<li>main函数：</li>
+</ol>
+<p>输入public static void main的首字母：psvm 然后按tab或者enter，就会写好main方法</p>
+<p><img src="/../source/images/Javee/20180331183744410" alt="img"></p>
+<ol start="2">
+<li>输出语句：</li>
+</ol>
+<p>System.out.print(); 键入：sout</p>
+<ol start="3">
+<li>for循环：</li>
+</ol>
+<p>输入： fori</p>
+<p><img src="/../source/images/Javee/20180331183150826" alt="img"></p>
+<h1>IDEA运行junit测试用例时控制台中文输出乱码</h1>
+<p>最近遇到在IDEA运行测试用例(junit4)时System.out.println中文时总是乱码,设置好编码后还是不行,后来总算解决了,这里记录下解决办法:</p>
+<p>1.设置好编码:</p>
+<p><img src="/../source/images/Javee/20191107144238841.png" alt="img"></p>
+<p>2.删除原来的 Run/Debug Configurations (这步很总要,就是很多时候就是因为没有做这边就会无效)</p>
+<p><img src="/../source/images/Javee/20191107144427568.png" alt="img"></p>
+<p>3.重新运行 junit</p>
+<p><img src="/../source/images/Javee/20191107144526220.png" alt="img"></p>
+<h1>IDEA中如何打开Run/Debug Configurations</h1>
+<p>工具栏–&gt;Run–&gt;Edit Configurations<br>
+<img src="/../source/images/Javee/20200317193324690.png" alt="在这里插入图片描述"><br>
+<img src="/../source/images/Javee/20200317193541919.png" alt="在这里插入图片描述"></p>
+<p><img src="/../source/images/Javee/image-20201028001014226.png" alt="image-20201028001014226"></p>
+<h1>IntelliJ IDEA 控制台中文乱码解决方案</h1>
+<p>参考链接：<a href="https://blog.csdn.net/wo541075754/article/details/51150035">https://blog.csdn.net/wo541075754/article/details/51150035</a><br>
+参考链接：<a href="http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral">http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral</a><br>
+相关设置<br>
+1、打开IDEA安装目录找到 idea.exe.vmoptions（64位为idea64.exe.vmoptions）文件， 在文件末尾加上 -Dfile.encoding=UTF-8<br>
+2、最后，在 IntelliJ IDEA 中的“Run/Debug Configurations”中，修改虚拟机参数“ VM options ”，内容与在文件idea.vmoptions中追加的内容相同，皆为-Dfile.encoding=UTF-8<br>
+3、打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8，如下图（红框的地方），然后重新rebuild一下，基本就行了<br>
+4、打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行<br>
+5、 打开Run/Debug Configuration,选择你的tomcat，在 Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
+<p>解决的是其中的第四点</p>
+<p><img src="/../source/images/Javee/image-20201028001623948.png" alt="image-20201028001623948"></p>
+<p>然后rebuild一下重新运行</p>
+<h1>Idea连接数据库时出现serverTimezone问题</h1>
+<p><img src="/../source/images/Javee/20200907102200827.png" alt="在这里插入图片描述"></p>
+<p>没有设置serverTimezone属性导致连接失败<br>
+<img src="/../source/images/Javee/20200907102317616.png" alt="在这里插入图片描述"><br>
+不一定要设为UTC，可以根据实际情况设置</p>
+<p>连接成功：</p>
+<p><img src="/../source/images/Javee/image-20201028135844679.png" alt="image-20201028135844679"></p>
+<h1>快捷键</h1>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">Alt+<span class="built_in">insert</span>快速生成有参无参构造方法和setget方法</span><br></pre></td></tr></table></figure>
+<h1>解决修改数据不能插入中文问题</h1>
+<p><img src="/../source/images/Javee/image-20201111141733502.png" alt="image-20201111141733502"></p>
+<p><img src="/../source/images/Javee/image-20201111141910728.png" alt="image-20201111141910728"></p>
+<p>修改defaultcharset为utf8</p>
+<h1>com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 1字节的 UTF-8 序列的字节 1 无效。</h1>
+<ul>
+<li>修改pom.xml文件，加入下面配置</li>
+</ul>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;properties&gt;</span></span><br><span class="line">	<span class="section">&lt;project.build.sourceEncoding&gt;</span><span class="attribute">UTF</span>-<span class="number">8</span>&lt;/project.build.sourceEncoding&gt;</span><br><span class="line"><span class="section">&lt;/properties&gt;</span></span><br></pre></td></tr></table></figure>
+<h1>intelij idea 使用maven打包报错 Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1</h1>
+<p>缺少这个插件，在pom.xml中加入相应的版本即可</p>
+<p><img src="/../source/images/Javee/image-20201123200045002.png" alt="image-20201123200045002"></p>
+<p>打包成功</p>
+<p><img src="/../source/images/Javee/image-20201123200101686.png" alt="image-20201123200101686"></p>
+<h1>springboot打包错误：Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0…</h1>
+<p>解决方法：修改maven-resources-plugin的版本</p>
+<p><img src="/../source/images/Javee/image-20201123200523720.png" alt="image-20201123200523720"></p>
+<h1>解决jrebel热部署错误问题</h1>
+<p>报错：</p>
+<p><img src="/../source/images/Javee/image-20201123220910872.png" alt="image-20201123220910872"></p>
+<p>依赖包冲突：</p>
+<p><img src="/../source/images/Javee/image-20201123221948421.png" alt="image-20201123221948421"></p>
+<p>原因在于版本的不对，把下面的版本删掉即可</p>
+<p><img src="/../source/images/Javee/image-20201123222058403.png" alt="image-20201123222058403"></p>
+<p>解决后：</p>
+<p><img src="/../source/images/Javee/image-20201123222246700.png" alt="image-20201123222246700"></p>
+<h1>解决idea中通过路径找不到页面404的问题</h1>
+<p>首先在pom中加入各类资源的路径：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;resources&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span><br><span class="line">        &lt;filtering&gt;<span class="keyword">true</span>&lt;/filtering&gt;</span><br><span class="line">        &lt;excludes&gt;</span><br><span class="line">          &lt;exclude&gt;application-dev.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-test.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-prod.yml&lt;/exclude&gt;</span><br><span class="line">        &lt;/excludes&gt;</span><br><span class="line">      &lt;/resource&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/java&lt;/directory&gt;</span><br><span class="line">        &lt;includes&gt;</span><br><span class="line">          &lt;include&gt;**<span class="comment">/*.xml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">      &lt;resource&gt;</span></span><br><span class="line"><span class="comment">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span></span><br><span class="line"><span class="comment">        &lt;filtering&gt;true&lt;/filtering&gt;</span></span><br><span class="line"><span class="comment">        &lt;includes&gt;</span></span><br><span class="line"><span class="comment">          &lt;!--suppress UnresolvedMavenProperty --&gt;</span></span><br><span class="line"><span class="comment">          &lt;include&gt;application-$&#123;activeProfile&#125;.yml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">    &lt;/resources&gt;</span></span><br></pre></td></tr></table></figure>
+<p>目录要放到相应的资源目录下：</p>
+<p><img src="/../source/images/Javee/image-20201202144159760.png" alt="image-20201202144159760"></p>
+<p>重点是部署到tomcat上时Deployment要为war exploded形式</p>
+<p><img src="/../source/images/Javee/image-20201202144242880.png" alt="image-20201202144242880"></p>
+<p>下方的application context路径要为/加项目名，运行后可在浏览器中通过各类路径接口访问</p>
+<p><img src="/../source/images/Javee/image-20201202144414351.png" alt="image-20201202144414351"></p>
+]]></content>
+      <categories>
+        <category>Javee</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络编程</title>
+    <url>/2021/3V4J77V/</url>
+    <content><![CDATA[<h1>解决代码C4996问题</h1>
+<p>严重性	代码	说明	项目	文件	行	禁止显示状态<br>
+错误	C4996	‘gethostbyname’: Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings	Project1	d:\visual studio\project1\project1\p2-4.cpp	31</p>
+<p>VS编译代码是遇到如上问题，vs准备弃用strcpy的，安全性较低，所以微软提供了strcpy_s来代替，如果想继续使用strcpy的，main前面加上</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> <span class="meta-keyword">warning</span>(disable:4996)</span></span><br></pre></td></tr></table></figure>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181229541.png" alt="image-20200918181229541"></p>
+<p>或者</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/20180506223431466" alt="img"></p>
+<p>解决方案：在main()函数中的return前面添加system(“pause”)，其中头文件中添加#include&lt;stdlib.h&gt;。</p>
+<h1>解决“const char *”类型的值不能用于初始化“char *”类型的实体</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181912423.png" alt="image-20200918181912423"></p>
+<p>用强制转换</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181940363.png" alt="image-20200918181940363"></p>
+<h1>error LNK2019: 无法解析的外部符号 WinMain，该符号在函数 &quot;int __cdecl invoke_main(void)”中被引用</h1>
+<p>问题描述：<img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112159738.png" alt="image-20200925112159738"></p>
+<p>解决方案：</p>
+<p>二，原因及解决办法<br>
+产生这个问题的真正原因是c语言运行时找不到适当的程序入口函数，</p>
+<p>一般情况下，如果是windows程序，那么WinMain是入口函数，在VS2017中新建项目为“win32项目”</p>
+<p>如果是dos控制台程序，那么main是入口函数，在VS2017中新建项目为“win32控制台应用程序”</p>
+<p>而如果入口函数指定不当，很显然c语言运行时找不到配合函数，它就会报告错误。</p>
+<p>修改设置适应你的需求</p>
+<p>如果是windows程序：</p>
+<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
+<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_CONSOLE, 添加_WINDOWS.</p>
+<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为Windows(/SUBSYSTEM:WINDOWS)</p>
+<p>如果是控制台程序：</p>
+<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
+<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_WINDOWS, 添加_CONSOLE.</p>
+<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为CONSOLE(/SUBSYSTEM:CONSOLE)</p>
+<p>即：</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112238834.png" alt="image-20200925112238834"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112255855.png" alt="image-20200925112255855"></p>
+<p>_CONSOLE控制台改为窗体_WINDOWS</p>
+<p>然后再链接器中找到系统：把控制台改成窗口</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112450551.png" alt="image-20200925112450551"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112523127.png" alt="image-20200925112523127"></p>
+<p>问题解决：</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112546860.png" alt="image-20200925112546860"></p>
+<h1>vs2010显示行号</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115454664.png" alt="image-20200925115454664"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115527639.png" alt="image-20200925115527639"></p>
+<h1>无法查找或打开PDB文件错误</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201016105325241.png" alt="image-20201016105325241"></p>
+<h1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100326958.png" alt="image-20201106100326958"></p>
+<p>在C盘中找到cvtres.exe文件把最新的替换到VS目录下</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100433205.png" alt="image-20201106100433205"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100548345.png" alt="image-20201106100548345"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100624598.png" alt="image-20201106100624598"></p>
+<h1>解决平台工具集问题</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093139932.png" alt="image-20201204093139932"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093358149.png" alt="image-20201204093358149"></p>
+]]></content>
+      <categories>
+        <category>网络编程</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>python</title>
+    <url>/2021/2JD9E5R/</url>
+    <content><![CDATA[<h1>列表List</h1>
+<p>随机生成列表：</p>
+<p>n=list（range（10））</p>
+<p>切片还可以更换索引值</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">n</span><br></pre></td></tr></table></figure>
+<p>词频统计：</p>
+<p><img src="/../source/images/python/20210523142308.png" alt="image-20200615104058100"></p>
+<p><img src="/../source/images/python/20210523142723.png" alt="image-20200615104053055"></p>
+<p><img src="/../source/images/python/20210523142743.png" alt="image-20200615110115241"></p>
+<h1>复习</h1>
+<p><img src="/../source/images/python/20210523142821.png" alt="image-20200706083644250"></p>
+<p>第一章</p>
+<p>print（sep,end）</p>
+<p>sep默认空格，end是以什么结尾</p>
+<p>标识符</p>
+<p>变量的定义中不需要先定义类型，付给什么值就什么值</p>
+<p>回顾多个变量赋值</p>
+<p>重点是复杂的数据类型——字符串，列表，元组，字典，集合</p>
+<p>运算符中注意下/和//的情况，水仙花数的分解，单/等同于5/3=1.66666666667</p>
+<p>5//3=1</p>
+<p>5.0//3=1.0</p>
+<p>1!=0     true</p>
+<p>逻辑运算：</p>
+<p>控制语句：</p>
+<p>重点是分支结构和循环结构  while和for/in后面都可以带else</p>
+<p>range(6)代表从0到5</p>
+<p>range(1,6)代表从1到5</p>
+<p>常用数据结构分了序列和非序列</p>
+<p>列表：</p>
+<p>切片考得比较多，注意</p>
+<p>a[:4]代表从第一个开始取</p>
+<p>a[2:]代表从这个一直到尾</p>
+<p>a[2:4]代表从第2个到第3个结束，和range一样不包含尾</p>
+<p>a[:]代表对整个字符串操作</p>
+<p>追加新的列表用extend，追加一个用append</p>
+<p>排序：</p>
+<p>进行逆序：reversed，排序sorted</p>
+<p>方法是用对象.方法</p>
+<p>函数时直接调用的如len，max，不要把排序搞混了</p>
+<p>列表遍历用for循环遍历</p>
+<p>空字典创建{}，键：值</p>
+<p>value=a[key]</p>
+<p>del a[key]删除字典中的某一组值</p>
+<p>扩展</p>
+<p>如果输入的字符串中有中文字符的话怎么统计？</p>
+<p>查一查中文字符的unicode编码是多少</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>第一章第十四节</title>
+    <url>/2021/1TC64GD/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>填空题】什么命令以递归的方式显示当前目录树中所有的文件的大小  du</p>
+<p>【填空题】通过什么命令创建连接   ln</p>
+<p>课后：目标：访问和检查红帽企业Linux系统上的现有文件系统<br>
+1.访问Linux文件系统层次结构<br>
+2.访问文件系统的内容<br>
+3.使用硬链接和符合链接制作多个名称<br>
+4.搜索挂载的文件系统中的文件</p>
+<p>1【填空题】将光盘临时挂载在/mnt/iso目录命令  mount  /dev/cdrom  /mnt/iso</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141657.png" alt="image-20210424164652431"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141700.png" alt="image-20210424164732196"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141704.png" alt="image-20210424164855898"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141707.png" alt="image-20210424164904677"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141711.png" alt="image-20210424164934839"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141717.png" alt="image-20210424165055123"></p>
+<h3 id="挂载或卸载文件系统"><a class="header-anchor" href="#挂载或卸载文件系统">¶</a>挂载或卸载文件系统</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141721.png" alt="image-20210424165150696"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141724.png" alt="image-20210424165305905"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141728.png" alt="image-20210424165354659"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141732.png" alt="image-20210424165415567"></p>
+<h3 id="制作文件间的链接"><a class="header-anchor" href="#制作文件间的链接">¶</a>制作文件间的链接</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141735.png" alt="image-20210424165554193"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141738.png" alt="image-20210424165710172"></p>
+<p>【填空题】通过什么命令创建连接  ln</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141742.png" alt="image-20210424170011375"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141746.png" alt="image-20210424170115513"></p>
+<h3 id="查找文件中的文件"><a class="header-anchor" href="#查找文件中的文件">¶</a>查找文件中的文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141749.png" alt="image-20210424170204042"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141752.png" alt="image-20210424170350589"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141755.png" alt="image-20210424170413586"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141758.png" alt="image-20210424170513467"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141801.png" alt="image-20210424170556369"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141806.png" alt="image-20210424170630134"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141809.png" alt="image-20210424170653630"></p>
+<p>【填空题】将光盘临时挂载在/mnt/iso目录命令</p>
+<p>mount /dev/cdrom /mnt/iso  或者mount /dev/sr0 /mnt/iso</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第十三节</title>
+    <url>/2021/31YW2V8/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】yum仓库的文件名应该为什么结尾。  .repo</p>
+<p>1【填空题】清除yum缓存的命令  yum  clean  all</p>
+<p>课后：</p>
+<p>目录：从红帽和YUM软件包存储库下载、安装、更新和管理软件包<br>
+1.使用您的红帽账户注册系统，授权它们并使用已安装产品的软件更新<br>
+2.解释什么事RPM软件包，以及如何在红帽企业Linux系统上使用RPM软件包管理软件<br>
+3.使用yum命令查找、安装和更新软件包<br>
+4.启用和禁用红帽或第三方YUM存储库<br>
+5.检查和安装下载的软件包文件</p>
+<p>1【填空题】使用yum安装httpd。  yum  install httpd</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141524.png" alt="image-20210424161219211"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141528.png" alt="image-20210424161758698"></p>
+<p>【填空题】yum仓库的文件名应该为什么结尾。  .repo</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141541.png" alt="image-20210424161912854"></p>
+<h3 id="使用yum管理软件更新"><a class="header-anchor" href="#使用yum管理软件更新">¶</a>使用yum管理软件更新</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141544.png" alt="image-20210424162421534"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141548.png" alt="image-20210424162704757"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141552.png" alt="image-20210424162818206"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141557.png" alt="image-20210424163005122"></p>
+<p>【填空题】清除yum缓存的命令 yum clean all</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141603.png" alt="image-20210424163516977"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141607.png" alt="image-20210424163716142"></p>
+<h3 id="启动yum软件存储库"><a class="header-anchor" href="#启动yum软件存储库">¶</a>启动yum软件存储库</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141610.png" alt="image-20210424163948518"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141613.png" alt="image-20210424164037889"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141616.png" alt="image-20210424164130609"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141619.png" alt="image-20210424164147019"></p>
+<h3 id="检查rpm软件包文件"><a class="header-anchor" href="#检查rpm软件包文件">¶</a>检查rpm软件包文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141622.png" alt="image-20210424164354886"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141626.png" alt="image-20210424164442466"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第十二节</title>
+    <url>/2021/27F1A1T/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】tar命令中添加什么参数是创建归档文件(不需要加-）  c</p>
+<p>1【填空题】tar命令中添加什么参数显示打包过程(不用带-）  v</p>
+<p>课后：</p>
+<p>目标：归档文件并从一个系统复制文件到另一系统<br>
+1.使用tar创建新的压缩存档文件，并从现有的存档文件提前文件<br>
+2.将文件安全复制到运行sshd的远程系统，或从中复制文件<br>
+3.与远程副本安全地同步本地文件或目录的内容</p>
+<p>1【单选题】bzip2压缩加什么选项   A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>j</p>
+</li>
+<li>
+<p>B：</p>
+<p>J</p>
+</li>
+<li>
+<p>C：</p>
+<p>x</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141249.png" alt="image-20210424153855723"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141303.png" alt="image-20210424154021392"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141307.png" alt="image-20210424154223488"></p>
+<p>root用户会还原为原来的权限</p>
+<p>普通用户为用户的权限</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141311.png" alt="image-20210424154452968"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141315.png" alt="image-20210424154859735"></p>
+<p>【填空题】tar命令中添加什么参数是创建归档文件(不需要加-） c</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141343.png" alt="image-20210424155033795"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141347.png" alt="image-20210424155214990">【填空题】tar命令中添加什么参数显示打包过程(不用带-） v</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141351.png" alt="image-20210424155408782"></p>
+<h3 id="在系统间安全复制的方法"><a class="header-anchor" href="#在系统间安全复制的方法">¶</a>在系统间安全复制的方法</h3>
+<p>scp 和ssh-copy-id 相似</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141358.png" alt="image-20210424155454492"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141406.png" alt="image-20210424155718415"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141426.png" alt="image-20210424160114643"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141430.png" alt="image-20210424160203660"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141433.png" alt="image-20210424160300171"></p>
+<h3 id="在系统间安全地同步文件"><a class="header-anchor" href="#在系统间安全地同步文件">¶</a>在系统间安全地同步文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141437.png" alt="image-20210424160415030"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141441.png" alt="image-20210424160542463"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141446.png" alt="image-20210424160717913"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第十一节</title>
+    <url>/2021/2ZECH72/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【单选题】常用的稳定可靠的传输层协议是？  TCP</p>
+<p>1【多选题】那些地址属于B类地址的私网地址    AC</p>
+<ul>
+<li>
+<p>A：</p>
+<p>172.16.0.1</p>
+</li>
+<li>
+<p>B：</p>
+<p>172.15.0.1</p>
+</li>
+<li>
+<p>C：</p>
+<p>172.31.0.1</p>
+</li>
+<li>
+<p>D：</p>
+<p>172.33.0.1</p>
+</li>
+</ul>
+<p>1【填空题】重启网络服务的命令  systemctl restart network</p>
+<p>课后：</p>
+<p>目标：在红帽企业Linux系统上配置基本的IPv网络<br>
+1.解释计算机网络的基本概念<br>
+2.使用基本的实用工具测试和查看的当前的网络配置<br>
+3.使用nmcli和NerworkManager管理网络设置和设备<br>
+4.通过编辑配置文件修改网络设置<br>
+5.配置和测试系统主机名和名称解析</p>
+<p>1【填空题】查看路由表的命令   ip route</p>
+<p>2【填空题】查看ip地址  ip addr</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111528.png" alt="image-20210423224104931"></p>
+<p>OSI：国际标准化组织 (ISO)提出的一个试图使各种 计算机 在世界范围内互连为 网络 的标准框架，简称OSI</p>
+<p>七层网络模型：</p>
+<p>物理层</p>
+<p>数据链路层</p>
+<p>网络层</p>
+<p>传输层</p>
+<p>会话层</p>
+<p>表示层</p>
+<p>应用层</p>
+<p>TCP/IP：</p>
+<p>应用层</p>
+<p>传输层</p>
+<p>网络层</p>
+<p>网络接口层			DMAC | SMAC | TYPE |DATA |FCS</p>
+<p>看上层0X0800  IP</p>
+<p>​			0X0806  ARP</p>
+<p>fcs：完整性校验</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111534.png" alt="image-20210423230231433"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111537.png" alt="image-20210423230240004"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111541.png" alt="image-20210424145236758"></p>
+<h3 id="验证网络配置"><a class="header-anchor" href="#验证网络配置">¶</a>验证网络配置</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111545.png" alt="image-20210424145256168"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111549.png" alt="image-20210424145327145"></p>
+<p>【多选题】那些地址属于B类地址的私网地址  AD</p>
+<ul>
+<li>
+<p>A：</p>
+<p>172.16.0.1</p>
+</li>
+<li>
+<p>B：</p>
+<p>172.15.0.1</p>
+</li>
+<li>
+<p>C：</p>
+<p>172.31.0.1</p>
+</li>
+<li>
+<p>D：</p>
+<p>172.33.0.1</p>
+</li>
+</ul>
+<p><strong>私网ip地址的范围：</strong></p>
+<p>A类地址：10.0.0.0～10.255.255.255</p>
+<p>B类地址：172.16.0.0 ～172.31.255.255</p>
+<p>C类地址：192.168.0.0～192.168.255.255</p>
+<h3 id="使用nmcli配置网络"><a class="header-anchor" href="#使用nmcli配置网络">¶</a>使用nmcli配置网络</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111553.png" alt="image-20210424150131635"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111557.png" alt="image-20210424150151167"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111600.png" alt="image-20210424150424209"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111604.png" alt="image-20210424150456996"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111608.png" alt="image-20210424150651651"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111611.png" alt="image-20210424151134040"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111615.png" alt="image-20210424151230050"></p>
+<p>修改开机自启动</p>
+<p>nmcli con mod joker connectio.autoconnect yes</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111618.png" alt="image-20210424151512583"></p>
+<p>1【填空题】重启网络服务的命令  systemctl restart network  /nmcli con reload</p>
+<h3 id="编辑网络配置"><a class="header-anchor" href="#编辑网络配置">¶</a>编辑网络配置</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111622.png" alt="image-20210424153026432"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111626.png" alt="image-20210424153046429"></p>
+<h3 id="配置主机名和名称解析"><a class="header-anchor" href="#配置主机名和名称解析">¶</a>配置主机名和名称解析</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111630.png" alt="image-20210424153109602"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111634.png" alt="image-20210424153420078"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111637.png" alt="image-20210424153430313"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第十节</title>
+    <url>/2021/129EEBE/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】syslog协议对于关于警告状况的优先级是  warning</p>
+<p>1【填空题】logger命令加什么参数可以指定优先级  -p</p>
+<p>1【填空题】查系统时间的命令  date</p>
+<p>课后：</p>
+<p>目标：查找和准确解读相关的系统日志文件，以用于故障排除<br>
+1.说明红帽企业Linux7中的基本系统日志架构<br>
+2.解读相关系统日志文件中的条目，以排除故障或查看系统状态<br>
+3.查找和解读systemd日志中的条目，以排除故障或查看系统状态<br>
+4.配置systemd-jourmald，将日志存储在磁盘而不是内存中<br>
+5.维护准确的时间同步和时区配置，确保系统日志中的时间戳正确无误</p>
+<p>1【填空题】安全和身份验证相关的消息和错误的日志文件是？   /var/log/secure</p>
+<p>2【填空题】与定期执行任务相关的日志文件是？  /var/log/cron</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111236.png" alt="image-20210422230442727"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111240.png" alt="image-20210422230958897"></p>
+<h3 id="查看系统日志文件"><a class="header-anchor" href="#查看系统日志文件">¶</a>查看系统日志文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111245.png" alt="image-20210422231229065"></p>
+<p>xxx.debug  /var/**</p>
+<p>某某服务的debug存储在后面这个文件里面  .的意思是大于等于</p>
+<p>.=  代表如果是debug就存在里面，不是的话就不要</p>
+<p>！=  代表除了debug以外都放在这里面</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111252.png" alt="image-20210422231659937"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111301.png" alt="image-20210422231814829"></p>
+<p>virsh  list  命令用来查看当前服务器上处于运行中的虚拟机实例。</p>
+<h3 id="注意事项"><a class="header-anchor" href="#注意事项">¶</a>注意事项</h3>
+<p>virsh list 命令只能查看状态是运行中的虚拟机实例，其余状态的虚拟机无法查看。</p>
+<p>ll -h /var/log/     -h显示大小<img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111307.png" alt="image-20210422232649686"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111312.png" alt="image-20210422232815055"></p>
+<p>每过一个周期messages会给这个日志加上一个日期，可以在写新的日志文件</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111317.png" alt="image-20210422232759100"></p>
+<p>1【填空题】logger命令加什么参数可以指定优先级  -p</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111321.png" alt="image-20210422233149339"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111325.png" alt="image-20210422233237803"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111328.png" alt="image-20210422233312522"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111332.png" alt="image-20210422233452721"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111336.png" alt="image-20210422233512494"></p>
+<h3 id="保存systemd日志"><a class="header-anchor" href="#保存systemd日志">¶</a>保存systemd日志</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111339.png" alt="image-20210422233624594"></p>
+<p>使用journal -b可以查看上一次启动的日志文件</p>
+<p>查看某个进程的日志</p>
+<p>systemctl status sshd</p>
+<h3 id="保存准确的时间"><a class="header-anchor" href="#保存准确的时间">¶</a>保存准确的时间</h3>
+<p>回忆：rht-vmctl</p>
+<p>fullreset是通过下载镜像才重置，比较慢</p>
+<p>reset是直接回复快照会比较快</p>
+<p>1【填空题】查系统时间的命令  date</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111344.png" alt="image-20210423172011343"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111347.png" alt="image-20210423172238770"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111351.png" alt="image-20210423172250238"></p>
+<p>UTC标准时间</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111356.png" alt="image-20210423223444467"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111400.png" alt="image-20210423223550728"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第九节</title>
+    <url>/2021/30TA75A/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>8:44 问题：常用的使用明文密码方式传输的网管工具是  telnet</p>
+<p>【填空题】ssh的端口号为  22</p>
+<p>课后：</p>
+<p>目标：使用OpenSSH配置远程系统上的安全命令行访问<br>
+1.使用ssh登录远程系统，以便在shell提示符下运行命令<br>
+2.设置ssh，以允许使用私有身份验证秘钥文件进行安全的免密码登录<br>
+3.自定义sshd配置，以限制作为root直接登录或禁用基于密码的身份验证</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111120.png" alt="image-20210420192835964"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111124.png" alt="image-20210420193100488"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111128.png" alt="image-20210420193548202"></p>
+<p>基于ssh密钥的身份认证</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111132.png" alt="image-20210420194730337"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111136.png" alt="image-20210420194855381"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111142.png" alt="image-20210422225805990"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111146.png" alt="image-20210422225821178"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111150.png" alt="image-20210422230130551"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第八节</title>
+    <url>/2021/2XPGFFN/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】一般守护进程名称后面都会有一个什么字母？  d</p>
+<p>1【判断题】如果重启进程，PID不会有变化   B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>正确</p>
+</li>
+<li>
+<p>B：</p>
+<p>错误</p>
+</li>
+</ul>
+<p>2【填空题】使某个进程开机自启需要在systemctl后面加什么单词    enable</p>
+<p>课后：</p>
+<p>目录：使用systemd控制和监控网络服务于系统守护进程<br>
+1.列出由systemd服务启动的系统守护进程和网络服务，以及套接字单元<br>
+2.使用systemctl控制系统守护进程和网络服务</p>
+<p>1【填空题】查看sshd进程状态命令  systemctl status sshd</p>
+<p>2【填空题】重启network进程  systemctl restart network</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110959.png" alt="image-20210420184700713"></p>
+<p>五元组，，</p>
+<p>linux中有个acl为访问控制列表，对文件或者用户为一组</p>
+<p>网路中有个acl为阻止某些流量</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111004.png" alt="image-20210420185201130"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111007.png" alt="image-20210420185316773"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111011.png" alt="image-20210420185610023"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111014.png" alt="image-20210420185959201"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111018.png" alt="image-20210420190058910"></p>
+<h3 id="控制系统服务"><a class="header-anchor" href="#控制系统服务">¶</a>控制系统服务</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111022.png" alt="image-20210420190333698"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111026.png" alt="image-20210420190531243"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111029.png" alt="image-20210420190637943"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111034.png" alt="image-20210420190849738"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第七节</title>
+    <url>/2021/16065DP/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【多选题】进程组成部分由哪些?   ABCD</p>
+<ul>
+<li>
+<p>A：</p>
+<p>已分配内存的地址空间</p>
+</li>
+<li>
+<p>B：</p>
+<p>安全属性，包括所有权凭据和特权</p>
+</li>
+<li>
+<p>C：</p>
+<p>程序代码的一个或多个执行线程</p>
+</li>
+<li>
+<p>D：</p>
+<p>进程状态</p>
+</li>
+</ul>
+<p>1【填空题】查看现有作业的命令是？   jobs</p>
+<p>课后：</p>
+<p>目标：评估和控制Red Hat Enterprise Linux系统上运行的进程<br>
+1.列举和解释系统中运行的进程的基本信息<br>
+2.使用bash作业控制，控制shell会话中的进程<br>
+3.使用信号终止和控制进程<br>
+4.监控进程活动中所引起的资源使用和系统负载</p>
+<p>1【填空题】如果想让进程后台工作该在命令结尾加什么符号   &amp;</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110535.png" alt="image-20210420181510529"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110540.png" alt="image-20210420181554248"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110546.png" alt="image-20210420181907645"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110552.png" alt="image-20210420181914519"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110601.png" alt="image-20210420182038122"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110609.png" alt="image-20210420182147671"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110617.png" alt="image-20210420182813222"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110624.png" alt="image-20210420182913505"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110630.png" alt="image-20210420183004694"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110642.png" alt="image-20210420183053088"></p>
+<p>中断进程</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110657.png" alt="image-20210420183211317"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110703.png" alt="image-20210420183608243"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110708.png" alt="image-20210420183659474"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110712.png" alt="image-20210420183800971"></p>
+<h3 id="监控进程活动"><a class="header-anchor" href="#监控进程活动">¶</a>监控进程活动</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110717.png" alt="image-20210420184028556"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110722.png" alt="image-20210420184038561"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110726.png" alt="image-20210420184136449"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110730.png" alt="image-20210420184201511"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110736.png" alt="image-20210420184529013"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第六节</title>
+    <url>/2021/2F06RH9/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【单选题】可读的权限的字母是？   B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>d</p>
+</li>
+<li>
+<p>B：</p>
+<p>r</p>
+</li>
+<li>
+<p>C：</p>
+<p>w</p>
+</li>
+<li>
+<p>D：</p>
+<p>x</p>
+</li>
+</ul>
+<p>1【判断题】root用户可以删除user1创建的文件      A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>正确</p>
+</li>
+<li>
+<p>B：</p>
+<p>错误</p>
+</li>
+</ul>
+<p>1【判断题】umask不可以修改。   B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>正确</p>
+</li>
+<li>
+<p>B：</p>
+<p>错误</p>
+</li>
+</ul>
+<p>课后：</p>
+<p>目标：设置文件的Linux文件系统权限，并解释不同权限设置的安全效果<br>
+1.解释Linux文件权限模型的工作方式<br>
+2.利用命令行工具更改文件的权限和所有权<br>
+3.配置目录，使其中新创建的文件可自动由拥有该目录的组的成员利用特殊权限和默认umask设置进入写入</p>
+<p>1【多选题】关于x权限描述正确的是    AC</p>
+<ul>
+<li>
+<p>A：</p>
+<p>文件没有x权限将无法执行</p>
+</li>
+<li>
+<p>B：</p>
+<p>文件默认拥有x权限</p>
+</li>
+<li>
+<p>C：</p>
+<p>目录没有x权限将无法进入</p>
+</li>
+<li>
+<p>D：</p>
+<p>目录有没有x权限不重要</p>
+</li>
+</ul>
+<p>2【多选题】数字6代表拥有什么权限   AB</p>
+<ul>
+<li>
+<p>A：</p>
+<p>可读</p>
+</li>
+<li>
+<p>B：</p>
+<p>可写</p>
+</li>
+<li>
+<p>C：</p>
+<p>可执行</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110235.png" alt="image-20210420164602764"></p>
+<h1><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110240.png" alt="image-20210420164759356"></h1>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110248.png" alt="image-20210420170211179"></p>
+<p>更改文件/目录的权限</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110255.png" alt="image-20210420170457600"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110300.png" alt="image-20210420170607746"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110305.png" alt="image-20210420170617051"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110317.png" alt="image-20210420170855461"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110324.png" alt="image-20210420170907923"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110331.png" alt="image-20210420170952337"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110338.png" alt="image-20210420171048820"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110347.png" alt="image-20210420172507178"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110356.png" alt="image-20210420172855730"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110402.png" alt="image-20210420173116444"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第五节</title>
+    <url>/2021/3XGTAFG/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<ol>
+<li>【填空题】创建用户的命令  useradd</li>
+<li>填空题】root的UID等于多少    0</li>
+</ol>
+<p>课后：</p>
+<p>目标：管理本地Linux用户和组，以及本地密码策略<br>
+1.解释Linux系统上用户和组的角色，以及计算机理解它们的方式<br>
+2.以超级用户运行命令，以管理Linux系统<br>
+3.创建、修改、锁定和删除本地定义的用户账户<br>
+4.创建、修改和删除本地定义的组账户<br>
+5.手动锁定账户，或者通过在阴影密码文件中设置密码过期策略来锁定</p>
+<p>1【单选题】在rhel7上普通用户的uid从多少开始    B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>500</p>
+</li>
+<li>
+<p>B：</p>
+<p>1000</p>
+</li>
+<li>
+<p>C：</p>
+<p>1500</p>
+</li>
+<li>
+<p>D：</p>
+<p>2000</p>
+</li>
+</ul>
+<h3 id="5-1用户"><a class="header-anchor" href="#5-1用户">¶</a>5.1用户</h3>
+<p>​	linux系统是一个多用户的系统，同一个账号可以多次同时登陆，对每一个进程而言，也有一个拥有者</p>
+<p>3中类型的用户:</p>
+<ol>
+<li>超级管理员，root</li>
+<li>系统用户，服务和内核态进程对应的用户，可以通过ps -ef 查看，比如：ps -ef | grep httpd，可以看到httpd有一个系统用户，叫apache</li>
+<li>普通用户</li>
+</ol>
+<p>UID</p>
+<p>系统通过UID去区分用户，不是用户名，每一个用户都有一个唯一的标识：</p>
+<p>0，超级管理员，可以用id root查看</p>
+<p>1-999，系统用户，在rhel7.0之前是0-499</p>
+<p>1000及以上，普通用户，7.0之前是500及以上</p>
+<p>定义文件：/etc/login.defs</p>
+<p>用户信息保存在哪里？</p>
+<p>/etc/passed</p>
+<p>保存的用户信息，每个用户一行，以冒号分割成7列：</p>
+<ol>
+<li>用户名</li>
+<li>都是x，这是之前的密码保存位置，不安全，所以后来把密码分开存放</li>
+<li>用户的UID</li>
+<li>GID，组ID，这个用户的主要组ID，一个用户只能属于一个主组，但可以属于多个附加组</li>
+<li>这个用户的描述信息，可以用 usermod -c “adfasdf” tt为用户tt添加描述信息</li>
+<li>用户的家目录</li>
+<li>该用户的shell类型</li>
+</ol>
+<p>/sbin/nologin类型为不允许登录交互</p>
+<p>就要设置： -s</p>
+<p>密码存在哪里？</p>
+<p>/etc/shadow</p>
+<p>以冒号分割成9列：</p>
+<ol>
+<li>
+<p>用户名</p>
+</li>
+<li>
+<p>密码</p>
+<p>#经过MD5生成的一个hash值，hash不能倒推，但加密可以解密。hash值一般用于身份验证。</p>
+<p>#如果此处是两个！，表示这个用户没有设置密码</p>
+<p>#passed -l tt 锁定这个用户密码，会在hash值之前多两个！，这时除了root用户，在其他用户下去用这个用户去登录，就不允许登录，因为PAM模块规定了，当root用户切换到其他用户时，不需要验证密码，而普通用户需要。</p>
+<p>#passed -u tt 解锁</p>
+</li>
+<li>
+<p>上次更改密码的日期，这个时间是冲1970年1月1日算起</p>
+</li>
+<li>
+<p>最短密码期限，从最近一次更改密码的日期算起，再过多少天之后才能再次更改密码，0表示无最短期限，随时可以改</p>
+</li>
+<li>
+<p>最长密码期限，必须在这个期限内跟改密码，否则过了这个期限，密码将过期</p>
+</li>
+<li>
+<p>密码警告期限，密码过期前多少天开始提醒用户更改密码，0表示不提醒</p>
+</li>
+<li>
+<p>密码过期之后的宽限天数，也就是说，密码过期之后，在这个期限内，密码还是可以用的，但如果过了这个期限，密码也就真的失效了，只能找管理员改密码了</p>
+</li>
+<li>
+<p>账号到期时间，也是从1970年1月1日算起</p>
+</li>
+<li>
+<p>保留</p>
+</li>
+</ol>
+<p><strong>命令行更改密码过期时间</strong></p>
+<p>chage -m 1 -M 10 -W 7 -I 17 tt</p>
+<p>cat /etc/shadow</p>
+<p>解释：1天之内不能修改你密码，10天之后密码到期，密码到期前7天提醒，宽限17天，如果要改默认值，可以到/etc/login.defs里修改</p>
+<h3 id="5-2-用户"><a class="header-anchor" href="#5-2-用户">¶</a>5.2 用户</h3>
+<p>useradd 创建用户</p>
+<p>-c 添加描述信息</p>
+<p>-g	指定主要组</p>
+<p>-G	指定附属组</p>
+<p>-d	指定家目录</p>
+<p>-s	指定shell</p>
+<p>-u	指定UID，注意，只能使用1000以上，并且不能和其他UID冲突</p>
+<p>usermod 更改用户信息</p>
+<p>-g	更改主要组</p>
+<p>-G	更改附属组，如果之前已经指定过附属组，会把该用户从之前附属组中删除</p>
+<p>-a	和-G结合使用，不删除之前的组，如果要加入多各组，用空格隔开</p>
+<p>-d	更改用户的家目录，但不会将旧家目录中的文件移过去</p>
+<p>-m	和-d结合使用，更改家目录时，文件一期一过去</p>
+<p>-s	更改用户的shell</p>
+<p>-L	锁定用户账号</p>
+<p>-U	解锁用户账号</p>
+<p>userdel	删除一个用户</p>
+<p>-r	同时删除用户和家目录，如果不加这个选项，之删除用户，而家目录还在</p>
+<p>id	显示用户信息</p>
+<p>字母小写大写标点符号最好</p>
+<p>修改用户密码</p>
+<p>passwd</p>
+<p>passwd</p>
+<p>​		#更改当前用户的密码</p>
+<p>passwd user1</p>
+<p>​		#更改user1这个用户的密码，但这种方式只有root才有权限</p>
+<p>echo “redhat” |passed --stdin sam</p>
+<p>​		#这种方式也可以、</p>
+<h3 id="5-3-用户组"><a class="header-anchor" href="#5-3-用户组">¶</a>5.3 用户组</h3>
+<p>创建用户时，会自动创建一个和用户名一样的用户组</p>
+<p>groupadd</p>
+<p>​	-g	指定GID，注意，1000以上，不能冲突</p>
+<p>groupmod</p>
+<p>​	-n	更改用户组名称</p>
+<p>groupdel</p>
+<p>​	删除一个用户组</p>
+<p>gpasswd</p>
+<p>​	-a	添加用户到组</p>
+<p>​	-d	从组中删除用户</p>
+<h3 id="5-4-切换用户"><a class="header-anchor" href="#5-4-切换用户">¶</a>5.4 切换用户</h3>
+<p>su</p>
+<p>​		#不会切换当前工作目录，就不会去读取用户家目录下的环境变量文件</p>
+<p>su	-</p>
+<p>​		#会切换到用户的家目录，并且读取用户家目录下的环境变量文件</p>
+<h3 id="5-5-sudo"><a class="header-anchor" href="#5-5-sudo">¶</a>5.5 sudo</h3>
+<p>分权，把root的权限分给普通用户</p>
+<p>配置文件：/etc/sudoers,修改这个文件，不要直接使用vi和vim去修改，因为这两个工具不会去检查语法，用visudo工具去编辑，这个工具会间接调用vim</p>
+<p>为一个普通用户分权</p>
+<p>visudo</p>
+<p>​	tt All=(ALL) NOPASSWD:/usr/sbin/fdisk</p>
+<p>​	#tt,表示能使用sudo命令的用户</p>
+<p>​	#ALL(ALL),第一个ALL，表示允许从任何主机登陆都可以使用sudo命令，第二个ALL，表示使用sudo后，可以使用任何身份来执行命令。</p>
+<p>​	#NOPASSED:表示执行后面的明星不需要输入用户密码。如果没有这句，首次执行fdisk命令会提示你输入当前用户的密码，如果5分钟还没输入密码就会自动退出。如果通过验证，下次在使用这个命令就不需要输密码了。</p>
+<p>​	#/usr/sbin/fdisk,这是fdisk命令的全路径</p>
+<p>普通用户怎么去执行？</p>
+<p>sudo fdisk</p>
+<p>用户的别名</p>
+<p>如果多个用户都要做同样的操作怎么办呢？</p>
+<p>做别名，相当于一个组，把多个用户加入这个别名，然后对这个别名分权。</p>
+<p>注意：别名不能小写，不许大写</p>
+<p>visudo</p>
+<p>​	User  Alias  AA = user1,user2</p>
+<p>​	AA  ALL=(ALL) NOPASSWD:/usr/sbin/fdisk</p>
+<p>为一个用户组分权</p>
+<p>visudo</p>
+<p>​	%group ALL=(ALL) NOPASSED:/usr/sbin/fdisk</p>
+<p>​	#只要属于group这个组的用户都可以使用fdisk这个命令</p>
+<p>命令的别名</p>
+<p>visudo</p>
+<p>​	Cmnd_Alias  CM = /usr/sbin/fdisk,/usr/sbin/useradd</p>
+<p>​	AA ALL=(ALL)NOPASSED:CM</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+        <tag>redhat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第四节</title>
+    <url>/2021/2A97V5Q/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】vim中使用什么快捷键可以向左移动     h</p>
+<p>课后：</p>
+<p>目标：从命令行输出或在编辑器中创建、查看和编辑文本文件<br>
+1.将一个程序的文本输出重定向到文件或另一程序<br>
+2.从shell提示符使用文本编辑器编辑现有的文本文件，以及创建新文件<br>
+3.使用图形环境中运行的文本编辑器，从图形窗口复制文本到文本文件</p>
+<p>1【单选题】vim中光标按什么字母键向下     B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>h</p>
+</li>
+<li>
+<p>B：</p>
+<p>j</p>
+</li>
+<li>
+<p>C：</p>
+<p>k</p>
+</li>
+<li>
+<p>D：</p>
+<p>l</p>
+</li>
+</ul>
+<p>2【单选题】如何复制当前行     A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>yy</p>
+</li>
+<li>
+<p>B：</p>
+<p>dd</p>
+</li>
+<li>
+<p>C：</p>
+<p>dG</p>
+</li>
+</ul>
+<p>输入：对一个文件输入，除了键盘输入外，还可以通过一个文件输入。</p>
+<p>输出：执行一个命令，，会有相应的输出到屏幕上，输出有标准的正确输出和错误输出</p>
+<p>重定向：把一个输出结果，再输出到另一个文件或一个终端</p>
+<h3 id="4-1-重定向"><a class="header-anchor" href="#4-1-重定向">¶</a>4.1 重定向</h3>
+<p>linux中有三种标准输入输出，分别是STDIN,STDOUT,STDERR,对应的数字是0,1,2</p>
+<ol>
+<li>STDIN就是标准输入，默认从键盘读取信息</li>
+<li>STDOUT是标准输出，默认将输出结果输出到终端，也就是显示器之类的东西</li>
+<li>STDERR是标准的错误信息，默认也会显示在终端上</li>
+<li>由于STDOUT与STDERR都会默认显示在终端上，为了区分二者的信息，就有了编号的0,1,2的定义，用1表示STDOUT,2表示STDERR。</li>
+</ol>
+<p>set -C</p>
+<p>​		#禁止覆盖重定向仅有文件，</p>
+<p>​		#如果还是要强制覆盖，使用“&gt;|”</p>
+<p>ser +C</p>
+<p>​		#允许覆盖重定向</p>
+<p>标准正确输入重定向</p>
+<p>1&gt;		覆盖式重定向。不加前面的1，默认就是正确输出</p>
+<p>1&gt;&gt;		追加式重定向</p>
+<p>标准错误输出重定向：</p>
+<p>2&gt;		覆盖</p>
+<p>2&gt;&gt;		追加</p>
+<p>&amp;	表示所有的正确和错误输出</p>
+<p>怎么判断一个命令的输出时正确输出还是错误输出呢？</p>
+<p>例1：</p>
+<p>find /etc-name passwd &gt;find.out 2&gt;find.err</p>
+<p>​		#将标准正确输出，重定向到find.out.</p>
+<p>​		#将标准错误输出，重定向到fine.err</p>
+<p>例2：</p>
+<p>adfkldf &gt;&gt;/tmp/t.txt</p>
+<p>​		如果还有输出，说明这个重定向方式没起作用的，也就是说这是一个错误的输出，反之，就是一个正确的输出。</p>
+<p>例3：</p>
+<p>echo $?</p>
+<p>​	只是判断上一次命令有没有执行成功，不能判断输出是一个标准正确还是错误输出。</p>
+<p>例4：</p>
+<p>ls  &gt; /dev/null</p>
+<p>​		相当于把输出结果丢到垃圾桶</p>
+<p>怎么同时把标准正确和错误的输出重定向到同一个文件呢？</p>
+<p>find /home -name kiosk 1&gt;&gt; /tmp/t 2&gt;&gt;/tmp/tt</p>
+<p>​		#这种方式会打乱输出，先重定向正确输出，才会输出错误输出。</p>
+<p>find /home -name kiosk &amp;&gt;/tmp/tt</p>
+<p>​		#这种方法就不会打乱输出了</p>
+<p>​		#&amp;表示所有正确和错误的输出</p>
+<p>有时候希望将一个错误输出重新丁香岛正确输出，就是将2的结果重定向到1中，就有了“2&gt;1”这样的思路，如果按照上面的写法，系统会默认将错误输出重定向到一个名字为1的文件中，而非标准输出中。因此需要加&amp;进行区分，就有了2&gt;&amp;1</p>
+<p>find /home -name kiosk &gt; /tmp/tt 2&gt;&amp;1</p>
+<p>​		#把一个错误输出转换成正确输出，然后再以正确输出重定向到tt</p>
+<h3 id="4-2-输入重定向"><a class="header-anchor" href="#4-2-输入重定向">¶</a>4.2  输入重定向</h3>
+<p>从一个文件的标准输出，再把这个输出作为输入到另一个文件</p>
+<p>&lt;  输入重定向</p>
+<p>cat &gt; /tmp/tt</p>
+<p>​		#通过键盘输入，重定向到tt这个文件，以ctrl+d结束</p>
+<p>cat &gt; /tmp/tt &lt; /etc/passwd</p>
+<p>​		#把/etc/passed这个文件内容作为输入，然后重定向到tt这个文件</p>
+<p>cat &gt; /tmp/tt &lt;&lt;“EOF”</p>
+<p>​		#定义一个结束符，当输入EOF,键盘输入就会结束。</p>
+<p>​		注意：EOF不是固定字符，可以自己随便定义</p>
+<p>tr abc ABC &lt; /etc/fstab</p>
+<p>​		#将/etc/fstab文件中的所有a，换成A，b换成B，c换成C</p>
+<p>​		#tr命令，替换字符</p>
+<p>tr ‘a-z’ ‘A-Z’ &lt; /etc/fstab</p>
+<p>​		#将所有小写字母，替换成大写输出</p>
+<h3 id="4-3-管道"><a class="header-anchor" href="#4-3-管道">¶</a>4.3 管道</h3>
+<p>|</p>
+<p>​	把管道符前面的命令的标准输出，当做后面命令的输入。</p>
+<p>​	cat /etc/passwd | more</p>
+<p>tee</p>
+<p>​	如果在管道符后面使用了tee，不仅可以保存输出，同时输出到终端。</p>
+<p>​	cat /etc/passed | tee f.txt</p>
+<p>​	pwd | tee -a f.txt</p>
+<p>​		#-a，追加</p>
+<h3 id="4-4-vi和vim"><a class="header-anchor" href="#4-4-vi和vim">¶</a>4.4 vi和vim</h3>
+<p>vi和vim都是文本编辑器，vim是vi的升级版</p>
+<p>vim会高亮显示，而vi不会</p>
+<p>hjkl  左下上右移动</p>
+<p>vimtutor  系统自带的帮助手册</p>
+<h4 id="4-4-1-命令行模式"><a class="header-anchor" href="#4-4-1-命令行模式">¶</a>4.4.1 命令行模式</h4>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601105909.png" alt="image-20210420151150955"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601105914.png" alt="image-20210420151322842"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601105919.png" alt="image-20210420151456103"></p>
+<h4 id="4-4-2-编辑模式"><a class="header-anchor" href="#4-4-2-编辑模式">¶</a>4.4.2 编辑模式</h4>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601105923.png" alt="image-20210420151534926"></p>
+<p>回到命令行模式，按esc键，切换到其他模式必须先回到命令模式，在切换图形化下用鼠标复制粘贴内容，要先进入编辑模式，否则会掉东西</p>
+<h4 id="4-4-3-末行模式"><a class="header-anchor" href="#4-4-3-末行模式">¶</a>4.4.3 末行模式</h4>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601105927.png" alt="image-20210420151732985"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第三节</title>
+    <url>/2021/HVXXEJ/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【判断题】man是一个帮助手册     A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>正确</p>
+</li>
+<li>
+<p>B：</p>
+<p>错误</p>
+</li>
+</ul>
+<p>课后：</p>
+<p>目标：使用在线帮助系统和红帽支持实用工具解决问题</p>
+<ol>
+<li>使用man Linux手册读取器</li>
+<li>使用pinfo GNU信息读取器</li>
+<li>使用红帽软件包管理器（RPM）软件包文档</li>
+<li>使用redhat-support-tool命令</li>
+</ol>
+<p>1【填空题】使用man查看ls的帮助  man  ls</p>
+<p>内部命令帮助：</p>
+<p>help  echo  		#查看echo命令的帮助</p>
+<p>外部命令帮助：</p>
+<p>ls  --help</p>
+<p>​		#查看ls命令的简单帮助，详细帮助要用man命令</p>
+<p>​		#/bin目录下面都是外部命令，如：/bin/ls  ,如：mv /bin/ls  /bin/ls,那ls命令就没用了</p>
+<p>查看一个命令帮助的时候</p>
+<p>[]		可选</p>
+<p>…		同一内容可出现多次</p>
+<p>|		多选</p>
+<p>&lt;&gt;		必选</p>
+<h3 id="3-2-man帮助手册"><a class="header-anchor" href="#3-2-man帮助手册">¶</a>3.2  man帮助手册</h3>
+<p>​		每个程序，都有帮助文档，但大量的文档，会占用大量控件，所以需要压缩，man手册就是压缩过的程序文档</p>
+<p>cat /etc/man.config</p>
+<p>​		#man手册的配置文件</p>
+<p>​		#指定了man手册命令搜索路径</p>
+<p>man手册总共分9个章节，对运维人员来说，主要1,5章节，man命令以less方式</p>
+<p>man1		<strong>用户命令</strong></p>
+<p>man2		系统调用</p>
+<p>man3		库函数调用</p>
+<p>man4		设备文件和特殊文件</p>
+<p>man5		<strong>配置文件</strong></p>
+<p>man6		游戏</p>
+<p>man7		协议、标准等</p>
+<p>man8		系统管理和特权命令，比如磁盘分区命令</p>
+<p>man9		linux内核API（内核调用）</p>
+<p>whatis read</p>
+<p>​		#搜索man手册，包含read的章节</p>
+<p>​		#whatis,有一个数据库，可将系统上所有的帮助手册与之对应的关键关创建为一个数据库，</p>
+<p>命令就是从他的的数据库中查询数据</p>
+<p>​		#mkwhatis，手动创建数据库</p>
+<p>​		#默认，系统有一个计划任务，自动创建这个数据库</p>
+<p>例1：查找passwd这个文件的帮助</p>
+<p>​		passwd既是一个命令又是一个配置文件，如果直接man passwd，会从第一章开始往后查找，一直找到位置，然而在第一章命令章节里，就有passwd，所以这样找到的是passwd这个命令的帮助，如果要查找passwd这个配置稳健的帮助：man  5	passwd</p>
+<p>man  -k  passwd</p>
+<p>​		#查看包含passwd这个干剑子的有哪些章节</p>
+<p>例2：在man手册中，查看内部命令cd的帮助信息</p>
+<p>man cd</p>
+<p>​		#发现，打开的是bash手册</p>
+<h3 id="3-3-info"><a class="header-anchor" href="#3-3-info">¶</a>3.3 info</h3>
+<p>info命令比man命令更加详细，但我们一般很少去用它。</p>
+<h3 id="3-4-程序的自身文档"><a class="header-anchor" href="#3-4-程序的自身文档">¶</a>3.4 程序的自身文档</h3>
+<p>​		安装软件的时候，会在/usr/share/doc目录下创建一个以程序名命名的目录，然后把自己的说明文档和使用方法文档放在改目录下</p>
+<p>​		也可到相应程序的官方网站查看相应的官方文档</p>
+<h3 id="3-5-红帽帮助"><a class="header-anchor" href="#3-5-红帽帮助">¶</a>3.5 红帽帮助</h3>
+<p>​		这个是要付费的</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+        <tag>redhat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第二节</title>
+    <url>/2021/1QA0NM0/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<ol>
+<li>【填空题】创建目录的命令mkdir</li>
+<li>【填空题】删除目录的命令rmdir</li>
+</ol>
+<p>课后：</p>
+<p>目标：在从Bash shell提示符操作时，复制、移动、创建、删除和组织文件<br>
+识别Linux上终于目录的用途<br>
+使用绝对和相对路径名称指定文件<br>
+使用命令行实用工具创建、复制、移动和删除文件和目录<br>
+将shell扩展用作shell命令的参数，匹配一个或多个文件名</p>
+<ol>
+<li>
+<p>1【单选题】普通用户的家目录在那个目录下  B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>/tmp</p>
+</li>
+<li>
+<p>B：</p>
+<p>/home</p>
+</li>
+<li>
+<p>C：</p>
+<p>/var</p>
+</li>
+<li>
+<p>D：</p>
+<p>/root</p>
+</li>
+</ul>
+</li>
+<li>
+<p>【填空题】创建文件夹的命令  mkdir</p>
+</li>
+</ol>
+<p>​		linux，一切皆文件，文件就要有一定的组织方式，linux是以树形组织文件，LSB（linux标准库）下的FHS标准规定了目录结构，也就是说所有linux发行版都要遵守这个标准</p>
+<p>​	文件有两类数据：元数据、数据</p>
+<p>​	目录是一种特殊的文件</p>
+<p>​	linux中，文件名称严格区分大小写</p>
+<p>​	文件名不能包含“/”这个字符</p>
+<p>​	文件名最长度不能超过255个字符</p>
+<p>​	以点（.）开头的文件都是隐藏文件</p>
+<h3 id="2-1-目录结构"><a class="header-anchor" href="#2-1-目录结构">¶</a>2.1 目录结构</h3>
+<p>/  		#根目录，所有的文件和目录，皆是由根目录延伸。</p>
+<p>/boot		#开机启动过程所需的文件，比如：内核文件，引导文件，驱动文件，boot目录一般在200M左右</p>
+<p>/opt  		#第三方应用程序的安装位置，兼容老程序</p>
+<p>​				#系统附件九装在这个目录中</p>
+<p>/src		#系统自行管理的服务用到的数据</p>
+<p>/usr/		#universal shared,read-only data,全局共享只读数据目录。可独立分区</p>
+<p>​				#编辑安装的第三方软件、共享的库，包括文件和静态只读程序数据，重要的子目录：/usr/bin,用户命令；/usrsbin,系统管理命令；/usr/local,第三方应用程序的安装位置。</p>
+<p>/etc		#配置文件</p>
+<p>/var		#动态变化的文件，如：数据库、缓存目录、日志文件、打印记后台处理文档和网站内容</p>
+<p>​				#可独立分区</p>
+<p>/run		#自本次系统启动以来启动的进程的运行时数据。包括进程ID文件和锁定文件等。此目录中的内容在重启时会重新创建。</p>
+<p>/root		#root用户的家目录</p>
+<p>/home		#普通用户对的个人数据和配置稳健的主目录，没切换用户时，首先就是切换到用户的家目录，每个用户的家目录里面有这个用户特有的环境变量，可以用ls -a查看由四个.bash开头的文件，就是这个用户的环境变量。比如：在root家目录下.bash_profile定义一个环境变量，export dd=test，在其他用户echo $dd,是不能输出的。工作中有可能需要为某些用户设置独有的环境变量。</p>
+<p>/proc		#用于输出内核和进程信息相关的虚拟文件系统</p>
+<p>​				#防止的是内存数据，不会占用磁盘空间，内存里有什么：1.系统开机时硬件信息，比如：CPU的信息：/proc/cpuinfo,内存信息：/pro/meminfo。2进程信息，数字命名的文件都是进程的信息，数字代表这个进程的PID。</p>
+<p>/sys		#用于输出当前系统上硬件设备相关信息的虚拟文件系统</p>
+<p>/tmp		#临时文件目录</p>
+<p>/dec		#设备文件目录</p>
+<p>/media		#便携式移动设备挂载目录，比如：U盘，光盘</p>
+<p>/mnt		#临时挂载用</p>
+<p>/bin		#供所有用户使用的基本命令，不能独立分区，系统启动时会用到的程序</p>
+<p>/sbin		#管理类的基本命令，不能独立分区，系统启动时会用到的程序。</p>
+<p>/lib			#基本功想哭文件，以及内核模块文件</p>
+<p>/lib64		#专用于64位系统上的共享库文件</p>
+<p>总结：etc，bin，sbin，lib这几个目录必须和根目录在同一个分区</p>
+<h3 id="2-2-根据名称查找文件"><a class="header-anchor" href="#2-2-根据名称查找文件">¶</a>2.2 根据名称查找文件</h3>
+<p>根据一个路径定位一个文件在哪里，路径又分为绝对路径和相对路径：</p>
+<p>绝对路径：从根目录起始</p>
+<p>相对路径：从当前位置起始</p>
+<p>ls  ./		#一个点表示当前目录</p>
+<p>ls	…/		#两个点表示上一级目录，即父目录</p>
+<p>pwd		#显示当前目录路径</p>
+<p>cd		返回到自己的家目录，</p>
+<p>cd	-		返回到上一次的工作目录</p>
+<p>cd	…		切换到父目录</p>
+<p>cd	~		切换到当前目录的家目录，如果指定用户，就切换到指定用户的家目录，比如：cd	~tt	就切换到tt这个用户的家目录，前提是有权限。</p>
+<p>注：cd   命令，其实在读取PWD（保存当前路径），PLDPWD（保存上一次路径）变量的值</p>
+<h3 id="2-3-目录的管理"><a class="header-anchor" href="#2-3-目录的管理">¶</a>2.3 目录的管理</h3>
+<p>​		对于目录而言，只有该目录的子文件或子目录的名字</p>
+<p>查看目录</p>
+<p>ls命令</p>
+<p>-l		给出权限、拥有者、拥有组、大小等详细信息。</p>
+<ul>
+<li>-代表是一个文件</li>
+<li>d代表是一个目录</li>
+<li>b为快设备文件</li>
+<li>c是字符设备文件</li>
+<li>l链接文件</li>
+<li>s套接字文件，一般用于本地进程间的相互通讯</li>
+</ul>
+<p>-d	查看目录的信息</p>
+<p>-h	以人类可读的方式显示大小，按大小排序：-Sh</p>
+<p>-a	包含隐藏文件在内的所有文件，以点（.）开头的都是隐藏文件</p>
+<p>-R	递归，包含子目录的内容</p>
+<p>-t	按时间排序，时间越近的越靠前，如果想反过来，时间越久越靠前，-tr</p>
+<p>tree命令</p>
+<p>​		#查看目录结构</p>
+<p>​		#-d，只显示目录</p>
+<p>​		#-L 3，指定显示的层级</p>
+<p>创建目录</p>
+<p>mkdir</p>
+<p>​	-p	同时创建多级目录</p>
+<p>​	-m	创建目录同时，给予权限，比如：mkdir -m	777	/tmp/tt</p>
+<p>注意：创建目录是，一定要注意路径是否正确</p>
+<p>mkdir   /mnt/d{1…9}			#以展开方式，创建</p>
+<p>删除目录</p>
+<p>​		删除操作，一定要注意，确定你要删除的是谁，并且删除的确实是你想要删除的东西。</p>
+<p>rm	-rf	*代表删除当前目录下的所有文件</p>
+<p>mkdir		这个命令只能删除空目录，如果目录下有文件，必须先把文件删除，才能删目录。</p>
+<p>rm	-r		rm本意思是删除一个文件，加上-r选项，递归删除，先删除该目录下的子文件和子目录，再删除指定目录。</p>
+<p>rm	-rf		强制删除，不会做任何提示，很容易删错，如：rm	-rf	/tm/tt和rm	-rf	/tmp/tt/*这两条命令结果是不一样的。</p>
+<p>目录移动</p>
+<p>mv  /tmp/tt   /root		将这个目录移动到/root目录下，包括子目录和子文件也一起移动。</p>
+<p>mv  /tmp/tt  /tmp/dd		把tt这个目录改个名字为dd</p>
+<p>目录的复制</p>
+<p>cp	-r		将目录及目录下的子文件和子目录一同复制，cp的本意是复制一个文件</p>
+<h3 id="2-4-文件的管理"><a class="header-anchor" href="#2-4-文件的管理">¶</a>2.4  文件的管理</h3>
+<p>touch</p>
+<ol>
+<li>
+<p>创建一个新文件</p>
+</li>
+<li>
+<p>更新文件的时间数为当前时间</p>
+<p>一个目录和文件有3中时间：</p>
+<p>mtime：文件内容被修改时间，ls  -l  查看的就是这个时间</p>
+<p>atime：文件最近一次被访问时间，查看：ls  -l  /tmp/f1   --time=atime/</p>
+<p>ctime:文件属性（元数据）发生变化的时间，属性：权限、拥有者、拥有组，查看：ls -l  /tmp/f1    	--time=ctime</p>
+</li>
+</ol>
+<p>touch  -m  -t    2001010100101  /mnt/f1</p>
+<p>​		#修改文件的修改时间为：年月日分时</p>
+<p>​		#-m访问时间</p>
+<p>​		#-a访问时间</p>
+<p>​		#-c如果文件不存在，不创建</p>
+<p>stat  /tmp/f1</p>
+<p>​		#获取稳健的元数据</p>
+<p>​		#包括三个时间</p>
+<p>touch f\ 1</p>
+<p>​		#创建一个带空格的文件名</p>
+<p>ls  f\  1</p>
+<p>ls  f[(:space:)] 1</p>
+<p>[(:digit:)]</p>
+<p>​		#表示数字</p>
+<p>查看文件</p>
+<p>file			#查看文件类型</p>
+<p>wc</p>
+<p>​		#统计文件行数、单词书、字符数</p>
+<p>​		#-l，只统计行数</p>
+<p>​		#-w，单词数</p>
+<p>​		#-c，字符数</p>
+<p>sort /etc/passed</p>
+<p>​		#按字母排序输出</p>
+<p>​		#-r，反序输出</p>
+<p>​		#-f，忽略大小写。</p>
+<p>​		#-t，字段分隔符</p>
+<p>​		#-k，指定字段为标准排序</p>
+<p>​		#-n，按数值大小排序</p>
+<p>​		#-u，uniq，排序后去重</p>
+<p>uniq</p>
+<p>​		#去重，但不进行排序</p>
+<p>​		#-c，显示美行重复出现的次数</p>
+<p>​		#-d，仅显示重复过的行</p>
+<p>​		#-u，仅显示不曾重复的行</p>
+<p>cat		#把文件内容全部输出，-n选项，显示行号</p>
+<p>cat -E		#输出文件的换行符</p>
+<p>tac		#反向查看文件</p>
+<p>more		#分页显示，空格/f 往下翻页，b往上翻页，enter往下翻一行，不能往上翻行，more还带有搜索功能，/搜索关键字，n下一个关键字。</p>
+<p>less		#用法和more类似，不同的是，less可以循环方式查看文件，j往下翻行，k往上翻行。</p>
+<p>head		#只显示文件的前10行，-n选项可以指定只显示第几行，如head -n 1，只显示第一行</p>
+<p>tail		#只显示文件的后10行，也可用-n选项指定行数</p>
+<p>tail  -f 		#跟踪显示文件新追加的内容</p>
+<p>​		tail  -f    /var/log/messages查看日志文件</p>
+<p>复制文件</p>
+<p>cp</p>
+<p>​		复制多个文件时，最后一个参数必须为目录  cp  file1  file2  /dir</p>
+<p>cp  -a</p>
+<p>​		最常用的方法，保持文件的连接和属性，并递归处理。</p>
+<p>​		和cp  -pdR 一个意思，-p  表示保持属性，-d表示保护文件的链接，-R表示递归</p>
+<p>移动文件</p>
+<p>mv</p>
+<ol>
+<li>​	移动一个文件</li>
+<li>重命名一个文件   mv  file1  file2</li>
+</ol>
+<p>删除文件</p>
+<p>rm</p>
+<p>​	rm  file</p>
+<h3 id="2-5通配符"><a class="header-anchor" href="#2-5通配符">¶</a>2.5通配符</h3>
+<p>通配符用于匹配路径名称</p>
+<p>*代表任意长度的人一个字符</p>
+<p>？		代表有且仅有一个任意字符，多个字符就加多个？</p>
+<p>[0-9]		中括号仅代表一个字符，0-9表示，匹配0-9中间的任意一个字符</p>
+<p>[1,3]		都好表示只匹配1或3</p>
+<p>[!1]		!表示非</p>
+<p>[^1]		和叹号意思一样</p>
+<p>[a-z/A-Z]		表示任意一个大小写字母</p>
+<p>字符集合</p>
+<p>[:digit:]		任意数字，0-9</p>
+<p>[(:digit:)]		一个任意数字</p>
+<p>[:lower:]		任意小写字母</p>
+<p>[:upper:]		任意大写字母</p>
+<p>[:alpha:]		任意大小写字母</p>
+<p>控制符</p>
+<p>\t		制表符</p>
+<p>\n		换行符</p>
+<p>echo -e  “how  \tare you”		#-e，允许转义符，也就是允许使用控制符</p>
+<p>echo -e  “how  \nare  you”		#</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>红帽周末上课笔记</title>
+    <url>/2021/3JFWP8Z/</url>
+    <content><![CDATA[<h1>XShell中的配置</h1>
+<p>窗口透明化</p>
+<p>关闭自动更新</p>
+<p>复制粘贴文本</p>
+<p>隐藏上方菜单栏</p>
+<p>多会话切换Alt+1或者ctrl+tab</p>
+<h1>系统中的配置</h1>
+<h2 id="1-配置网络"><a class="header-anchor" href="#1-配置网络">¶</a>1.配置网络</h2>
+<p>ip addr</p>
+<p>cat /etc/rsolv.conf</p>
+<p>vi /etc/sysconfig/network-scrpts/ifcfg-ens33</p>
+<p>修改BOOTPRUTU为static</p>
+<p>在网络设置中查看VMware Network Adapter VMnet8中的连接属性</p>
+<p><img src="/source/images/redhat/20210520194148.png" alt="image-20210419150102139"></p>
+<p>添加IPADDR=192.168.234.111</p>
+<p>NETMASK=255.255.255.0</p>
+<p>GATEWAY=192.168.234.2  //不要填错漏单词</p>
+<p>DNS1=192.168.234.2 或 114.114.114.114</p>
+<p>重启网卡服务systemctl restart network</p>
+<p>在使用xshell连接时可以先进行ping操作看是否能ping通</p>
+<p>配置不同的Session会有不同的效果，每个人都有自己的Session</p>
+<h2 id="2-配置yum源"><a class="header-anchor" href="#2-配置yum源">¶</a>2.配置yum源</h2>
+<p>cd /etc/yum.repos.d/</p>
+<p><img src="/source/images/redhat/20210520194154.png" alt="image-20210419150637930"></p>
+<p>sha256sum 用于校验下载的是否正确，如果有修改的情况对应官方的是不正确的</p>
+<p><img src="/source/images/redhat/20210520194200.png" alt="image-20210419150903886"></p>
+<p>cd常用命令</p>
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="keyword">cd</span>        进入用户主目录 </span><br><span class="line">    <span class="keyword">cd</span> ~      进入用户主目录 </span><br><span class="line">    <span class="keyword">cd</span> -      返回进入此目录之前所在目录 </span><br><span class="line">    <span class="keyword">cd</span> <span class="string">..</span>     返回上一级目录 </span><br><span class="line">    <span class="keyword">cd</span> <span class="string">../..</span>  返回上两级目录 </span><br><span class="line">    <span class="keyword">cd</span> !$     把上个命令的参数作为<span class="keyword">cd</span> 参数使用 </span><br><span class="line">    <span class="keyword">cd</span> /      进入根目录</span><br><span class="line">    <span class="keyword">cd</span> .      当前目录</span><br><span class="line">    root用户下 <span class="keyword">cd</span> 相当于 <span class="keyword">cd</span> <span class="string">/root</span></span><br><span class="line">	普通用户下  <span class="keyword">cd</span> 相当于 <span class="keyword">cd</span> <span class="string">/home/</span>当前用户名</span><br></pre></td></tr></table></figure>
+<p>cat CentOS-Media.repo</p>
+<p>创建/media/cdrom目录一个dvd.repo文件修改为</p>
+<p><img src="/source/images/redhat/20210520194205.png" alt="image-20210419151508523"></p>
+<p>cat /etc/fstab查看自动挂载文件，添加/dev/sr0到这个文件</p>
+<p><img src="/source/images/redhat/20210520194208.png" alt="image-20210419151736970"></p>
+<p>注意重定向输入符不要写在了&gt;,不然会被覆盖，&gt;&gt;为追加</p>
+<p>然后使用yum repolist查看可用的yum源</p>
+<p><img src="/source/images/redhat/20210520194212.png" alt="image-20210419152048450"></p>
+<p>使用yum -y install bash-com*</p>
+<p><img src="/source/images/redhat/20210520194214.png" alt="image-20210419152406433"></p>
+<p>更新源，source /etc/profile</p>
+<p>查找vim源是哪一个：yum provides vim</p>
+<p><img src="/source/images/redhat/20210520194219.png" alt="image-20210419152638134"></p>
+<p>再对应下载这个yum -y install vim-enhanced</p>
+<p>ps -aux使用finalshell会在进程中有所存在会影响到使用</p>
+<p>查看内存情况 free -h</p>
+<p><img src="/source/images/redhat/20210520194222.png" alt="image-20210419153002894"></p>
+<p>ctrl+l清屏</p>
+<p>修改selinux为disabled：</p>
+<p>vim /etc/sysconfig/selinux</p>
+<p><img src="/source/images/redhat/20210520194224.png" alt="image-20210419153215783"></p>
+<p>使用getenforce可以在Linux下查看是否开启了SELinux。</p>
+<p>如何开启、关闭SELinux呢？最简单的方式使用setenforce，这样不用重启服务器，但是该命令只能将SeLinux在enforcing、permissive这两种模式之间切换，服务器重启后，又会恢复到/etc/selinux/config下，也就是说setenforce的修改是不能持久的。</p>
+<p>[root@server ~]# setenforce 0<br>
+[root@server ~]# getenforce<br>
+Permissive<br>
+[root@server ~]# setenforce 1<br>
+[root@server ~]# getenforce<br>
+Enforcing</p>
+<p>另外就是修改/etc/selinux/config，如下所示，可以配置SELinux为enforcing、permissive、disabled三个值，修改后必须重启系统才能生效。</p>
+<p>[root@server ~]# more /etc/selinux/config<br>
+# This file controls the state of SELinux on the system.<br>
+# SELINUX= can take one of these three values:<br>
+#    enforcing - SELinux security policy is enforced.<br>
+#    permissive - SELinux prints warnings instead of enforcing.<br>
+#    disabled - SELinux is fully disabled.<br>
+SELINUX=enforcing<br>
+# SELINUXTYPE= <a href="https://ywnz.com/linux/type/">type</a> of policy in use. Possible values are:<br>
+#    targeted - Only targeted network daemons are protected.<br>
+#    strict - Full SELinux protection.<br>
+SELINUXTYPE=targeted<br>
+You have new mail in /var/spool/mail/root<br>
+[root@server ~]#</p>
+<p>如果由 enforcing 或 permissive 改成 disabled，或由 disabled 改成其他两个，那也必须要重新开机。这是因为 SELinux 是整合到核心里面去的，你只可以在SELinux 运作下切换成为强制 (enforcing) 或宽容 (permissive) 模式，不能够直接关闭 SELinux 的！同时，由 SELinux 关闭 (disable) 的状态到开启的状态也需要重新开机啦。</p>
+<p><img src="/source/images/redhat/20210520194228.png" alt="image-20210419153648063"></p>
+<p>配置防火墙：</p>
+<p>查看状态：systemctl status firewalld.service</p>
+<p><img src="/source/images/redhat/20210520194231.png" alt="image-20210419153759464"></p>
+<p><img src="/source/images/redhat/20210520194238.png" alt="image-20210419154015011"></p>
+<p>关闭防火墙和设置开机禁用防火墙</p>
+<p>一、防火墙的开启、关闭、禁用命令</p>
+<p>（1）设置开机启用防火墙：systemctl enable firewalld.service</p>
+<p>（2）设置开机禁用防火墙：systemctl disable firewalld.service</p>
+<p>（3）启动防火墙：systemctl start firewalld</p>
+<p>（4）关闭防火墙：systemctl stop firewalld</p>
+<p>（5）检查防火墙状态：systemctl status firewalld</p>
+<p>二、使用firewall-cmd配置端口</p>
+<p>（1）查看防火墙状态：firewall-cmd --state</p>
+<p>（2）重新加载配置：firewall-cmd --reload</p>
+<p>（3）查看开放的端口：firewall-cmd --list-ports</p>
+<p>（4）开启防火墙端口：firewall-cmd --zone=public --add-port=9200/tcp --permanent</p>
+<p>命令含义：</p>
+<p>–zone #作用域</p>
+<p>–add-port=9200/tcp #添加端口，格式为：端口/通讯协议</p>
+<p>–permanent #永久生效，没有此参数重启后失效</p>
+<p><strong>注意：添加端口后，必须用命令firewall-cmd --reload重新加载一遍才会生效</strong></p>
+<p>（5）关闭防火墙端口：firewall-cmd --zone=public --remove-port=9200/tcp --permanent</p>
+<p><img src="/source/images/redhat/20210520194241.png" alt="image-20210419154250013"></p>
+<p>nmcli命令：配置管理网络</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">常用命令</span><br><span class="line"></span><br><span class="line"><span class="code">    nmcli connection show 显示所有连接</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection show --active    显示所有活动的连接状态</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection show &quot;ens33&quot;    显示网络连接配置</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device status            显示设备状态</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device show ens33        显示网络接口属性</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection add help        查看帮助</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection reload        重新加载配置</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection down test2        禁用test2的配置，注意一个网卡可以有多个配置。</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection up test2        启用test2的配置</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device disconnect ens33    禁用ens33网卡，物理网卡</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device disconnect ens33    启用ens33网卡</span></span><br><span class="line"><span class="code"></span></span><br><span class="line">图形工具</span><br><span class="line"></span><br><span class="line"><span class="code">    nm-connection-editor</span></span><br><span class="line"><span class="code"></span></span><br><span class="line">字符工具</span><br><span class="line"></span><br><span class="line"><span class="code">    nmtui</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmtui-connect</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmtui-edit</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmtui-hostname</span></span><br><span class="line"><span class="code"></span></span><br></pre></td></tr></table></figure>
+<p><img src="/source/images/redhat/20210520194247.png" alt="image-20210419154705018"></p>
+<p>uname功能主要作用：：用来获取电脑和操作系统的相关信息。</p>
+<p><img src="/source/images/redhat/20210520194249.png" alt="image-20210419155732224"></p>
+<p>xshell 中Alt+s可以进入简单使用模式很简洁</p>
+<p>把下载好的CentOS7-Base-163.repo通过xftp放入到/etc/yum.repos.d/目录中</p>
+<p>diff 命令：diff以逐行的方式，比较文本文件的异同处。如果指定要比较目录，则diff会比较目录中相同文件名的文件，但不会比较其中子目录。</p>
+<p><img src="/source/images/redhat/20210520194252.png" alt="image-20210419161251116"></p>
+<p><img src="/source/images/redhat/20210520194254.png" alt="image-20210419161740493"></p>
+<p>改为epel源下载：</p>
+<p>创建epel.repo文件：复制内容进去</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[epel]</span></span><br><span class="line"><span class="attr">name</span>=Extra Packages for Enterprise Linux <span class="number">7</span> - <span class="variable">$basearch</span></span><br><span class="line"><span class="attr">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/epel/<span class="number">7</span>/<span class="variable">$basearch</span></span><br><span class="line"><span class="comment">#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&amp;arch=$basearch</span></span><br><span class="line"><span class="attr">failovermethod</span>=priority</span><br><span class="line"><span class="attr">enabled</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">gpgcheck</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">gpgkey</span>=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-<span class="number">7</span></span><br><span class="line"></span><br><span class="line"><span class="section">[epel-debuginfo]</span></span><br><span class="line"><span class="attr">name</span>=Extra Packages for Enterprise Linux <span class="number">7</span> - <span class="variable">$basearch</span> - Debug</span><br><span class="line"><span class="attr">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/epel/<span class="number">7</span>/<span class="variable">$basearch</span>/debug</span><br><span class="line"><span class="comment">#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-7&amp;arch=$basearch</span></span><br><span class="line"><span class="attr">failovermethod</span>=priority</span><br><span class="line"><span class="attr">enabled</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">gpgkey</span>=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-<span class="number">7</span></span><br><span class="line"><span class="attr">gpgcheck</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[epel-source]</span></span><br><span class="line"><span class="attr">name</span>=Extra Packages for Enterprise Linux <span class="number">7</span> - <span class="variable">$basearch</span> - Source</span><br><span class="line"><span class="attr">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/epel/<span class="number">7</span>/SRPMS</span><br><span class="line"><span class="comment">#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&amp;arch=$basearch</span></span><br><span class="line"><span class="attr">failovermethod</span>=priority</span><br><span class="line"><span class="attr">enabled</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">gpgkey</span>=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-<span class="number">7</span></span><br><span class="line"><span class="attr">gpgcheck</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p><img src="/source/images/redhat/20210520194258.png" alt="image-20210419162404736"></p>
+<p>改名字</p>
+<p>yum repolist下载源：</p>
+<p><img src="/source/images/redhat/20210520194300.png" alt="image-20210419162451896"></p>
+<h2 id="3-ansibel："><a class="header-anchor" href="#3-ansibel：">¶</a>3.ansibel：</h2>
+<p>ansible概述：<br>
+ansible是一款为类unix系统开发的自由开源的配置和自动化工具。它用python写成，类似于saltstack和puppet，但是不同点是ansible不需要再节点中安装任何客户端。它使用ssh来通信。它基于python的paramiko开发，分布式，无需任何客户端，轻量级，配置语法使用ymal及jinja2模板语言，更强的远程命令执行操作。</p>
+<figure class="highlight mel"><table><tr><td class="code"><pre><span class="line">ansible优点：</span><br><span class="line">部署简单，只需要再主控端部署ansible环境，被控端无需做任何操作</span><br><span class="line">默认使用ssh协议对设备进行管理</span><br><span class="line">主从集中化管理</span><br><span class="line">支持API及自定义模块，可以通过<span class="keyword">python</span>扩展</span><br><span class="line">对云计算平台、大数据都有很好的支持</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="vim快速移动"><a class="header-anchor" href="#vim快速移动">¶</a>vim快速移动</h3>
+<figure class="highlight stan"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、    按屏幕移动</span><br><span class="line">（<span class="number">1</span>） 最常用的几个命令如下：</span><br><span class="line">Ctrl + f                <span class="comment">// 向前（往行号大的方向移动）移动一屏，想来F代表Forward</span></span><br><span class="line">Ctrl  + b               <span class="comment">// 向后移动一屏，B的话应该是Before吧</span></span><br><span class="line">Ctrl + d               <span class="comment">// 向前移动半屏，D指Down</span></span><br><span class="line">Ctrl +  u               <span class="comment">// 向后移动半屏，U指Up</span></span><br><span class="line"></span><br><span class="line">Ctrl+<span class="built_in">e</span>           <span class="comment">//编辑窗口中的文件内容整体上移一行。</span></span><br><span class="line"></span><br><span class="line">Ctrl+y           <span class="comment">//编辑窗口中的文件内容整体下移一行。</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">注：上面是指按下Ctrl键的同时再按f等键。</span><br><span class="line"></span><br><span class="line">（<span class="number">2</span>） 使用z重新定位屏幕命令</span><br><span class="line">z + 回车         <span class="comment">// 把当前行移动到屏幕顶部</span></span><br><span class="line">扩展下上命令如：</span><br><span class="line"><span class="number">100</span>z + 回车      <span class="comment">// 将移动第100行到屏幕的顶部，记得键入100z之后要再回车</span></span><br><span class="line">z.                              <span class="comment">// 把当前行移动到屏幕中央，不用回车，切记</span></span><br><span class="line">z-                             <span class="comment">// 把当前行移动到屏幕底部，同上，不用回车</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、    按搜索移动</span><br><span class="line">事实上，对于一个源程序文件我们往往是要查找其中的一个变量或函数名，最有效的方法就是按文本搜索快速移动。</span><br><span class="line">/pattern            <span class="comment">// 向前搜索模式，pattern代指要搜索的内容</span></span><br><span class="line">?pattern            <span class="comment">// 向后搜索模式</span></span><br><span class="line">n                              <span class="comment">// 重复上次搜索（向行号大的方向）</span></span><br><span class="line">N                             <span class="comment">// 反方向重复上次搜索</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">3</span>、    按行号移动</span><br><span class="line">nG                         <span class="comment">// 移动到第n行，注意此处G是大写。即输入n，在小写模式下输入shift+g，大写模式下直接按下g键</span></span><br><span class="line">              （如<span class="number">100</span>G则能快速定位到源程序中第<span class="number">100</span>行代码位置处，想必是很有用的。）</span><br><span class="line">Ctrl + g            <span class="comment">// 显示当前行（并不是移动命令）</span></span><br><span class="line">G                           <span class="comment">// 移动到文件的尾部，在小写模式下输入shift+g，大写模式下直接按下g键</span></span><br><span class="line"></span><br><span class="line"><span class="number">4</span>、按光标移动</span><br><span class="line"></span><br><span class="line">左：h</span><br><span class="line">下：j</span><br><span class="line">上：k</span><br><span class="line">右：l</span><br><span class="line"></span><br><span class="line">下一行行首：+         <span class="comment">//shift键切换到上档 &#x27;+&#x27;</span></span><br><span class="line">上一行行首：-</span><br><span class="line">当前行行首：<span class="number">0</span></span><br><span class="line"></span><br><span class="line">把光标移至当前行的起始位置，也即当前行的第一个非空白字符：^</span><br><span class="line">当前行行尾：$</span><br><span class="line"></span><br><span class="line">后一个单词词首：w,W    <span class="comment">// w：将光标右移一个字。光标停留在下一个字的字首位置；W：将光标右移一个字。光标停留在下一个字的字首位置（即使两个字之间存在标点符号）。</span></span><br><span class="line">后一个单词词尾：<span class="built_in">e</span>,E      <span class="comment">// e：把光标移至当前所在字（或下一个字）的最后一个字符位置；E:  同e，只是以空格字符作为字的分隔符。</span></span><br><span class="line"></span><br><span class="line">前一个单词词首：b,B <span class="comment">//b:将光标左移一个字。光标停留在下一个字的字首位置；B：将光标左移一个字。光标停留在下一个字的字首位置（即使两个字之间存在标点符号）。</span></span><br><span class="line"></span><br><span class="line">当前屏幕首行：H</span><br><span class="line">当前屏幕末行：L</span><br><span class="line">当前屏幕中央：M</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">fx       <span class="comment">//往右移动到 x 字符上                                                        </span></span><br><span class="line">Fx       <span class="comment">//往左移动到 x 字符上                                                        </span></span><br><span class="line">tx       <span class="comment">//往右移动到 x 字符前                                                        </span></span><br><span class="line">Tx      <span class="comment">//往左移动到 x 字符后                                                        </span></span><br><span class="line">　        （注意：以上四个命令中，其中x是键入的字符）                                  </span><br><span class="line">;         <span class="comment">//分号，配合 f 和 t 使用，重复一次                                       </span></span><br><span class="line">,         <span class="comment">//逗号，配合 f 和 t 使用，反方向重复一次  </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">标记文本替换</span><br><span class="line"></span><br><span class="line">mqq    <span class="comment">//用字符串qq来标记当前光标的位置</span></span><br><span class="line"></span><br><span class="line">`qq      <span class="comment">//移至qq所标记处  (数字1键左边键的上档)</span></span><br><span class="line"></span><br><span class="line">&#x27;qq      <span class="comment">//移至qq标记所在行的开头处（单引号）</span></span><br><span class="line"></span><br><span class="line">&#x27;&#x27;         <span class="comment">//移至当前行上第一次所在位置的行的开头处（在光标移动之后，两个单引号）</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;          //移至当前行上一次所在位置（在光标移动之后）——1个双引号（测试不通过）</span></span><br></pre></td></tr></table></figure>
+<h3 id="替换"><a class="header-anchor" href="#替换">¶</a>替换</h3>
+<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">替换</span><br><span class="line"></span><br><span class="line">语法<span class="symbol">:</span>[addr]s/源字符串/目的字符串/[option]</span><br><span class="line"></span><br><span class="line">[addr]表示检索范围,如:</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;1,n&quot;</span><span class="symbol">:</span>表示从第<span class="number">1</span>行到n行</span><br><span class="line"><span class="string">&quot;%&quot;</span><span class="symbol">:</span>表示整个文件,同<span class="string">&quot;1,$&quot;</span></span><br><span class="line"><span class="string">&quot;.,$&quot;</span><span class="symbol">:</span>表示从当前行到文件尾</span><br><span class="line"></span><br><span class="line">[addr]省略时表示当前行</span><br><span class="line"></span><br><span class="line"><span class="symbol">s:</span>表示替换操作,其为substitute的缩写</span><br><span class="line"></span><br><span class="line">[option] : 表示操作类型,如:</span><br><span class="line"></span><br><span class="line"><span class="symbol">g:</span>globe,表示全局替换</span><br><span class="line"></span><br><span class="line"><span class="symbol">c:</span>confirm,表示进行确认</span><br><span class="line"></span><br><span class="line"><span class="symbol">p:</span>表示替代结果逐行显示(Ctrl + L恢复屏幕)</span><br><span class="line"></span><br><span class="line"><span class="symbol">i:</span>ignore,不区分大小写</span><br><span class="line"></span><br><span class="line">[option]省略时仅对每行第一个匹配串进行替换</span><br><span class="line"></span><br><span class="line">如果在源字符串和目的字符串中出现特殊字符,如<span class="string">&#x27;/&#x27;</span>,<span class="string">&#x27;&lt;&#x27;</span>,<span class="string">&#x27;&gt;&#x27;</span>,<span class="string">&#x27;,&#x27;</span>等需要前面加反斜杠\进行转义</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">常用命令示例:</span><br><span class="line"></span><br><span class="line"><span class="comment">#将当前行第一个a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s/a/b/</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将当前行的所有a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s/a/b/g</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将每行第一个a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:%s/a/b</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将整个文件的所有a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:%s/a/b/g</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将1至3行的第一个a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:</span><span class="number">1</span>,<span class="number">3</span>s/a/b/</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将1至3行的所有a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:</span><span class="number">1</span>,<span class="number">3</span>s/a/b/g</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">上面是一些常用的替换,但是我们日常碰到的问题不止这么简单,这就要涉及到一些较为高级的替换操作,会涉及到转义,正则表达式相关的知识,下面是一些例子:</span><br><span class="line"></span><br><span class="line"><span class="comment">#使用#作为分隔符,此时中间出现的/不会作为分隔符,如:将当前行的字符串&quot;a/&quot;替换为&quot;b/&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s</span><span class="comment">#a/#b/#</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#找到包含字母a的行并删除</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:g/a/d</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#删除所有空行</span></span><br><span class="line"><span class="symbol">:g/^</span><span class="variable">$/</span>d</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"> <span class="comment">#多个空格替换为一个空格</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s/</span> \+<span class="regexp">/ /g</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#在正则表达式中使用和和符号括起正则表达式,即可在后面使用\1,\2等变量来访问和和中的内容,如下</span></span><br><span class="line">将data1 data2修改为data2 data1</span><br><span class="line"><span class="symbol">:s/</span>\w\+\w\+\s\+\w\+\w\+<span class="regexp">/\2\t\1</span></span><br></pre></td></tr></table></figure>
+<p><img src="/source/images/redhat/20210520194314.png" alt="image-20210419171503627"></p>
+<p>%s等价于1,$s全文查找替换</p>
+<p>linux中用:%s#替换和%s /的区别</p>
+<p>：%s/name.name.name/yourname/g</p>
+<p>替换name.name.name为yourname</p>
+<p>:%s#/data3/svr_publish/run_script#/home/root#g</p>
+<p>替换/data3/svr_publish/run_script为/home/root</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>redhat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一章第一节</title>
     <url>/2021/1FBDEJR/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
@@ -718,376 +2292,8 @@
         <category>linux</category>
       </categories>
       <tags>
+        <tag>红帽第一章</tag>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Javee</title>
-    <url>/2021/HDAEA4/</url>
-    <content><![CDATA[<h1>解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码</h1>
-<p><a href="https://www.jianshu.com/p/43061e0b5703">https://www.jianshu.com/p/43061e0b5703</a></p>
-<p><a href="https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710">https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710</a></p>
-<p><a href="https://blog.csdn.net/weixin_45673401/article/details/104446105">https://blog.csdn.net/weixin_45673401/article/details/104446105</a></p>
-<h1>Eclipse中java和Xml文件字体大小调整：</h1>
-<p>Eclipse字体大小调整：</p>
-<p>Window / Preferences / General / Appearance / ColorsAnd Fonts ，在右边的对话框里选择Java - Java Editor Text Font，点击出现的编辑（Edit）按钮，可以设置显示在在主窗体中程序的字体大小，设置完之后点击右下角的应用(Apply)，最后点击确定（OK）即可。</p>
-<p>Xml文件字体大小的调整： window / preferences / General / appearance / colors and fonts / Basic /  &quot;Text font &quot; ，然后点击Edit，可以设置字体的大小。</p>
-<h1>@Resource注解错误，无法导入javax.annotation.Resource包的问题</h1>
-<p><a href="http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxannotationjar.htm</a></p>
-<p>下载后进入项目buildpath</p>
-<p><img src="/../source/images/Javee/image-20200913204513394.png" alt="image-20200913204513394"></p>
-<p>导入即可</p>
-<h1><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">如何用Eclipse将普通的JavaWeb项目转为Maven项目</a></h1>
-<p><a href="https://www.cnblogs.com/qlqwjy/p/8386188.html">https://www.cnblogs.com/qlqwjy/p/8386188.html</a></p>
-<h1>解决idea中xml文件资源路径问题</h1>
-<p>如果该项目是maven项目：</p>
-<p>配置maven的pom文件配置，在pom文件中找到<build>节点，添加下列代码：</build></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1>Intellij IDEA 创建main函数 和 输出语句的快捷键</h1>
-<ol>
-<li>main函数：</li>
-</ol>
-<p>输入public static void main的首字母：psvm 然后按tab或者enter，就会写好main方法</p>
-<p><img src="/../source/images/Javee/20180331183744410" alt="img"></p>
-<ol start="2">
-<li>输出语句：</li>
-</ol>
-<p>System.out.print(); 键入：sout</p>
-<ol start="3">
-<li>for循环：</li>
-</ol>
-<p>输入： fori</p>
-<p><img src="/../source/images/Javee/20180331183150826" alt="img"></p>
-<h1>IDEA运行junit测试用例时控制台中文输出乱码</h1>
-<p>最近遇到在IDEA运行测试用例(junit4)时System.out.println中文时总是乱码,设置好编码后还是不行,后来总算解决了,这里记录下解决办法:</p>
-<p>1.设置好编码:</p>
-<p><img src="/../source/images/Javee/20191107144238841.png" alt="img"></p>
-<p>2.删除原来的 Run/Debug Configurations (这步很总要,就是很多时候就是因为没有做这边就会无效)</p>
-<p><img src="/../source/images/Javee/20191107144427568.png" alt="img"></p>
-<p>3.重新运行 junit</p>
-<p><img src="/../source/images/Javee/20191107144526220.png" alt="img"></p>
-<h1>IDEA中如何打开Run/Debug Configurations</h1>
-<p>工具栏–&gt;Run–&gt;Edit Configurations<br>
-<img src="/../source/images/Javee/20200317193324690.png" alt="在这里插入图片描述"><br>
-<img src="/../source/images/Javee/20200317193541919.png" alt="在这里插入图片描述"></p>
-<p><img src="/../source/images/Javee/image-20201028001014226.png" alt="image-20201028001014226"></p>
-<h1>IntelliJ IDEA 控制台中文乱码解决方案</h1>
-<p>参考链接：<a href="https://blog.csdn.net/wo541075754/article/details/51150035">https://blog.csdn.net/wo541075754/article/details/51150035</a><br>
-参考链接：<a href="http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral">http://www.cnblogs.com/vhua/p/idea_1.html?utm_source=tuicool&amp;utm_medium=referral</a><br>
-相关设置<br>
-1、打开IDEA安装目录找到 idea.exe.vmoptions（64位为idea64.exe.vmoptions）文件， 在文件末尾加上 -Dfile.encoding=UTF-8<br>
-2、最后，在 IntelliJ IDEA 中的“Run/Debug Configurations”中，修改虚拟机参数“ VM options ”，内容与在文件idea.vmoptions中追加的内容相同，皆为-Dfile.encoding=UTF-8<br>
-3、打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8，如下图（红框的地方），然后重新rebuild一下，基本就行了<br>
-4、打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行<br>
-5、 打开Run/Debug Configuration,选择你的tomcat，在 Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
-<p>解决的是其中的第四点</p>
-<p><img src="/../source/images/Javee/image-20201028001623948.png" alt="image-20201028001623948"></p>
-<p>然后rebuild一下重新运行</p>
-<h1>Idea连接数据库时出现serverTimezone问题</h1>
-<p><img src="/../source/images/Javee/20200907102200827.png" alt="在这里插入图片描述"></p>
-<p>没有设置serverTimezone属性导致连接失败<br>
-<img src="/../source/images/Javee/20200907102317616.png" alt="在这里插入图片描述"><br>
-不一定要设为UTC，可以根据实际情况设置</p>
-<p>连接成功：</p>
-<p><img src="/../source/images/Javee/image-20201028135844679.png" alt="image-20201028135844679"></p>
-<h1>快捷键</h1>
-<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">Alt+<span class="built_in">insert</span>快速生成有参无参构造方法和setget方法</span><br></pre></td></tr></table></figure>
-<h1>解决修改数据不能插入中文问题</h1>
-<p><img src="/../source/images/Javee/image-20201111141733502.png" alt="image-20201111141733502"></p>
-<p><img src="/../source/images/Javee/image-20201111141910728.png" alt="image-20201111141910728"></p>
-<p>修改defaultcharset为utf8</p>
-<h1>com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 1字节的 UTF-8 序列的字节 1 无效。</h1>
-<ul>
-<li>修改pom.xml文件，加入下面配置</li>
-</ul>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;properties&gt;</span></span><br><span class="line">	<span class="section">&lt;project.build.sourceEncoding&gt;</span><span class="attribute">UTF</span>-<span class="number">8</span>&lt;/project.build.sourceEncoding&gt;</span><br><span class="line"><span class="section">&lt;/properties&gt;</span></span><br></pre></td></tr></table></figure>
-<h1>intelij idea 使用maven打包报错 Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1</h1>
-<p>缺少这个插件，在pom.xml中加入相应的版本即可</p>
-<p><img src="/../source/images/Javee/image-20201123200045002.png" alt="image-20201123200045002"></p>
-<p>打包成功</p>
-<p><img src="/../source/images/Javee/image-20201123200101686.png" alt="image-20201123200101686"></p>
-<h1>springboot打包错误：Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0…</h1>
-<p>解决方法：修改maven-resources-plugin的版本</p>
-<p><img src="/../source/images/Javee/image-20201123200523720.png" alt="image-20201123200523720"></p>
-<h1>解决jrebel热部署错误问题</h1>
-<p>报错：</p>
-<p><img src="/../source/images/Javee/image-20201123220910872.png" alt="image-20201123220910872"></p>
-<p>依赖包冲突：</p>
-<p><img src="/../source/images/Javee/image-20201123221948421.png" alt="image-20201123221948421"></p>
-<p>原因在于版本的不对，把下面的版本删掉即可</p>
-<p><img src="/../source/images/Javee/image-20201123222058403.png" alt="image-20201123222058403"></p>
-<p>解决后：</p>
-<p><img src="/../source/images/Javee/image-20201123222246700.png" alt="image-20201123222246700"></p>
-<h1>解决idea中通过路径找不到页面404的问题</h1>
-<p>首先在pom中加入各类资源的路径：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;resources&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span><br><span class="line">        &lt;filtering&gt;<span class="keyword">true</span>&lt;/filtering&gt;</span><br><span class="line">        &lt;excludes&gt;</span><br><span class="line">          &lt;exclude&gt;application-dev.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-test.yml&lt;/exclude&gt;</span><br><span class="line">          &lt;exclude&gt;application-prod.yml&lt;/exclude&gt;</span><br><span class="line">        &lt;/excludes&gt;</span><br><span class="line">      &lt;/resource&gt;</span><br><span class="line">      &lt;resource&gt;</span><br><span class="line">        &lt;directory&gt;src/main/java&lt;/directory&gt;</span><br><span class="line">        &lt;includes&gt;</span><br><span class="line">          &lt;include&gt;**<span class="comment">/*.xml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">      &lt;resource&gt;</span></span><br><span class="line"><span class="comment">        &lt;directory&gt;src/main/resources&lt;/directory&gt;</span></span><br><span class="line"><span class="comment">        &lt;filtering&gt;true&lt;/filtering&gt;</span></span><br><span class="line"><span class="comment">        &lt;includes&gt;</span></span><br><span class="line"><span class="comment">          &lt;!--suppress UnresolvedMavenProperty --&gt;</span></span><br><span class="line"><span class="comment">          &lt;include&gt;application-$&#123;activeProfile&#125;.yml&lt;/include&gt;</span></span><br><span class="line"><span class="comment">        &lt;/includes&gt;</span></span><br><span class="line"><span class="comment">      &lt;/resource&gt;</span></span><br><span class="line"><span class="comment">    &lt;/resources&gt;</span></span><br></pre></td></tr></table></figure>
-<p>目录要放到相应的资源目录下：</p>
-<p><img src="/../source/images/Javee/image-20201202144159760.png" alt="image-20201202144159760"></p>
-<p>重点是部署到tomcat上时Deployment要为war exploded形式</p>
-<p><img src="/../source/images/Javee/image-20201202144242880.png" alt="image-20201202144242880"></p>
-<p>下方的application context路径要为/加项目名，运行后可在浏览器中通过各类路径接口访问</p>
-<p><img src="/../source/images/Javee/image-20201202144414351.png" alt="image-20201202144414351"></p>
-]]></content>
-      <categories>
-        <category>Javee</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网络编程</title>
-    <url>/2021/3V4J77V/</url>
-    <content><![CDATA[<h1>解决代码C4996问题</h1>
-<p>严重性	代码	说明	项目	文件	行	禁止显示状态<br>
-错误	C4996	‘gethostbyname’: Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings	Project1	d:\visual studio\project1\project1\p2-4.cpp	31</p>
-<p>VS编译代码是遇到如上问题，vs准备弃用strcpy的，安全性较低，所以微软提供了strcpy_s来代替，如果想继续使用strcpy的，main前面加上</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> <span class="meta-keyword">warning</span>(disable:4996)</span></span><br></pre></td></tr></table></figure>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181229541.png" alt="image-20200918181229541"></p>
-<p>或者</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/20180506223431466" alt="img"></p>
-<p>解决方案：在main()函数中的return前面添加system(“pause”)，其中头文件中添加#include&lt;stdlib.h&gt;。</p>
-<h1>解决“const char *”类型的值不能用于初始化“char *”类型的实体</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181912423.png" alt="image-20200918181912423"></p>
-<p>用强制转换</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181940363.png" alt="image-20200918181940363"></p>
-<h1>error LNK2019: 无法解析的外部符号 WinMain，该符号在函数 &quot;int __cdecl invoke_main(void)”中被引用</h1>
-<p>问题描述：<img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112159738.png" alt="image-20200925112159738"></p>
-<p>解决方案：</p>
-<p>二，原因及解决办法<br>
-产生这个问题的真正原因是c语言运行时找不到适当的程序入口函数，</p>
-<p>一般情况下，如果是windows程序，那么WinMain是入口函数，在VS2017中新建项目为“win32项目”</p>
-<p>如果是dos控制台程序，那么main是入口函数，在VS2017中新建项目为“win32控制台应用程序”</p>
-<p>而如果入口函数指定不当，很显然c语言运行时找不到配合函数，它就会报告错误。</p>
-<p>修改设置适应你的需求</p>
-<p>如果是windows程序：</p>
-<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
-<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_CONSOLE, 添加_WINDOWS.</p>
-<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为Windows(/SUBSYSTEM:WINDOWS)</p>
-<p>如果是控制台程序：</p>
-<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
-<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_WINDOWS, 添加_CONSOLE.</p>
-<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为CONSOLE(/SUBSYSTEM:CONSOLE)</p>
-<p>即：</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112238834.png" alt="image-20200925112238834"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112255855.png" alt="image-20200925112255855"></p>
-<p>_CONSOLE控制台改为窗体_WINDOWS</p>
-<p>然后再链接器中找到系统：把控制台改成窗口</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112450551.png" alt="image-20200925112450551"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112523127.png" alt="image-20200925112523127"></p>
-<p>问题解决：</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112546860.png" alt="image-20200925112546860"></p>
-<h1>vs2010显示行号</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115454664.png" alt="image-20200925115454664"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115527639.png" alt="image-20200925115527639"></p>
-<h1>无法查找或打开PDB文件错误</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201016105325241.png" alt="image-20201016105325241"></p>
-<h1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100326958.png" alt="image-20201106100326958"></p>
-<p>在C盘中找到cvtres.exe文件把最新的替换到VS目录下</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100433205.png" alt="image-20201106100433205"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100548345.png" alt="image-20201106100548345"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100624598.png" alt="image-20201106100624598"></p>
-<h1>解决平台工具集问题</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093139932.png" alt="image-20201204093139932"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093358149.png" alt="image-20201204093358149"></p>
-]]></content>
-      <categories>
-        <category>网络编程</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2021/2JD9E5R/</url>
-    <content><![CDATA[<h1>列表List</h1>
-<p>随机生成列表：</p>
-<p>n=list（range（10））</p>
-<p>切片还可以更换索引值</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">n</span><br></pre></td></tr></table></figure>
-<p>词频统计：</p>
-<p><img src="/../source/images/python/20210523142308.png" alt="image-20200615104058100"></p>
-<p><img src="/../source/images/python/20210523142723.png" alt="image-20200615104053055"></p>
-<p><img src="/../source/images/python/20210523142743.png" alt="image-20200615110115241"></p>
-<h1>复习</h1>
-<p><img src="/../source/images/python/20210523142821.png" alt="image-20200706083644250"></p>
-<p>第一章</p>
-<p>print（sep,end）</p>
-<p>sep默认空格，end是以什么结尾</p>
-<p>标识符</p>
-<p>变量的定义中不需要先定义类型，付给什么值就什么值</p>
-<p>回顾多个变量赋值</p>
-<p>重点是复杂的数据类型——字符串，列表，元组，字典，集合</p>
-<p>运算符中注意下/和//的情况，水仙花数的分解，单/等同于5/3=1.66666666667</p>
-<p>5//3=1</p>
-<p>5.0//3=1.0</p>
-<p>1!=0     true</p>
-<p>逻辑运算：</p>
-<p>控制语句：</p>
-<p>重点是分支结构和循环结构  while和for/in后面都可以带else</p>
-<p>range(6)代表从0到5</p>
-<p>range(1,6)代表从1到5</p>
-<p>常用数据结构分了序列和非序列</p>
-<p>列表：</p>
-<p>切片考得比较多，注意</p>
-<p>a[:4]代表从第一个开始取</p>
-<p>a[2:]代表从这个一直到尾</p>
-<p>a[2:4]代表从第2个到第3个结束，和range一样不包含尾</p>
-<p>a[:]代表对整个字符串操作</p>
-<p>追加新的列表用extend，追加一个用append</p>
-<p>排序：</p>
-<p>进行逆序：reversed，排序sorted</p>
-<p>方法是用对象.方法</p>
-<p>函数时直接调用的如len，max，不要把排序搞混了</p>
-<p>列表遍历用for循环遍历</p>
-<p>空字典创建{}，键：值</p>
-<p>value=a[key]</p>
-<p>del a[key]删除字典中的某一组值</p>
-<p>扩展</p>
-<p>如果输入的字符串中有中文字符的话怎么统计？</p>
-<p>查一查中文字符的unicode编码是多少</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>红帽周末上课笔记</title>
-    <url>/2021/3JFWP8Z/</url>
-    <content><![CDATA[<h1>XShell中的配置</h1>
-<p>窗口透明化</p>
-<p>关闭自动更新</p>
-<p>复制粘贴文本</p>
-<p>隐藏上方菜单栏</p>
-<p>多会话切换Alt+1或者ctrl+tab</p>
-<h1>系统中的配置</h1>
-<h2 id="1-配置网络"><a class="header-anchor" href="#1-配置网络">¶</a>1.配置网络</h2>
-<p>ip addr</p>
-<p>cat /etc/rsolv.conf</p>
-<p>vi /etc/sysconfig/network-scrpts/ifcfg-ens33</p>
-<p>修改BOOTPRUTU为static</p>
-<p>在网络设置中查看VMware Network Adapter VMnet8中的连接属性</p>
-<p><img src="/source/images/redhat/20210520194148.png" alt="image-20210419150102139"></p>
-<p>添加IPADDR=192.168.234.111</p>
-<p>NETMASK=255.255.255.0</p>
-<p>GATEWAY=192.168.234.2  //不要填错漏单词</p>
-<p>DNS1=192.168.234.2 或 114.114.114.114</p>
-<p>重启网卡服务systemctl restart network</p>
-<p>在使用xshell连接时可以先进行ping操作看是否能ping通</p>
-<p>配置不同的Session会有不同的效果，每个人都有自己的Session</p>
-<h2 id="2-配置yum源"><a class="header-anchor" href="#2-配置yum源">¶</a>2.配置yum源</h2>
-<p>cd /etc/yum.repos.d/</p>
-<p><img src="/source/images/redhat/20210520194154.png" alt="image-20210419150637930"></p>
-<p>sha256sum 用于校验下载的是否正确，如果有修改的情况对应官方的是不正确的</p>
-<p><img src="/source/images/redhat/20210520194200.png" alt="image-20210419150903886"></p>
-<p>cd常用命令</p>
-<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="keyword">cd</span>        进入用户主目录 </span><br><span class="line">    <span class="keyword">cd</span> ~      进入用户主目录 </span><br><span class="line">    <span class="keyword">cd</span> -      返回进入此目录之前所在目录 </span><br><span class="line">    <span class="keyword">cd</span> <span class="string">..</span>     返回上一级目录 </span><br><span class="line">    <span class="keyword">cd</span> <span class="string">../..</span>  返回上两级目录 </span><br><span class="line">    <span class="keyword">cd</span> !$     把上个命令的参数作为<span class="keyword">cd</span> 参数使用 </span><br><span class="line">    <span class="keyword">cd</span> /      进入根目录</span><br><span class="line">    <span class="keyword">cd</span> .      当前目录</span><br><span class="line">    root用户下 <span class="keyword">cd</span> 相当于 <span class="keyword">cd</span> <span class="string">/root</span></span><br><span class="line">	普通用户下  <span class="keyword">cd</span> 相当于 <span class="keyword">cd</span> <span class="string">/home/</span>当前用户名</span><br></pre></td></tr></table></figure>
-<p>cat CentOS-Media.repo</p>
-<p>创建/media/cdrom目录一个dvd.repo文件修改为</p>
-<p><img src="/source/images/redhat/20210520194205.png" alt="image-20210419151508523"></p>
-<p>cat /etc/fstab查看自动挂载文件，添加/dev/sr0到这个文件</p>
-<p><img src="/source/images/redhat/20210520194208.png" alt="image-20210419151736970"></p>
-<p>注意重定向输入符不要写在了&gt;,不然会被覆盖，&gt;&gt;为追加</p>
-<p>然后使用yum repolist查看可用的yum源</p>
-<p><img src="/source/images/redhat/20210520194212.png" alt="image-20210419152048450"></p>
-<p>使用yum -y install bash-com*</p>
-<p><img src="/source/images/redhat/20210520194214.png" alt="image-20210419152406433"></p>
-<p>更新源，source /etc/profile</p>
-<p>查找vim源是哪一个：yum provides vim</p>
-<p><img src="/source/images/redhat/20210520194219.png" alt="image-20210419152638134"></p>
-<p>再对应下载这个yum -y install vim-enhanced</p>
-<p>ps -aux使用finalshell会在进程中有所存在会影响到使用</p>
-<p>查看内存情况 free -h</p>
-<p><img src="/source/images/redhat/20210520194222.png" alt="image-20210419153002894"></p>
-<p>ctrl+l清屏</p>
-<p>修改selinux为disabled：</p>
-<p>vim /etc/sysconfig/selinux</p>
-<p><img src="/source/images/redhat/20210520194224.png" alt="image-20210419153215783"></p>
-<p>使用getenforce可以在Linux下查看是否开启了SELinux。</p>
-<p>如何开启、关闭SELinux呢？最简单的方式使用setenforce，这样不用重启服务器，但是该命令只能将SeLinux在enforcing、permissive这两种模式之间切换，服务器重启后，又会恢复到/etc/selinux/config下，也就是说setenforce的修改是不能持久的。</p>
-<p>[root@server ~]# setenforce 0<br>
-[root@server ~]# getenforce<br>
-Permissive<br>
-[root@server ~]# setenforce 1<br>
-[root@server ~]# getenforce<br>
-Enforcing</p>
-<p>另外就是修改/etc/selinux/config，如下所示，可以配置SELinux为enforcing、permissive、disabled三个值，修改后必须重启系统才能生效。</p>
-<p>[root@server ~]# more /etc/selinux/config<br>
-# This file controls the state of SELinux on the system.<br>
-# SELINUX= can take one of these three values:<br>
-#    enforcing - SELinux security policy is enforced.<br>
-#    permissive - SELinux prints warnings instead of enforcing.<br>
-#    disabled - SELinux is fully disabled.<br>
-SELINUX=enforcing<br>
-# SELINUXTYPE= <a href="https://ywnz.com/linux/type/">type</a> of policy in use. Possible values are:<br>
-#    targeted - Only targeted network daemons are protected.<br>
-#    strict - Full SELinux protection.<br>
-SELINUXTYPE=targeted<br>
-You have new mail in /var/spool/mail/root<br>
-[root@server ~]#</p>
-<p>如果由 enforcing 或 permissive 改成 disabled，或由 disabled 改成其他两个，那也必须要重新开机。这是因为 SELinux 是整合到核心里面去的，你只可以在SELinux 运作下切换成为强制 (enforcing) 或宽容 (permissive) 模式，不能够直接关闭 SELinux 的！同时，由 SELinux 关闭 (disable) 的状态到开启的状态也需要重新开机啦。</p>
-<p><img src="/source/images/redhat/20210520194228.png" alt="image-20210419153648063"></p>
-<p>配置防火墙：</p>
-<p>查看状态：systemctl status firewalld.service</p>
-<p><img src="/source/images/redhat/20210520194231.png" alt="image-20210419153759464"></p>
-<p><img src="/source/images/redhat/20210520194238.png" alt="image-20210419154015011"></p>
-<p>关闭防火墙和设置开机禁用防火墙</p>
-<p>一、防火墙的开启、关闭、禁用命令</p>
-<p>（1）设置开机启用防火墙：systemctl enable firewalld.service</p>
-<p>（2）设置开机禁用防火墙：systemctl disable firewalld.service</p>
-<p>（3）启动防火墙：systemctl start firewalld</p>
-<p>（4）关闭防火墙：systemctl stop firewalld</p>
-<p>（5）检查防火墙状态：systemctl status firewalld</p>
-<p>二、使用firewall-cmd配置端口</p>
-<p>（1）查看防火墙状态：firewall-cmd --state</p>
-<p>（2）重新加载配置：firewall-cmd --reload</p>
-<p>（3）查看开放的端口：firewall-cmd --list-ports</p>
-<p>（4）开启防火墙端口：firewall-cmd --zone=public --add-port=9200/tcp --permanent</p>
-<p>命令含义：</p>
-<p>–zone #作用域</p>
-<p>–add-port=9200/tcp #添加端口，格式为：端口/通讯协议</p>
-<p>–permanent #永久生效，没有此参数重启后失效</p>
-<p><strong>注意：添加端口后，必须用命令firewall-cmd --reload重新加载一遍才会生效</strong></p>
-<p>（5）关闭防火墙端口：firewall-cmd --zone=public --remove-port=9200/tcp --permanent</p>
-<p><img src="/source/images/redhat/20210520194241.png" alt="image-20210419154250013"></p>
-<p>nmcli命令：配置管理网络</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">常用命令</span><br><span class="line"></span><br><span class="line"><span class="code">    nmcli connection show 显示所有连接</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection show --active    显示所有活动的连接状态</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection show &quot;ens33&quot;    显示网络连接配置</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device status            显示设备状态</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device show ens33        显示网络接口属性</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection add help        查看帮助</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection reload        重新加载配置</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection down test2        禁用test2的配置，注意一个网卡可以有多个配置。</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli connection up test2        启用test2的配置</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device disconnect ens33    禁用ens33网卡，物理网卡</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmcli device disconnect ens33    启用ens33网卡</span></span><br><span class="line"><span class="code"></span></span><br><span class="line">图形工具</span><br><span class="line"></span><br><span class="line"><span class="code">    nm-connection-editor</span></span><br><span class="line"><span class="code"></span></span><br><span class="line">字符工具</span><br><span class="line"></span><br><span class="line"><span class="code">    nmtui</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmtui-connect</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmtui-edit</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    nmtui-hostname</span></span><br><span class="line"><span class="code"></span></span><br></pre></td></tr></table></figure>
-<p><img src="/source/images/redhat/20210520194247.png" alt="image-20210419154705018"></p>
-<p>uname功能主要作用：：用来获取电脑和操作系统的相关信息。</p>
-<p><img src="/source/images/redhat/20210520194249.png" alt="image-20210419155732224"></p>
-<p>xshell 中Alt+s可以进入简单使用模式很简洁</p>
-<p>把下载好的CentOS7-Base-163.repo通过xftp放入到/etc/yum.repos.d/目录中</p>
-<p>diff 命令：diff以逐行的方式，比较文本文件的异同处。如果指定要比较目录，则diff会比较目录中相同文件名的文件，但不会比较其中子目录。</p>
-<p><img src="/source/images/redhat/20210520194252.png" alt="image-20210419161251116"></p>
-<p><img src="/source/images/redhat/20210520194254.png" alt="image-20210419161740493"></p>
-<p>改为epel源下载：</p>
-<p>创建epel.repo文件：复制内容进去</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[epel]</span></span><br><span class="line"><span class="attr">name</span>=Extra Packages for Enterprise Linux <span class="number">7</span> - <span class="variable">$basearch</span></span><br><span class="line"><span class="attr">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/epel/<span class="number">7</span>/<span class="variable">$basearch</span></span><br><span class="line"><span class="comment">#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&amp;arch=$basearch</span></span><br><span class="line"><span class="attr">failovermethod</span>=priority</span><br><span class="line"><span class="attr">enabled</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">gpgcheck</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">gpgkey</span>=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-<span class="number">7</span></span><br><span class="line"></span><br><span class="line"><span class="section">[epel-debuginfo]</span></span><br><span class="line"><span class="attr">name</span>=Extra Packages for Enterprise Linux <span class="number">7</span> - <span class="variable">$basearch</span> - Debug</span><br><span class="line"><span class="attr">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/epel/<span class="number">7</span>/<span class="variable">$basearch</span>/debug</span><br><span class="line"><span class="comment">#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-7&amp;arch=$basearch</span></span><br><span class="line"><span class="attr">failovermethod</span>=priority</span><br><span class="line"><span class="attr">enabled</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">gpgkey</span>=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-<span class="number">7</span></span><br><span class="line"><span class="attr">gpgcheck</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[epel-source]</span></span><br><span class="line"><span class="attr">name</span>=Extra Packages for Enterprise Linux <span class="number">7</span> - <span class="variable">$basearch</span> - Source</span><br><span class="line"><span class="attr">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/epel/<span class="number">7</span>/SRPMS</span><br><span class="line"><span class="comment">#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&amp;arch=$basearch</span></span><br><span class="line"><span class="attr">failovermethod</span>=priority</span><br><span class="line"><span class="attr">enabled</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">gpgkey</span>=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-<span class="number">7</span></span><br><span class="line"><span class="attr">gpgcheck</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p><img src="/source/images/redhat/20210520194258.png" alt="image-20210419162404736"></p>
-<p>改名字</p>
-<p>yum repolist下载源：</p>
-<p><img src="/source/images/redhat/20210520194300.png" alt="image-20210419162451896"></p>
-<h2 id="3-ansibel："><a class="header-anchor" href="#3-ansibel：">¶</a>3.ansibel：</h2>
-<p>ansible概述：<br>
-ansible是一款为类unix系统开发的自由开源的配置和自动化工具。它用python写成，类似于saltstack和puppet，但是不同点是ansible不需要再节点中安装任何客户端。它使用ssh来通信。它基于python的paramiko开发，分布式，无需任何客户端，轻量级，配置语法使用ymal及jinja2模板语言，更强的远程命令执行操作。</p>
-<figure class="highlight mel"><table><tr><td class="code"><pre><span class="line">ansible优点：</span><br><span class="line">部署简单，只需要再主控端部署ansible环境，被控端无需做任何操作</span><br><span class="line">默认使用ssh协议对设备进行管理</span><br><span class="line">主从集中化管理</span><br><span class="line">支持API及自定义模块，可以通过<span class="keyword">python</span>扩展</span><br><span class="line">对云计算平台、大数据都有很好的支持</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="vim快速移动"><a class="header-anchor" href="#vim快速移动">¶</a>vim快速移动</h3>
-<figure class="highlight stan"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、    按屏幕移动</span><br><span class="line">（<span class="number">1</span>） 最常用的几个命令如下：</span><br><span class="line">Ctrl + f                <span class="comment">// 向前（往行号大的方向移动）移动一屏，想来F代表Forward</span></span><br><span class="line">Ctrl  + b               <span class="comment">// 向后移动一屏，B的话应该是Before吧</span></span><br><span class="line">Ctrl + d               <span class="comment">// 向前移动半屏，D指Down</span></span><br><span class="line">Ctrl +  u               <span class="comment">// 向后移动半屏，U指Up</span></span><br><span class="line"></span><br><span class="line">Ctrl+<span class="built_in">e</span>           <span class="comment">//编辑窗口中的文件内容整体上移一行。</span></span><br><span class="line"></span><br><span class="line">Ctrl+y           <span class="comment">//编辑窗口中的文件内容整体下移一行。</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">注：上面是指按下Ctrl键的同时再按f等键。</span><br><span class="line"></span><br><span class="line">（<span class="number">2</span>） 使用z重新定位屏幕命令</span><br><span class="line">z + 回车         <span class="comment">// 把当前行移动到屏幕顶部</span></span><br><span class="line">扩展下上命令如：</span><br><span class="line"><span class="number">100</span>z + 回车      <span class="comment">// 将移动第100行到屏幕的顶部，记得键入100z之后要再回车</span></span><br><span class="line">z.                              <span class="comment">// 把当前行移动到屏幕中央，不用回车，切记</span></span><br><span class="line">z-                             <span class="comment">// 把当前行移动到屏幕底部，同上，不用回车</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、    按搜索移动</span><br><span class="line">事实上，对于一个源程序文件我们往往是要查找其中的一个变量或函数名，最有效的方法就是按文本搜索快速移动。</span><br><span class="line">/pattern            <span class="comment">// 向前搜索模式，pattern代指要搜索的内容</span></span><br><span class="line">?pattern            <span class="comment">// 向后搜索模式</span></span><br><span class="line">n                              <span class="comment">// 重复上次搜索（向行号大的方向）</span></span><br><span class="line">N                             <span class="comment">// 反方向重复上次搜索</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">3</span>、    按行号移动</span><br><span class="line">nG                         <span class="comment">// 移动到第n行，注意此处G是大写。即输入n，在小写模式下输入shift+g，大写模式下直接按下g键</span></span><br><span class="line">              （如<span class="number">100</span>G则能快速定位到源程序中第<span class="number">100</span>行代码位置处，想必是很有用的。）</span><br><span class="line">Ctrl + g            <span class="comment">// 显示当前行（并不是移动命令）</span></span><br><span class="line">G                           <span class="comment">// 移动到文件的尾部，在小写模式下输入shift+g，大写模式下直接按下g键</span></span><br><span class="line"></span><br><span class="line"><span class="number">4</span>、按光标移动</span><br><span class="line"></span><br><span class="line">左：h</span><br><span class="line">下：j</span><br><span class="line">上：k</span><br><span class="line">右：l</span><br><span class="line"></span><br><span class="line">下一行行首：+         <span class="comment">//shift键切换到上档 &#x27;+&#x27;</span></span><br><span class="line">上一行行首：-</span><br><span class="line">当前行行首：<span class="number">0</span></span><br><span class="line"></span><br><span class="line">把光标移至当前行的起始位置，也即当前行的第一个非空白字符：^</span><br><span class="line">当前行行尾：$</span><br><span class="line"></span><br><span class="line">后一个单词词首：w,W    <span class="comment">// w：将光标右移一个字。光标停留在下一个字的字首位置；W：将光标右移一个字。光标停留在下一个字的字首位置（即使两个字之间存在标点符号）。</span></span><br><span class="line">后一个单词词尾：<span class="built_in">e</span>,E      <span class="comment">// e：把光标移至当前所在字（或下一个字）的最后一个字符位置；E:  同e，只是以空格字符作为字的分隔符。</span></span><br><span class="line"></span><br><span class="line">前一个单词词首：b,B <span class="comment">//b:将光标左移一个字。光标停留在下一个字的字首位置；B：将光标左移一个字。光标停留在下一个字的字首位置（即使两个字之间存在标点符号）。</span></span><br><span class="line"></span><br><span class="line">当前屏幕首行：H</span><br><span class="line">当前屏幕末行：L</span><br><span class="line">当前屏幕中央：M</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">fx       <span class="comment">//往右移动到 x 字符上                                                        </span></span><br><span class="line">Fx       <span class="comment">//往左移动到 x 字符上                                                        </span></span><br><span class="line">tx       <span class="comment">//往右移动到 x 字符前                                                        </span></span><br><span class="line">Tx      <span class="comment">//往左移动到 x 字符后                                                        </span></span><br><span class="line">　        （注意：以上四个命令中，其中x是键入的字符）                                  </span><br><span class="line">;         <span class="comment">//分号，配合 f 和 t 使用，重复一次                                       </span></span><br><span class="line">,         <span class="comment">//逗号，配合 f 和 t 使用，反方向重复一次  </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">标记文本替换</span><br><span class="line"></span><br><span class="line">mqq    <span class="comment">//用字符串qq来标记当前光标的位置</span></span><br><span class="line"></span><br><span class="line">`qq      <span class="comment">//移至qq所标记处  (数字1键左边键的上档)</span></span><br><span class="line"></span><br><span class="line">&#x27;qq      <span class="comment">//移至qq标记所在行的开头处（单引号）</span></span><br><span class="line"></span><br><span class="line">&#x27;&#x27;         <span class="comment">//移至当前行上第一次所在位置的行的开头处（在光标移动之后，两个单引号）</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;          //移至当前行上一次所在位置（在光标移动之后）——1个双引号（测试不通过）</span></span><br></pre></td></tr></table></figure>
-<h3 id="替换"><a class="header-anchor" href="#替换">¶</a>替换</h3>
-<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">替换</span><br><span class="line"></span><br><span class="line">语法<span class="symbol">:</span>[addr]s/源字符串/目的字符串/[option]</span><br><span class="line"></span><br><span class="line">[addr]表示检索范围,如:</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;1,n&quot;</span><span class="symbol">:</span>表示从第<span class="number">1</span>行到n行</span><br><span class="line"><span class="string">&quot;%&quot;</span><span class="symbol">:</span>表示整个文件,同<span class="string">&quot;1,$&quot;</span></span><br><span class="line"><span class="string">&quot;.,$&quot;</span><span class="symbol">:</span>表示从当前行到文件尾</span><br><span class="line"></span><br><span class="line">[addr]省略时表示当前行</span><br><span class="line"></span><br><span class="line"><span class="symbol">s:</span>表示替换操作,其为substitute的缩写</span><br><span class="line"></span><br><span class="line">[option] : 表示操作类型,如:</span><br><span class="line"></span><br><span class="line"><span class="symbol">g:</span>globe,表示全局替换</span><br><span class="line"></span><br><span class="line"><span class="symbol">c:</span>confirm,表示进行确认</span><br><span class="line"></span><br><span class="line"><span class="symbol">p:</span>表示替代结果逐行显示(Ctrl + L恢复屏幕)</span><br><span class="line"></span><br><span class="line"><span class="symbol">i:</span>ignore,不区分大小写</span><br><span class="line"></span><br><span class="line">[option]省略时仅对每行第一个匹配串进行替换</span><br><span class="line"></span><br><span class="line">如果在源字符串和目的字符串中出现特殊字符,如<span class="string">&#x27;/&#x27;</span>,<span class="string">&#x27;&lt;&#x27;</span>,<span class="string">&#x27;&gt;&#x27;</span>,<span class="string">&#x27;,&#x27;</span>等需要前面加反斜杠\进行转义</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">常用命令示例:</span><br><span class="line"></span><br><span class="line"><span class="comment">#将当前行第一个a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s/a/b/</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将当前行的所有a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s/a/b/g</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将每行第一个a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:%s/a/b</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将整个文件的所有a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:%s/a/b/g</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将1至3行的第一个a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:</span><span class="number">1</span>,<span class="number">3</span>s/a/b/</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#将1至3行的所有a替换为b</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:</span><span class="number">1</span>,<span class="number">3</span>s/a/b/g</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">上面是一些常用的替换,但是我们日常碰到的问题不止这么简单,这就要涉及到一些较为高级的替换操作,会涉及到转义,正则表达式相关的知识,下面是一些例子:</span><br><span class="line"></span><br><span class="line"><span class="comment">#使用#作为分隔符,此时中间出现的/不会作为分隔符,如:将当前行的字符串&quot;a/&quot;替换为&quot;b/&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s</span><span class="comment">#a/#b/#</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#找到包含字母a的行并删除</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:g/a/d</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#删除所有空行</span></span><br><span class="line"><span class="symbol">:g/^</span><span class="variable">$/</span>d</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"> <span class="comment">#多个空格替换为一个空格</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">:s/</span> \+<span class="regexp">/ /g</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">#在正则表达式中使用和和符号括起正则表达式,即可在后面使用\1,\2等变量来访问和和中的内容,如下</span></span><br><span class="line">将data1 data2修改为data2 data1</span><br><span class="line"><span class="symbol">:s/</span>\w\+\w\+\s\+\w\+\w\+<span class="regexp">/\2\t\1</span></span><br></pre></td></tr></table></figure>
-<p><img src="/source/images/redhat/20210520194314.png" alt="image-20210419171503627"></p>
-<p>%s等价于1,$s全文查找替换</p>
-<p>linux中用:%s#替换和%s /的区别</p>
-<p>：%s/name.name.name/yourname/g</p>
-<p>替换name.name.name为yourname</p>
-<p>:%s#/data3/svr_publish/run_script#/home/root#g</p>
-<p>替换/data3/svr_publish/run_script为/home/root</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>redhat</tag>
       </tags>
   </entry>
 </search>

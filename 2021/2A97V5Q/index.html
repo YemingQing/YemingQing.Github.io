@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;blog.forlearn.top&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:true,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
+<meta name="description" content="¶题目： 1【填空题】vim中使用什么快捷键可以向左移动     h 课后： 目标：从命令行输出或在编辑器中创建、查看和编辑文本文件 1.将一个程序的文本输出重定向到文件或另一程序 2.从shell提示符使用文本编辑器编辑现有的文本文件，以及创建新文件 3.使用图形环境中运行的文本编辑器，从图形窗口复制文本到文本文件 1【单选题】vim中光标按什么字母键向下     B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一章第四节">
+<meta property="og:url" content="https://blog.forlearn.top/2021/2A97V5Q/index.html">
+<meta property="og:site_name" content="记录屋">
+<meta property="og:description" content="¶题目： 1【填空题】vim中使用什么快捷键可以向左移动     h 课后： 目标：从命令行输出或在编辑器中创建、查看和编辑文本文件 1.将一个程序的文本输出重定向到文件或另一程序 2.从shell提示符使用文本编辑器编辑现有的文本文件，以及创建新文件 3.使用图形环境中运行的文本编辑器，从图形窗口复制文本到文本文件 1【单选题】vim中光标按什么字母键向下     B">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601105909.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601105914.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601105919.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601105923.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601105927.png">
+<meta property="article:published_time" content="2021-04-23T07:58:24.000Z">
+<meta property="article:modified_time" content="2021-04-23T07:58:24.000Z">
+<meta property="article:author" content="LimeY">
+<meta property="article:tag" content="红帽第一章">
+<meta property="article:tag" content="linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601105909.png">
+
+
+<link rel="canonical" href="https://blog.forlearn.top/2021/2A97V5Q/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;blog.forlearn.top&#x2F;2021&#x2F;2A97V5Q&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;2A97V5Q&#x2F;&quot;,&quot;title&quot;:&quot;第一章第四节&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>第一章第四节 | 记录屋</title><script src="/js/config.js"></script><script src="/lib/fireworks.js"></script>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?f3799707fbafb7fe095460b4d4974872"></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<link rel="alternate" href="/atom.xml" title="记录屋" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+  <a target="_blank" rel="noopener" href="https://github.com/YemingQing" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">记录屋</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">LimeY</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap/" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%EF%BC%9A"><span class="nav-text">题目：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E9%87%8D%E5%AE%9A%E5%90%91"><span class="nav-text">4.1 重定向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-%E8%BE%93%E5%85%A5%E9%87%8D%E5%AE%9A%E5%90%91"><span class="nav-text">4.2  输入重定向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-%E7%AE%A1%E9%81%93"><span class="nav-text">4.3 管道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-vi%E5%92%8Cvim"><span class="nav-text">4.4 vi和vim</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-1-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F"><span class="nav-text">4.4.1 命令行模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-2-%E7%BC%96%E8%BE%91%E6%A8%A1%E5%BC%8F"><span class="nav-text">4.4.2 编辑模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-3-%E6%9C%AB%E8%A1%8C%E6%A8%A1%E5%BC%8F"><span class="nav-text">4.4.3 末行模式</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LimeY"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">LimeY</p>
+  <div class="site-description" itemprop="description">后端、记录、分享、总结</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fas fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/YemingQing" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YemingQing" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yemingqing110@gmail.com" title="E-Mail → mailto:yemingqing110@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/avatar.png" data-original="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+	  
+
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.forlearn.top/2021/2A97V5Q/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="LimeY">
+      <meta itemprop="description" content="后端、记录、分享、总结">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="记录屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          第一章第四节
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-23 15:58:24" itemprop="dateCreated datePublished" datetime="2021-04-23T15:58:24+08:00">2021-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】vim中使用什么快捷键可以向左移动     h</p>
+<p>课后：</p>
+<p>目标：从命令行输出或在编辑器中创建、查看和编辑文本文件<br>
+1.将一个程序的文本输出重定向到文件或另一程序<br>
+2.从shell提示符使用文本编辑器编辑现有的文本文件，以及创建新文件<br>
+3.使用图形环境中运行的文本编辑器，从图形窗口复制文本到文本文件</p>
+<p>1【单选题】vim中光标按什么字母键向下     B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>h</p>
+</li>
+<li>
+<p>B：</p>
+<p>j</p>
+</li>
+<li>
+<p>C：</p>
+<p>k</p>
+</li>
+<li>
+<p>D：</p>
+<p>l</p>
+</li>
+</ul>
+<p>2【单选题】如何复制当前行     A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>yy</p>
+</li>
+<li>
+<p>B：</p>
+<p>dd</p>
+</li>
+<li>
+<p>C：</p>
+<p>dG</p>
+</li>
+</ul>
+<p>输入：对一个文件输入，除了键盘输入外，还可以通过一个文件输入。</p>
+<p>输出：执行一个命令，，会有相应的输出到屏幕上，输出有标准的正确输出和错误输出</p>
+<p>重定向：把一个输出结果，再输出到另一个文件或一个终端</p>
+<h3 id="4-1-重定向"><a class="header-anchor" href="#4-1-重定向">¶</a>4.1 重定向</h3>
+<p>linux中有三种标准输入输出，分别是STDIN,STDOUT,STDERR,对应的数字是0,1,2</p>
+<ol>
+<li>STDIN就是标准输入，默认从键盘读取信息</li>
+<li>STDOUT是标准输出，默认将输出结果输出到终端，也就是显示器之类的东西</li>
+<li>STDERR是标准的错误信息，默认也会显示在终端上</li>
+<li>由于STDOUT与STDERR都会默认显示在终端上，为了区分二者的信息，就有了编号的0,1,2的定义，用1表示STDOUT,2表示STDERR。</li>
+</ol>
+<p>set -C</p>
+<p>​		#禁止覆盖重定向仅有文件，</p>
+<p>​		#如果还是要强制覆盖，使用“&gt;|”</p>
+<p>ser +C</p>
+<p>​		#允许覆盖重定向</p>
+<p>标准正确输入重定向</p>
+<p>1&gt;		覆盖式重定向。不加前面的1，默认就是正确输出</p>
+<p>1&gt;&gt;		追加式重定向</p>
+<p>标准错误输出重定向：</p>
+<p>2&gt;		覆盖</p>
+<p>2&gt;&gt;		追加</p>
+<p>&amp;	表示所有的正确和错误输出</p>
+<p>怎么判断一个命令的输出时正确输出还是错误输出呢？</p>
+<p>例1：</p>
+<p>find /etc-name passwd &gt;find.out 2&gt;find.err</p>
+<p>​		#将标准正确输出，重定向到find.out.</p>
+<p>​		#将标准错误输出，重定向到fine.err</p>
+<p>例2：</p>
+<p>adfkldf &gt;&gt;/tmp/t.txt</p>
+<p>​		如果还有输出，说明这个重定向方式没起作用的，也就是说这是一个错误的输出，反之，就是一个正确的输出。</p>
+<p>例3：</p>
+<p>echo $?</p>
+<p>​	只是判断上一次命令有没有执行成功，不能判断输出是一个标准正确还是错误输出。</p>
+<p>例4：</p>
+<p>ls  &gt; /dev/null</p>
+<p>​		相当于把输出结果丢到垃圾桶</p>
+<p>怎么同时把标准正确和错误的输出重定向到同一个文件呢？</p>
+<p>find /home -name kiosk 1&gt;&gt; /tmp/t 2&gt;&gt;/tmp/tt</p>
+<p>​		#这种方式会打乱输出，先重定向正确输出，才会输出错误输出。</p>
+<p>find /home -name kiosk &amp;&gt;/tmp/tt</p>
+<p>​		#这种方法就不会打乱输出了</p>
+<p>​		#&amp;表示所有正确和错误的输出</p>
+<p>有时候希望将一个错误输出重新丁香岛正确输出，就是将2的结果重定向到1中，就有了“2&gt;1”这样的思路，如果按照上面的写法，系统会默认将错误输出重定向到一个名字为1的文件中，而非标准输出中。因此需要加&amp;进行区分，就有了2&gt;&amp;1</p>
+<p>find /home -name kiosk &gt; /tmp/tt 2&gt;&amp;1</p>
+<p>​		#把一个错误输出转换成正确输出，然后再以正确输出重定向到tt</p>
+<h3 id="4-2-输入重定向"><a class="header-anchor" href="#4-2-输入重定向">¶</a>4.2  输入重定向</h3>
+<p>从一个文件的标准输出，再把这个输出作为输入到另一个文件</p>
+<p>&lt;  输入重定向</p>
+<p>cat &gt; /tmp/tt</p>
+<p>​		#通过键盘输入，重定向到tt这个文件，以ctrl+d结束</p>
+<p>cat &gt; /tmp/tt &lt; /etc/passwd</p>
+<p>​		#把/etc/passed这个文件内容作为输入，然后重定向到tt这个文件</p>
+<p>cat &gt; /tmp/tt &lt;&lt;“EOF”</p>
+<p>​		#定义一个结束符，当输入EOF,键盘输入就会结束。</p>
+<p>​		注意：EOF不是固定字符，可以自己随便定义</p>
+<p>tr abc ABC &lt; /etc/fstab</p>
+<p>​		#将/etc/fstab文件中的所有a，换成A，b换成B，c换成C</p>
+<p>​		#tr命令，替换字符</p>
+<p>tr ‘a-z’ ‘A-Z’ &lt; /etc/fstab</p>
+<p>​		#将所有小写字母，替换成大写输出</p>
+<h3 id="4-3-管道"><a class="header-anchor" href="#4-3-管道">¶</a>4.3 管道</h3>
+<p>|</p>
+<p>​	把管道符前面的命令的标准输出，当做后面命令的输入。</p>
+<p>​	cat /etc/passwd | more</p>
+<p>tee</p>
+<p>​	如果在管道符后面使用了tee，不仅可以保存输出，同时输出到终端。</p>
+<p>​	cat /etc/passed | tee f.txt</p>
+<p>​	pwd | tee -a f.txt</p>
+<p>​		#-a，追加</p>
+<h3 id="4-4-vi和vim"><a class="header-anchor" href="#4-4-vi和vim">¶</a>4.4 vi和vim</h3>
+<p>vi和vim都是文本编辑器，vim是vi的升级版</p>
+<p>vim会高亮显示，而vi不会</p>
+<p>hjkl  左下上右移动</p>
+<p>vimtutor  系统自带的帮助手册</p>
+<h4 id="4-4-1-命令行模式"><a class="header-anchor" href="#4-4-1-命令行模式">¶</a>4.4.1 命令行模式</h4>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601105909.png" alt="image-20210420151150955"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601105914.png" alt="image-20210420151322842"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601105919.png" alt="image-20210420151456103"></p>
+<h4 id="4-4-2-编辑模式"><a class="header-anchor" href="#4-4-2-编辑模式">¶</a>4.4.2 编辑模式</h4>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601105923.png" alt="image-20210420151534926"></p>
+<p>回到命令行模式，按esc键，切换到其他模式必须先回到命令模式，在切换图形化下用鼠标复制粘贴内容，要先进入编辑模式，否则会掉东西</p>
+<h4 id="4-4-3-末行模式"><a class="header-anchor" href="#4-4-3-末行模式">¶</a>4.4.3 末行模式</h4>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601105927.png" alt="image-20210420151732985"></p>
+
+    </div>
+	
+
+    
+    
+    
+	
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>LimeY
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.forlearn.top/2021/2A97V5Q/" title="第一章第四节">https://blog.forlearn.top/2021/2A97V5Q/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%80%E7%AB%A0/" rel="tag"><i class="fa fa-tag"></i>红帽第一章</a>
+              <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i>linux</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/HVXXEJ/" rel="prev" title="第一章第三节">
+                  <i class="fa fa-chevron-left"></i> 第一章第三节
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/3XGTAFG/" rel="next" title="第一章第五节">
+                  第一章第五节 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+	<div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+    
+	</div>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="minivaline-comments"></div><script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LimeY</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">35k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">59 分钟</span>
+  </span>
+</div>
+<!--
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ab4fbc198a8475" async="async"></script>
+  </div>
+-->
+    </div>
+  </footer>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/love.js"></script>
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+<script>
+NexT.utils.loadComments('#minivaline-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/gh/MiniValine/MiniValine@3.1.5/dist/MiniValine.min.js', () => {
+      new MiniValine(Object.assign({"enable":true,"appId":"09EWPJMabUnX5RJJUvgx6wXR-MdYXbMMI","appKey":"dmidPzAwsGsxDDioseAknVqP","mode":"xCss","placeholder":"欢迎畅所欲言O(∩_∩)O~~","enableQQ":true,"enableFlag":true,"enableUA":true,"region":true,"md":true,"dark":true,"RecordIP":true,"visitor":false,"barrager":1,"cloudflag":false,"master":["1b5e2fe749339260f3477b4846605ab4"],"friends":["b33aa01b50eee8819e466c4c6cfed891","63fbaf5dd6a2619b761cfa0fc188a9e7","9324CD53FFD227E536BC418C89D56A6E","6d684174e7c6af9e3a093949bf056e1d","b8c14a782397b160f2ac4f7c3941867f"],"tagMeta":["管理员","小伙伴","新朋友"],"emoticonUrl":["https://cdn.jsdelivr.net/npm/alus@latest","https://cdn.jsdelivr.net/gh/MiniValine/qq@latest","https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest","https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest","https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest","https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],"cdn":"https://cdn.jsdelivr.net/gh/MiniValine/MiniValine@3.1.5/dist/MiniValine.min.js","index_generator":null,"per_page":5}, {
+      el: '#minivaline-comments',
+      pathname: "/2021/2A97V5Q/",
+    }));
+  }, window.MiniValine);
+});
+</script>
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"left","width":180,"height":320},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>

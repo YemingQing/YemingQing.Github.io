@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;blog.forlearn.top&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:true,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
+<meta name="description" content="¶题目： 1【判断题】man是一个帮助手册     A   A： 正确   B： 错误   课后： 目标：使用在线帮助系统和红帽支持实用工具解决问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一章第三节">
+<meta property="og:url" content="https://blog.forlearn.top/2021/HVXXEJ/index.html">
+<meta property="og:site_name" content="记录屋">
+<meta property="og:description" content="¶题目： 1【判断题】man是一个帮助手册     A   A： 正确   B： 错误   课后： 目标：使用在线帮助系统和红帽支持实用工具解决问题">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-23T07:26:15.000Z">
+<meta property="article:modified_time" content="2021-04-23T07:26:15.000Z">
+<meta property="article:author" content="LimeY">
+<meta property="article:tag" content="红帽第一章">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="redhat">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.forlearn.top/2021/HVXXEJ/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;blog.forlearn.top&#x2F;2021&#x2F;HVXXEJ&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;HVXXEJ&#x2F;&quot;,&quot;title&quot;:&quot;第一章第三节&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>第一章第三节 | 记录屋</title><script src="/js/config.js"></script><script src="/lib/fireworks.js"></script>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?f3799707fbafb7fe095460b4d4974872"></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<link rel="alternate" href="/atom.xml" title="记录屋" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+  <a target="_blank" rel="noopener" href="https://github.com/YemingQing" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">记录屋</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">LimeY</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap/" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%EF%BC%9A"><span class="nav-text">题目：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-man%E5%B8%AE%E5%8A%A9%E6%89%8B%E5%86%8C"><span class="nav-text">3.2  man帮助手册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-info"><span class="nav-text">3.3 info</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%87%AA%E8%BA%AB%E6%96%87%E6%A1%A3"><span class="nav-text">3.4 程序的自身文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-%E7%BA%A2%E5%B8%BD%E5%B8%AE%E5%8A%A9"><span class="nav-text">3.5 红帽帮助</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LimeY"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">LimeY</p>
+  <div class="site-description" itemprop="description">后端、记录、分享、总结</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fas fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/YemingQing" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YemingQing" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yemingqing110@gmail.com" title="E-Mail → mailto:yemingqing110@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/avatar.png" data-original="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+	  
+
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.forlearn.top/2021/HVXXEJ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="LimeY">
+      <meta itemprop="description" content="后端、记录、分享、总结">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="记录屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          第一章第三节
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-23 15:26:15" itemprop="dateCreated datePublished" datetime="2021-04-23T15:26:15+08:00">2021-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【判断题】man是一个帮助手册     A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>正确</p>
+</li>
+<li>
+<p>B：</p>
+<p>错误</p>
+</li>
+</ul>
+<p>课后：</p>
+<p>目标：使用在线帮助系统和红帽支持实用工具解决问题</p>
+<ol>
+<li>使用man Linux手册读取器</li>
+<li>使用pinfo GNU信息读取器</li>
+<li>使用红帽软件包管理器（RPM）软件包文档</li>
+<li>使用redhat-support-tool命令</li>
+</ol>
+<p>1【填空题】使用man查看ls的帮助  man  ls</p>
+<p>内部命令帮助：</p>
+<p>help  echo  		#查看echo命令的帮助</p>
+<p>外部命令帮助：</p>
+<p>ls  --help</p>
+<p>​		#查看ls命令的简单帮助，详细帮助要用man命令</p>
+<p>​		#/bin目录下面都是外部命令，如：/bin/ls  ,如：mv /bin/ls  /bin/ls,那ls命令就没用了</p>
+<p>查看一个命令帮助的时候</p>
+<p>[]		可选</p>
+<p>…		同一内容可出现多次</p>
+<p>|		多选</p>
+<p>&lt;&gt;		必选</p>
+<h3 id="3-2-man帮助手册"><a class="header-anchor" href="#3-2-man帮助手册">¶</a>3.2  man帮助手册</h3>
+<p>​		每个程序，都有帮助文档，但大量的文档，会占用大量控件，所以需要压缩，man手册就是压缩过的程序文档</p>
+<p>cat /etc/man.config</p>
+<p>​		#man手册的配置文件</p>
+<p>​		#指定了man手册命令搜索路径</p>
+<p>man手册总共分9个章节，对运维人员来说，主要1,5章节，man命令以less方式</p>
+<p>man1		<strong>用户命令</strong></p>
+<p>man2		系统调用</p>
+<p>man3		库函数调用</p>
+<p>man4		设备文件和特殊文件</p>
+<p>man5		<strong>配置文件</strong></p>
+<p>man6		游戏</p>
+<p>man7		协议、标准等</p>
+<p>man8		系统管理和特权命令，比如磁盘分区命令</p>
+<p>man9		linux内核API（内核调用）</p>
+<p>whatis read</p>
+<p>​		#搜索man手册，包含read的章节</p>
+<p>​		#whatis,有一个数据库，可将系统上所有的帮助手册与之对应的关键关创建为一个数据库，</p>
+<p>命令就是从他的的数据库中查询数据</p>
+<p>​		#mkwhatis，手动创建数据库</p>
+<p>​		#默认，系统有一个计划任务，自动创建这个数据库</p>
+<p>例1：查找passwd这个文件的帮助</p>
+<p>​		passwd既是一个命令又是一个配置文件，如果直接man passwd，会从第一章开始往后查找，一直找到位置，然而在第一章命令章节里，就有passwd，所以这样找到的是passwd这个命令的帮助，如果要查找passwd这个配置稳健的帮助：man  5	passwd</p>
+<p>man  -k  passwd</p>
+<p>​		#查看包含passwd这个干剑子的有哪些章节</p>
+<p>例2：在man手册中，查看内部命令cd的帮助信息</p>
+<p>man cd</p>
+<p>​		#发现，打开的是bash手册</p>
+<h3 id="3-3-info"><a class="header-anchor" href="#3-3-info">¶</a>3.3 info</h3>
+<p>info命令比man命令更加详细，但我们一般很少去用它。</p>
+<h3 id="3-4-程序的自身文档"><a class="header-anchor" href="#3-4-程序的自身文档">¶</a>3.4 程序的自身文档</h3>
+<p>​		安装软件的时候，会在/usr/share/doc目录下创建一个以程序名命名的目录，然后把自己的说明文档和使用方法文档放在改目录下</p>
+<p>​		也可到相应程序的官方网站查看相应的官方文档</p>
+<h3 id="3-5-红帽帮助"><a class="header-anchor" href="#3-5-红帽帮助">¶</a>3.5 红帽帮助</h3>
+<p>​		这个是要付费的</p>
+
+    </div>
+	
+
+    
+    
+    
+	
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>LimeY
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.forlearn.top/2021/HVXXEJ/" title="第一章第三节">https://blog.forlearn.top/2021/HVXXEJ/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%80%E7%AB%A0/" rel="tag"><i class="fa fa-tag"></i>红帽第一章</a>
+              <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i>linux</a>
+              <a href="/tags/redhat/" rel="tag"><i class="fa fa-tag"></i>redhat</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/1QA0NM0/" rel="prev" title="第一章第二节">
+                  <i class="fa fa-chevron-left"></i> 第一章第二节
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/2A97V5Q/" rel="next" title="第一章第四节">
+                  第一章第四节 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+	<div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+    
+	</div>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="minivaline-comments"></div><script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LimeY</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">35k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">59 分钟</span>
+  </span>
+</div>
+<!--
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ab4fbc198a8475" async="async"></script>
+  </div>
+-->
+    </div>
+  </footer>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/love.js"></script>
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+<script>
+NexT.utils.loadComments('#minivaline-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/gh/MiniValine/MiniValine@3.1.5/dist/MiniValine.min.js', () => {
+      new MiniValine(Object.assign({"enable":true,"appId":"09EWPJMabUnX5RJJUvgx6wXR-MdYXbMMI","appKey":"dmidPzAwsGsxDDioseAknVqP","mode":"xCss","placeholder":"欢迎畅所欲言O(∩_∩)O~~","enableQQ":true,"enableFlag":true,"enableUA":true,"region":true,"md":true,"dark":true,"RecordIP":true,"visitor":false,"barrager":1,"cloudflag":false,"master":["1b5e2fe749339260f3477b4846605ab4"],"friends":["b33aa01b50eee8819e466c4c6cfed891","63fbaf5dd6a2619b761cfa0fc188a9e7","9324CD53FFD227E536BC418C89D56A6E","6d684174e7c6af9e3a093949bf056e1d","b8c14a782397b160f2ac4f7c3941867f"],"tagMeta":["管理员","小伙伴","新朋友"],"emoticonUrl":["https://cdn.jsdelivr.net/npm/alus@latest","https://cdn.jsdelivr.net/gh/MiniValine/qq@latest","https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest","https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest","https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest","https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],"cdn":"https://cdn.jsdelivr.net/gh/MiniValine/MiniValine@3.1.5/dist/MiniValine.min.js","index_generator":null,"per_page":5}, {
+      el: '#minivaline-comments',
+      pathname: "/2021/HVXXEJ/",
+    }));
+  }, window.MiniValine);
+});
+</script>
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"left","width":180,"height":320},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>
