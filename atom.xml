@@ -32,7 +32,8 @@
 &lt;li&gt;more&lt;/li&gt;
 &lt;li&gt;cat&lt;/li&gt;
 &lt;li&gt;grep&lt;/li&gt;
-&lt;/ul&gt;</summary>
+&lt;/ul&gt;
+&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
     
     
     
@@ -53,14 +54,11 @@
     <updated>2021-05-23T07:23:33.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h1&gt;解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码&lt;/h1&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/43061e0b5703&quot;&gt;https://www.jianshu.com/p/43061e0b5703&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710&quot;&gt;https://blog.csdn.net/ordinaryprogrammerc/article/details/83013710&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/weixin_45673401/article/details/104446105&quot;&gt;https://blog.csdn.net/weixin_45673401/article/details/104446105&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Eclipse中java和Xml文件字体大小调整：&lt;/h1&gt;</summary>
     
     
     
@@ -79,15 +77,12 @@
     <updated>2021-05-23T07:06:18.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h1&gt;解决代码C4996问题&lt;/h1&gt;
 &lt;p&gt;严重性	代码	说明	项目	文件	行	禁止显示状态&lt;br&gt;
-错误	C4996	‘gethostbyname’: Use getaddrinfo() or GetAddrInfoW() instead or define</summary>
-        
-      
+错误	C4996	‘gethostbyname’: Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings	Project1	d:\visual studio\project1\project1\p2-4.cpp	31&lt;/p&gt;
+&lt;p&gt;VS编译代码是遇到如上问题，vs准备弃用strcpy的，安全性较低，所以微软提供了strcpy_s来代替，如果想继续使用strcpy的，main前面加上&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;meta-keyword&quot;&gt;warning&lt;/span&gt;(disable:4996)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181229541.png&quot; alt=&quot;image-20200918181229541&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -104,17 +99,11 @@
     <updated>2021-05-23T06:21:31.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h1&gt;列表List&lt;/h1&gt;
 &lt;p&gt;随机生成列表：&lt;/p&gt;
 &lt;p&gt;n=list（range（10））&lt;/p&gt;
 &lt;p&gt;切片还可以更换索引值&lt;/p&gt;
-&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-        
-      
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;n&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -131,15 +120,15 @@
     <updated>2021-04-23T14:08:34.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;p&gt;填空题】什么命令以递归的方式显示当前目录树中所有的文件的大小  du&lt;/p&gt;
-&lt;p&gt;【填空题】通过什么命令创建连接  </summary>
-        
-      
+&lt;p&gt;【填空题】通过什么命令创建连接   ln&lt;/p&gt;
+&lt;p&gt;课后：目标：访问和检查红帽企业Linux系统上的现有文件系统&lt;br&gt;
+1.访问Linux文件系统层次结构&lt;br&gt;
+2.访问文件系统的内容&lt;br&gt;
+3.使用硬链接和符合链接制作多个名称&lt;br&gt;
+4.搜索挂载的文件系统中的文件&lt;/p&gt;
+&lt;p&gt;1【填空题】将光盘临时挂载在/mnt/iso目录命令  mount  /dev/cdrom  /mnt/iso&lt;/p&gt;</summary>
     
     
     
@@ -160,15 +149,16 @@
     <updated>2021-04-23T13:34:12.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;p&gt;1【填空题】yum仓库的文件名应该为什么结尾。  .repo&lt;/p&gt;
-&lt;p&gt;1【填空题】清除yum缓存的命令  yum  clean </summary>
-        
-      
+&lt;p&gt;1【填空题】清除yum缓存的命令  yum  clean  all&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目录：从红帽和YUM软件包存储库下载、安装、更新和管理软件包&lt;br&gt;
+1.使用您的红帽账户注册系统，授权它们并使用已安装产品的软件更新&lt;br&gt;
+2.解释什么事RPM软件包，以及如何在红帽企业Linux系统上使用RPM软件包管理软件&lt;br&gt;
+3.使用yum命令查找、安装和更新软件包&lt;br&gt;
+4.启用和禁用红帽或第三方YUM存储库&lt;br&gt;
+5.检查和安装下载的软件包文件&lt;/p&gt;</summary>
     
     
     
@@ -189,14 +179,14 @@
     <updated>2021-04-23T12:57:40.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【填空题】tar命令中添加什么参数是创建归档文件(不需要加-） </summary>
-        
-      
+&lt;p&gt;1【填空题】tar命令中添加什么参数是创建归档文件(不需要加-）  c&lt;/p&gt;
+&lt;p&gt;1【填空题】tar命令中添加什么参数显示打包过程(不用带-）  v&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：归档文件并从一个系统复制文件到另一系统&lt;br&gt;
+1.使用tar创建新的压缩存档文件，并从现有的存档文件提前文件&lt;br&gt;
+2.将文件安全复制到运行sshd的远程系统，或从中复制文件&lt;br&gt;
+3.与远程副本安全地同步本地文件或目录的内容&lt;/p&gt;</summary>
     
     
     
@@ -215,15 +205,28 @@
     <updated>2021-04-23T12:37:15.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;p&gt;1【单选题】常用的稳定可靠的传输层协议是？  TCP&lt;/p&gt;
-&lt;p&gt;1【多选题】那些地址属于B类地址的私网地址   </summary>
-        
-      
+&lt;p&gt;1【多选题】那些地址属于B类地址的私网地址    AC&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;172.16.0.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;172.15.0.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C：&lt;/p&gt;
+&lt;p&gt;172.31.0.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;D：&lt;/p&gt;
+&lt;p&gt;172.33.0.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1【填空题】重启网络服务的命令  systemctl restart network&lt;/p&gt;</summary>
     
     
     
@@ -244,15 +247,11 @@
     <updated>2021-04-23T12:19:51.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;p&gt;1【填空题】syslog协议对于关于警告状况的优先级是  warning&lt;/p&gt;
-&lt;p&gt;1【填空题】logger命令加什么参数可以指定优先级 </summary>
-        
-      
+&lt;p&gt;1【填空题】logger命令加什么参数可以指定优先级  -p&lt;/p&gt;
+&lt;p&gt;1【填空题】查系统时间的命令  date&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;</summary>
     
     
     
@@ -273,15 +272,14 @@
     <updated>2021-04-23T11:48:31.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;p&gt;8:44 问题：常用的使用明文密码方式传输的网管工具是  telnet&lt;/p&gt;
-&lt;p&gt;【填空题】ssh的端口号为 </summary>
-        
-      
+&lt;p&gt;【填空题】ssh的端口号为  22&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：使用OpenSSH配置远程系统上的安全命令行访问&lt;br&gt;
+1.使用ssh登录远程系统，以便在shell提示符下运行命令&lt;br&gt;
+2.设置ssh，以允许使用私有身份验证秘钥文件进行安全的免密码登录&lt;br&gt;
+3.自定义sshd配置，以限制作为root直接登录或禁用基于密码的身份验证&lt;/p&gt;</summary>
     
     
     
@@ -300,15 +298,20 @@
     <updated>2021-04-23T10:31:25.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;p&gt;1【填空题】一般守护进程名称后面都会有一个什么字母？  d&lt;/p&gt;
-&lt;p&gt;1【判断题】如果重启进程，PID不会有变化  </summary>
-        
-      
+&lt;p&gt;1【判断题】如果重启进程，PID不会有变化   B&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;正确&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;错误&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2【填空题】使某个进程开机自启需要在systemctl后面加什么单词    enable&lt;/p&gt;</summary>
     
     
     
@@ -329,14 +332,28 @@
     <updated>2021-04-23T09:58:38.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【多选题】进程组成部分由哪些?  </summary>
-        
-      
+&lt;p&gt;1【多选题】进程组成部分由哪些?   ABCD&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;已分配内存的地址空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;安全属性，包括所有权凭据和特权&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C：&lt;/p&gt;
+&lt;p&gt;程序代码的一个或多个执行线程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;D：&lt;/p&gt;
+&lt;p&gt;进程状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1【填空题】查看现有作业的命令是？   jobs&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;</summary>
     
     
     
@@ -357,14 +374,37 @@
     <updated>2021-04-23T09:28:34.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【单选题】可读的权限的字母是？  </summary>
-        
-      
+&lt;p&gt;1【单选题】可读的权限的字母是？   B&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;d&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;r&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C：&lt;/p&gt;
+&lt;p&gt;w&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;D：&lt;/p&gt;
+&lt;p&gt;x&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1【判断题】root用户可以删除user1创建的文件      A&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;正确&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;错误&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -385,16 +425,19 @@
     <updated>2021-04-23T08:26:34.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;【填空题】创建用户的命令  useradd&lt;/li&gt;
-&lt;li&gt;填空题】root的UID等于多少   </summary>
-        
-      
+&lt;li&gt;填空题】root的UID等于多少    0&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：管理本地Linux用户和组，以及本地密码策略&lt;br&gt;
+1.解释Linux系统上用户和组的角色，以及计算机理解它们的方式&lt;br&gt;
+2.以超级用户运行命令，以管理Linux系统&lt;br&gt;
+3.创建、修改、锁定和删除本地定义的用户账户&lt;br&gt;
+4.创建、修改和删除本地定义的组账户&lt;br&gt;
+5.手动锁定账户，或者通过在阴影密码文件中设置密码过期策略来锁定&lt;/p&gt;
+&lt;p&gt;1【单选题】在rhel7上普通用户的uid从多少开始    B&lt;/p&gt;</summary>
     
     
     
@@ -417,14 +460,14 @@
     <updated>2021-04-23T07:58:24.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【填空题】vim中使用什么快捷键可以向左移动    </summary>
-        
-      
+&lt;p&gt;1【填空题】vim中使用什么快捷键可以向左移动     h&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：从命令行输出或在编辑器中创建、查看和编辑文本文件&lt;br&gt;
+1.将一个程序的文本输出重定向到文件或另一程序&lt;br&gt;
+2.从shell提示符使用文本编辑器编辑现有的文本文件，以及创建新文件&lt;br&gt;
+3.使用图形环境中运行的文本编辑器，从图形窗口复制文本到文本文件&lt;/p&gt;
+&lt;p&gt;1【单选题】vim中光标按什么字母键向下     B&lt;/p&gt;</summary>
     
     
     
@@ -445,14 +488,20 @@
     <updated>2021-04-23T07:26:15.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【判断题】man是一个帮助手册    </summary>
-        
-      
+&lt;p&gt;1【判断题】man是一个帮助手册     A&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;正确&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;错误&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：使用在线帮助系统和红帽支持实用工具解决问题&lt;/p&gt;</summary>
     
     
     
@@ -475,13 +524,43 @@
     <updated>2021-04-23T06:32:15.000Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;【填空题】创建目录的命令mkdir&lt;/li&gt;
+&lt;li&gt;【填空题】删除目录的命令rmdir&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：在从Bash shell提示符操作时，复制、移动、创建、删除和组织文件&lt;br&gt;
+识别Linux上终于目录的用途&lt;br&gt;
+使用绝对和相对路径名称指定文件&lt;br&gt;
+使用命令行实用工具创建、复制、移动和删除文件和目录&lt;br&gt;
+将shell扩展用作shell命令的参数，匹配一个或多个文件名&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;1【单选题】普通用户的家目录在那个目录下  B&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;/tmp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;/home&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C：&lt;/p&gt;
+&lt;p&gt;/var&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;D：&lt;/p&gt;
+&lt;p&gt;/root&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;【填空题】创建文件夹的命令  mkdir&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary>
     
     
     
@@ -502,20 +581,11 @@
     <updated>2021-04-23T04:32:15.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h1&gt;XShell中的配置&lt;/h1&gt;
 &lt;p&gt;窗口透明化&lt;/p&gt;
 &lt;p&gt;关闭自动更新&lt;/p&gt;
 &lt;p&gt;复制粘贴文本&lt;/p&gt;
-&lt;p&gt;隐藏上方菜单栏&lt;/p&gt;
-&lt;p&gt;多会话切换Alt+1或者ctrl+tab&lt;/p&gt;
-&lt;h1&gt;系统中的配置&lt;/h1&gt;
-&lt;h2 id=&quot;1-配置网络&quot;&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;隐藏上方菜单栏&lt;/p&gt;</summary>
     
     
     
@@ -536,16 +606,34 @@
     <updated>2021-04-22T16:00:00.000Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;【填空题】查找关键字文件在哪儿  whereis</summary>
-        
-      
+&lt;p&gt;【填空题】查找关键字文件在哪儿  whereis ls&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;【填空题】查找ls命令可执行文件在哪儿   which ls&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;【单选题】查看历史记录命令 A&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A：&lt;/p&gt;
+&lt;p&gt;history&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B：&lt;/p&gt;
+&lt;p&gt;pwd&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：登录Linux系统并使用shell运行简单的命令。&lt;br&gt;
+1.在Linux控制台使用Bash shell语法输入命令。&lt;br&gt;
+2.在GVONE桌面环境中启动应用。&lt;br&gt;
+3.借助Bash功能，使用较少的击键次数在shell提示符下运行命令。&lt;/p&gt;
+&lt;p&gt;【单选题】什么按键可以补全命令   A&lt;/p&gt;</summary>
     
     
     
@@ -567,7 +655,11 @@
     
     
     <summary type="html">&lt;h1&gt;欢迎到访：写在前面&lt;/h1&gt;
-&lt;p&gt;不知不觉，建站已有不少日子了，无论是内容还是界面，都逐渐丰富了起来。觉得有必要补充一篇类似于导言的文字，今天抽出点时间写一下，日后继续完善。&lt;/p&gt;</summary>
+&lt;p&gt;不知不觉，建站已有不少日子了，无论是内容还是界面，都逐渐丰富了起来。觉得有必要补充一篇类似于导言的文字，今天抽出点时间写一下，日后继续完善。&lt;/p&gt;
+&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;h1&gt;关于博客&lt;/h1&gt;
+&lt;p&gt;对于这个博客网站，可以把它看作一个技术博客，而我更多的把它看成一个自己的空间，所以偶尔也会加入一些学习和生活中的元素，此外，我会尽我所能提升文章的质量，在发布后也会不断地查漏补缺，小幅修正与大幅补充结合，使每篇文章尽可能更规范易懂、更丰富充实。&lt;br&gt;
+或许在这个移动端主导的时代，搭网站写博客的价值有所降低。但当我写了一段时间之后，发现驱使我写博客的动力不减反增。最大的收获就是我每写一篇文章就会不断地想把相关的知识彻底搞懂，这就不断促使我去深究（哪怕钻牛角尖），因此总能收获好多写之前根本没想到的内容。&lt;/p&gt;</summary>
     
     
     
