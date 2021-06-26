@@ -18,400 +18,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>红帽挑战赛初赛试题</title>
-    <url>/2021/24P3Z49/</url>
-    <content><![CDATA[<h2 id="笔试："><a class="header-anchor" href="#笔试：">¶</a>笔试：</h2>
-<h3 id="单选题，共34题，每题2分，共68分。"><a class="header-anchor" href="#单选题，共34题，每题2分，共68分。">¶</a>单选题，共34题，每题2分，共68分。</h3>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">1、哪个Linux命令可以一次显示一页内容？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>pause</li>
-<li>more</li>
-<li>cat</li>
-<li>grep</li>
-</ul>
-<span id="more"></span>
-<h3 id="单选题"><a class="header-anchor" href="#单选题">¶</a>单选题</h3>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">2、哪个Linux命令可以更改一个文件的权限？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>attrib</li>
-<li>change</li>
-<li>file</li>
-<li>chmod</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">3、怎样可以删除一个用户并同时删除用户的主目录？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>userdel -r</li>
-<li>rmuser -r</li>
-<li>deluser -r</li>
-<li>usermgr -r</li>
-</ul>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">4</span>、下面哪条命令可以把f<span class="number">1</span>.txt复制为f<span class="number">2</span>.txt?</span><br></pre></td></tr></table></figure>
-<ul>
-<li>copy f1.txt | f2.txt</li>
-<li>cat f1.txt &gt; f2.txt</li>
-<li>cat f1.txt | f2.txt</li>
-<li>cp f1.txt | f2.txt</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">5、哪个命令可以显示文件最后几行：</span><br></pre></td></tr></table></figure>
-<ul>
-<li>rear</li>
-<li>tail</li>
-<li>last</li>
-<li>tac</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">6、哪个命令可以快速切换到用户John的主目录下？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>cd @John</li>
-<li>cd #John</li>
-<li>cd &amp;John</li>
-<li>cd ~John</li>
-</ul>
-<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="number">7</span>、如何在文件中查找显示所有以<span class="string">&quot;*&quot;</span>打头的行？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>grep -n * file</li>
-<li>wc -l * &lt; file</li>
-<li>grep ‘^*’ file</li>
-<li>find * file</li>
-</ul>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="number">8</span>、在<span class="built_in">ps</span>命令中什么参数是用来显示所有用户的进程的？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>u</li>
-<li>a</li>
-<li>x</li>
-<li>b</li>
-</ul>
-<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">9、下列哪个命令可以删除一个非空子目录<span class="string">/tmp</span>？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>del /tmp/*</li>
-<li>rm -rf /tmp</li>
-<li>rm -rf /tmp/*</li>
-<li>rm -Ra /tmp/*</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">10、对所有用户的变量设置，应当放在哪个文件下？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>/etc/bashrc</li>
-<li>~/.bash_profile</li>
-<li>/etc/skel/.bashrc</li>
-<li>/etc/profile</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">11、Linux的源代码放在哪个目录？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>/etc</li>
-<li>/usr</li>
-<li>/usr/src</li>
-<li>/home</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">12、以下哪个命令不能显示文本文件的内容：</span><br></pre></td></tr></table></figure>
-<ul>
-<li>more</li>
-<li>join</li>
-<li>less</li>
-<li>tail</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">13、以下哪个命令可以建立一个新文件</span><br></pre></td></tr></table></figure>
-<ul>
-<li>chmod</li>
-<li>touch</li>
-<li>more</li>
-<li>cp</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">14、哪个命令可以在给定文件中查找与设定条件相符字符串：</span><br></pre></td></tr></table></figure>
-<ul>
-<li>gzip</li>
-<li>find</li>
-<li>grep</li>
-<li>sort</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">15、哪个命令可以改变文件所有者：</span><br></pre></td></tr></table></figure>
-<ul>
-<li>chmod</li>
-<li>touch</li>
-<li>chown</li>
-<li>cat</li>
-</ul>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="number">16</span>、当使用<span class="built_in">mount</span>进行设备或者文件系统挂载的时候，需要用到的设备位于哪个目录</span><br></pre></td></tr></table></figure>
-<ul>
-<li>/etc</li>
-<li>/dev</li>
-<li>/bin</li>
-<li>/home</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">17、哪个命令可以列出一个目录下的所有文件：</span><br></pre></td></tr></table></figure>
-<ul>
-<li>ls-a</li>
-<li>ls</li>
-<li>ls -l</li>
-<li>ls -d</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">18、按下哪个键能终止当前运行命令</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Ctrl -F</li>
-<li>Ctrl -C</li>
-<li>Ctrl -D</li>
-<li>Ctrl -B</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">19、可用哪个对某一命令进行详细了解</span><br></pre></td></tr></table></figure>
-<ul>
-<li>man</li>
-<li>cat</li>
-<li>ls</li>
-<li>dir</li>
-</ul>
-<figure class="highlight basic"><table><tr><td class="code"><pre><span class="line"><span class="number">20</span>、下面那个命令用来定义<span class="keyword">shell</span>的全局变量</span><br></pre></td></tr></table></figure>
-<ul>
-<li>exports</li>
-<li>exportfs</li>
-<li>export</li>
-<li>alias</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">21、哪个命令可以终止一个用户的所有进程</span><br></pre></td></tr></table></figure>
-<ul>
-<li>skillall</li>
-<li>killall</li>
-<li>skill</li>
-<li>kill</li>
-</ul>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="number">22</span>、在<span class="keyword">vi</span>编辑器中退出不保存的命令是？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>q</li>
-<li>w</li>
-<li>q!</li>
-<li>wq</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">23、哪个命令可以检测基本网络连接？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>route</li>
-<li>ifconfig</li>
-<li>ping</li>
-<li>netstat</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">24、下面哪个命令可以压缩部分文件：</span><br></pre></td></tr></table></figure>
-<ul>
-<li>tar -xzvf filename.tgz *</li>
-<li>tar -tzvf filename.tgz *</li>
-<li>tar -czvf filename.tgz *</li>
-<li>tar -dzvf filename.tgz *</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">25、什么命令解压缩tar文件？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>tar -tzvf filename.tgz</li>
-<li>tar -dzvf filename.tgz</li>
-<li>tar -xzvf filename.tgz</li>
-<li>tar -czvf filename.tgz</li>
-</ul>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">26</span>、Linux文件权限一共<span class="number">10</span>位长度,分成四段,第三段表示的内容是</span><br></pre></td></tr></table></figure>
-<ul>
-<li>其他用户的权限</li>
-<li>文件所有者所在组的权限</li>
-<li>文件所有者的权限</li>
-<li>文件类型</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">27、linux 怎么查看并对外开放端口</span><br></pre></td></tr></table></figure>
-<ul>
-<li>more /etc/sysconfig/iptables</li>
-<li>cat /etc/sysconfig/net-work</li>
-<li>ps aux</li>
-<li>vi /etc/profile</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">28、显示文件和目录由根目录开始的树形结构</span><br></pre></td></tr></table></figure>
-<ul>
-<li>pwd</li>
-<li>tree</li>
-<li>ln</li>
-<li>ls</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">29、Linux系统最少的挂载点有哪两个</span><br></pre></td></tr></table></figure>
-<ul>
-<li>一个是根挂载点home，另一个是swap</li>
-<li>一个是根挂载点user，另一个是boot</li>
-<li>一个是根挂载点boot，另一个是swap</li>
-<li>一个是根挂载点/，另一个是swap</li>
-</ul>
-<figure class="highlight coq"><table><tr><td class="code"><pre><span class="line"><span class="number">30</span>、<span class="built_in">top</span>命令的作用是</span><br></pre></td></tr></table></figure>
-<ul>
-<li>查看线程详情情况</li>
-<li>用于实时动态显示 Linux进程 的动态信息</li>
-<li>查看进程名称</li>
-<li>显示内存情况</li>
-</ul>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">31</span>、ISP分配给某公司的地址块为<span class="number">199.34.76.64</span>/<span class="number">28</span>，则该公司得到的地址数是</span><br></pre></td></tr></table></figure>
-<ul>
-<li>8</li>
-<li>16</li>
-<li>32</li>
-<li>32</li>
-</ul>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">32</span>、主机A的IP地址为<span class="number">220.17.33.24</span>/<span class="number">28</span>，而主机B的IP地址为<span class="number">220.17.33.100</span>/<span class="number">28</span>，两个主机互相ping不通，这时应该</span><br></pre></td></tr></table></figure>
-<ul>
-<li>改变主机A的地址为220.17.33.15</li>
-<li>改变主机B的地址为220.17.33.111</li>
-<li>改变子网掩码为26</li>
-<li>改变子网掩码为25</li>
-</ul>
-<figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="number">33</span>.DNS正向收索区的功能是将域名解析为<span class="built_in">IP</span>地址，windows系统中，用于测试该功能的命令是</span><br></pre></td></tr></table></figure>
-<ul>
-<li>nslookup</li>
-<li>arp</li>
-<li>netstat</li>
-<li>query</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">34、Linux 文件系统的文件都按其作用分门别类地放在相关的目录中，对于外部设备文件，一般应将其放在哪个目录中？</span><br></pre></td></tr></table></figure>
-<ul>
-<li>/bin</li>
-<li>/etc</li>
-<li>/dev</li>
-<li>/lib</li>
-</ul>
-<h3 id="判断题，共10题，每题2分，共20分"><a class="header-anchor" href="#判断题，共10题，每题2分，共20分">¶</a>判断题，共10题，每题2分，共20分</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1、<span class="built_in">umask</span>不可以修改。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<h3 id="判断题"><a class="header-anchor" href="#判断题">¶</a>判断题</h3>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">2、RedHat LINUX 安装时不能自动创建了根用户。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight xquery"><table><tr><td class="code"><pre><span class="line"><span class="number">3</span>、Linux 中的超级用户<span class="built_in">为root</span>,登陆时需要口令。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">4、<span class="built_in">pwd</span>命令可用于确定当前目录</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="number">5</span>、<span class="built_in">ps</span> <span class="literal">-u</span>命令可以查找出当前用户运行的所有进程的信息</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line"><span class="number">6</span>、为了防止误删除，设置rm<span class="comment">(删除指令)</span>确认删除选项是-R</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">7、<span class="keyword">ls</span>命令可以统计文件系统中未用的磁盘空间</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">8、df -h可以查看用户使用了多少磁盘空间</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">9</span>、在Linux系统中，硬件设备大部分是安装在<span class="built_in">bin</span>目录下的</span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">10</span>、系统默认的进程启动后的nice值为<span class="number">10</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>正确</li>
-<li>错误</li>
-</ul>
-<h3 id="多选题，共4题，每题3分，共12分"><a class="header-anchor" href="#多选题，共4题，每题3分，共12分">¶</a>多选题，共4题，每题3分，共12分</h3>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">1、在创建Linux分区时，一定要创建</span><br></pre></td></tr></table></figure>
-<ul>
-<li>FAT</li>
-<li>NTFS</li>
-<li>SWAP</li>
-<li>根分区</li>
-</ul>
-<h3 id="多选题"><a class="header-anchor" href="#多选题">¶</a>多选题</h3>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">2、哪些命令不能讲普通用户转为超级用户</span><br></pre></td></tr></table></figure>
-<ul>
-<li>super</li>
-<li>password</li>
-<li>su</li>
-<li>tar</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">3、下列内核版本不稳定的是</span><br></pre></td></tr></table></figure>
-<ul>
-<li>3.10.0</li>
-<li>3.11.4</li>
-<li>3.10.5</li>
-<li>3.8.5</li>
-</ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">4、下列设备不属于块设备的是</span><br></pre></td></tr></table></figure>
-<ul>
-<li>键盘</li>
-<li>游戏杠</li>
-<li>终端</li>
-<li>硬盘</li>
-</ul>
-<h2 id="机试："><a class="header-anchor" href="#机试：">¶</a>机试：</h2>
-<p>账号root 密码123456</p>
-<p>在 servera 上执行以下任务</p>
-<h3 id="1-配置网络设置"><a class="header-anchor" href="#1-配置网络设置">¶</a>1. 配置网络设置</h3>
-<p>在servera上执行</p>
-<p>将servera配置为具有以下网络配置：</p>
-<p>l 主机名： servera</p>
-<p>l IP地址： 192.168.159.111</p>
-<p>l 网关： 192.168.159.1</p>
-<p>l 名称服务器： 192.168.159.2</p>
-<h3 id="2-SElinux-必须运行在Enforcing模式下。"><a class="header-anchor" href="#2-SElinux-必须运行在Enforcing模式下。">¶</a>2. SElinux 必须运行在Enforcing模式下。</h3>
-<h3 id="3-创建用户帐户"><a class="header-anchor" href="#3-创建用户帐户">¶</a>3. 创建用户帐户</h3>
-<p>在servera上执行</p>
-<p>创建下列用户、 组和组成员资格：</p>
-<p>l 名为admins的组</p>
-<p>l 用户lucy， 作为次要组从属于admins</p>
-<p>l 用户harry， 作为次要组还从属于admins</p>
-<p>l 用户jams， 无权访问系统上的交互式shell且不是admins的成员</p>
-<p>l lucy、 harry和jams的密码应当都是redhat</p>
-<h3 id="4-配置-cron-作业"><a class="header-anchor" href="#4-配置-cron-作业">¶</a>4. 配置 cron 作业</h3>
-<p>在servera上执行</p>
-<p>用户lucy必须配置一个cron作业， 该作业每隔2分钟（ 当地时间） 运行</p>
-<p>且执行： /bin/echo hiya</p>
-<h3 id="5-创建协作目录"><a class="header-anchor" href="#5-创建协作目录">¶</a>5. 创建协作目录</h3>
-<p>在servera上执行</p>
-<p>创建具有以下特征的协作目录/home/test</p>
-<p>l /home/test的组所有权是admins</p>
-<p>l 目录应当可被admins的成员读取、 写入和访问， 但任何其他用户不具这些权限。（当然， root用户有权访问系统上的所有文件和目录）</p>
-<p>l /home/test中创建的文件自动将组所有权设置到admins组</p>
-<h3 id="6-配置-var-tmp-fstab-权限"><a class="header-anchor" href="#6-配置-var-tmp-fstab-权限">¶</a>6. 配置 /var/tmp/fstab 权限</h3>
-<p>在servera上执行</p>
-<p>将文件/etc/fstab复制到/var/tmp/fstab。 配置/var/tmp/fstab的权限以满足如下条件：</p>
-<p>l 文件/var/tmp/fstab由root用户所有</p>
-<p>l 文件/var/tmp/fstab属于组root</p>
-<p>l 文件/var/tmp/fstab应不能被任何人执行</p>
-<p>l 用户lucy能够读取和写入/var/tmp/fstab</p>
-<p>l 用户harry无法写入或读取/var/tmp/fstab</p>
-<p>l 所有其他用户（ 当前或未来） 能够读取/var/tmp/fstab</p>
-<h3 id="7-配置用户帐户"><a class="header-anchor" href="#7-配置用户帐户">¶</a>7. 配置用户帐户</h3>
-<p>在servera上执行</p>
-<p>配置用户jacks， 用户ID为3533。 此用户的密码应当为redhat。</p>
-<h3 id="8-查找文件"><a class="header-anchor" href="#8-查找文件">¶</a>8. 查找文件</h3>
-<p>在servera上执行</p>
-<p>查找用户lucy所有的所有文件并将其副本放入/root/findfiles目录。</p>
-<h3 id="9-查找字符串"><a class="header-anchor" href="#9-查找字符串">¶</a>9. 查找字符串</h3>
-<p>在servera上执行</p>
-<p>l 查找文件/boot/grub2/grub.cfg中包含字符串save 的所有行。</p>
-<p>l 将所有这些行的副本按原始顺序放在文件/root/list中。</p>
-<p>l /root/list不得包含空行， 且所有行必须是/boot/grub2/grub.cfg中原始行的确切副本.</p>
-<h3 id="10-创建存档"><a class="header-anchor" href="#10-创建存档">¶</a>10. 创建存档</h3>
-<p>在servera上执行</p>
-<p>创建一个名为/root/backup.tar.gz的tar存档， 其应包含/usr/local的内容。</p>
-<p>该tar存档必须使用gzip进行压缩</p>
-<h3 id="11-配置系统调优"><a class="header-anchor" href="#11-配置系统调优">¶</a>11. 配置系统调优</h3>
-<p>在servera上执行</p>
-<p>为您的系统tuned配置集设置为“running KVM guests”并将它设为默认设置</p>
-<p>查看成绩执行脚本</p>
-<p>sh  /boot/grade.sh</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>redhat</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Javee</title>
     <url>/2021/HDAEA4/</url>
     <content><![CDATA[<h1>解决项目java代码显示中文乱码Eclipse导入项目java文件中文乱码</h1>
@@ -526,67 +132,6 @@
       </tags>
   </entry>
   <entry>
-    <title>网络编程</title>
-    <url>/2021/3V4J77V/</url>
-    <content><![CDATA[<h1>解决代码C4996问题</h1>
-<p>严重性	代码	说明	项目	文件	行	禁止显示状态<br>
-错误	C4996	‘gethostbyname’: Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings	Project1	d:\visual studio\project1\project1\p2-4.cpp	31</p>
-<p>VS编译代码是遇到如上问题，vs准备弃用strcpy的，安全性较低，所以微软提供了strcpy_s来代替，如果想继续使用strcpy的，main前面加上</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> <span class="meta-keyword">warning</span>(disable:4996)</span></span><br></pre></td></tr></table></figure>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181229541.png" alt="image-20200918181229541"></p>
-<p>或者</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/20180506223431466" alt="img"></p>
-<p>解决方案：在main()函数中的return前面添加system(“pause”)，其中头文件中添加#include&lt;stdlib.h&gt;。</p>
-<h1>解决“const char *”类型的值不能用于初始化“char *”类型的实体</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181912423.png" alt="image-20200918181912423"></p>
-<p>用强制转换</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181940363.png" alt="image-20200918181940363"></p>
-<h1>error LNK2019: 无法解析的外部符号 WinMain，该符号在函数 &quot;int __cdecl invoke_main(void)”中被引用</h1>
-<p>问题描述：<img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112159738.png" alt="image-20200925112159738"></p>
-<p>解决方案：</p>
-<p>二，原因及解决办法<br>
-产生这个问题的真正原因是c语言运行时找不到适当的程序入口函数，</p>
-<p>一般情况下，如果是windows程序，那么WinMain是入口函数，在VS2017中新建项目为“win32项目”</p>
-<p>如果是dos控制台程序，那么main是入口函数，在VS2017中新建项目为“win32控制台应用程序”</p>
-<p>而如果入口函数指定不当，很显然c语言运行时找不到配合函数，它就会报告错误。</p>
-<p>修改设置适应你的需求</p>
-<p>如果是windows程序：</p>
-<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
-<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_CONSOLE, 添加_WINDOWS.</p>
-<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为Windows(/SUBSYSTEM:WINDOWS)</p>
-<p>如果是控制台程序：</p>
-<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
-<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_WINDOWS, 添加_CONSOLE.</p>
-<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为CONSOLE(/SUBSYSTEM:CONSOLE)</p>
-<p>即：</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112238834.png" alt="image-20200925112238834"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112255855.png" alt="image-20200925112255855"></p>
-<p>_CONSOLE控制台改为窗体_WINDOWS</p>
-<p>然后再链接器中找到系统：把控制台改成窗口</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112450551.png" alt="image-20200925112450551"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112523127.png" alt="image-20200925112523127"></p>
-<p>问题解决：</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112546860.png" alt="image-20200925112546860"></p>
-<h1>vs2010显示行号</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115454664.png" alt="image-20200925115454664"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115527639.png" alt="image-20200925115527639"></p>
-<h1>无法查找或打开PDB文件错误</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201016105325241.png" alt="image-20201016105325241"></p>
-<h1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100326958.png" alt="image-20201106100326958"></p>
-<p>在C盘中找到cvtres.exe文件把最新的替换到VS目录下</p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100433205.png" alt="image-20201106100433205"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100548345.png" alt="image-20201106100548345"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100624598.png" alt="image-20201106100624598"></p>
-<h1>解决平台工具集问题</h1>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093139932.png" alt="image-20201204093139932"></p>
-<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093358149.png" alt="image-20201204093358149"></p>
-]]></content>
-      <categories>
-        <category>网络编程</category>
-      </categories>
-  </entry>
-  <entry>
     <title>python</title>
     <url>/2021/2JD9E5R/</url>
     <content><![CDATA[<h1>列表List</h1>
@@ -641,400 +186,6 @@
       </categories>
   </entry>
   <entry>
-    <title>第一章第十四节</title>
-    <url>/2021/1TC64GD/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>填空题】什么命令以递归的方式显示当前目录树中所有的文件的大小  du</p>
-<p>【填空题】通过什么命令创建连接   ln</p>
-<p>课后：目标：访问和检查红帽企业Linux系统上的现有文件系统<br>
-1.访问Linux文件系统层次结构<br>
-2.访问文件系统的内容<br>
-3.使用硬链接和符合链接制作多个名称<br>
-4.搜索挂载的文件系统中的文件</p>
-<p>1【填空题】将光盘临时挂载在/mnt/iso目录命令  mount  /dev/cdrom  /mnt/iso</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141657.png" alt="image-20210424164652431"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141700.png" alt="image-20210424164732196"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141704.png" alt="image-20210424164855898"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141707.png" alt="image-20210424164904677"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141711.png" alt="image-20210424164934839"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141717.png" alt="image-20210424165055123"></p>
-<h3 id="挂载或卸载文件系统"><a class="header-anchor" href="#挂载或卸载文件系统">¶</a>挂载或卸载文件系统</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141721.png" alt="image-20210424165150696"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141724.png" alt="image-20210424165305905"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141728.png" alt="image-20210424165354659"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141732.png" alt="image-20210424165415567"></p>
-<h3 id="制作文件间的链接"><a class="header-anchor" href="#制作文件间的链接">¶</a>制作文件间的链接</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141735.png" alt="image-20210424165554193"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141738.png" alt="image-20210424165710172"></p>
-<p>【填空题】通过什么命令创建连接  ln</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141742.png" alt="image-20210424170011375"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141746.png" alt="image-20210424170115513"></p>
-<h3 id="查找文件中的文件"><a class="header-anchor" href="#查找文件中的文件">¶</a>查找文件中的文件</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141749.png" alt="image-20210424170204042"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141752.png" alt="image-20210424170350589"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141755.png" alt="image-20210424170413586"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141758.png" alt="image-20210424170513467"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141801.png" alt="image-20210424170556369"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141806.png" alt="image-20210424170630134"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141809.png" alt="image-20210424170653630"></p>
-<p>【填空题】将光盘临时挂载在/mnt/iso目录命令</p>
-<p>mount /dev/cdrom /mnt/iso  或者mount /dev/sr0 /mnt/iso</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章第十三节</title>
-    <url>/2021/31YW2V8/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>1【填空题】yum仓库的文件名应该为什么结尾。  .repo</p>
-<p>1【填空题】清除yum缓存的命令  yum  clean  all</p>
-<p>课后：</p>
-<p>目录：从红帽和YUM软件包存储库下载、安装、更新和管理软件包<br>
-1.使用您的红帽账户注册系统，授权它们并使用已安装产品的软件更新<br>
-2.解释什么事RPM软件包，以及如何在红帽企业Linux系统上使用RPM软件包管理软件<br>
-3.使用yum命令查找、安装和更新软件包<br>
-4.启用和禁用红帽或第三方YUM存储库<br>
-5.检查和安装下载的软件包文件</p>
-<p>1【填空题】使用yum安装httpd。  yum  install httpd</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141524.png" alt="image-20210424161219211"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141528.png" alt="image-20210424161758698"></p>
-<p>【填空题】yum仓库的文件名应该为什么结尾。  .repo</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141541.png" alt="image-20210424161912854"></p>
-<h3 id="使用yum管理软件更新"><a class="header-anchor" href="#使用yum管理软件更新">¶</a>使用yum管理软件更新</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141544.png" alt="image-20210424162421534"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141548.png" alt="image-20210424162704757"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141552.png" alt="image-20210424162818206"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141557.png" alt="image-20210424163005122"></p>
-<p>【填空题】清除yum缓存的命令 yum clean all</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141603.png" alt="image-20210424163516977"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141607.png" alt="image-20210424163716142"></p>
-<h3 id="启动yum软件存储库"><a class="header-anchor" href="#启动yum软件存储库">¶</a>启动yum软件存储库</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141610.png" alt="image-20210424163948518"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141613.png" alt="image-20210424164037889"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141616.png" alt="image-20210424164130609"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141619.png" alt="image-20210424164147019"></p>
-<h3 id="检查rpm软件包文件"><a class="header-anchor" href="#检查rpm软件包文件">¶</a>检查rpm软件包文件</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141622.png" alt="image-20210424164354886"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141626.png" alt="image-20210424164442466"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章第十二节</title>
-    <url>/2021/27F1A1T/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>1【填空题】tar命令中添加什么参数是创建归档文件(不需要加-）  c</p>
-<p>1【填空题】tar命令中添加什么参数显示打包过程(不用带-）  v</p>
-<p>课后：</p>
-<p>目标：归档文件并从一个系统复制文件到另一系统<br>
-1.使用tar创建新的压缩存档文件，并从现有的存档文件提前文件<br>
-2.将文件安全复制到运行sshd的远程系统，或从中复制文件<br>
-3.与远程副本安全地同步本地文件或目录的内容</p>
-<p>1【单选题】bzip2压缩加什么选项   A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>j</p>
-</li>
-<li>
-<p>B：</p>
-<p>J</p>
-</li>
-<li>
-<p>C：</p>
-<p>x</p>
-</li>
-</ul>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141249.png" alt="image-20210424153855723"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141303.png" alt="image-20210424154021392"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141307.png" alt="image-20210424154223488"></p>
-<p>root用户会还原为原来的权限</p>
-<p>普通用户为用户的权限</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141311.png" alt="image-20210424154452968"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141315.png" alt="image-20210424154859735"></p>
-<p>【填空题】tar命令中添加什么参数是创建归档文件(不需要加-） c</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141343.png" alt="image-20210424155033795"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141347.png" alt="image-20210424155214990">【填空题】tar命令中添加什么参数显示打包过程(不用带-） v</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141351.png" alt="image-20210424155408782"></p>
-<h3 id="在系统间安全复制的方法"><a class="header-anchor" href="#在系统间安全复制的方法">¶</a>在系统间安全复制的方法</h3>
-<p>scp 和ssh-copy-id 相似</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141358.png" alt="image-20210424155454492"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141406.png" alt="image-20210424155718415"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141426.png" alt="image-20210424160114643"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141430.png" alt="image-20210424160203660"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141433.png" alt="image-20210424160300171"></p>
-<h3 id="在系统间安全地同步文件"><a class="header-anchor" href="#在系统间安全地同步文件">¶</a>在系统间安全地同步文件</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141437.png" alt="image-20210424160415030"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141441.png" alt="image-20210424160542463"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141446.png" alt="image-20210424160717913"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章第十一节</title>
-    <url>/2021/2ZECH72/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>1【单选题】常用的稳定可靠的传输层协议是？  TCP</p>
-<p>1【多选题】那些地址属于B类地址的私网地址    AC</p>
-<ul>
-<li>
-<p>A：</p>
-<p>172.16.0.1</p>
-</li>
-<li>
-<p>B：</p>
-<p>172.15.0.1</p>
-</li>
-<li>
-<p>C：</p>
-<p>172.31.0.1</p>
-</li>
-<li>
-<p>D：</p>
-<p>172.33.0.1</p>
-</li>
-</ul>
-<p>1【填空题】重启网络服务的命令  systemctl restart network</p>
-<p>课后：</p>
-<p>目标：在红帽企业Linux系统上配置基本的IPv网络<br>
-1.解释计算机网络的基本概念<br>
-2.使用基本的实用工具测试和查看的当前的网络配置<br>
-3.使用nmcli和NerworkManager管理网络设置和设备<br>
-4.通过编辑配置文件修改网络设置<br>
-5.配置和测试系统主机名和名称解析</p>
-<p>1【填空题】查看路由表的命令   ip route</p>
-<p>2【填空题】查看ip地址  ip addr</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111528.png" alt="image-20210423224104931"></p>
-<p>OSI：国际标准化组织 (ISO)提出的一个试图使各种 计算机 在世界范围内互连为 网络 的标准框架，简称OSI</p>
-<p>七层网络模型：</p>
-<p>物理层</p>
-<p>数据链路层</p>
-<p>网络层</p>
-<p>传输层</p>
-<p>会话层</p>
-<p>表示层</p>
-<p>应用层</p>
-<p>TCP/IP：</p>
-<p>应用层</p>
-<p>传输层</p>
-<p>网络层</p>
-<p>网络接口层			DMAC | SMAC | TYPE |DATA |FCS</p>
-<p>看上层0X0800  IP</p>
-<p>​			0X0806  ARP</p>
-<p>fcs：完整性校验</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111534.png" alt="image-20210423230231433"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111537.png" alt="image-20210423230240004"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111541.png" alt="image-20210424145236758"></p>
-<h3 id="验证网络配置"><a class="header-anchor" href="#验证网络配置">¶</a>验证网络配置</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111545.png" alt="image-20210424145256168"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111549.png" alt="image-20210424145327145"></p>
-<p>【多选题】那些地址属于B类地址的私网地址  AD</p>
-<ul>
-<li>
-<p>A：</p>
-<p>172.16.0.1</p>
-</li>
-<li>
-<p>B：</p>
-<p>172.15.0.1</p>
-</li>
-<li>
-<p>C：</p>
-<p>172.31.0.1</p>
-</li>
-<li>
-<p>D：</p>
-<p>172.33.0.1</p>
-</li>
-</ul>
-<p><strong>私网ip地址的范围：</strong></p>
-<p>A类地址：10.0.0.0～10.255.255.255</p>
-<p>B类地址：172.16.0.0 ～172.31.255.255</p>
-<p>C类地址：192.168.0.0～192.168.255.255</p>
-<h3 id="使用nmcli配置网络"><a class="header-anchor" href="#使用nmcli配置网络">¶</a>使用nmcli配置网络</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111553.png" alt="image-20210424150131635"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111557.png" alt="image-20210424150151167"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111600.png" alt="image-20210424150424209"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111604.png" alt="image-20210424150456996"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111608.png" alt="image-20210424150651651"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111611.png" alt="image-20210424151134040"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111615.png" alt="image-20210424151230050"></p>
-<p>修改开机自启动</p>
-<p>nmcli con mod joker connectio.autoconnect yes</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111618.png" alt="image-20210424151512583"></p>
-<p>1【填空题】重启网络服务的命令  systemctl restart network  /nmcli con reload</p>
-<h3 id="编辑网络配置"><a class="header-anchor" href="#编辑网络配置">¶</a>编辑网络配置</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111622.png" alt="image-20210424153026432"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111626.png" alt="image-20210424153046429"></p>
-<h3 id="配置主机名和名称解析"><a class="header-anchor" href="#配置主机名和名称解析">¶</a>配置主机名和名称解析</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111630.png" alt="image-20210424153109602"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111634.png" alt="image-20210424153420078"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111637.png" alt="image-20210424153430313"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章第十节</title>
-    <url>/2021/129EEBE/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>1【填空题】syslog协议对于关于警告状况的优先级是  warning</p>
-<p>1【填空题】logger命令加什么参数可以指定优先级  -p</p>
-<p>1【填空题】查系统时间的命令  date</p>
-<p>课后：</p>
-<p>目标：查找和准确解读相关的系统日志文件，以用于故障排除<br>
-1.说明红帽企业Linux7中的基本系统日志架构<br>
-2.解读相关系统日志文件中的条目，以排除故障或查看系统状态<br>
-3.查找和解读systemd日志中的条目，以排除故障或查看系统状态<br>
-4.配置systemd-jourmald，将日志存储在磁盘而不是内存中<br>
-5.维护准确的时间同步和时区配置，确保系统日志中的时间戳正确无误</p>
-<p>1【填空题】安全和身份验证相关的消息和错误的日志文件是？   /var/log/secure</p>
-<p>2【填空题】与定期执行任务相关的日志文件是？  /var/log/cron</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111236.png" alt="image-20210422230442727"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111240.png" alt="image-20210422230958897"></p>
-<h3 id="查看系统日志文件"><a class="header-anchor" href="#查看系统日志文件">¶</a>查看系统日志文件</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111245.png" alt="image-20210422231229065"></p>
-<p>xxx.debug  /var/**</p>
-<p>某某服务的debug存储在后面这个文件里面  .的意思是大于等于</p>
-<p>.=  代表如果是debug就存在里面，不是的话就不要</p>
-<p>！=  代表除了debug以外都放在这里面</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111252.png" alt="image-20210422231659937"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111301.png" alt="image-20210422231814829"></p>
-<p>virsh  list  命令用来查看当前服务器上处于运行中的虚拟机实例。</p>
-<h3 id="注意事项"><a class="header-anchor" href="#注意事项">¶</a>注意事项</h3>
-<p>virsh list 命令只能查看状态是运行中的虚拟机实例，其余状态的虚拟机无法查看。</p>
-<p>ll -h /var/log/     -h显示大小<img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111307.png" alt="image-20210422232649686"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111312.png" alt="image-20210422232815055"></p>
-<p>每过一个周期messages会给这个日志加上一个日期，可以在写新的日志文件</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111317.png" alt="image-20210422232759100"></p>
-<p>1【填空题】logger命令加什么参数可以指定优先级  -p</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111321.png" alt="image-20210422233149339"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111325.png" alt="image-20210422233237803"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111328.png" alt="image-20210422233312522"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111332.png" alt="image-20210422233452721"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111336.png" alt="image-20210422233512494"></p>
-<h3 id="保存systemd日志"><a class="header-anchor" href="#保存systemd日志">¶</a>保存systemd日志</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111339.png" alt="image-20210422233624594"></p>
-<p>使用journal -b可以查看上一次启动的日志文件</p>
-<p>查看某个进程的日志</p>
-<p>systemctl status sshd</p>
-<h3 id="保存准确的时间"><a class="header-anchor" href="#保存准确的时间">¶</a>保存准确的时间</h3>
-<p>回忆：rht-vmctl</p>
-<p>fullreset是通过下载镜像才重置，比较慢</p>
-<p>reset是直接回复快照会比较快</p>
-<p>1【填空题】查系统时间的命令  date</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111344.png" alt="image-20210423172011343"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111347.png" alt="image-20210423172238770"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111351.png" alt="image-20210423172250238"></p>
-<p>UTC标准时间</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111356.png" alt="image-20210423223444467"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111400.png" alt="image-20210423223550728"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章第九节</title>
-    <url>/2021/30TA75A/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>8:44 问题：常用的使用明文密码方式传输的网管工具是  telnet</p>
-<p>【填空题】ssh的端口号为  22</p>
-<p>课后：</p>
-<p>目标：使用OpenSSH配置远程系统上的安全命令行访问<br>
-1.使用ssh登录远程系统，以便在shell提示符下运行命令<br>
-2.设置ssh，以允许使用私有身份验证秘钥文件进行安全的免密码登录<br>
-3.自定义sshd配置，以限制作为root直接登录或禁用基于密码的身份验证</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111120.png" alt="image-20210420192835964"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111124.png" alt="image-20210420193100488"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111128.png" alt="image-20210420193548202"></p>
-<p>基于ssh密钥的身份认证</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111132.png" alt="image-20210420194730337"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111136.png" alt="image-20210420194855381"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111142.png" alt="image-20210422225805990"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111146.png" alt="image-20210422225821178"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111150.png" alt="image-20210422230130551"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章第八节</title>
-    <url>/2021/2XPGFFN/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>1【填空题】一般守护进程名称后面都会有一个什么字母？  d</p>
-<p>1【判断题】如果重启进程，PID不会有变化   B</p>
-<ul>
-<li>
-<p>A：</p>
-<p>正确</p>
-</li>
-<li>
-<p>B：</p>
-<p>错误</p>
-</li>
-</ul>
-<p>2【填空题】使某个进程开机自启需要在systemctl后面加什么单词    enable</p>
-<p>课后：</p>
-<p>目录：使用systemd控制和监控网络服务于系统守护进程<br>
-1.列出由systemd服务启动的系统守护进程和网络服务，以及套接字单元<br>
-2.使用systemctl控制系统守护进程和网络服务</p>
-<p>1【填空题】查看sshd进程状态命令  systemctl status sshd</p>
-<p>2【填空题】重启network进程  systemctl restart network</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110959.png" alt="image-20210420184700713"></p>
-<p>五元组，，</p>
-<p>linux中有个acl为访问控制列表，对文件或者用户为一组</p>
-<p>网路中有个acl为阻止某些流量</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111004.png" alt="image-20210420185201130"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111007.png" alt="image-20210420185316773"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111011.png" alt="image-20210420185610023"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111014.png" alt="image-20210420185959201"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111018.png" alt="image-20210420190058910"></p>
-<h3 id="控制系统服务"><a class="header-anchor" href="#控制系统服务">¶</a>控制系统服务</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111022.png" alt="image-20210420190333698"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111026.png" alt="image-20210420190531243"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111029.png" alt="image-20210420190637943"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111034.png" alt="image-20210420190849738"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第一章第七节</title>
     <url>/2021/16065DP/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
@@ -1086,6 +237,713 @@
 <p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110726.png" alt="image-20210420184136449"></p>
 <p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110730.png" alt="image-20210420184201511"></p>
 <p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110736.png" alt="image-20210420184529013"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第九节</title>
+    <url>/2021/30TA75A/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>8:44 问题：常用的使用明文密码方式传输的网管工具是  telnet</p>
+<p>【填空题】ssh的端口号为  22</p>
+<p>课后：</p>
+<p>目标：使用OpenSSH配置远程系统上的安全命令行访问<br>
+1.使用ssh登录远程系统，以便在shell提示符下运行命令<br>
+2.设置ssh，以允许使用私有身份验证秘钥文件进行安全的免密码登录<br>
+3.自定义sshd配置，以限制作为root直接登录或禁用基于密码的身份验证</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111120.png" alt="image-20210420192835964"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111124.png" alt="image-20210420193100488"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111128.png" alt="image-20210420193548202"></p>
+<p>基于ssh密钥的身份认证</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111132.png" alt="image-20210420194730337"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111136.png" alt="image-20210420194855381"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111142.png" alt="image-20210422225805990"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111146.png" alt="image-20210422225821178"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111150.png" alt="image-20210422230130551"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第一节</title>
+    <url>/2021/1FBDEJR/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<ol>
+<li>
+<p>【填空题】查找关键字文件在哪儿  whereis ls</p>
+</li>
+<li>
+<p>【填空题】查找ls命令可执行文件在哪儿   which ls</p>
+</li>
+<li>
+<p>【单选题】查看历史记录命令 A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>history</p>
+</li>
+<li>
+<p>B：</p>
+<p>pwd</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>课后：</p>
+<p>目标：登录Linux系统并使用shell运行简单的命令。<br>
+1.在Linux控制台使用Bash shell语法输入命令。<br>
+2.在GVONE桌面环境中启动应用。<br>
+3.借助Bash功能，使用较少的击键次数在shell提示符下运行命令。</p>
+<p>【单选题】什么按键可以补全命令   A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>TAB键</p>
+</li>
+<li>
+<p>B：</p>
+<p>回车键</p>
+</li>
+<li>
+<p>C：</p>
+<p>空格键</p>
+</li>
+</ul>
+<p>基于foundationX，在此环境中，共有3台虚拟机，分别为classroom，serverX，desktopX</p>
+<ol>
+<li>classroom:上课环境，包含：DNS服务器、NTP服务器、DHCP服务器、HTTP服务器等</li>
+<li>serverX：作为服务端的练习环境</li>
+<li>desktopX：作为客户端的练习环境</li>
+</ol>
+<p>关于虚拟机的控制：</p>
+<p>rht-vmctl fullreset desktop</p>
+<p>fullreset 恢复较慢</p>
+<p>reset直接回复快照，恢复较快</p>
+<p>KVM虚拟化管理工具：</p>
+<p>virt-manager</p>
+<p>virsh list</p>
+<p>virsh list --all</p>
+<p>virsh start server/desktop</p>
+<p>virsh shutdown desktop</p>
+<p>ssh:远程连接</p>
+<p>​	ssh root@ip地址</p>
+<p>关于虚拟机的</p>
+<p>virsh</p>
+<h3 id="1-1-linux内核"><a class="header-anchor" href="#1-1-linux内核">¶</a>1.1. linux内核</h3>
+<p>查看linux内核版本的命令：</p>
+<p>uname -a</p>
+<p>uname -r</p>
+<p>#注意：linux版本号主要看主版本号和次版本号，次版本号为偶数，表示稳定版，奇数表示测试版</p>
+<p>linux基于模块化，比如：驱动当做一个模块的方式加载</p>
+<p>lsmod | grep usb_storage</p>
+<p>#可以发现，默认没有加载usb驱动，当插入一个U盘，就自动加载了</p>
+<h3 id="1-2-shell"><a class="header-anchor" href="#1-2-shell">¶</a>1.2 shell</h3>
+<p>linux不是系统，是个内核，加上CLI等才为系统</p>
+<p>因为内核不提供和用户的交互功能，所以需要一个程序提供这种功能，这种程序分为两种：命令行（CLI）和图形界面（GUI），在linux提供CLI的交互程序，我们称之为shell</p>
+<p>cat /etc/shells  #可以看到多种shell，对于红帽系统来说，默认采用的是bash这个shell</p>
+<p>chsh -l #查看系统所有的shell</p>
+<p>echo $SHELL #查看当前使用的shell</p>
+<p>ps #ps命令用于查看当前进程，可以发现，有一个bash进程</p>
+<ol>
+<li>打开一个终端就可以打开一个shell</li>
+<li>得到一个命令行界面，就触发一个shell</li>
+</ol>
+<p>ls /dev/可以看到登录方式</p>
+<p>触发一个shell，可以得到一个提示符：</p>
+<p>登录用户名@主机名 当前目录</p>
+<ul>
+<li>#表示的是root用户</li>
+<li>$表示的是普通用户</li>
+<li>方括号里的提示符是由PS1变量展示</li>
+</ul>
+<p>echo $PS1 #查看命令提示符的格式</p>
+<p>echo $$  #查看当前shell的ID</p>
+<p>图形界面中</p>
+<p>ctrl+alt+F2 ：切换成了命令行界面 第二个tty</p>
+<p>ctrl+alt+F1:默认的图形界面登录</p>
+<p>可以通过hostname命令查看主机名</p>
+<p>~ 代表当前用户的家目录</p>
+<h3 id="1-3终端"><a class="header-anchor" href="#1-3终端">¶</a>1.3终端</h3>
+<p>物理终端：一个键盘、一个鼠标、一个显示器就是一个物理终端</p>
+<p>​		设备文件：/dev/console</p>
+<p>虚拟终端（tty）：附加在物理终端之上，以软件方式虚拟出来的终端</p>
+<p>​		设备文件：/dev/tty</p>
+<p>模拟终端（pts）: 纯软件实现的终端，比如：在图形界面打开的terminal，使用SSH、telnet等远程打开的界面。</p>
+<p>​		设备文件：/dev/pts/*</p>
+<p>系统启动过程中，以物理终端提供</p>
+<p>系统启动之后，就以虚拟终端提供</p>
+<p><strong>虚拟终端切换</strong></p>
+<p>ctrl+alt+f</p>
+<ul>
+<li>如果有图形环境，共有六个控制台，图形界面运行在第一个；文本界面运行在第二至第六个。</li>
+<li>如果没有线图形界面，则只有5个细腻控制台，全是文本界面。</li>
+<li>提示：rhel5之前的版本，都有7个虚拟控制台，前6个为文本界面，第7个为图形界面。</li>
+</ul>
+<p>tty  #查看当前终端设备</p>
+<p>who  #查看有哪些用户登录到当前系统</p>
+<p>echo aaa &gt; /dev/tty2  #就会在tty2上显示这串字符</p>
+<p>echo hello &gt; /dev/pts/5  #在pts5上显示hello</p>
+<h3 id="1-4命令行"><a class="header-anchor" href="#1-4命令行">¶</a>1.4命令行</h3>
+<p>命令 【选项】【参数】</p>
+<p>命令：</p>
+<p>​		所谓命令就是一个可执行文件，文件本身包含了可执行的程序代码</p>
+<p>​		输入命令，并回车，就是将这个程序提交给内核，有内核分配资源将其运行起来。运行中的程序需，我们称之为进程。</p>
+<p>​		最左边，必须是一个命令</p>
+<p>选项：</p>
+<p>​		用于启用或关闭命令的某个或某些功能</p>
+<p>​		短选项： -表示，可合并使用</p>
+<p>​		长选项： --表示，一般不可合并使用</p>
+<p>参数：</p>
+<p>​		命令作用的对象，向命令提供数据。</p>
+<p>注意：</p>
+<ol>
+<li>​	命令，选项，参数中间使用空格隔开</li>
+<li>多上选项之间、多参数之间，使用空格隔开</li>
+<li>一行执行多个命令，使用分号（；）隔开</li>
+</ol>
+<p>man+命令查看帮助</p>
+<p>在shell中有两类命令：</p>
+<ol>
+<li>内建命令：shell自带，找不到，比如：cd命令，使用which cd 是找不到的</li>
+<li>外部命令：非shell自大，外部的一个可执行文件</li>
+</ol>
+<p>type cd  #查看一个命令的类型，是内建还是外部</p>
+<p>which ls  #查看ls命令可执行文件在哪里</p>
+<p>whereis ls  #查找关键字文件在哪里</p>
+<p>使用/usr/bin/ls是没有颜色的，默认ls是‘ls --color=auto’</p>
+<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419231735533.png" alt="image-20210419231735533"></p>
+<p><strong>那为什么无论在什么位置都可以执行命令呢？</strong></p>
+<p>echo $PATH</p>
+<p>​		#查看PATH变量的值</p>
+<p>​		#执行命令时，就会在这个PATH变量指定的路径，从左到右去寻找，一直到找到为止，如果没找到，会提示找不到这个命令</p>
+<p>​		#shell搜寻到的外部命令的路径，会被缓存下来，下次就不用再去搜索了</p>
+<p>hash</p>
+<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419232907350.png" alt="image-20210419232907350"></p>
+<p>​		#查看缓存的命令</p>
+<p>​		#hits.   表示命中次数，也就是被执行了多少次。</p>
+<p>hash -r</p>
+<p>​		#清除所有缓存</p>
+<p>​		#比如：将ls程序文件移到/usr/bin目录下，如果有缓存存在，还会到/bin/下去找ls这个命令，找不到就会报错，这时，就需要清一下缓存，重新去搜寻。</p>
+<h3 id="1-5-命令演示"><a class="header-anchor" href="#1-5-命令演示">¶</a>1.5 命令演示</h3>
+<p>shutdown</p>
+<ol>
+<li>
+<p>作用：关闭计算机，它的使用权限是超级用户。</p>
+</li>
+<li>
+<p>格式：</p>
+<p>shutdown [-h] [-i] [-k] [-m] [-t]</p>
+</li>
+<li>
+<p>重要参数</p>
+<p>-t：在改变到其它运行级别之前，告诉init程序多久以后关机。</p>
+<p>-k：并不真正关机，只是送警告信号给每位登录者。</p>
+<p>-h: 关机后关闭电源。</p>
+<p>-c：cancel current process 取消目前正在执行的关机程序。所以这个选项当然没有时间参数，但是可是输入一个用来解释的讯息，而这信息将会送到每位使用者。</p>
+<p>-F：在重启计算机时强迫fsck。</p>
+<p>-time：设定关机前的时间。</p>
+<p>-m：将系统改为单用户模式</p>
+<p>-i: 关机时显示系统信息。</p>
+</li>
+<li>
+<p>命令说明</p>
+<p>shutdown  命令可以安全地将系统关机。有些用户会使用直接断掉电源的方式来关闭linux系统，这是十分危险的。因为Linux与Windows不同，其后台运行着许多进程，所以强制关机可能会导致进程的数据丢失，使系统处于不稳定的状态，甚至在有的系统中会损坏硬件宿舍（硬盘）。在系统关机前使用shutdown命令，系统管理员会通知所有登录的用户系统将要关闭，并且login指令会被冻结，即新的用户不能再登录。</p>
+</li>
+<li>
+<p>举例</p>
+<p>shutdown -h 3:40</p>
+<p>现在关机  shutdown -h now</p>
+</li>
+</ol>
+<p>halt</p>
+<ol>
+<li>
+<p>作用：关闭系统，它的使用权限是超级用户。</p>
+</li>
+<li>
+<p>格式</p>
+<p>halt [-n] [-w] [-d] [-f] [-i] [-p]</p>
+</li>
+<li>
+<p>主要参数说明</p>
+<p>-n: 防止sync系统调用，它用在用fsck修补根分区之后，以阻止内核用老版本的超级块覆盖修补过的超级块</p>
+<p>-w：并不是真正的重启或关机，知识写wtmp（/var/log/wtmp）记录。</p>
+<p>-f：没有调用shutdown，而强制关机或重启。</p>
+<p>-i：关机（或重启）前，关掉所有的网络接口。</p>
+<p>-f：强迫关机，不呼叫shutdown这个命令。</p>
+<p>-p：当关机的时候随便做关闭电源的动作。</p>
+<p>-d：关闭系统，但不留下记录。</p>
+</li>
+<li>
+<p>命令说明</p>
+<p>halt就是调用shutdown -h。halt执行时，杀死应用进程，执行sync（将存于buffer中的资料强制写入硬盘中）系统调用，文件系统写操作完成后就会停止内核。若系统的运行级别为0或6，则关闭系统；否则以shutdown指令（加上-h参数）来取代。</p>
+</li>
+</ol>
+<p>reboot</p>
+<ol>
+<li>
+<p>​	作用：重启计算机，它的使用权限是系统管理者。</p>
+</li>
+<li>
+<p>格式</p>
+<p>reboot [-n] [-w] [-d] [-f] [-i]</p>
+</li>
+<li>
+<p>主要参数</p>
+<p>-n：在重开机前不做将记忆体资料写回硬盘的动作。</p>
+<p>-w：并不会真的重开机，只要把记录写到/var/log/wtmp/文件里。</p>
+<p>-d：不把记录写到/var/log/wtmp文件里（-n这个参数包含了-d）。</p>
+<p>-i：在重开机之前先把所有与网络相关的装置停止。</p>
+</li>
+</ol>
+<p>exit</p>
+<ol>
+<li>
+<p>​	作用：退出系统，它的使用权限是所有用户</p>
+</li>
+<li>
+<p>格式</p>
+<p>exit</p>
+</li>
+<li>
+<p>参数</p>
+<p>exit命令没有参数，运行后退出系统进入登录界面。</p>
+</li>
+</ol>
+<p>last</p>
+<ol>
+<li>
+<p>作用：是显示近期用户或终端的登录情况，它的使用权限是所有用户。通过last命令查看该程序的log，管理员可以获知谁曾经或企图连接系统。</p>
+</li>
+<li>
+<p>格式</p>
+<p>last [-n] [-f file] [-t tty] [-h 节点] [-l -Ip] [-1] [-y] [1D]</p>
+</li>
+<li>
+<p>主要参数</p>
+<p>-n：指定输出记录的条数。</p>
+<p>-f file：指定用文件file作为查询用的log文件。</p>
+<p>-t tty：只显示指定的虚拟控制台上登录情况。</p>
+<p>-h 节点：只显示指定的节点上登陆的情况、</p>
+<p>-i IP：只显示指定的IP上登录的情况。</p>
+<p>-1 ：用IP来显示远端地址。</p>
+<p>-y：显示记录的年、月、日。</p>
+<p>-ID:知道查询的用户名。</p>
+<p>-x：显示系统关闭、用户登录和退出的历史。</p>
+</li>
+</ol>
+<p>id  #查看当前用户</p>
+<p>root不是真正的超级用户，超级用户为uid为0的用户</p>
+<p>uid可以理解为身份证号</p>
+<p>hostname  #查看当前主机名</p>
+<p>pwd   #查看当前路径</p>
+<p>date  #查看日期时间</p>
+<p>cal 2016 #查看2016年的日历</p>
+<p>bc  #计算器  crtl+d  退出</p>
+<h3 id="1-6-TAB补全"><a class="header-anchor" href="#1-6-TAB补全">¶</a>1.6 TAB补全</h3>
+<p>​		输入命令、选项、参数时，可以通过tab键补全功能来减轻输入压力。键入的内容如果足够使其唯一，按一次tab键即可补全，如果键入的内容不够十七唯一，按两次tab键，既可以显示以键入的字符为开头的所有命令。</p>
+<p>​		在RHEL7/CentOS7以前的版本中，bash自动补全功能仅限于命令和文件名，然而网络设备往往可以自动补全命令的参数，常常让搞网络出身的工程师唏嘘不已。</p>
+<p>​		在新出的RHEL7/CentOS7 中的Bash已经可以自动补全命令参数了，需要注意的是RHEL7/CentOS7的默认安装类型是最小安装，他是没有这个功能的。要启用这个功能，你需要安装一个bash-completion包，然后退出bash，重新登陆即可（为重启bash的情况下继续使用可能出现补全功能异常，出现一堆代码）。</p>
+<p>RHEL7收费，CentOS免费开源</p>
+<p>因为RHEL其中的图标注册了商标，所以收费</p>
+<p>bash-2.05及以后的版本提供了自动补齐的编程接口，通过安装bash-completion来使用TAB键自动补齐几乎任何内容，包括参数、文件、目录甚至包名称等等。</p>
+<p>rpm -qa | grep bash-completion</p>
+<h3 id="1-7-命令历史记录"><a class="header-anchor" href="#1-7-命令历史记录">¶</a>1.7 命令历史记录</h3>
+<p>在每个用户的家目录，都有自己的历史记录文件：.bash_history</p>
+<p>登陆shell时，会从登陆用户的家目录中，读取.bash_history文件。</p>
+<p>登录后，执行的命令历史记录，会先记录到缓存中。</p>
+<p>登出时，会将缓存中的历史记录，以追加方式写到.bash_history文件中。</p>
+<p>vim /root/.bash_history</p>
+<p>history  #查看历史命令记录</p>
+<p>history -a #立即将缓存中的记录，协会文件</p>
+<p>history -c  #清除历史</p>
+<p>echo  $HISTSIZE #查看命令历史记录的条数</p>
+<p>echo  $HISTFILE  #历史文件路径</p>
+<p>echo  $HISTFILESIZE   #命令历史文件记录历史的条数</p>
+<p>echo  $HISTCONTROL</p>
+<p>​			#历史记录的控制</p>
+<p>​			#ignoredups，忽略连续且相同的重复的命令</p>
+<p>​			#ignorespace，忽略所有以空白开头的命令</p>
+<p>​			#ignoreboth，上面两项全部</p>
+<p>!数字   #调用历史记录中对应编号的命令</p>
+<p>!字符串    #调用历史记录中最近的一个以指定字符串开头的命令</p>
+<p>!!       #调用上一条命令</p>
+<p>!$       #表示上一个命令的最后一段字符</p>
+<p>上、下箭头      #可以上下查阅历史记录</p>
+<p>左、右箭头      #在当前命令行中左右移动光标</p>
+<p>esc+.      #将上一命令的最后一个参数复制到当前命令行光标处,重复使用，将继续到更早的命令。</p>
+<p>alt+.        #将上一个命令的最后一段字符复制到当前，重复使用。</p>
+<p>ctrl+r      #在历史记录列表中搜索某一模式的命令</p>
+<h3 id="1-8-快捷键"><a class="header-anchor" href="#1-8-快捷键">¶</a>1.8  快捷键</h3>
+<p>ctrl+a		光标定位到命令行首</p>
+<p>ctrl+e		光标定位到命令行尾</p>
+<p>ctrl+u		将光标处前面的内容清楚</p>
+<p>ctrl+k		将光标处后面的内容清楚</p>
+<p>ctrl+左箭头			调到命令行中前一字的开头</p>
+<p>ctrl+右箭头			跳到命令行中下一字的末尾</p>
+<p>ctrl+c		阶段过程</p>
+<p>ctrl+l		清空屏幕</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第三节</title>
+    <url>/2021/HVXXEJ/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【判断题】man是一个帮助手册     A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>正确</p>
+</li>
+<li>
+<p>B：</p>
+<p>错误</p>
+</li>
+</ul>
+<p>课后：</p>
+<p>目标：使用在线帮助系统和红帽支持实用工具解决问题</p>
+<ol>
+<li>使用man Linux手册读取器</li>
+<li>使用pinfo GNU信息读取器</li>
+<li>使用红帽软件包管理器（RPM）软件包文档</li>
+<li>使用redhat-support-tool命令</li>
+</ol>
+<p>1【填空题】使用man查看ls的帮助  man  ls</p>
+<p>内部命令帮助：</p>
+<p>help  echo  		#查看echo命令的帮助</p>
+<p>外部命令帮助：</p>
+<p>ls  --help</p>
+<p>​		#查看ls命令的简单帮助，详细帮助要用man命令</p>
+<p>​		#/bin目录下面都是外部命令，如：/bin/ls  ,如：mv /bin/ls  /bin/ls,那ls命令就没用了</p>
+<p>查看一个命令帮助的时候</p>
+<p>[]		可选</p>
+<p>…		同一内容可出现多次</p>
+<p>|		多选</p>
+<p>&lt;&gt;		必选</p>
+<h3 id="3-2-man帮助手册"><a class="header-anchor" href="#3-2-man帮助手册">¶</a>3.2  man帮助手册</h3>
+<p>​		每个程序，都有帮助文档，但大量的文档，会占用大量控件，所以需要压缩，man手册就是压缩过的程序文档</p>
+<p>cat /etc/man.config</p>
+<p>​		#man手册的配置文件</p>
+<p>​		#指定了man手册命令搜索路径</p>
+<p>man手册总共分9个章节，对运维人员来说，主要1,5章节，man命令以less方式</p>
+<p>man1		<strong>用户命令</strong></p>
+<p>man2		系统调用</p>
+<p>man3		库函数调用</p>
+<p>man4		设备文件和特殊文件</p>
+<p>man5		<strong>配置文件</strong></p>
+<p>man6		游戏</p>
+<p>man7		协议、标准等</p>
+<p>man8		系统管理和特权命令，比如磁盘分区命令</p>
+<p>man9		linux内核API（内核调用）</p>
+<p>whatis read</p>
+<p>​		#搜索man手册，包含read的章节</p>
+<p>​		#whatis,有一个数据库，可将系统上所有的帮助手册与之对应的关键关创建为一个数据库，</p>
+<p>命令就是从他的的数据库中查询数据</p>
+<p>​		#mkwhatis，手动创建数据库</p>
+<p>​		#默认，系统有一个计划任务，自动创建这个数据库</p>
+<p>例1：查找passwd这个文件的帮助</p>
+<p>​		passwd既是一个命令又是一个配置文件，如果直接man passwd，会从第一章开始往后查找，一直找到位置，然而在第一章命令章节里，就有passwd，所以这样找到的是passwd这个命令的帮助，如果要查找passwd这个配置稳健的帮助：man  5	passwd</p>
+<p>man  -k  passwd</p>
+<p>​		#查看包含passwd这个干剑子的有哪些章节</p>
+<p>例2：在man手册中，查看内部命令cd的帮助信息</p>
+<p>man cd</p>
+<p>​		#发现，打开的是bash手册</p>
+<h3 id="3-3-info"><a class="header-anchor" href="#3-3-info">¶</a>3.3 info</h3>
+<p>info命令比man命令更加详细，但我们一般很少去用它。</p>
+<h3 id="3-4-程序的自身文档"><a class="header-anchor" href="#3-4-程序的自身文档">¶</a>3.4 程序的自身文档</h3>
+<p>​		安装软件的时候，会在/usr/share/doc目录下创建一个以程序名命名的目录，然后把自己的说明文档和使用方法文档放在改目录下</p>
+<p>​		也可到相应程序的官方网站查看相应的官方文档</p>
+<h3 id="3-5-红帽帮助"><a class="header-anchor" href="#3-5-红帽帮助">¶</a>3.5 红帽帮助</h3>
+<p>​		这个是要付费的</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+        <tag>redhat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第二节</title>
+    <url>/2021/1QA0NM0/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<ol>
+<li>【填空题】创建目录的命令mkdir</li>
+<li>【填空题】删除目录的命令rmdir</li>
+</ol>
+<p>课后：</p>
+<p>目标：在从Bash shell提示符操作时，复制、移动、创建、删除和组织文件<br>
+识别Linux上终于目录的用途<br>
+使用绝对和相对路径名称指定文件<br>
+使用命令行实用工具创建、复制、移动和删除文件和目录<br>
+将shell扩展用作shell命令的参数，匹配一个或多个文件名</p>
+<ol>
+<li>
+<p>1【单选题】普通用户的家目录在那个目录下  B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>/tmp</p>
+</li>
+<li>
+<p>B：</p>
+<p>/home</p>
+</li>
+<li>
+<p>C：</p>
+<p>/var</p>
+</li>
+<li>
+<p>D：</p>
+<p>/root</p>
+</li>
+</ul>
+</li>
+<li>
+<p>【填空题】创建文件夹的命令  mkdir</p>
+</li>
+</ol>
+<p>​		linux，一切皆文件，文件就要有一定的组织方式，linux是以树形组织文件，LSB（linux标准库）下的FHS标准规定了目录结构，也就是说所有linux发行版都要遵守这个标准</p>
+<p>​	文件有两类数据：元数据、数据</p>
+<p>​	目录是一种特殊的文件</p>
+<p>​	linux中，文件名称严格区分大小写</p>
+<p>​	文件名不能包含“/”这个字符</p>
+<p>​	文件名最长度不能超过255个字符</p>
+<p>​	以点（.）开头的文件都是隐藏文件</p>
+<h3 id="2-1-目录结构"><a class="header-anchor" href="#2-1-目录结构">¶</a>2.1 目录结构</h3>
+<p>/  		#根目录，所有的文件和目录，皆是由根目录延伸。</p>
+<p>/boot		#开机启动过程所需的文件，比如：内核文件，引导文件，驱动文件，boot目录一般在200M左右</p>
+<p>/opt  		#第三方应用程序的安装位置，兼容老程序</p>
+<p>​				#系统附件九装在这个目录中</p>
+<p>/src		#系统自行管理的服务用到的数据</p>
+<p>/usr/		#universal shared,read-only data,全局共享只读数据目录。可独立分区</p>
+<p>​				#编辑安装的第三方软件、共享的库，包括文件和静态只读程序数据，重要的子目录：/usr/bin,用户命令；/usrsbin,系统管理命令；/usr/local,第三方应用程序的安装位置。</p>
+<p>/etc		#配置文件</p>
+<p>/var		#动态变化的文件，如：数据库、缓存目录、日志文件、打印记后台处理文档和网站内容</p>
+<p>​				#可独立分区</p>
+<p>/run		#自本次系统启动以来启动的进程的运行时数据。包括进程ID文件和锁定文件等。此目录中的内容在重启时会重新创建。</p>
+<p>/root		#root用户的家目录</p>
+<p>/home		#普通用户对的个人数据和配置稳健的主目录，没切换用户时，首先就是切换到用户的家目录，每个用户的家目录里面有这个用户特有的环境变量，可以用ls -a查看由四个.bash开头的文件，就是这个用户的环境变量。比如：在root家目录下.bash_profile定义一个环境变量，export dd=test，在其他用户echo $dd,是不能输出的。工作中有可能需要为某些用户设置独有的环境变量。</p>
+<p>/proc		#用于输出内核和进程信息相关的虚拟文件系统</p>
+<p>​				#防止的是内存数据，不会占用磁盘空间，内存里有什么：1.系统开机时硬件信息，比如：CPU的信息：/proc/cpuinfo,内存信息：/pro/meminfo。2进程信息，数字命名的文件都是进程的信息，数字代表这个进程的PID。</p>
+<p>/sys		#用于输出当前系统上硬件设备相关信息的虚拟文件系统</p>
+<p>/tmp		#临时文件目录</p>
+<p>/dec		#设备文件目录</p>
+<p>/media		#便携式移动设备挂载目录，比如：U盘，光盘</p>
+<p>/mnt		#临时挂载用</p>
+<p>/bin		#供所有用户使用的基本命令，不能独立分区，系统启动时会用到的程序</p>
+<p>/sbin		#管理类的基本命令，不能独立分区，系统启动时会用到的程序。</p>
+<p>/lib			#基本功想哭文件，以及内核模块文件</p>
+<p>/lib64		#专用于64位系统上的共享库文件</p>
+<p>总结：etc，bin，sbin，lib这几个目录必须和根目录在同一个分区</p>
+<h3 id="2-2-根据名称查找文件"><a class="header-anchor" href="#2-2-根据名称查找文件">¶</a>2.2 根据名称查找文件</h3>
+<p>根据一个路径定位一个文件在哪里，路径又分为绝对路径和相对路径：</p>
+<p>绝对路径：从根目录起始</p>
+<p>相对路径：从当前位置起始</p>
+<p>ls  ./		#一个点表示当前目录</p>
+<p>ls	…/		#两个点表示上一级目录，即父目录</p>
+<p>pwd		#显示当前目录路径</p>
+<p>cd		返回到自己的家目录，</p>
+<p>cd	-		返回到上一次的工作目录</p>
+<p>cd	…		切换到父目录</p>
+<p>cd	~		切换到当前目录的家目录，如果指定用户，就切换到指定用户的家目录，比如：cd	~tt	就切换到tt这个用户的家目录，前提是有权限。</p>
+<p>注：cd   命令，其实在读取PWD（保存当前路径），PLDPWD（保存上一次路径）变量的值</p>
+<h3 id="2-3-目录的管理"><a class="header-anchor" href="#2-3-目录的管理">¶</a>2.3 目录的管理</h3>
+<p>​		对于目录而言，只有该目录的子文件或子目录的名字</p>
+<p>查看目录</p>
+<p>ls命令</p>
+<p>-l		给出权限、拥有者、拥有组、大小等详细信息。</p>
+<ul>
+<li>-代表是一个文件</li>
+<li>d代表是一个目录</li>
+<li>b为快设备文件</li>
+<li>c是字符设备文件</li>
+<li>l链接文件</li>
+<li>s套接字文件，一般用于本地进程间的相互通讯</li>
+</ul>
+<p>-d	查看目录的信息</p>
+<p>-h	以人类可读的方式显示大小，按大小排序：-Sh</p>
+<p>-a	包含隐藏文件在内的所有文件，以点（.）开头的都是隐藏文件</p>
+<p>-R	递归，包含子目录的内容</p>
+<p>-t	按时间排序，时间越近的越靠前，如果想反过来，时间越久越靠前，-tr</p>
+<p>tree命令</p>
+<p>​		#查看目录结构</p>
+<p>​		#-d，只显示目录</p>
+<p>​		#-L 3，指定显示的层级</p>
+<p>创建目录</p>
+<p>mkdir</p>
+<p>​	-p	同时创建多级目录</p>
+<p>​	-m	创建目录同时，给予权限，比如：mkdir -m	777	/tmp/tt</p>
+<p>注意：创建目录是，一定要注意路径是否正确</p>
+<p>mkdir   /mnt/d{1…9}			#以展开方式，创建</p>
+<p>删除目录</p>
+<p>​		删除操作，一定要注意，确定你要删除的是谁，并且删除的确实是你想要删除的东西。</p>
+<p>rm	-rf	*代表删除当前目录下的所有文件</p>
+<p>mkdir		这个命令只能删除空目录，如果目录下有文件，必须先把文件删除，才能删目录。</p>
+<p>rm	-r		rm本意思是删除一个文件，加上-r选项，递归删除，先删除该目录下的子文件和子目录，再删除指定目录。</p>
+<p>rm	-rf		强制删除，不会做任何提示，很容易删错，如：rm	-rf	/tm/tt和rm	-rf	/tmp/tt/*这两条命令结果是不一样的。</p>
+<p>目录移动</p>
+<p>mv  /tmp/tt   /root		将这个目录移动到/root目录下，包括子目录和子文件也一起移动。</p>
+<p>mv  /tmp/tt  /tmp/dd		把tt这个目录改个名字为dd</p>
+<p>目录的复制</p>
+<p>cp	-r		将目录及目录下的子文件和子目录一同复制，cp的本意是复制一个文件</p>
+<h3 id="2-4-文件的管理"><a class="header-anchor" href="#2-4-文件的管理">¶</a>2.4  文件的管理</h3>
+<p>touch</p>
+<ol>
+<li>
+<p>创建一个新文件</p>
+</li>
+<li>
+<p>更新文件的时间数为当前时间</p>
+<p>一个目录和文件有3中时间：</p>
+<p>mtime：文件内容被修改时间，ls  -l  查看的就是这个时间</p>
+<p>atime：文件最近一次被访问时间，查看：ls  -l  /tmp/f1   --time=atime/</p>
+<p>ctime:文件属性（元数据）发生变化的时间，属性：权限、拥有者、拥有组，查看：ls -l  /tmp/f1    	--time=ctime</p>
+</li>
+</ol>
+<p>touch  -m  -t    2001010100101  /mnt/f1</p>
+<p>​		#修改文件的修改时间为：年月日分时</p>
+<p>​		#-m访问时间</p>
+<p>​		#-a访问时间</p>
+<p>​		#-c如果文件不存在，不创建</p>
+<p>stat  /tmp/f1</p>
+<p>​		#获取稳健的元数据</p>
+<p>​		#包括三个时间</p>
+<p>touch f\ 1</p>
+<p>​		#创建一个带空格的文件名</p>
+<p>ls  f\  1</p>
+<p>ls  f[(:space:)] 1</p>
+<p>[(:digit:)]</p>
+<p>​		#表示数字</p>
+<p>查看文件</p>
+<p>file			#查看文件类型</p>
+<p>wc</p>
+<p>​		#统计文件行数、单词书、字符数</p>
+<p>​		#-l，只统计行数</p>
+<p>​		#-w，单词数</p>
+<p>​		#-c，字符数</p>
+<p>sort /etc/passed</p>
+<p>​		#按字母排序输出</p>
+<p>​		#-r，反序输出</p>
+<p>​		#-f，忽略大小写。</p>
+<p>​		#-t，字段分隔符</p>
+<p>​		#-k，指定字段为标准排序</p>
+<p>​		#-n，按数值大小排序</p>
+<p>​		#-u，uniq，排序后去重</p>
+<p>uniq</p>
+<p>​		#去重，但不进行排序</p>
+<p>​		#-c，显示美行重复出现的次数</p>
+<p>​		#-d，仅显示重复过的行</p>
+<p>​		#-u，仅显示不曾重复的行</p>
+<p>cat		#把文件内容全部输出，-n选项，显示行号</p>
+<p>cat -E		#输出文件的换行符</p>
+<p>tac		#反向查看文件</p>
+<p>more		#分页显示，空格/f 往下翻页，b往上翻页，enter往下翻一行，不能往上翻行，more还带有搜索功能，/搜索关键字，n下一个关键字。</p>
+<p>less		#用法和more类似，不同的是，less可以循环方式查看文件，j往下翻行，k往上翻行。</p>
+<p>head		#只显示文件的前10行，-n选项可以指定只显示第几行，如head -n 1，只显示第一行</p>
+<p>tail		#只显示文件的后10行，也可用-n选项指定行数</p>
+<p>tail  -f 		#跟踪显示文件新追加的内容</p>
+<p>​		tail  -f    /var/log/messages查看日志文件</p>
+<p>复制文件</p>
+<p>cp</p>
+<p>​		复制多个文件时，最后一个参数必须为目录  cp  file1  file2  /dir</p>
+<p>cp  -a</p>
+<p>​		最常用的方法，保持文件的连接和属性，并递归处理。</p>
+<p>​		和cp  -pdR 一个意思，-p  表示保持属性，-d表示保护文件的链接，-R表示递归</p>
+<p>移动文件</p>
+<p>mv</p>
+<ol>
+<li>​	移动一个文件</li>
+<li>重命名一个文件   mv  file1  file2</li>
+</ol>
+<p>删除文件</p>
+<p>rm</p>
+<p>​	rm  file</p>
+<h3 id="2-5通配符"><a class="header-anchor" href="#2-5通配符">¶</a>2.5通配符</h3>
+<p>通配符用于匹配路径名称</p>
+<p>*代表任意长度的人一个字符</p>
+<p>？		代表有且仅有一个任意字符，多个字符就加多个？</p>
+<p>[0-9]		中括号仅代表一个字符，0-9表示，匹配0-9中间的任意一个字符</p>
+<p>[1,3]		都好表示只匹配1或3</p>
+<p>[!1]		!表示非</p>
+<p>[^1]		和叹号意思一样</p>
+<p>[a-z/A-Z]		表示任意一个大小写字母</p>
+<p>字符集合</p>
+<p>[:digit:]		任意数字，0-9</p>
+<p>[(:digit:)]		一个任意数字</p>
+<p>[:lower:]		任意小写字母</p>
+<p>[:upper:]		任意大写字母</p>
+<p>[:alpha:]		任意大小写字母</p>
+<p>控制符</p>
+<p>\t		制表符</p>
+<p>\n		换行符</p>
+<p>echo -e  “how  \tare you”		#-e，允许转义符，也就是允许使用控制符</p>
+<p>echo -e  “how  \nare  you”		#</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第八节</title>
+    <url>/2021/2XPGFFN/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】一般守护进程名称后面都会有一个什么字母？  d</p>
+<p>1【判断题】如果重启进程，PID不会有变化   B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>正确</p>
+</li>
+<li>
+<p>B：</p>
+<p>错误</p>
+</li>
+</ul>
+<p>2【填空题】使某个进程开机自启需要在systemctl后面加什么单词    enable</p>
+<p>课后：</p>
+<p>目录：使用systemd控制和监控网络服务于系统守护进程<br>
+1.列出由systemd服务启动的系统守护进程和网络服务，以及套接字单元<br>
+2.使用systemctl控制系统守护进程和网络服务</p>
+<p>1【填空题】查看sshd进程状态命令  systemctl status sshd</p>
+<p>2【填空题】重启network进程  systemctl restart network</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601110959.png" alt="image-20210420184700713"></p>
+<p>五元组，，</p>
+<p>linux中有个acl为访问控制列表，对文件或者用户为一组</p>
+<p>网路中有个acl为阻止某些流量</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111004.png" alt="image-20210420185201130"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111007.png" alt="image-20210420185316773"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111011.png" alt="image-20210420185610023"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111014.png" alt="image-20210420185959201"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111018.png" alt="image-20210420190058910"></p>
+<h3 id="控制系统服务"><a class="header-anchor" href="#控制系统服务">¶</a>控制系统服务</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111022.png" alt="image-20210420190333698"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111026.png" alt="image-20210420190531243"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111029.png" alt="image-20210420190637943"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111034.png" alt="image-20210420190849738"></p>
 ]]></content>
       <categories>
         <category>linux</category>
@@ -1524,75 +1382,39 @@
       </tags>
   </entry>
   <entry>
-    <title>第一章第三节</title>
-    <url>/2021/HVXXEJ/</url>
+    <title>第一章第十三节</title>
+    <url>/2021/31YW2V8/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>1【判断题】man是一个帮助手册     A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>正确</p>
-</li>
-<li>
-<p>B：</p>
-<p>错误</p>
-</li>
-</ul>
+<p>1【填空题】yum仓库的文件名应该为什么结尾。  .repo</p>
+<p>1【填空题】清除yum缓存的命令  yum  clean  all</p>
 <p>课后：</p>
-<p>目标：使用在线帮助系统和红帽支持实用工具解决问题</p>
-<ol>
-<li>使用man Linux手册读取器</li>
-<li>使用pinfo GNU信息读取器</li>
-<li>使用红帽软件包管理器（RPM）软件包文档</li>
-<li>使用redhat-support-tool命令</li>
-</ol>
-<p>1【填空题】使用man查看ls的帮助  man  ls</p>
-<p>内部命令帮助：</p>
-<p>help  echo  		#查看echo命令的帮助</p>
-<p>外部命令帮助：</p>
-<p>ls  --help</p>
-<p>​		#查看ls命令的简单帮助，详细帮助要用man命令</p>
-<p>​		#/bin目录下面都是外部命令，如：/bin/ls  ,如：mv /bin/ls  /bin/ls,那ls命令就没用了</p>
-<p>查看一个命令帮助的时候</p>
-<p>[]		可选</p>
-<p>…		同一内容可出现多次</p>
-<p>|		多选</p>
-<p>&lt;&gt;		必选</p>
-<h3 id="3-2-man帮助手册"><a class="header-anchor" href="#3-2-man帮助手册">¶</a>3.2  man帮助手册</h3>
-<p>​		每个程序，都有帮助文档，但大量的文档，会占用大量控件，所以需要压缩，man手册就是压缩过的程序文档</p>
-<p>cat /etc/man.config</p>
-<p>​		#man手册的配置文件</p>
-<p>​		#指定了man手册命令搜索路径</p>
-<p>man手册总共分9个章节，对运维人员来说，主要1,5章节，man命令以less方式</p>
-<p>man1		<strong>用户命令</strong></p>
-<p>man2		系统调用</p>
-<p>man3		库函数调用</p>
-<p>man4		设备文件和特殊文件</p>
-<p>man5		<strong>配置文件</strong></p>
-<p>man6		游戏</p>
-<p>man7		协议、标准等</p>
-<p>man8		系统管理和特权命令，比如磁盘分区命令</p>
-<p>man9		linux内核API（内核调用）</p>
-<p>whatis read</p>
-<p>​		#搜索man手册，包含read的章节</p>
-<p>​		#whatis,有一个数据库，可将系统上所有的帮助手册与之对应的关键关创建为一个数据库，</p>
-<p>命令就是从他的的数据库中查询数据</p>
-<p>​		#mkwhatis，手动创建数据库</p>
-<p>​		#默认，系统有一个计划任务，自动创建这个数据库</p>
-<p>例1：查找passwd这个文件的帮助</p>
-<p>​		passwd既是一个命令又是一个配置文件，如果直接man passwd，会从第一章开始往后查找，一直找到位置，然而在第一章命令章节里，就有passwd，所以这样找到的是passwd这个命令的帮助，如果要查找passwd这个配置稳健的帮助：man  5	passwd</p>
-<p>man  -k  passwd</p>
-<p>​		#查看包含passwd这个干剑子的有哪些章节</p>
-<p>例2：在man手册中，查看内部命令cd的帮助信息</p>
-<p>man cd</p>
-<p>​		#发现，打开的是bash手册</p>
-<h3 id="3-3-info"><a class="header-anchor" href="#3-3-info">¶</a>3.3 info</h3>
-<p>info命令比man命令更加详细，但我们一般很少去用它。</p>
-<h3 id="3-4-程序的自身文档"><a class="header-anchor" href="#3-4-程序的自身文档">¶</a>3.4 程序的自身文档</h3>
-<p>​		安装软件的时候，会在/usr/share/doc目录下创建一个以程序名命名的目录，然后把自己的说明文档和使用方法文档放在改目录下</p>
-<p>​		也可到相应程序的官方网站查看相应的官方文档</p>
-<h3 id="3-5-红帽帮助"><a class="header-anchor" href="#3-5-红帽帮助">¶</a>3.5 红帽帮助</h3>
-<p>​		这个是要付费的</p>
+<p>目录：从红帽和YUM软件包存储库下载、安装、更新和管理软件包<br>
+1.使用您的红帽账户注册系统，授权它们并使用已安装产品的软件更新<br>
+2.解释什么事RPM软件包，以及如何在红帽企业Linux系统上使用RPM软件包管理软件<br>
+3.使用yum命令查找、安装和更新软件包<br>
+4.启用和禁用红帽或第三方YUM存储库<br>
+5.检查和安装下载的软件包文件</p>
+<p>1【填空题】使用yum安装httpd。  yum  install httpd</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141524.png" alt="image-20210424161219211"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141528.png" alt="image-20210424161758698"></p>
+<p>【填空题】yum仓库的文件名应该为什么结尾。  .repo</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141541.png" alt="image-20210424161912854"></p>
+<h3 id="使用yum管理软件更新"><a class="header-anchor" href="#使用yum管理软件更新">¶</a>使用yum管理软件更新</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141544.png" alt="image-20210424162421534"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141548.png" alt="image-20210424162704757"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141552.png" alt="image-20210424162818206"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141557.png" alt="image-20210424163005122"></p>
+<p>【填空题】清除yum缓存的命令 yum clean all</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141603.png" alt="image-20210424163516977"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141607.png" alt="image-20210424163716142"></p>
+<h3 id="启动yum软件存储库"><a class="header-anchor" href="#启动yum软件存储库">¶</a>启动yum软件存储库</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141610.png" alt="image-20210424163948518"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141613.png" alt="image-20210424164037889"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141616.png" alt="image-20210424164130609"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141619.png" alt="image-20210424164147019"></p>
+<h3 id="检查rpm软件包文件"><a class="header-anchor" href="#检查rpm软件包文件">¶</a>检查rpm软件包文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141622.png" alt="image-20210424164354886"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141626.png" alt="image-20210424164442466"></p>
 ]]></content>
       <categories>
         <category>linux</category>
@@ -1600,225 +1422,103 @@
       <tags>
         <tag>红帽第一章</tag>
         <tag>linux</tag>
-        <tag>redhat</tag>
       </tags>
   </entry>
   <entry>
-    <title>第一章第二节</title>
-    <url>/2021/1QA0NM0/</url>
+    <title>第一章第十二节</title>
+    <url>/2021/27F1A1T/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<ol>
-<li>【填空题】创建目录的命令mkdir</li>
-<li>【填空题】删除目录的命令rmdir</li>
-</ol>
+<p>1【填空题】tar命令中添加什么参数是创建归档文件(不需要加-）  c</p>
+<p>1【填空题】tar命令中添加什么参数显示打包过程(不用带-）  v</p>
 <p>课后：</p>
-<p>目标：在从Bash shell提示符操作时，复制、移动、创建、删除和组织文件<br>
-识别Linux上终于目录的用途<br>
-使用绝对和相对路径名称指定文件<br>
-使用命令行实用工具创建、复制、移动和删除文件和目录<br>
-将shell扩展用作shell命令的参数，匹配一个或多个文件名</p>
-<ol>
-<li>
-<p>1【单选题】普通用户的家目录在那个目录下  B</p>
+<p>目标：归档文件并从一个系统复制文件到另一系统<br>
+1.使用tar创建新的压缩存档文件，并从现有的存档文件提前文件<br>
+2.将文件安全复制到运行sshd的远程系统，或从中复制文件<br>
+3.与远程副本安全地同步本地文件或目录的内容</p>
+<p>1【单选题】bzip2压缩加什么选项   A</p>
 <ul>
 <li>
 <p>A：</p>
-<p>/tmp</p>
+<p>j</p>
 </li>
 <li>
 <p>B：</p>
-<p>/home</p>
+<p>J</p>
 </li>
 <li>
 <p>C：</p>
-<p>/var</p>
-</li>
-<li>
-<p>D：</p>
-<p>/root</p>
+<p>x</p>
 </li>
 </ul>
-</li>
-<li>
-<p>【填空题】创建文件夹的命令  mkdir</p>
-</li>
-</ol>
-<p>​		linux，一切皆文件，文件就要有一定的组织方式，linux是以树形组织文件，LSB（linux标准库）下的FHS标准规定了目录结构，也就是说所有linux发行版都要遵守这个标准</p>
-<p>​	文件有两类数据：元数据、数据</p>
-<p>​	目录是一种特殊的文件</p>
-<p>​	linux中，文件名称严格区分大小写</p>
-<p>​	文件名不能包含“/”这个字符</p>
-<p>​	文件名最长度不能超过255个字符</p>
-<p>​	以点（.）开头的文件都是隐藏文件</p>
-<h3 id="2-1-目录结构"><a class="header-anchor" href="#2-1-目录结构">¶</a>2.1 目录结构</h3>
-<p>/  		#根目录，所有的文件和目录，皆是由根目录延伸。</p>
-<p>/boot		#开机启动过程所需的文件，比如：内核文件，引导文件，驱动文件，boot目录一般在200M左右</p>
-<p>/opt  		#第三方应用程序的安装位置，兼容老程序</p>
-<p>​				#系统附件九装在这个目录中</p>
-<p>/src		#系统自行管理的服务用到的数据</p>
-<p>/usr/		#universal shared,read-only data,全局共享只读数据目录。可独立分区</p>
-<p>​				#编辑安装的第三方软件、共享的库，包括文件和静态只读程序数据，重要的子目录：/usr/bin,用户命令；/usrsbin,系统管理命令；/usr/local,第三方应用程序的安装位置。</p>
-<p>/etc		#配置文件</p>
-<p>/var		#动态变化的文件，如：数据库、缓存目录、日志文件、打印记后台处理文档和网站内容</p>
-<p>​				#可独立分区</p>
-<p>/run		#自本次系统启动以来启动的进程的运行时数据。包括进程ID文件和锁定文件等。此目录中的内容在重启时会重新创建。</p>
-<p>/root		#root用户的家目录</p>
-<p>/home		#普通用户对的个人数据和配置稳健的主目录，没切换用户时，首先就是切换到用户的家目录，每个用户的家目录里面有这个用户特有的环境变量，可以用ls -a查看由四个.bash开头的文件，就是这个用户的环境变量。比如：在root家目录下.bash_profile定义一个环境变量，export dd=test，在其他用户echo $dd,是不能输出的。工作中有可能需要为某些用户设置独有的环境变量。</p>
-<p>/proc		#用于输出内核和进程信息相关的虚拟文件系统</p>
-<p>​				#防止的是内存数据，不会占用磁盘空间，内存里有什么：1.系统开机时硬件信息，比如：CPU的信息：/proc/cpuinfo,内存信息：/pro/meminfo。2进程信息，数字命名的文件都是进程的信息，数字代表这个进程的PID。</p>
-<p>/sys		#用于输出当前系统上硬件设备相关信息的虚拟文件系统</p>
-<p>/tmp		#临时文件目录</p>
-<p>/dec		#设备文件目录</p>
-<p>/media		#便携式移动设备挂载目录，比如：U盘，光盘</p>
-<p>/mnt		#临时挂载用</p>
-<p>/bin		#供所有用户使用的基本命令，不能独立分区，系统启动时会用到的程序</p>
-<p>/sbin		#管理类的基本命令，不能独立分区，系统启动时会用到的程序。</p>
-<p>/lib			#基本功想哭文件，以及内核模块文件</p>
-<p>/lib64		#专用于64位系统上的共享库文件</p>
-<p>总结：etc，bin，sbin，lib这几个目录必须和根目录在同一个分区</p>
-<h3 id="2-2-根据名称查找文件"><a class="header-anchor" href="#2-2-根据名称查找文件">¶</a>2.2 根据名称查找文件</h3>
-<p>根据一个路径定位一个文件在哪里，路径又分为绝对路径和相对路径：</p>
-<p>绝对路径：从根目录起始</p>
-<p>相对路径：从当前位置起始</p>
-<p>ls  ./		#一个点表示当前目录</p>
-<p>ls	…/		#两个点表示上一级目录，即父目录</p>
-<p>pwd		#显示当前目录路径</p>
-<p>cd		返回到自己的家目录，</p>
-<p>cd	-		返回到上一次的工作目录</p>
-<p>cd	…		切换到父目录</p>
-<p>cd	~		切换到当前目录的家目录，如果指定用户，就切换到指定用户的家目录，比如：cd	~tt	就切换到tt这个用户的家目录，前提是有权限。</p>
-<p>注：cd   命令，其实在读取PWD（保存当前路径），PLDPWD（保存上一次路径）变量的值</p>
-<h3 id="2-3-目录的管理"><a class="header-anchor" href="#2-3-目录的管理">¶</a>2.3 目录的管理</h3>
-<p>​		对于目录而言，只有该目录的子文件或子目录的名字</p>
-<p>查看目录</p>
-<p>ls命令</p>
-<p>-l		给出权限、拥有者、拥有组、大小等详细信息。</p>
-<ul>
-<li>-代表是一个文件</li>
-<li>d代表是一个目录</li>
-<li>b为快设备文件</li>
-<li>c是字符设备文件</li>
-<li>l链接文件</li>
-<li>s套接字文件，一般用于本地进程间的相互通讯</li>
-</ul>
-<p>-d	查看目录的信息</p>
-<p>-h	以人类可读的方式显示大小，按大小排序：-Sh</p>
-<p>-a	包含隐藏文件在内的所有文件，以点（.）开头的都是隐藏文件</p>
-<p>-R	递归，包含子目录的内容</p>
-<p>-t	按时间排序，时间越近的越靠前，如果想反过来，时间越久越靠前，-tr</p>
-<p>tree命令</p>
-<p>​		#查看目录结构</p>
-<p>​		#-d，只显示目录</p>
-<p>​		#-L 3，指定显示的层级</p>
-<p>创建目录</p>
-<p>mkdir</p>
-<p>​	-p	同时创建多级目录</p>
-<p>​	-m	创建目录同时，给予权限，比如：mkdir -m	777	/tmp/tt</p>
-<p>注意：创建目录是，一定要注意路径是否正确</p>
-<p>mkdir   /mnt/d{1…9}			#以展开方式，创建</p>
-<p>删除目录</p>
-<p>​		删除操作，一定要注意，确定你要删除的是谁，并且删除的确实是你想要删除的东西。</p>
-<p>rm	-rf	*代表删除当前目录下的所有文件</p>
-<p>mkdir		这个命令只能删除空目录，如果目录下有文件，必须先把文件删除，才能删目录。</p>
-<p>rm	-r		rm本意思是删除一个文件，加上-r选项，递归删除，先删除该目录下的子文件和子目录，再删除指定目录。</p>
-<p>rm	-rf		强制删除，不会做任何提示，很容易删错，如：rm	-rf	/tm/tt和rm	-rf	/tmp/tt/*这两条命令结果是不一样的。</p>
-<p>目录移动</p>
-<p>mv  /tmp/tt   /root		将这个目录移动到/root目录下，包括子目录和子文件也一起移动。</p>
-<p>mv  /tmp/tt  /tmp/dd		把tt这个目录改个名字为dd</p>
-<p>目录的复制</p>
-<p>cp	-r		将目录及目录下的子文件和子目录一同复制，cp的本意是复制一个文件</p>
-<h3 id="2-4-文件的管理"><a class="header-anchor" href="#2-4-文件的管理">¶</a>2.4  文件的管理</h3>
-<p>touch</p>
-<ol>
-<li>
-<p>创建一个新文件</p>
-</li>
-<li>
-<p>更新文件的时间数为当前时间</p>
-<p>一个目录和文件有3中时间：</p>
-<p>mtime：文件内容被修改时间，ls  -l  查看的就是这个时间</p>
-<p>atime：文件最近一次被访问时间，查看：ls  -l  /tmp/f1   --time=atime/</p>
-<p>ctime:文件属性（元数据）发生变化的时间，属性：权限、拥有者、拥有组，查看：ls -l  /tmp/f1    	--time=ctime</p>
-</li>
-</ol>
-<p>touch  -m  -t    2001010100101  /mnt/f1</p>
-<p>​		#修改文件的修改时间为：年月日分时</p>
-<p>​		#-m访问时间</p>
-<p>​		#-a访问时间</p>
-<p>​		#-c如果文件不存在，不创建</p>
-<p>stat  /tmp/f1</p>
-<p>​		#获取稳健的元数据</p>
-<p>​		#包括三个时间</p>
-<p>touch f\ 1</p>
-<p>​		#创建一个带空格的文件名</p>
-<p>ls  f\  1</p>
-<p>ls  f[(:space:)] 1</p>
-<p>[(:digit:)]</p>
-<p>​		#表示数字</p>
-<p>查看文件</p>
-<p>file			#查看文件类型</p>
-<p>wc</p>
-<p>​		#统计文件行数、单词书、字符数</p>
-<p>​		#-l，只统计行数</p>
-<p>​		#-w，单词数</p>
-<p>​		#-c，字符数</p>
-<p>sort /etc/passed</p>
-<p>​		#按字母排序输出</p>
-<p>​		#-r，反序输出</p>
-<p>​		#-f，忽略大小写。</p>
-<p>​		#-t，字段分隔符</p>
-<p>​		#-k，指定字段为标准排序</p>
-<p>​		#-n，按数值大小排序</p>
-<p>​		#-u，uniq，排序后去重</p>
-<p>uniq</p>
-<p>​		#去重，但不进行排序</p>
-<p>​		#-c，显示美行重复出现的次数</p>
-<p>​		#-d，仅显示重复过的行</p>
-<p>​		#-u，仅显示不曾重复的行</p>
-<p>cat		#把文件内容全部输出，-n选项，显示行号</p>
-<p>cat -E		#输出文件的换行符</p>
-<p>tac		#反向查看文件</p>
-<p>more		#分页显示，空格/f 往下翻页，b往上翻页，enter往下翻一行，不能往上翻行，more还带有搜索功能，/搜索关键字，n下一个关键字。</p>
-<p>less		#用法和more类似，不同的是，less可以循环方式查看文件，j往下翻行，k往上翻行。</p>
-<p>head		#只显示文件的前10行，-n选项可以指定只显示第几行，如head -n 1，只显示第一行</p>
-<p>tail		#只显示文件的后10行，也可用-n选项指定行数</p>
-<p>tail  -f 		#跟踪显示文件新追加的内容</p>
-<p>​		tail  -f    /var/log/messages查看日志文件</p>
-<p>复制文件</p>
-<p>cp</p>
-<p>​		复制多个文件时，最后一个参数必须为目录  cp  file1  file2  /dir</p>
-<p>cp  -a</p>
-<p>​		最常用的方法，保持文件的连接和属性，并递归处理。</p>
-<p>​		和cp  -pdR 一个意思，-p  表示保持属性，-d表示保护文件的链接，-R表示递归</p>
-<p>移动文件</p>
-<p>mv</p>
-<ol>
-<li>​	移动一个文件</li>
-<li>重命名一个文件   mv  file1  file2</li>
-</ol>
-<p>删除文件</p>
-<p>rm</p>
-<p>​	rm  file</p>
-<h3 id="2-5通配符"><a class="header-anchor" href="#2-5通配符">¶</a>2.5通配符</h3>
-<p>通配符用于匹配路径名称</p>
-<p>*代表任意长度的人一个字符</p>
-<p>？		代表有且仅有一个任意字符，多个字符就加多个？</p>
-<p>[0-9]		中括号仅代表一个字符，0-9表示，匹配0-9中间的任意一个字符</p>
-<p>[1,3]		都好表示只匹配1或3</p>
-<p>[!1]		!表示非</p>
-<p>[^1]		和叹号意思一样</p>
-<p>[a-z/A-Z]		表示任意一个大小写字母</p>
-<p>字符集合</p>
-<p>[:digit:]		任意数字，0-9</p>
-<p>[(:digit:)]		一个任意数字</p>
-<p>[:lower:]		任意小写字母</p>
-<p>[:upper:]		任意大写字母</p>
-<p>[:alpha:]		任意大小写字母</p>
-<p>控制符</p>
-<p>\t		制表符</p>
-<p>\n		换行符</p>
-<p>echo -e  “how  \tare you”		#-e，允许转义符，也就是允许使用控制符</p>
-<p>echo -e  “how  \nare  you”		#</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141249.png" alt="image-20210424153855723"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141303.png" alt="image-20210424154021392"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141307.png" alt="image-20210424154223488"></p>
+<p>root用户会还原为原来的权限</p>
+<p>普通用户为用户的权限</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141311.png" alt="image-20210424154452968"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141315.png" alt="image-20210424154859735"></p>
+<p>【填空题】tar命令中添加什么参数是创建归档文件(不需要加-） c</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141343.png" alt="image-20210424155033795"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141347.png" alt="image-20210424155214990">【填空题】tar命令中添加什么参数显示打包过程(不用带-） v</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141351.png" alt="image-20210424155408782"></p>
+<h3 id="在系统间安全复制的方法"><a class="header-anchor" href="#在系统间安全复制的方法">¶</a>在系统间安全复制的方法</h3>
+<p>scp 和ssh-copy-id 相似</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141358.png" alt="image-20210424155454492"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141406.png" alt="image-20210424155718415"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141426.png" alt="image-20210424160114643"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141430.png" alt="image-20210424160203660"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141433.png" alt="image-20210424160300171"></p>
+<h3 id="在系统间安全地同步文件"><a class="header-anchor" href="#在系统间安全地同步文件">¶</a>在系统间安全地同步文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141437.png" alt="image-20210424160415030"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141441.png" alt="image-20210424160542463"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141446.png" alt="image-20210424160717913"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第十四节</title>
+    <url>/2021/1TC64GD/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>填空题】什么命令以递归的方式显示当前目录树中所有的文件的大小  du</p>
+<p>【填空题】通过什么命令创建连接   ln</p>
+<p>课后：目标：访问和检查红帽企业Linux系统上的现有文件系统<br>
+1.访问Linux文件系统层次结构<br>
+2.访问文件系统的内容<br>
+3.使用硬链接和符合链接制作多个名称<br>
+4.搜索挂载的文件系统中的文件</p>
+<p>1【填空题】将光盘临时挂载在/mnt/iso目录命令  mount  /dev/cdrom  /mnt/iso</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141657.png" alt="image-20210424164652431"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141700.png" alt="image-20210424164732196"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141704.png" alt="image-20210424164855898"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141707.png" alt="image-20210424164904677"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141711.png" alt="image-20210424164934839"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141717.png" alt="image-20210424165055123"></p>
+<h3 id="挂载或卸载文件系统"><a class="header-anchor" href="#挂载或卸载文件系统">¶</a>挂载或卸载文件系统</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141721.png" alt="image-20210424165150696"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141724.png" alt="image-20210424165305905"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141728.png" alt="image-20210424165354659"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141732.png" alt="image-20210424165415567"></p>
+<h3 id="制作文件间的链接"><a class="header-anchor" href="#制作文件间的链接">¶</a>制作文件间的链接</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141735.png" alt="image-20210424165554193"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141738.png" alt="image-20210424165710172"></p>
+<p>【填空题】通过什么命令创建连接  ln</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141742.png" alt="image-20210424170011375"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141746.png" alt="image-20210424170115513"></p>
+<h3 id="查找文件中的文件"><a class="header-anchor" href="#查找文件中的文件">¶</a>查找文件中的文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141749.png" alt="image-20210424170204042"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141752.png" alt="image-20210424170350589"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141755.png" alt="image-20210424170413586"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141758.png" alt="image-20210424170513467"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141801.png" alt="image-20210424170556369"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141806.png" alt="image-20210424170630134"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601141809.png" alt="image-20210424170653630"></p>
+<p>【填空题】将光盘临时挂载在/mnt/iso目录命令</p>
+<p>mount /dev/cdrom /mnt/iso  或者mount /dev/sr0 /mnt/iso</p>
 ]]></content>
       <categories>
         <category>linux</category>
@@ -1826,6 +1526,634 @@
       <tags>
         <tag>红帽第一章</tag>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第十一节</title>
+    <url>/2021/2ZECH72/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【单选题】常用的稳定可靠的传输层协议是？  TCP</p>
+<p>1【多选题】那些地址属于B类地址的私网地址    AC</p>
+<ul>
+<li>
+<p>A：</p>
+<p>172.16.0.1</p>
+</li>
+<li>
+<p>B：</p>
+<p>172.15.0.1</p>
+</li>
+<li>
+<p>C：</p>
+<p>172.31.0.1</p>
+</li>
+<li>
+<p>D：</p>
+<p>172.33.0.1</p>
+</li>
+</ul>
+<p>1【填空题】重启网络服务的命令  systemctl restart network</p>
+<p>课后：</p>
+<p>目标：在红帽企业Linux系统上配置基本的IPv网络<br>
+1.解释计算机网络的基本概念<br>
+2.使用基本的实用工具测试和查看的当前的网络配置<br>
+3.使用nmcli和NerworkManager管理网络设置和设备<br>
+4.通过编辑配置文件修改网络设置<br>
+5.配置和测试系统主机名和名称解析</p>
+<p>1【填空题】查看路由表的命令   ip route</p>
+<p>2【填空题】查看ip地址  ip addr</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111528.png" alt="image-20210423224104931"></p>
+<p>OSI：国际标准化组织 (ISO)提出的一个试图使各种 计算机 在世界范围内互连为 网络 的标准框架，简称OSI</p>
+<p>七层网络模型：</p>
+<p>物理层</p>
+<p>数据链路层</p>
+<p>网络层</p>
+<p>传输层</p>
+<p>会话层</p>
+<p>表示层</p>
+<p>应用层</p>
+<p>TCP/IP：</p>
+<p>应用层</p>
+<p>传输层</p>
+<p>网络层</p>
+<p>网络接口层			DMAC | SMAC | TYPE |DATA |FCS</p>
+<p>看上层0X0800  IP</p>
+<p>​			0X0806  ARP</p>
+<p>fcs：完整性校验</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111534.png" alt="image-20210423230231433"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111537.png" alt="image-20210423230240004"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111541.png" alt="image-20210424145236758"></p>
+<h3 id="验证网络配置"><a class="header-anchor" href="#验证网络配置">¶</a>验证网络配置</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111545.png" alt="image-20210424145256168"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111549.png" alt="image-20210424145327145"></p>
+<p>【多选题】那些地址属于B类地址的私网地址  AD</p>
+<ul>
+<li>
+<p>A：</p>
+<p>172.16.0.1</p>
+</li>
+<li>
+<p>B：</p>
+<p>172.15.0.1</p>
+</li>
+<li>
+<p>C：</p>
+<p>172.31.0.1</p>
+</li>
+<li>
+<p>D：</p>
+<p>172.33.0.1</p>
+</li>
+</ul>
+<p><strong>私网ip地址的范围：</strong></p>
+<p>A类地址：10.0.0.0～10.255.255.255</p>
+<p>B类地址：172.16.0.0 ～172.31.255.255</p>
+<p>C类地址：192.168.0.0～192.168.255.255</p>
+<h3 id="使用nmcli配置网络"><a class="header-anchor" href="#使用nmcli配置网络">¶</a>使用nmcli配置网络</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111553.png" alt="image-20210424150131635"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111557.png" alt="image-20210424150151167"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111600.png" alt="image-20210424150424209"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111604.png" alt="image-20210424150456996"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111608.png" alt="image-20210424150651651"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111611.png" alt="image-20210424151134040"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111615.png" alt="image-20210424151230050"></p>
+<p>修改开机自启动</p>
+<p>nmcli con mod joker connectio.autoconnect yes</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111618.png" alt="image-20210424151512583"></p>
+<p>1【填空题】重启网络服务的命令  systemctl restart network  /nmcli con reload</p>
+<h3 id="编辑网络配置"><a class="header-anchor" href="#编辑网络配置">¶</a>编辑网络配置</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111622.png" alt="image-20210424153026432"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111626.png" alt="image-20210424153046429"></p>
+<h3 id="配置主机名和名称解析"><a class="header-anchor" href="#配置主机名和名称解析">¶</a>配置主机名和名称解析</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111630.png" alt="image-20210424153109602"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111634.png" alt="image-20210424153420078"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111637.png" alt="image-20210424153430313"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章第十节</title>
+    <url>/2021/129EEBE/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】syslog协议对于关于警告状况的优先级是  warning</p>
+<p>1【填空题】logger命令加什么参数可以指定优先级  -p</p>
+<p>1【填空题】查系统时间的命令  date</p>
+<p>课后：</p>
+<p>目标：查找和准确解读相关的系统日志文件，以用于故障排除<br>
+1.说明红帽企业Linux7中的基本系统日志架构<br>
+2.解读相关系统日志文件中的条目，以排除故障或查看系统状态<br>
+3.查找和解读systemd日志中的条目，以排除故障或查看系统状态<br>
+4.配置systemd-jourmald，将日志存储在磁盘而不是内存中<br>
+5.维护准确的时间同步和时区配置，确保系统日志中的时间戳正确无误</p>
+<p>1【填空题】安全和身份验证相关的消息和错误的日志文件是？   /var/log/secure</p>
+<p>2【填空题】与定期执行任务相关的日志文件是？  /var/log/cron</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111236.png" alt="image-20210422230442727"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111240.png" alt="image-20210422230958897"></p>
+<h3 id="查看系统日志文件"><a class="header-anchor" href="#查看系统日志文件">¶</a>查看系统日志文件</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111245.png" alt="image-20210422231229065"></p>
+<p>xxx.debug  /var/**</p>
+<p>某某服务的debug存储在后面这个文件里面  .的意思是大于等于</p>
+<p>.=  代表如果是debug就存在里面，不是的话就不要</p>
+<p>！=  代表除了debug以外都放在这里面</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111252.png" alt="image-20210422231659937"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111301.png" alt="image-20210422231814829"></p>
+<p>virsh  list  命令用来查看当前服务器上处于运行中的虚拟机实例。</p>
+<h3 id="注意事项"><a class="header-anchor" href="#注意事项">¶</a>注意事项</h3>
+<p>virsh list 命令只能查看状态是运行中的虚拟机实例，其余状态的虚拟机无法查看。</p>
+<p>ll -h /var/log/     -h显示大小<img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111307.png" alt="image-20210422232649686"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111312.png" alt="image-20210422232815055"></p>
+<p>每过一个周期messages会给这个日志加上一个日期，可以在写新的日志文件</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111317.png" alt="image-20210422232759100"></p>
+<p>1【填空题】logger命令加什么参数可以指定优先级  -p</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111321.png" alt="image-20210422233149339"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111325.png" alt="image-20210422233237803"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111328.png" alt="image-20210422233312522"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111332.png" alt="image-20210422233452721"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111336.png" alt="image-20210422233512494"></p>
+<h3 id="保存systemd日志"><a class="header-anchor" href="#保存systemd日志">¶</a>保存systemd日志</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111339.png" alt="image-20210422233624594"></p>
+<p>使用journal -b可以查看上一次启动的日志文件</p>
+<p>查看某个进程的日志</p>
+<p>systemctl status sshd</p>
+<h3 id="保存准确的时间"><a class="header-anchor" href="#保存准确的时间">¶</a>保存准确的时间</h3>
+<p>回忆：rht-vmctl</p>
+<p>fullreset是通过下载镜像才重置，比较慢</p>
+<p>reset是直接回复快照会比较快</p>
+<p>1【填空题】查系统时间的命令  date</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111344.png" alt="image-20210423172011343"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111347.png" alt="image-20210423172238770"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111351.png" alt="image-20210423172250238"></p>
+<p>UTC标准时间</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111356.png" alt="image-20210423223444467"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601111400.png" alt="image-20210423223550728"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第一章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络编程</title>
+    <url>/2021/3V4J77V/</url>
+    <content><![CDATA[<h1>解决代码C4996问题</h1>
+<p>严重性	代码	说明	项目	文件	行	禁止显示状态<br>
+错误	C4996	‘gethostbyname’: Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings	Project1	d:\visual studio\project1\project1\p2-4.cpp	31</p>
+<p>VS编译代码是遇到如上问题，vs准备弃用strcpy的，安全性较低，所以微软提供了strcpy_s来代替，如果想继续使用strcpy的，main前面加上</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> <span class="meta-keyword">warning</span>(disable:4996)</span></span><br></pre></td></tr></table></figure>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181229541.png" alt="image-20200918181229541"></p>
+<p>或者</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/20180506223431466" alt="img"></p>
+<p>解决方案：在main()函数中的return前面添加system(“pause”)，其中头文件中添加#include&lt;stdlib.h&gt;。</p>
+<h1>解决“const char *”类型的值不能用于初始化“char *”类型的实体</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181912423.png" alt="image-20200918181912423"></p>
+<p>用强制转换</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200918181940363.png" alt="image-20200918181940363"></p>
+<h1>error LNK2019: 无法解析的外部符号 WinMain，该符号在函数 &quot;int __cdecl invoke_main(void)”中被引用</h1>
+<p>问题描述：<img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112159738.png" alt="image-20200925112159738"></p>
+<p>解决方案：</p>
+<p>二，原因及解决办法<br>
+产生这个问题的真正原因是c语言运行时找不到适当的程序入口函数，</p>
+<p>一般情况下，如果是windows程序，那么WinMain是入口函数，在VS2017中新建项目为“win32项目”</p>
+<p>如果是dos控制台程序，那么main是入口函数，在VS2017中新建项目为“win32控制台应用程序”</p>
+<p>而如果入口函数指定不当，很显然c语言运行时找不到配合函数，它就会报告错误。</p>
+<p>修改设置适应你的需求</p>
+<p>如果是windows程序：</p>
+<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
+<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_CONSOLE, 添加_WINDOWS.</p>
+<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为Windows(/SUBSYSTEM:WINDOWS)</p>
+<p>如果是控制台程序：</p>
+<p>1.菜单中选择 Project-&gt;Properties, 弹出Property Pages窗口</p>
+<p>2.在左边栏中依次选择：Configuration Properties-&gt;C/C+±&gt;Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_WINDOWS, 添加_CONSOLE.</p>
+<p>3.在左边栏中依次选择：Configuration Properties-&gt;Linker-&gt;System,然后在右边栏的SubSystem对应的项改为CONSOLE(/SUBSYSTEM:CONSOLE)</p>
+<p>即：</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112238834.png" alt="image-20200925112238834"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112255855.png" alt="image-20200925112255855"></p>
+<p>_CONSOLE控制台改为窗体_WINDOWS</p>
+<p>然后再链接器中找到系统：把控制台改成窗口</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112450551.png" alt="image-20200925112450551"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112523127.png" alt="image-20200925112523127"></p>
+<p>问题解决：</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925112546860.png" alt="image-20200925112546860"></p>
+<h1>vs2010显示行号</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115454664.png" alt="image-20200925115454664"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200925115527639.png" alt="image-20200925115527639"></p>
+<h1>无法查找或打开PDB文件错误</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201016105325241.png" alt="image-20201016105325241"></p>
+<h1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100326958.png" alt="image-20201106100326958"></p>
+<p>在C盘中找到cvtres.exe文件把最新的替换到VS目录下</p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100433205.png" alt="image-20201106100433205"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100548345.png" alt="image-20201106100548345"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201106100624598.png" alt="image-20201106100624598"></p>
+<h1>解决平台工具集问题</h1>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093139932.png" alt="image-20201204093139932"></p>
+<p><img src="/source/images/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20201204093358149.png" alt="image-20201204093358149"></p>
+]]></content>
+      <categories>
+        <category>网络编程</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>红帽挑战赛初赛试题</title>
+    <url>/2021/24P3Z49/</url>
+    <content><![CDATA[<h2 id="笔试："><a class="header-anchor" href="#笔试：">¶</a>笔试：</h2>
+<h3 id="单选题，共34题，每题2分，共68分。"><a class="header-anchor" href="#单选题，共34题，每题2分，共68分。">¶</a>单选题，共34题，每题2分，共68分。</h3>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">1、哪个Linux命令可以一次显示一页内容？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>pause</li>
+<li>more</li>
+<li>cat</li>
+<li>grep</li>
+</ul>
+<span id="more"></span>
+<h3 id="单选题"><a class="header-anchor" href="#单选题">¶</a>单选题</h3>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">2、哪个Linux命令可以更改一个文件的权限？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>attrib</li>
+<li>change</li>
+<li>file</li>
+<li>chmod</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">3、怎样可以删除一个用户并同时删除用户的主目录？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>userdel -r</li>
+<li>rmuser -r</li>
+<li>deluser -r</li>
+<li>usermgr -r</li>
+</ul>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">4</span>、下面哪条命令可以把f<span class="number">1</span>.txt复制为f<span class="number">2</span>.txt?</span><br></pre></td></tr></table></figure>
+<ul>
+<li>copy f1.txt | f2.txt</li>
+<li>cat f1.txt &gt; f2.txt</li>
+<li>cat f1.txt | f2.txt</li>
+<li>cp f1.txt | f2.txt</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">5、哪个命令可以显示文件最后几行：</span><br></pre></td></tr></table></figure>
+<ul>
+<li>rear</li>
+<li>tail</li>
+<li>last</li>
+<li>tac</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">6、哪个命令可以快速切换到用户John的主目录下？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>cd @John</li>
+<li>cd #John</li>
+<li>cd &amp;John</li>
+<li>cd ~John</li>
+</ul>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="number">7</span>、如何在文件中查找显示所有以<span class="string">&quot;*&quot;</span>打头的行？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>grep -n * file</li>
+<li>wc -l * &lt; file</li>
+<li>grep ‘^*’ file</li>
+<li>find * file</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="number">8</span>、在<span class="built_in">ps</span>命令中什么参数是用来显示所有用户的进程的？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>u</li>
+<li>a</li>
+<li>x</li>
+<li>b</li>
+</ul>
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">9、下列哪个命令可以删除一个非空子目录<span class="string">/tmp</span>？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>del /tmp/*</li>
+<li>rm -rf /tmp</li>
+<li>rm -rf /tmp/*</li>
+<li>rm -Ra /tmp/*</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">10、对所有用户的变量设置，应当放在哪个文件下？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>/etc/bashrc</li>
+<li>~/.bash_profile</li>
+<li>/etc/skel/.bashrc</li>
+<li>/etc/profile</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">11、Linux的源代码放在哪个目录？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>/etc</li>
+<li>/usr</li>
+<li>/usr/src</li>
+<li>/home</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">12、以下哪个命令不能显示文本文件的内容：</span><br></pre></td></tr></table></figure>
+<ul>
+<li>more</li>
+<li>join</li>
+<li>less</li>
+<li>tail</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">13、以下哪个命令可以建立一个新文件</span><br></pre></td></tr></table></figure>
+<ul>
+<li>chmod</li>
+<li>touch</li>
+<li>more</li>
+<li>cp</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">14、哪个命令可以在给定文件中查找与设定条件相符字符串：</span><br></pre></td></tr></table></figure>
+<ul>
+<li>gzip</li>
+<li>find</li>
+<li>grep</li>
+<li>sort</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">15、哪个命令可以改变文件所有者：</span><br></pre></td></tr></table></figure>
+<ul>
+<li>chmod</li>
+<li>touch</li>
+<li>chown</li>
+<li>cat</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="number">16</span>、当使用<span class="built_in">mount</span>进行设备或者文件系统挂载的时候，需要用到的设备位于哪个目录</span><br></pre></td></tr></table></figure>
+<ul>
+<li>/etc</li>
+<li>/dev</li>
+<li>/bin</li>
+<li>/home</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">17、哪个命令可以列出一个目录下的所有文件：</span><br></pre></td></tr></table></figure>
+<ul>
+<li>ls-a</li>
+<li>ls</li>
+<li>ls -l</li>
+<li>ls -d</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">18、按下哪个键能终止当前运行命令</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Ctrl -F</li>
+<li>Ctrl -C</li>
+<li>Ctrl -D</li>
+<li>Ctrl -B</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">19、可用哪个对某一命令进行详细了解</span><br></pre></td></tr></table></figure>
+<ul>
+<li>man</li>
+<li>cat</li>
+<li>ls</li>
+<li>dir</li>
+</ul>
+<figure class="highlight basic"><table><tr><td class="code"><pre><span class="line"><span class="number">20</span>、下面那个命令用来定义<span class="keyword">shell</span>的全局变量</span><br></pre></td></tr></table></figure>
+<ul>
+<li>exports</li>
+<li>exportfs</li>
+<li>export</li>
+<li>alias</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">21、哪个命令可以终止一个用户的所有进程</span><br></pre></td></tr></table></figure>
+<ul>
+<li>skillall</li>
+<li>killall</li>
+<li>skill</li>
+<li>kill</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="number">22</span>、在<span class="keyword">vi</span>编辑器中退出不保存的命令是？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>q</li>
+<li>w</li>
+<li>q!</li>
+<li>wq</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">23、哪个命令可以检测基本网络连接？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>route</li>
+<li>ifconfig</li>
+<li>ping</li>
+<li>netstat</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">24、下面哪个命令可以压缩部分文件：</span><br></pre></td></tr></table></figure>
+<ul>
+<li>tar -xzvf filename.tgz *</li>
+<li>tar -tzvf filename.tgz *</li>
+<li>tar -czvf filename.tgz *</li>
+<li>tar -dzvf filename.tgz *</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">25、什么命令解压缩tar文件？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>tar -tzvf filename.tgz</li>
+<li>tar -dzvf filename.tgz</li>
+<li>tar -xzvf filename.tgz</li>
+<li>tar -czvf filename.tgz</li>
+</ul>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">26</span>、Linux文件权限一共<span class="number">10</span>位长度,分成四段,第三段表示的内容是</span><br></pre></td></tr></table></figure>
+<ul>
+<li>其他用户的权限</li>
+<li>文件所有者所在组的权限</li>
+<li>文件所有者的权限</li>
+<li>文件类型</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">27、linux 怎么查看并对外开放端口</span><br></pre></td></tr></table></figure>
+<ul>
+<li>more /etc/sysconfig/iptables</li>
+<li>cat /etc/sysconfig/net-work</li>
+<li>ps aux</li>
+<li>vi /etc/profile</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">28、显示文件和目录由根目录开始的树形结构</span><br></pre></td></tr></table></figure>
+<ul>
+<li>pwd</li>
+<li>tree</li>
+<li>ln</li>
+<li>ls</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">29、Linux系统最少的挂载点有哪两个</span><br></pre></td></tr></table></figure>
+<ul>
+<li>一个是根挂载点home，另一个是swap</li>
+<li>一个是根挂载点user，另一个是boot</li>
+<li>一个是根挂载点boot，另一个是swap</li>
+<li>一个是根挂载点/，另一个是swap</li>
+</ul>
+<figure class="highlight coq"><table><tr><td class="code"><pre><span class="line"><span class="number">30</span>、<span class="built_in">top</span>命令的作用是</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看线程详情情况</li>
+<li>用于实时动态显示 Linux进程 的动态信息</li>
+<li>查看进程名称</li>
+<li>显示内存情况</li>
+</ul>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">31</span>、ISP分配给某公司的地址块为<span class="number">199.34.76.64</span>/<span class="number">28</span>，则该公司得到的地址数是</span><br></pre></td></tr></table></figure>
+<ul>
+<li>8</li>
+<li>16</li>
+<li>32</li>
+<li>32</li>
+</ul>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">32</span>、主机A的IP地址为<span class="number">220.17.33.24</span>/<span class="number">28</span>，而主机B的IP地址为<span class="number">220.17.33.100</span>/<span class="number">28</span>，两个主机互相ping不通，这时应该</span><br></pre></td></tr></table></figure>
+<ul>
+<li>改变主机A的地址为220.17.33.15</li>
+<li>改变主机B的地址为220.17.33.111</li>
+<li>改变子网掩码为26</li>
+<li>改变子网掩码为25</li>
+</ul>
+<figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="number">33</span>.DNS正向收索区的功能是将域名解析为<span class="built_in">IP</span>地址，windows系统中，用于测试该功能的命令是</span><br></pre></td></tr></table></figure>
+<ul>
+<li>nslookup</li>
+<li>arp</li>
+<li>netstat</li>
+<li>query</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">34、Linux 文件系统的文件都按其作用分门别类地放在相关的目录中，对于外部设备文件，一般应将其放在哪个目录中？</span><br></pre></td></tr></table></figure>
+<ul>
+<li>/bin</li>
+<li>/etc</li>
+<li>/dev</li>
+<li>/lib</li>
+</ul>
+<h3 id="判断题，共10题，每题2分，共20分"><a class="header-anchor" href="#判断题，共10题，每题2分，共20分">¶</a>判断题，共10题，每题2分，共20分</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1、<span class="built_in">umask</span>不可以修改。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<h3 id="判断题"><a class="header-anchor" href="#判断题">¶</a>判断题</h3>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">2、RedHat LINUX 安装时不能自动创建了根用户。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight xquery"><table><tr><td class="code"><pre><span class="line"><span class="number">3</span>、Linux 中的超级用户<span class="built_in">为root</span>,登陆时需要口令。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">4、<span class="built_in">pwd</span>命令可用于确定当前目录</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="number">5</span>、<span class="built_in">ps</span> <span class="literal">-u</span>命令可以查找出当前用户运行的所有进程的信息</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line"><span class="number">6</span>、为了防止误删除，设置rm<span class="comment">(删除指令)</span>确认删除选项是-R</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">7、<span class="keyword">ls</span>命令可以统计文件系统中未用的磁盘空间</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">8、df -h可以查看用户使用了多少磁盘空间</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">9</span>、在Linux系统中，硬件设备大部分是安装在<span class="built_in">bin</span>目录下的</span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">10</span>、系统默认的进程启动后的nice值为<span class="number">10</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>正确</li>
+<li>错误</li>
+</ul>
+<h3 id="多选题，共4题，每题3分，共12分"><a class="header-anchor" href="#多选题，共4题，每题3分，共12分">¶</a>多选题，共4题，每题3分，共12分</h3>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">1、在创建Linux分区时，一定要创建</span><br></pre></td></tr></table></figure>
+<ul>
+<li>FAT</li>
+<li>NTFS</li>
+<li>SWAP</li>
+<li>根分区</li>
+</ul>
+<h3 id="多选题"><a class="header-anchor" href="#多选题">¶</a>多选题</h3>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">2、哪些命令不能讲普通用户转为超级用户</span><br></pre></td></tr></table></figure>
+<ul>
+<li>super</li>
+<li>password</li>
+<li>su</li>
+<li>tar</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">3、下列内核版本不稳定的是</span><br></pre></td></tr></table></figure>
+<ul>
+<li>3.10.0</li>
+<li>3.11.4</li>
+<li>3.10.5</li>
+<li>3.8.5</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">4、下列设备不属于块设备的是</span><br></pre></td></tr></table></figure>
+<ul>
+<li>键盘</li>
+<li>游戏杠</li>
+<li>终端</li>
+<li>硬盘</li>
+</ul>
+<h2 id="机试："><a class="header-anchor" href="#机试：">¶</a>机试：</h2>
+<p>账号root 密码123456</p>
+<p>在 servera 上执行以下任务</p>
+<h3 id="1-配置网络设置"><a class="header-anchor" href="#1-配置网络设置">¶</a>1. 配置网络设置</h3>
+<p>在servera上执行</p>
+<p>将servera配置为具有以下网络配置：</p>
+<p>l 主机名： servera</p>
+<p>l IP地址： 192.168.159.111</p>
+<p>l 网关： 192.168.159.1</p>
+<p>l 名称服务器： 192.168.159.2</p>
+<h3 id="2-SElinux-必须运行在Enforcing模式下。"><a class="header-anchor" href="#2-SElinux-必须运行在Enforcing模式下。">¶</a>2. SElinux 必须运行在Enforcing模式下。</h3>
+<h3 id="3-创建用户帐户"><a class="header-anchor" href="#3-创建用户帐户">¶</a>3. 创建用户帐户</h3>
+<p>在servera上执行</p>
+<p>创建下列用户、 组和组成员资格：</p>
+<p>l 名为admins的组</p>
+<p>l 用户lucy， 作为次要组从属于admins</p>
+<p>l 用户harry， 作为次要组还从属于admins</p>
+<p>l 用户jams， 无权访问系统上的交互式shell且不是admins的成员</p>
+<p>l lucy、 harry和jams的密码应当都是redhat</p>
+<h3 id="4-配置-cron-作业"><a class="header-anchor" href="#4-配置-cron-作业">¶</a>4. 配置 cron 作业</h3>
+<p>在servera上执行</p>
+<p>用户lucy必须配置一个cron作业， 该作业每隔2分钟（ 当地时间） 运行</p>
+<p>且执行： /bin/echo hiya</p>
+<h3 id="5-创建协作目录"><a class="header-anchor" href="#5-创建协作目录">¶</a>5. 创建协作目录</h3>
+<p>在servera上执行</p>
+<p>创建具有以下特征的协作目录/home/test</p>
+<p>l /home/test的组所有权是admins</p>
+<p>l 目录应当可被admins的成员读取、 写入和访问， 但任何其他用户不具这些权限。（当然， root用户有权访问系统上的所有文件和目录）</p>
+<p>l /home/test中创建的文件自动将组所有权设置到admins组</p>
+<h3 id="6-配置-var-tmp-fstab-权限"><a class="header-anchor" href="#6-配置-var-tmp-fstab-权限">¶</a>6. 配置 /var/tmp/fstab 权限</h3>
+<p>在servera上执行</p>
+<p>将文件/etc/fstab复制到/var/tmp/fstab。 配置/var/tmp/fstab的权限以满足如下条件：</p>
+<p>l 文件/var/tmp/fstab由root用户所有</p>
+<p>l 文件/var/tmp/fstab属于组root</p>
+<p>l 文件/var/tmp/fstab应不能被任何人执行</p>
+<p>l 用户lucy能够读取和写入/var/tmp/fstab</p>
+<p>l 用户harry无法写入或读取/var/tmp/fstab</p>
+<p>l 所有其他用户（ 当前或未来） 能够读取/var/tmp/fstab</p>
+<h3 id="7-配置用户帐户"><a class="header-anchor" href="#7-配置用户帐户">¶</a>7. 配置用户帐户</h3>
+<p>在servera上执行</p>
+<p>配置用户jacks， 用户ID为3533。 此用户的密码应当为redhat。</p>
+<h3 id="8-查找文件"><a class="header-anchor" href="#8-查找文件">¶</a>8. 查找文件</h3>
+<p>在servera上执行</p>
+<p>查找用户lucy所有的所有文件并将其副本放入/root/findfiles目录。</p>
+<h3 id="9-查找字符串"><a class="header-anchor" href="#9-查找字符串">¶</a>9. 查找字符串</h3>
+<p>在servera上执行</p>
+<p>l 查找文件/boot/grub2/grub.cfg中包含字符串save 的所有行。</p>
+<p>l 将所有这些行的副本按原始顺序放在文件/root/list中。</p>
+<p>l /root/list不得包含空行， 且所有行必须是/boot/grub2/grub.cfg中原始行的确切副本.</p>
+<h3 id="10-创建存档"><a class="header-anchor" href="#10-创建存档">¶</a>10. 创建存档</h3>
+<p>在servera上执行</p>
+<p>创建一个名为/root/backup.tar.gz的tar存档， 其应包含/usr/local的内容。</p>
+<p>该tar存档必须使用gzip进行压缩</p>
+<h3 id="11-配置系统调优"><a class="header-anchor" href="#11-配置系统调优">¶</a>11. 配置系统调优</h3>
+<p>在servera上执行</p>
+<p>为您的系统tuned配置集设置为“running KVM guests”并将它设为默认设置</p>
+<p>查看成绩执行脚本</p>
+<p>sh  /boot/grade.sh</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>redhat</tag>
       </tags>
   </entry>
   <entry>
@@ -1966,334 +2294,6 @@ ansible是一款为类unix系统开发的自由开源的配置和自动化工具
       <tags>
         <tag>linux</tag>
         <tag>redhat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章第一节</title>
-    <url>/2021/1FBDEJR/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<ol>
-<li>
-<p>【填空题】查找关键字文件在哪儿  whereis ls</p>
-</li>
-<li>
-<p>【填空题】查找ls命令可执行文件在哪儿   which ls</p>
-</li>
-<li>
-<p>【单选题】查看历史记录命令 A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>history</p>
-</li>
-<li>
-<p>B：</p>
-<p>pwd</p>
-</li>
-</ul>
-</li>
-</ol>
-<p>课后：</p>
-<p>目标：登录Linux系统并使用shell运行简单的命令。<br>
-1.在Linux控制台使用Bash shell语法输入命令。<br>
-2.在GVONE桌面环境中启动应用。<br>
-3.借助Bash功能，使用较少的击键次数在shell提示符下运行命令。</p>
-<p>【单选题】什么按键可以补全命令   A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>TAB键</p>
-</li>
-<li>
-<p>B：</p>
-<p>回车键</p>
-</li>
-<li>
-<p>C：</p>
-<p>空格键</p>
-</li>
-</ul>
-<p>基于foundationX，在此环境中，共有3台虚拟机，分别为classroom，serverX，desktopX</p>
-<ol>
-<li>classroom:上课环境，包含：DNS服务器、NTP服务器、DHCP服务器、HTTP服务器等</li>
-<li>serverX：作为服务端的练习环境</li>
-<li>desktopX：作为客户端的练习环境</li>
-</ol>
-<p>关于虚拟机的控制：</p>
-<p>rht-vmctl fullreset desktop</p>
-<p>fullreset 恢复较慢</p>
-<p>reset直接回复快照，恢复较快</p>
-<p>KVM虚拟化管理工具：</p>
-<p>virt-manager</p>
-<p>virsh list</p>
-<p>virsh list --all</p>
-<p>virsh start server/desktop</p>
-<p>virsh shutdown desktop</p>
-<p>ssh:远程连接</p>
-<p>​	ssh root@ip地址</p>
-<p>关于虚拟机的</p>
-<p>virsh</p>
-<h3 id="1-1-linux内核"><a class="header-anchor" href="#1-1-linux内核">¶</a>1.1. linux内核</h3>
-<p>查看linux内核版本的命令：</p>
-<p>uname -a</p>
-<p>uname -r</p>
-<p>#注意：linux版本号主要看主版本号和次版本号，次版本号为偶数，表示稳定版，奇数表示测试版</p>
-<p>linux基于模块化，比如：驱动当做一个模块的方式加载</p>
-<p>lsmod | grep usb_storage</p>
-<p>#可以发现，默认没有加载usb驱动，当插入一个U盘，就自动加载了</p>
-<h3 id="1-2-shell"><a class="header-anchor" href="#1-2-shell">¶</a>1.2 shell</h3>
-<p>linux不是系统，是个内核，加上CLI等才为系统</p>
-<p>因为内核不提供和用户的交互功能，所以需要一个程序提供这种功能，这种程序分为两种：命令行（CLI）和图形界面（GUI），在linux提供CLI的交互程序，我们称之为shell</p>
-<p>cat /etc/shells  #可以看到多种shell，对于红帽系统来说，默认采用的是bash这个shell</p>
-<p>chsh -l #查看系统所有的shell</p>
-<p>echo $SHELL #查看当前使用的shell</p>
-<p>ps #ps命令用于查看当前进程，可以发现，有一个bash进程</p>
-<ol>
-<li>打开一个终端就可以打开一个shell</li>
-<li>得到一个命令行界面，就触发一个shell</li>
-</ol>
-<p>ls /dev/可以看到登录方式</p>
-<p>触发一个shell，可以得到一个提示符：</p>
-<p>登录用户名@主机名 当前目录</p>
-<ul>
-<li>#表示的是root用户</li>
-<li>$表示的是普通用户</li>
-<li>方括号里的提示符是由PS1变量展示</li>
-</ul>
-<p>echo $PS1 #查看命令提示符的格式</p>
-<p>echo $$  #查看当前shell的ID</p>
-<p>图形界面中</p>
-<p>ctrl+alt+F2 ：切换成了命令行界面 第二个tty</p>
-<p>ctrl+alt+F1:默认的图形界面登录</p>
-<p>可以通过hostname命令查看主机名</p>
-<p>~ 代表当前用户的家目录</p>
-<h3 id="1-3终端"><a class="header-anchor" href="#1-3终端">¶</a>1.3终端</h3>
-<p>物理终端：一个键盘、一个鼠标、一个显示器就是一个物理终端</p>
-<p>​		设备文件：/dev/console</p>
-<p>虚拟终端（tty）：附加在物理终端之上，以软件方式虚拟出来的终端</p>
-<p>​		设备文件：/dev/tty</p>
-<p>模拟终端（pts）: 纯软件实现的终端，比如：在图形界面打开的terminal，使用SSH、telnet等远程打开的界面。</p>
-<p>​		设备文件：/dev/pts/*</p>
-<p>系统启动过程中，以物理终端提供</p>
-<p>系统启动之后，就以虚拟终端提供</p>
-<p><strong>虚拟终端切换</strong></p>
-<p>ctrl+alt+f</p>
-<ul>
-<li>如果有图形环境，共有六个控制台，图形界面运行在第一个；文本界面运行在第二至第六个。</li>
-<li>如果没有线图形界面，则只有5个细腻控制台，全是文本界面。</li>
-<li>提示：rhel5之前的版本，都有7个虚拟控制台，前6个为文本界面，第7个为图形界面。</li>
-</ul>
-<p>tty  #查看当前终端设备</p>
-<p>who  #查看有哪些用户登录到当前系统</p>
-<p>echo aaa &gt; /dev/tty2  #就会在tty2上显示这串字符</p>
-<p>echo hello &gt; /dev/pts/5  #在pts5上显示hello</p>
-<h3 id="1-4命令行"><a class="header-anchor" href="#1-4命令行">¶</a>1.4命令行</h3>
-<p>命令 【选项】【参数】</p>
-<p>命令：</p>
-<p>​		所谓命令就是一个可执行文件，文件本身包含了可执行的程序代码</p>
-<p>​		输入命令，并回车，就是将这个程序提交给内核，有内核分配资源将其运行起来。运行中的程序需，我们称之为进程。</p>
-<p>​		最左边，必须是一个命令</p>
-<p>选项：</p>
-<p>​		用于启用或关闭命令的某个或某些功能</p>
-<p>​		短选项： -表示，可合并使用</p>
-<p>​		长选项： --表示，一般不可合并使用</p>
-<p>参数：</p>
-<p>​		命令作用的对象，向命令提供数据。</p>
-<p>注意：</p>
-<ol>
-<li>​	命令，选项，参数中间使用空格隔开</li>
-<li>多上选项之间、多参数之间，使用空格隔开</li>
-<li>一行执行多个命令，使用分号（；）隔开</li>
-</ol>
-<p>man+命令查看帮助</p>
-<p>在shell中有两类命令：</p>
-<ol>
-<li>内建命令：shell自带，找不到，比如：cd命令，使用which cd 是找不到的</li>
-<li>外部命令：非shell自大，外部的一个可执行文件</li>
-</ol>
-<p>type cd  #查看一个命令的类型，是内建还是外部</p>
-<p>which ls  #查看ls命令可执行文件在哪里</p>
-<p>whereis ls  #查找关键字文件在哪里</p>
-<p>使用/usr/bin/ls是没有颜色的，默认ls是‘ls --color=auto’</p>
-<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419231735533.png" alt="image-20210419231735533"></p>
-<p><strong>那为什么无论在什么位置都可以执行命令呢？</strong></p>
-<p>echo $PATH</p>
-<p>​		#查看PATH变量的值</p>
-<p>​		#执行命令时，就会在这个PATH变量指定的路径，从左到右去寻找，一直到找到为止，如果没找到，会提示找不到这个命令</p>
-<p>​		#shell搜寻到的外部命令的路径，会被缓存下来，下次就不用再去搜索了</p>
-<p>hash</p>
-<p><img src="/source/images/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82/image-20210419232907350.png" alt="image-20210419232907350"></p>
-<p>​		#查看缓存的命令</p>
-<p>​		#hits.   表示命中次数，也就是被执行了多少次。</p>
-<p>hash -r</p>
-<p>​		#清除所有缓存</p>
-<p>​		#比如：将ls程序文件移到/usr/bin目录下，如果有缓存存在，还会到/bin/下去找ls这个命令，找不到就会报错，这时，就需要清一下缓存，重新去搜寻。</p>
-<h3 id="1-5-命令演示"><a class="header-anchor" href="#1-5-命令演示">¶</a>1.5 命令演示</h3>
-<p>shutdown</p>
-<ol>
-<li>
-<p>作用：关闭计算机，它的使用权限是超级用户。</p>
-</li>
-<li>
-<p>格式：</p>
-<p>shutdown [-h] [-i] [-k] [-m] [-t]</p>
-</li>
-<li>
-<p>重要参数</p>
-<p>-t：在改变到其它运行级别之前，告诉init程序多久以后关机。</p>
-<p>-k：并不真正关机，只是送警告信号给每位登录者。</p>
-<p>-h: 关机后关闭电源。</p>
-<p>-c：cancel current process 取消目前正在执行的关机程序。所以这个选项当然没有时间参数，但是可是输入一个用来解释的讯息，而这信息将会送到每位使用者。</p>
-<p>-F：在重启计算机时强迫fsck。</p>
-<p>-time：设定关机前的时间。</p>
-<p>-m：将系统改为单用户模式</p>
-<p>-i: 关机时显示系统信息。</p>
-</li>
-<li>
-<p>命令说明</p>
-<p>shutdown  命令可以安全地将系统关机。有些用户会使用直接断掉电源的方式来关闭linux系统，这是十分危险的。因为Linux与Windows不同，其后台运行着许多进程，所以强制关机可能会导致进程的数据丢失，使系统处于不稳定的状态，甚至在有的系统中会损坏硬件宿舍（硬盘）。在系统关机前使用shutdown命令，系统管理员会通知所有登录的用户系统将要关闭，并且login指令会被冻结，即新的用户不能再登录。</p>
-</li>
-<li>
-<p>举例</p>
-<p>shutdown -h 3:40</p>
-<p>现在关机  shutdown -h now</p>
-</li>
-</ol>
-<p>halt</p>
-<ol>
-<li>
-<p>作用：关闭系统，它的使用权限是超级用户。</p>
-</li>
-<li>
-<p>格式</p>
-<p>halt [-n] [-w] [-d] [-f] [-i] [-p]</p>
-</li>
-<li>
-<p>主要参数说明</p>
-<p>-n: 防止sync系统调用，它用在用fsck修补根分区之后，以阻止内核用老版本的超级块覆盖修补过的超级块</p>
-<p>-w：并不是真正的重启或关机，知识写wtmp（/var/log/wtmp）记录。</p>
-<p>-f：没有调用shutdown，而强制关机或重启。</p>
-<p>-i：关机（或重启）前，关掉所有的网络接口。</p>
-<p>-f：强迫关机，不呼叫shutdown这个命令。</p>
-<p>-p：当关机的时候随便做关闭电源的动作。</p>
-<p>-d：关闭系统，但不留下记录。</p>
-</li>
-<li>
-<p>命令说明</p>
-<p>halt就是调用shutdown -h。halt执行时，杀死应用进程，执行sync（将存于buffer中的资料强制写入硬盘中）系统调用，文件系统写操作完成后就会停止内核。若系统的运行级别为0或6，则关闭系统；否则以shutdown指令（加上-h参数）来取代。</p>
-</li>
-</ol>
-<p>reboot</p>
-<ol>
-<li>
-<p>​	作用：重启计算机，它的使用权限是系统管理者。</p>
-</li>
-<li>
-<p>格式</p>
-<p>reboot [-n] [-w] [-d] [-f] [-i]</p>
-</li>
-<li>
-<p>主要参数</p>
-<p>-n：在重开机前不做将记忆体资料写回硬盘的动作。</p>
-<p>-w：并不会真的重开机，只要把记录写到/var/log/wtmp/文件里。</p>
-<p>-d：不把记录写到/var/log/wtmp文件里（-n这个参数包含了-d）。</p>
-<p>-i：在重开机之前先把所有与网络相关的装置停止。</p>
-</li>
-</ol>
-<p>exit</p>
-<ol>
-<li>
-<p>​	作用：退出系统，它的使用权限是所有用户</p>
-</li>
-<li>
-<p>格式</p>
-<p>exit</p>
-</li>
-<li>
-<p>参数</p>
-<p>exit命令没有参数，运行后退出系统进入登录界面。</p>
-</li>
-</ol>
-<p>last</p>
-<ol>
-<li>
-<p>作用：是显示近期用户或终端的登录情况，它的使用权限是所有用户。通过last命令查看该程序的log，管理员可以获知谁曾经或企图连接系统。</p>
-</li>
-<li>
-<p>格式</p>
-<p>last [-n] [-f file] [-t tty] [-h 节点] [-l -Ip] [-1] [-y] [1D]</p>
-</li>
-<li>
-<p>主要参数</p>
-<p>-n：指定输出记录的条数。</p>
-<p>-f file：指定用文件file作为查询用的log文件。</p>
-<p>-t tty：只显示指定的虚拟控制台上登录情况。</p>
-<p>-h 节点：只显示指定的节点上登陆的情况、</p>
-<p>-i IP：只显示指定的IP上登录的情况。</p>
-<p>-1 ：用IP来显示远端地址。</p>
-<p>-y：显示记录的年、月、日。</p>
-<p>-ID:知道查询的用户名。</p>
-<p>-x：显示系统关闭、用户登录和退出的历史。</p>
-</li>
-</ol>
-<p>id  #查看当前用户</p>
-<p>root不是真正的超级用户，超级用户为uid为0的用户</p>
-<p>uid可以理解为身份证号</p>
-<p>hostname  #查看当前主机名</p>
-<p>pwd   #查看当前路径</p>
-<p>date  #查看日期时间</p>
-<p>cal 2016 #查看2016年的日历</p>
-<p>bc  #计算器  crtl+d  退出</p>
-<h3 id="1-6-TAB补全"><a class="header-anchor" href="#1-6-TAB补全">¶</a>1.6 TAB补全</h3>
-<p>​		输入命令、选项、参数时，可以通过tab键补全功能来减轻输入压力。键入的内容如果足够使其唯一，按一次tab键即可补全，如果键入的内容不够十七唯一，按两次tab键，既可以显示以键入的字符为开头的所有命令。</p>
-<p>​		在RHEL7/CentOS7以前的版本中，bash自动补全功能仅限于命令和文件名，然而网络设备往往可以自动补全命令的参数，常常让搞网络出身的工程师唏嘘不已。</p>
-<p>​		在新出的RHEL7/CentOS7 中的Bash已经可以自动补全命令参数了，需要注意的是RHEL7/CentOS7的默认安装类型是最小安装，他是没有这个功能的。要启用这个功能，你需要安装一个bash-completion包，然后退出bash，重新登陆即可（为重启bash的情况下继续使用可能出现补全功能异常，出现一堆代码）。</p>
-<p>RHEL7收费，CentOS免费开源</p>
-<p>因为RHEL其中的图标注册了商标，所以收费</p>
-<p>bash-2.05及以后的版本提供了自动补齐的编程接口，通过安装bash-completion来使用TAB键自动补齐几乎任何内容，包括参数、文件、目录甚至包名称等等。</p>
-<p>rpm -qa | grep bash-completion</p>
-<h3 id="1-7-命令历史记录"><a class="header-anchor" href="#1-7-命令历史记录">¶</a>1.7 命令历史记录</h3>
-<p>在每个用户的家目录，都有自己的历史记录文件：.bash_history</p>
-<p>登陆shell时，会从登陆用户的家目录中，读取.bash_history文件。</p>
-<p>登录后，执行的命令历史记录，会先记录到缓存中。</p>
-<p>登出时，会将缓存中的历史记录，以追加方式写到.bash_history文件中。</p>
-<p>vim /root/.bash_history</p>
-<p>history  #查看历史命令记录</p>
-<p>history -a #立即将缓存中的记录，协会文件</p>
-<p>history -c  #清除历史</p>
-<p>echo  $HISTSIZE #查看命令历史记录的条数</p>
-<p>echo  $HISTFILE  #历史文件路径</p>
-<p>echo  $HISTFILESIZE   #命令历史文件记录历史的条数</p>
-<p>echo  $HISTCONTROL</p>
-<p>​			#历史记录的控制</p>
-<p>​			#ignoredups，忽略连续且相同的重复的命令</p>
-<p>​			#ignorespace，忽略所有以空白开头的命令</p>
-<p>​			#ignoreboth，上面两项全部</p>
-<p>!数字   #调用历史记录中对应编号的命令</p>
-<p>!字符串    #调用历史记录中最近的一个以指定字符串开头的命令</p>
-<p>!!       #调用上一条命令</p>
-<p>!$       #表示上一个命令的最后一段字符</p>
-<p>上、下箭头      #可以上下查阅历史记录</p>
-<p>左、右箭头      #在当前命令行中左右移动光标</p>
-<p>esc+.      #将上一命令的最后一个参数复制到当前命令行光标处,重复使用，将继续到更早的命令。</p>
-<p>alt+.        #将上一个命令的最后一段字符复制到当前，重复使用。</p>
-<p>ctrl+r      #在历史记录列表中搜索某一模式的命令</p>
-<h3 id="1-8-快捷键"><a class="header-anchor" href="#1-8-快捷键">¶</a>1.8  快捷键</h3>
-<p>ctrl+a		光标定位到命令行首</p>
-<p>ctrl+e		光标定位到命令行尾</p>
-<p>ctrl+u		将光标处前面的内容清楚</p>
-<p>ctrl+k		将光标处后面的内容清楚</p>
-<p>ctrl+左箭头			调到命令行中前一字的开头</p>
-<p>ctrl+右箭头			跳到命令行中下一字的末尾</p>
-<p>ctrl+c		阶段过程</p>
-<p>ctrl+l		清空屏幕</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第一章</tag>
-        <tag>linux</tag>
       </tags>
   </entry>
 </search>
