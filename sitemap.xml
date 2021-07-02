@@ -93,13 +93,6 @@
   </url>
   
   <url>
-    <loc>https://blog.forlearn.top/2021/1MFD5TF/</loc>
-    
-    <lastmod>2021-04-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.forlearn.top/2021/3GFV54N/</loc>
     
     <lastmod>2021-04-25</lastmod>
@@ -114,28 +107,7 @@
   </url>
   
   <url>
-    <loc>https://blog.forlearn.top/2021/1E392MK/</loc>
-    
-    <lastmod>2021-04-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.forlearn.top/2021/018YEN/</loc>
-    
-    <lastmod>2021-04-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.forlearn.top/2021/XQN3MD/</loc>
-    
-    <lastmod>2021-04-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.forlearn.top/2021/15QCESR/</loc>
     
     <lastmod>2021-04-25</lastmod>
     
@@ -149,7 +121,28 @@
   </url>
   
   <url>
-    <loc>https://blog.forlearn.top/2021/WP2Y7K/</loc>
+    <loc>https://blog.forlearn.top/2021/1MFD5TF/</loc>
+    
+    <lastmod>2021-04-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.forlearn.top/2021/XQN3MD/</loc>
+    
+    <lastmod>2021-04-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.forlearn.top/2021/1E392MK/</loc>
+    
+    <lastmod>2021-04-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.forlearn.top/2021/15QCESR/</loc>
     
     <lastmod>2021-04-25</lastmod>
     
@@ -157,6 +150,13 @@
   
   <url>
     <loc>https://blog.forlearn.top/2021/1NMPZAZ/</loc>
+    
+    <lastmod>2021-04-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.forlearn.top/2021/WP2Y7K/</loc>
     
     <lastmod>2021-04-25</lastmod>
     
@@ -335,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://blog.forlearn.top/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://blog.forlearn.top/categories/linux/</loc>
     <lastmod>2021-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -349,7 +349,7 @@
   </url>
   
   <url>
-    <loc>https://blog.forlearn.top/categories/linux/</loc>
+    <loc>https://blog.forlearn.top/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2021-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
