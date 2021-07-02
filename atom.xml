@@ -131,9 +131,34 @@
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
+    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
     <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
+  </entry>
+  
+  <entry>
+    <title>通过GREP使用正则表达式</title>
+    <link href="https://blog.forlearn.top/2021/1MFD5TF/"/>
+    <id>https://blog.forlearn.top/2021/1MFD5TF/</id>
+    <published>2021-04-25T16:00:00.000Z</published>
+    <updated>2021-04-25T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;6分45【填空题】从/tmp/passwd文件中找到带有root的行&lt;/p&gt;
+&lt;p&gt;grep root /tmp/passwd&lt;/p&gt;
+&lt;p&gt;cat tmp/passwd | grep “root”&lt;/p&gt;
+&lt;p&gt;passwd文件在/etc/passed中&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
   </entry>
   
@@ -160,9 +185,9 @@
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
   </entry>
   
@@ -187,85 +212,6 @@
     
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>向linux系统添加磁盘、分区和文件系统</title>
-    <link href="https://blog.forlearn.top/2021/018YEN/"/>
-    <id>https://blog.forlearn.top/2021/018YEN/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】在MBR分区方案上创建和删除磁盘分区。使用什么命令fdisk&lt;/p&gt;
-&lt;p&gt;【填空题】在GPT分区方案上创建和删除磁盘分区。使用什么命令gdisk&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：使用命令行创建和管理磁盘、分区和文件系统&lt;br&gt;
-1.管理简单分区和文件系统&lt;br&gt;
-2.管理交换空间&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>管理linux进程的优先级</title>
-    <link href="https://blog.forlearn.top/2021/1SF06D6/"/>
-    <id>https://blog.forlearn.top/2021/1SF06D6/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】那个用户可以重新调整属于其他用户的进程的nice值 root&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：影响Linux各进程运行的相对优先级&lt;br&gt;
-1.描述nice级别&lt;br&gt;
-2.设置新进程和现有进程的nice级别&lt;/p&gt;
-&lt;p&gt;1【单选题】普通用户nice等级范围是  A&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过GREP使用正则表达式</title>
-    <link href="https://blog.forlearn.top/2021/1MFD5TF/"/>
-    <id>https://blog.forlearn.top/2021/1MFD5TF/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;6分45【填空题】从/tmp/passwd文件中找到带有root的行&lt;/p&gt;
-&lt;p&gt;grep root /tmp/passwd&lt;/p&gt;
-&lt;p&gt;cat tmp/passwd | grep “root”&lt;/p&gt;
-&lt;p&gt;passwd文件在/etc/passed中&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
     
@@ -312,27 +258,29 @@
   </entry>
   
   <entry>
-    <title>对rhel启动过程进行控制和故障排除</title>
-    <link href="https://blog.forlearn.top/2021/15QCESR/"/>
-    <id>https://blog.forlearn.top/2021/15QCESR/</id>
+    <title>向linux系统添加磁盘、分区和文件系统</title>
+    <link href="https://blog.forlearn.top/2021/018YEN/"/>
+    <id>https://blog.forlearn.top/2021/018YEN/</id>
     <published>2021-04-25T16:00:00.000Z</published>
     <updated>2021-04-25T16:00:00.000Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】临时的启动图形化&lt;/p&gt;
-&lt;p&gt;systemctl isolate graphical.target&lt;/p&gt;
-&lt;p&gt;systemctl isolate查询切换目标&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;</summary>
+&lt;p&gt;【填空题】在MBR分区方案上创建和删除磁盘分区。使用什么命令fdisk&lt;/p&gt;
+&lt;p&gt;【填空题】在GPT分区方案上创建和删除磁盘分区。使用什么命令gdisk&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：使用命令行创建和管理磁盘、分区和文件系统&lt;br&gt;
+1.管理简单分区和文件系统&lt;br&gt;
+2.管理交换空间&lt;/p&gt;</summary>
     
     
     
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
   </entry>
   
@@ -355,63 +303,61 @@
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
   </entry>
   
   <entry>
-    <title>计划将来的linux任务</title>
-    <link href="https://blog.forlearn.top/2021/QS1MBX/"/>
-    <id>https://blog.forlearn.top/2021/QS1MBX/</id>
+    <title>对rhel启动过程进行控制和故障排除</title>
+    <link href="https://blog.forlearn.top/2021/15QCESR/"/>
+    <id>https://blog.forlearn.top/2021/15QCESR/</id>
     <published>2021-04-25T16:00:00.000Z</published>
     <updated>2021-04-25T16:00:00.000Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】列出当前用户的计划任务 crontab -l&lt;/p&gt;
+&lt;p&gt;【填空题】临时的启动图形化&lt;/p&gt;
+&lt;p&gt;systemctl isolate graphical.target&lt;/p&gt;
+&lt;p&gt;systemctl isolate查询切换目标&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>管理linux进程的优先级</title>
+    <link href="https://blog.forlearn.top/2021/1SF06D6/"/>
+    <id>https://blog.forlearn.top/2021/1SF06D6/</id>
+    <published>2021-04-25T16:00:00.000Z</published>
+    <updated>2021-04-25T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【填空题】那个用户可以重新调整属于其他用户的进程的nice值 root&lt;/p&gt;
 &lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：计划可在将来自动执行的任务&lt;br&gt;
-1.使用at计划一次性的任务&lt;br&gt;
-2.使用cron计划周期性的作业&lt;br&gt;
-3.计划周期性系统作业&lt;br&gt;
-4.管理临时文件&lt;/p&gt;
-&lt;p&gt;1【填空题】一次性任务使用什么工具？at&lt;/p&gt;</summary>
+&lt;p&gt;目标：影响Linux各进程运行的相对优先级&lt;br&gt;
+1.描述nice级别&lt;br&gt;
+2.设置新进程和现有进程的nice级别&lt;/p&gt;
+&lt;p&gt;1【单选题】普通用户nice等级范围是  A&lt;/p&gt;</summary>
     
     
     
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
     
-  </entry>
-  
-  <entry>
-    <title>使用firewalld限制网络通信</title>
-    <link href="https://blog.forlearn.top/2021/1NMPZAZ/"/>
-    <id>https://blog.forlearn.top/2021/1NMPZAZ/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】重启防火墙服务systemctl restart firewalld&lt;/p&gt;
-&lt;p&gt;12分56【填空题】查看默认防火墙规则  firewall-cmd --get-default-zone&lt;/p&gt;
-&lt;p&gt;firewall-cmd --state&lt;/p&gt;
-&lt;p&gt;firewall-cmd --list-all&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
     <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
     
   </entry>
   
@@ -438,6 +384,60 @@
     
     
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用firewalld限制网络通信</title>
+    <link href="https://blog.forlearn.top/2021/1NMPZAZ/"/>
+    <id>https://blog.forlearn.top/2021/1NMPZAZ/</id>
+    <published>2021-04-25T16:00:00.000Z</published>
+    <updated>2021-04-25T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【填空题】重启防火墙服务systemctl restart firewalld&lt;/p&gt;
+&lt;p&gt;12分56【填空题】查看默认防火墙规则  firewall-cmd --get-default-zone&lt;/p&gt;
+&lt;p&gt;firewall-cmd --state&lt;/p&gt;
+&lt;p&gt;firewall-cmd --list-all&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计划将来的linux任务</title>
+    <link href="https://blog.forlearn.top/2021/QS1MBX/"/>
+    <id>https://blog.forlearn.top/2021/QS1MBX/</id>
+    <published>2021-04-25T16:00:00.000Z</published>
+    <updated>2021-04-25T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【填空题】列出当前用户的计划任务 crontab -l&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：计划可在将来自动执行的任务&lt;br&gt;
+1.使用at计划一次性的任务&lt;br&gt;
+2.使用cron计划周期性的作业&lt;br&gt;
+3.计划周期性系统作业&lt;br&gt;
+4.管理临时文件&lt;/p&gt;
+&lt;p&gt;1【填空题】一次性任务使用什么工具？at&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
   </entry>
   
