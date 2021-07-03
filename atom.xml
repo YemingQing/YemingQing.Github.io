@@ -190,33 +190,6 @@
   </entry>
   
   <entry>
-    <title>配置MariaDb数据库</title>
-    <link href="https://blog.forlearn.top/2021/22W4C75/"/>
-    <id>https://blog.forlearn.top/2021/22W4C75/</id>
-    <published>2021-04-26T16:00:00.000Z</published>
-    <updated>2021-04-26T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【判断题】mariaDB就是mysql  错误&lt;/p&gt;
-&lt;p&gt;【判断题】mariadb使用的指令属于sql指令。     正确&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：提供MariaDB SQL数据库供程序和数据库管理员使用&lt;br&gt;
-1.安装MariaDB&lt;br&gt;
-2.配置和管理MariaDB&lt;br&gt;
-3.配置用户和访问权限&lt;br&gt;
-4.备份和回复MariaDB数据库&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>管理IPv6网络</title>
     <link href="https://blog.forlearn.top/2021/2MGH7CT/"/>
     <id>https://blog.forlearn.top/2021/2MGH7CT/</id>
@@ -240,6 +213,33 @@
     <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
     
     <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置MariaDb数据库</title>
+    <link href="https://blog.forlearn.top/2021/22W4C75/"/>
+    <id>https://blog.forlearn.top/2021/22W4C75/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【判断题】mariaDB就是mysql  错误&lt;/p&gt;
+&lt;p&gt;【判断题】mariadb使用的指令属于sql指令。     正确&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：提供MariaDB SQL数据库供程序和数据库管理员使用&lt;br&gt;
+1.安装MariaDB&lt;br&gt;
+2.配置和管理MariaDB&lt;br&gt;
+3.配置用户和访问权限&lt;br&gt;
+4.备份和回复MariaDB数据库&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
     
   </entry>
   
@@ -509,18 +509,20 @@
   </entry>
   
   <entry>
-    <title>通过GREP使用正则表达式</title>
-    <link href="https://blog.forlearn.top/2021/1MFD5TF/"/>
-    <id>https://blog.forlearn.top/2021/1MFD5TF/</id>
+    <title>管理linux进程的优先级</title>
+    <link href="https://blog.forlearn.top/2021/1SF06D6/"/>
+    <id>https://blog.forlearn.top/2021/1SF06D6/</id>
     <published>2021-04-25T16:00:00.000Z</published>
     <updated>2021-04-25T16:00:00.000Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;6分45【填空题】从/tmp/passwd文件中找到带有root的行&lt;/p&gt;
-&lt;p&gt;grep root /tmp/passwd&lt;/p&gt;
-&lt;p&gt;cat tmp/passwd | grep “root”&lt;/p&gt;
-&lt;p&gt;passwd文件在/etc/passed中&lt;/p&gt;</summary>
+&lt;p&gt;【填空题】那个用户可以重新调整属于其他用户的进程的nice值 root&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：影响Linux各进程运行的相对优先级&lt;br&gt;
+1.描述nice级别&lt;br&gt;
+2.设置新进程和现有进程的nice级别&lt;/p&gt;
+&lt;p&gt;1【单选题】普通用户nice等级范围是  A&lt;/p&gt;</summary>
     
     
     

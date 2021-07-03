@@ -840,6 +840,50 @@
       </tags>
   </entry>
   <entry>
+    <title>管理IPv6网络</title>
+    <url>/2021/2MGH7CT/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【填空题】本地回环地址::1/128</p>
+<p>【填空题】全球单播地址2000::/3</p>
+<p>课后：</p>
+<p>目标：在红帽企业Linux系统上配置基本的IPv6网络并进行故障排除<br>
+1.复习如何在RHCE7中配置IPv4网络<br>
+2.说明IPv6 网络的基本概念以及读取和写入简化IPv6地址</p>
+<p>【填空题】ipv6有__位组成  128</p>
+<h3 id="复习IPv4联网配置"><a class="header-anchor" href="#复习IPv4联网配置">¶</a>复习IPv4联网配置</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150645.png" alt="image-20210426233352987"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150654.png" alt="image-20210426233501831"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150658.png" alt="image-20210426233557538"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150702.png" alt="image-20210426233714151"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150706.png" alt="image-20210426233957343"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150709.png" alt="image-20210426234010450"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150712.png" alt="image-20210426234015396"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150715.png" alt="image-20210426234030278"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150718.png" alt="image-20210426234049917"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150721.png" alt="image-20210427205731037"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150724.png" alt="image-20210427205740505"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150726.png" alt="image-20210427205800243"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150729.png" alt="image-20210427205859418"></p>
+<h3 id="ipv6地址概念"><a class="header-anchor" href="#ipv6地址概念">¶</a>ipv6地址概念</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150733.png" alt="image-20210427205926130"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150737.png" alt="image-20210427210135714"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150739.png" alt="image-20210427210242478"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150744.png" alt="image-20210427210712156"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150748.png" alt="image-20210427211028261"></p>
+<p>考试配置</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150751.png" alt="image-20210427210918402"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150754.png" alt="image-20210427210933929"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150758.png" alt="image-20210427211140957"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>配置MariaDb数据库</title>
     <url>/2021/22W4C75/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
@@ -901,50 +945,6 @@
       </categories>
       <tags>
         <tag>红帽第三章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>管理IPv6网络</title>
-    <url>/2021/2MGH7CT/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>【填空题】本地回环地址::1/128</p>
-<p>【填空题】全球单播地址2000::/3</p>
-<p>课后：</p>
-<p>目标：在红帽企业Linux系统上配置基本的IPv6网络并进行故障排除<br>
-1.复习如何在RHCE7中配置IPv4网络<br>
-2.说明IPv6 网络的基本概念以及读取和写入简化IPv6地址</p>
-<p>【填空题】ipv6有__位组成  128</p>
-<h3 id="复习IPv4联网配置"><a class="header-anchor" href="#复习IPv4联网配置">¶</a>复习IPv4联网配置</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150645.png" alt="image-20210426233352987"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150654.png" alt="image-20210426233501831"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150658.png" alt="image-20210426233557538"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150702.png" alt="image-20210426233714151"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150706.png" alt="image-20210426233957343"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150709.png" alt="image-20210426234010450"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150712.png" alt="image-20210426234015396"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150715.png" alt="image-20210426234030278"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150718.png" alt="image-20210426234049917"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150721.png" alt="image-20210427205731037"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150724.png" alt="image-20210427205740505"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150726.png" alt="image-20210427205800243"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150729.png" alt="image-20210427205859418"></p>
-<h3 id="ipv6地址概念"><a class="header-anchor" href="#ipv6地址概念">¶</a>ipv6地址概念</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150733.png" alt="image-20210427205926130"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150737.png" alt="image-20210427210135714"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150739.png" alt="image-20210427210242478"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150744.png" alt="image-20210427210712156"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150748.png" alt="image-20210427211028261"></p>
-<p>考试配置</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150751.png" alt="image-20210427210918402"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150754.png" alt="image-20210427210933929"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150758.png" alt="image-20210427211140957"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第三章</tag>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1657,45 +1657,6 @@
       </tags>
   </entry>
   <entry>
-    <title>通过GREP使用正则表达式</title>
-    <url>/2021/1MFD5TF/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>6分45【填空题】从/tmp/passwd文件中找到带有root的行</p>
-<p>grep root /tmp/passwd</p>
-<p>cat tmp/passwd | grep “root”</p>
-<p>passwd文件在/etc/passed中</p>
-<p>课后：</p>
-<p>目标：使用grcp编写正则表达式，以隔离或检查文本文件中国的内容<br>
-1.创建匹配文本模式的正则表达式<br>
-2.使用grcp查找文件中的内容</p>
-<p>1【单选题】在正则表达式中^表示   A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>开头</p>
-</li>
-<li>
-<p>B：</p>
-<p>结尾</p>
-</li>
-</ul>
-<p>2【填空题】在正则表达式中^cat$可以匹配到什么   仅找到文件中的一个行，即顺序依次为行首、c、a、t以及行尾的行。</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142108.png" alt="image-20210425202025071"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142114.png" alt="image-20210425202235704"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142117.png" alt="image-20210425202524846"></p>
-<p>可以在http://man.linuxde.net/</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142121.png" alt="image-20210425204251383"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142124.png" alt="image-20210425204327468"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第二章</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>管理linux进程的优先级</title>
     <url>/2021/1SF06D6/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
@@ -1732,6 +1693,45 @@
 <p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143909.png" alt="image-20210425224747077"></p>
 <p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143912.png" alt="image-20210425224911291"></p>
 <p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143916.png" alt="image-20210425225004030"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第二章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过GREP使用正则表达式</title>
+    <url>/2021/1MFD5TF/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>6分45【填空题】从/tmp/passwd文件中找到带有root的行</p>
+<p>grep root /tmp/passwd</p>
+<p>cat tmp/passwd | grep “root”</p>
+<p>passwd文件在/etc/passed中</p>
+<p>课后：</p>
+<p>目标：使用grcp编写正则表达式，以隔离或检查文本文件中国的内容<br>
+1.创建匹配文本模式的正则表达式<br>
+2.使用grcp查找文件中的内容</p>
+<p>1【单选题】在正则表达式中^表示   A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>开头</p>
+</li>
+<li>
+<p>B：</p>
+<p>结尾</p>
+</li>
+</ul>
+<p>2【填空题】在正则表达式中^cat$可以匹配到什么   仅找到文件中的一个行，即顺序依次为行首、c、a、t以及行尾的行。</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142108.png" alt="image-20210425202025071"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142114.png" alt="image-20210425202235704"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142117.png" alt="image-20210425202524846"></p>
+<p>可以在http://man.linuxde.net/</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142121.png" alt="image-20210425204251383"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601142124.png" alt="image-20210425204327468"></p>
 ]]></content>
       <categories>
         <category>linux</category>
