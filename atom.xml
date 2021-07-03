@@ -113,6 +113,31 @@
   </entry>
   
   <entry>
+    <title>控制服务和守护进程</title>
+    <link href="https://blog.forlearn.top/2021/W7KRYQ/"/>
+    <id>https://blog.forlearn.top/2021/W7KRYQ/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【填空题】查看httpd服务systemctl status httpd&lt;/p&gt;
+&lt;p&gt;【填空题】开启httpd服务systemctl start httpd&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：回顾如何适应systcmctl管理服务和启动过程&lt;br&gt;
+1.systcmd如何使用sistemctl管理启动系统守护进程和网络服务&lt;br&gt;
+2.使用systemd目标控制系统启动以及对系统启动进行故障排除&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>提供远程块存储</title>
     <link href="https://blog.forlearn.top/2021/1J5V5MF/"/>
     <id>https://blog.forlearn.top/2021/1J5V5MF/</id>
@@ -154,31 +179,6 @@
 1.使用网络合作提供链路冗余性或更高的吞吐量&lt;br&gt;
 2.管理网络组接口&lt;br&gt;
 3.管理本地软件桥和关联的接口&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>控制服务和守护进程</title>
-    <link href="https://blog.forlearn.top/2021/W7KRYQ/"/>
-    <id>https://blog.forlearn.top/2021/W7KRYQ/</id>
-    <published>2021-04-26T16:00:00.000Z</published>
-    <updated>2021-04-26T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】查看httpd服务systemctl status httpd&lt;/p&gt;
-&lt;p&gt;【填空题】开启httpd服务systemctl start httpd&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：回顾如何适应systcmctl管理服务和启动过程&lt;br&gt;
-1.systcmd如何使用sistemctl管理启动系统守护进程和网络服务&lt;br&gt;
-2.使用systemd目标控制系统启动以及对系统启动进行故障排除&lt;/p&gt;</summary>
     
     
     
@@ -237,35 +237,9 @@
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
     <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
     
-  </entry>
-  
-  <entry>
-    <title>配置电子邮件传输</title>
-    <link href="https://blog.forlearn.top/2021/17PPF4Q/"/>
-    <id>https://blog.forlearn.top/2021/17PPF4Q/</id>
-    <published>2021-04-26T16:00:00.000Z</published>
-    <updated>2021-04-26T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【判断题】通过SMTP协议发送邮件给邮件服务器的 正确&lt;/p&gt;
-&lt;p&gt;【判断题】可以通过POP3或者IMAP协议下载邮件 正确&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：通过SMTP网关中继由系统发送的所有电子邮件&lt;br&gt;
-1.配置红帽企业Linux服务器版以通过未验证的SMTP网关传输所有电子邮件&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
     <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
     
   </entry>
   
@@ -296,31 +270,6 @@
   </entry>
   
   <entry>
-    <title>编写BASH脚本</title>
-    <link href="https://blog.forlearn.top/2021/6A5Z9P/"/>
-    <id>https://blog.forlearn.top/2021/6A5Z9P/</id>
-    <published>2021-04-26T16:00:00.000Z</published>
-    <updated>2021-04-26T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【判断题】可以多种方式调用shell脚本 正确&lt;/p&gt;
-&lt;p&gt;1【判断题】一旦设置了别名就不可以修改了 错误&lt;/p&gt;
-&lt;p&gt;1【判断题】echo $? 显示0.代表上一条命令正确执行。正确&lt;/p&gt;
-&lt;p&gt;1【判断题】for是一个条件循环语句。 正确&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>提供基于稳健的存储</title>
     <link href="https://blog.forlearn.top/2021/244VVTA/"/>
     <id>https://blog.forlearn.top/2021/244VVTA/</id>
@@ -339,9 +288,85 @@
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
     <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
+  </entry>
+  
+  <entry>
+    <title>配置电子邮件传输</title>
+    <link href="https://blog.forlearn.top/2021/17PPF4Q/"/>
+    <id>https://blog.forlearn.top/2021/17PPF4Q/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【判断题】通过SMTP协议发送邮件给邮件服务器的 正确&lt;/p&gt;
+&lt;p&gt;【判断题】可以通过POP3或者IMAP协议下载邮件 正确&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：通过SMTP网关中继由系统发送的所有电子邮件&lt;br&gt;
+1.配置红帽企业Linux服务器版以通过未验证的SMTP网关传输所有电子邮件&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
     <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编写BASH脚本</title>
+    <link href="https://blog.forlearn.top/2021/6A5Z9P/"/>
+    <id>https://blog.forlearn.top/2021/6A5Z9P/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;1【判断题】可以多种方式调用shell脚本 正确&lt;/p&gt;
+&lt;p&gt;1【判断题】一旦设置了别名就不可以修改了 错误&lt;/p&gt;
+&lt;p&gt;1【判断题】echo $? 显示0.代表上一条命令正确执行。正确&lt;/p&gt;
+&lt;p&gt;1【判断题】for是一个条件循环语句。 正确&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提供Apache httpd web 服务</title>
+    <link href="https://blog.forlearn.top/2021/1SET2WP/"/>
+    <id>https://blog.forlearn.top/2021/1SET2WP/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;1【填空题】http服务的守护进程是？ httpd&lt;/p&gt;
+&lt;p&gt;1【填空题】http的属于传输层的TCP协议还是UDP协议。 TCP&lt;/p&gt;
+&lt;p&gt;1【填空题】HTTPS的端口多少？ 443&lt;/p&gt;
+&lt;p&gt;课后:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
   </entry>
   
@@ -368,36 +393,11 @@
     <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
     
     
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
     <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
     <category term="redhat" scheme="https://blog.forlearn.top/tags/redhat/"/>
-    
-    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>提供Apache httpd web 服务</title>
-    <link href="https://blog.forlearn.top/2021/1SET2WP/"/>
-    <id>https://blog.forlearn.top/2021/1SET2WP/</id>
-    <published>2021-04-26T16:00:00.000Z</published>
-    <updated>2021-04-26T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【填空题】http服务的守护进程是？ httpd&lt;/p&gt;
-&lt;p&gt;1【填空题】http的属于传输层的TCP协议还是UDP协议。 TCP&lt;/p&gt;
-&lt;p&gt;1【填空题】HTTPS的端口多少？ 443&lt;/p&gt;
-&lt;p&gt;课后:&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
     
   </entry>
   
@@ -509,20 +509,18 @@
   </entry>
   
   <entry>
-    <title>管理linux进程的优先级</title>
-    <link href="https://blog.forlearn.top/2021/1SF06D6/"/>
-    <id>https://blog.forlearn.top/2021/1SF06D6/</id>
+    <title>通过GREP使用正则表达式</title>
+    <link href="https://blog.forlearn.top/2021/1MFD5TF/"/>
+    <id>https://blog.forlearn.top/2021/1MFD5TF/</id>
     <published>2021-04-25T16:00:00.000Z</published>
     <updated>2021-04-25T16:00:00.000Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】那个用户可以重新调整属于其他用户的进程的nice值 root&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：影响Linux各进程运行的相对优先级&lt;br&gt;
-1.描述nice级别&lt;br&gt;
-2.设置新进程和现有进程的nice级别&lt;/p&gt;
-&lt;p&gt;1【单选题】普通用户nice等级范围是  A&lt;/p&gt;</summary>
+&lt;p&gt;6分45【填空题】从/tmp/passwd文件中找到带有root的行&lt;/p&gt;
+&lt;p&gt;grep root /tmp/passwd&lt;/p&gt;
+&lt;p&gt;cat tmp/passwd | grep “root”&lt;/p&gt;
+&lt;p&gt;passwd文件在/etc/passed中&lt;/p&gt;</summary>
     
     
     

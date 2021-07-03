@@ -641,6 +641,83 @@
       </categories>
   </entry>
   <entry>
+    <title>控制服务和守护进程</title>
+    <url>/2021/W7KRYQ/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【填空题】查看httpd服务systemctl status httpd</p>
+<p>【填空题】开启httpd服务systemctl start httpd</p>
+<p>课后：</p>
+<p>目标：回顾如何适应systcmctl管理服务和启动过程<br>
+1.systcmd如何使用sistemctl管理启动系统守护进程和网络服务<br>
+2.使用systemd目标控制系统启动以及对系统启动进行故障排除</p>
+<p>1【单选题】基本上，守护进程名称后面以什么结尾 A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>d</p>
+</li>
+<li>
+<p>B：</p>
+<p>ctl</p>
+</li>
+</ul>
+<p>2【多选题】查看sshd进程是否是运行状态该如何查 AB</p>
+<ul>
+<li>
+<p>A：</p>
+<p>systemctl is-active sshd</p>
+</li>
+<li>
+<p>B：</p>
+<p>systemctl status sshd</p>
+</li>
+<li>
+<p>C：</p>
+<p>systemctl status ssh</p>
+</li>
+<li>
+<p>D：</p>
+<p>systemctl start sshd</p>
+</li>
+</ul>
+<p>3【单选题】重启进程时,PID是否会更改A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>会</p>
+</li>
+<li>
+<p>B：</p>
+<p>不会</p>
+</li>
+</ul>
+<p>4【填空题】在已启动的界面中，将现在的系统目标设置为命令行界面使用什么命令？</p>
+<p>systemctl isolate multi-user.target</p>
+<h3 id="控制服务和守护进程"><a class="header-anchor" href="#控制服务和守护进程">¶</a>控制服务和守护进程</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150448.png" alt="image-20210426232219964"></p>
+<p><img src="/2021/W7KRYQ/C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210426232228718.png" alt="image-20210426232228718"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150502.png" alt="image-20210426232451995"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150506.png" alt="image-20210426232512779"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150509.png" alt="image-20210426232520654"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150512.png" alt="image-20210426232528510"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150516.png" alt="image-20210426232538603"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150519.png" alt="image-20210426232739778"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150521.png" alt="image-20210426232800838"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150526.png" alt="image-20210426232953977"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150530.png" alt="image-20210426232807929"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150534.png" alt="image-20210426232817163"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150537.png" alt="image-20210426232834446"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150541.png" alt="image-20210426232842632"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150544.png" alt="image-20210426232850086"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>提供远程块存储</title>
     <url>/2021/1J5V5MF/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
@@ -763,83 +840,6 @@
       </tags>
   </entry>
   <entry>
-    <title>控制服务和守护进程</title>
-    <url>/2021/W7KRYQ/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>【填空题】查看httpd服务systemctl status httpd</p>
-<p>【填空题】开启httpd服务systemctl start httpd</p>
-<p>课后：</p>
-<p>目标：回顾如何适应systcmctl管理服务和启动过程<br>
-1.systcmd如何使用sistemctl管理启动系统守护进程和网络服务<br>
-2.使用systemd目标控制系统启动以及对系统启动进行故障排除</p>
-<p>1【单选题】基本上，守护进程名称后面以什么结尾 A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>d</p>
-</li>
-<li>
-<p>B：</p>
-<p>ctl</p>
-</li>
-</ul>
-<p>2【多选题】查看sshd进程是否是运行状态该如何查 AB</p>
-<ul>
-<li>
-<p>A：</p>
-<p>systemctl is-active sshd</p>
-</li>
-<li>
-<p>B：</p>
-<p>systemctl status sshd</p>
-</li>
-<li>
-<p>C：</p>
-<p>systemctl status ssh</p>
-</li>
-<li>
-<p>D：</p>
-<p>systemctl start sshd</p>
-</li>
-</ul>
-<p>3【单选题】重启进程时,PID是否会更改A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>会</p>
-</li>
-<li>
-<p>B：</p>
-<p>不会</p>
-</li>
-</ul>
-<p>4【填空题】在已启动的界面中，将现在的系统目标设置为命令行界面使用什么命令？</p>
-<p>systemctl isolate multi-user.target</p>
-<h3 id="控制服务和守护进程"><a class="header-anchor" href="#控制服务和守护进程">¶</a>控制服务和守护进程</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150448.png" alt="image-20210426232219964"></p>
-<p><img src="/2021/W7KRYQ/C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210426232228718.png" alt="image-20210426232228718"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150502.png" alt="image-20210426232451995"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150506.png" alt="image-20210426232512779"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150509.png" alt="image-20210426232520654"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150512.png" alt="image-20210426232528510"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150516.png" alt="image-20210426232538603"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150519.png" alt="image-20210426232739778"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150521.png" alt="image-20210426232800838"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150526.png" alt="image-20210426232953977"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150530.png" alt="image-20210426232807929"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150534.png" alt="image-20210426232817163"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150537.png" alt="image-20210426232834446"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150541.png" alt="image-20210426232842632"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150544.png" alt="image-20210426232850086"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第三章</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>配置MariaDb数据库</title>
     <url>/2021/22W4C75/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
@@ -943,49 +943,8 @@
         <category>linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>红帽第三章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>配置电子邮件传输</title>
-    <url>/2021/17PPF4Q/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>【判断题】通过SMTP协议发送邮件给邮件服务器的 正确</p>
-<p>【判断题】可以通过POP3或者IMAP协议下载邮件 正确</p>
-<p>课后：</p>
-<p>目标：通过SMTP网关中继由系统发送的所有电子邮件<br>
-1.配置红帽企业Linux服务器版以通过未验证的SMTP网关传输所有电子邮件</p>
-<p>1【多选题】可以通过以下哪几种方式来管理firewalld？（）ABC</p>
-<ul>
-<li>
-<p>A：</p>
-<p>使用命令行工具fircwalld-cmd</p>
-</li>
-<li>
-<p>B：</p>
-<p>使用图形工具firewalld-config</p>
-</li>
-<li>
-<p>C：</p>
-<p>使用/ctc/fircwalld/中的配置文件</p>
-</li>
-</ul>
-<h3 id="配置仅发送电子邮件服务"><a class="header-anchor" href="#配置仅发送电子邮件服务">¶</a>配置仅发送电子邮件服务</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151321.png" alt="image-20210429141449903"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151324.png" alt="image-20210429141606619"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151327.png" alt="image-20210429141615600"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151331.png" alt="image-20210429141842386"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151334.png" alt="image-20210429142020560"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151337.png" alt="image-20210429142112584"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151341.png" alt="image-20210429142633279"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
         <tag>linux</tag>
-        <tag>红帽第三章</tag>
       </tags>
   </entry>
   <entry>
@@ -1039,73 +998,6 @@
         <category>linux</category>
       </categories>
       <tags>
-        <tag>红帽第三章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编写BASH脚本</title>
-    <url>/2021/6A5Z9P/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>1【判断题】可以多种方式调用shell脚本 正确</p>
-<p>1【判断题】一旦设置了别名就不可以修改了 错误</p>
-<p>1【判断题】echo $? 显示0.代表上一条命令正确执行。正确</p>
-<p>1【判断题】for是一个条件循环语句。 正确</p>
-<p>课后：</p>
-<p>目标：使用Bash的shell扩展功能和for循环结构编写简单且结构良好的shell脚本<br>
-1.使用Bash编写简单的shell脚本</p>
-<p>1【单选题】在bash中，export命令的作用是：  C</p>
-<ul>
-<li>
-<p>A：</p>
-<p>在子shell中运行命令</p>
-</li>
-<li>
-<p>B：</p>
-<p>使在子shell中可以使用命令历史记录</p>
-</li>
-<li>
-<p>C：</p>
-<p>为其它应用程序设置环境变量</p>
-</li>
-<li>
-<p>D：</p>
-<p>提供NFS分区给网络中的其它系统使用</p>
-</li>
-</ul>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160920.png" alt="image-20210511104036804"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160924.png" alt="image-20210511104125832"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160928.png" alt="image-20210511104215104"></p>
-<p>windows和linux的换行符不一样</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160930.png" alt="image-20210511104405645"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160941.png" alt="image-20210511104702586"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160945.png" alt="image-20210511104722503"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161348.png" alt="image-20210511105214939"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160948.png" alt="image-20210511105112142"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160951.png" alt="image-20210511105132000"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160955.png" alt="image-20210511105202001"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161003.png" alt="image-20210511105256055"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161005.png" alt="image-20210511105442648"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161012.png" alt="image-20210511105619976"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161017.png" alt="image-20210511105735210"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161023.png" alt="image-20210511105755727"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161029.png" alt="image-20210511110058637"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161032.png" alt="image-20210511110114053"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161038.png" alt="image-20210511110242776"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161041.png" alt="image-20210511110301302"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161045.png" alt="image-20210511110616543"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161049.png" alt="image-20210511111009276"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161059.png" alt="image-20210511111020778"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/20210520192316.png" alt="image-20210511111033024"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161107.png" alt="image-20210511111530793"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161111.png" alt="image-20210511112125285"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161116.png" alt="image-20210511112131423"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161118.png" alt="image-20210511112433961"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
         <tag>红帽第三章</tag>
       </tags>
   </entry>
@@ -1217,74 +1109,116 @@
         <category>linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>红帽第三章</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
-    <title>网络端口安全性</title>
-    <url>/2021/3P8B2DQ/</url>
+    <title>配置电子邮件传输</title>
+    <url>/2021/17PPF4Q/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>【判断题】在默认的区域中，我们应该将连接外网的接口设置为external区域。 正确</p>
-<p>【判断题】写入防火墙指令可以使用的是firewalld-cmd这个工具  正确</p>
+<p>【判断题】通过SMTP协议发送邮件给邮件服务器的 正确</p>
+<p>【判断题】可以通过POP3或者IMAP协议下载邮件 正确</p>
 <p>课后：</p>
-<p>目标：使用高级SElinux和防火墙过滤技术允许和拒绝访问网络服务<br>
-1.复习先前课程中讲述的firewalld概念和管理命令<br>
-2.利用firewalld对“富语言规则”的支持。配置更复杂的防火墙配置<br>
-3.描述和实施网络地址转换（NAT）<br>
-4.确保网络端口具有正确的SELinux类型，以便服务能够与其绑定</p>
-<p>1【单选题】默认情况下面在RedHat Enterprise Linux7.0中使用的防火墙软件是什么（）  C</p>
+<p>目标：通过SMTP网关中继由系统发送的所有电子邮件<br>
+1.配置红帽企业Linux服务器版以通过未验证的SMTP网关传输所有电子邮件</p>
+<p>1【多选题】可以通过以下哪几种方式来管理firewalld？（）ABC</p>
 <ul>
 <li>
 <p>A：</p>
-<p>iptables</p>
+<p>使用命令行工具fircwalld-cmd</p>
 </li>
 <li>
 <p>B：</p>
-<p>acl</p>
+<p>使用图形工具firewalld-config</p>
 </li>
 <li>
 <p>C：</p>
-<p>firewalld</p>
-</li>
-<li>
-<p>D：</p>
-<p>etables</p>
+<p>使用/ctc/fircwalld/中的配置文件</p>
 </li>
 </ul>
-<h3 id="管理firewalled"><a class="header-anchor" href="#管理firewalled">¶</a>管理firewalled</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150948.png" alt="image-20210429133000541"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150955.png" alt="image-20210429133038879"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151001.png" alt="image-20210429133209367"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151005.png" alt="image-20210429133316446"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151009.png" alt="image-20210429133345108"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151012.png" alt="image-20210429133440401"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151015.png" alt="image-20210429133555641"></p>
-<h3 id="管理富规则"><a class="header-anchor" href="#管理富规则">¶</a>管理富规则</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151018.png" alt="image-20210429133726693"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151022.png" alt="image-20210429133749778"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151025.png" alt="image-20210429133821299"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151028.png" alt="image-20210429133843590"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151032.png" alt="image-20210429134219144"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151036.png" alt="image-20210429134227808"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151040.png" alt="image-20210429134328919"></p>
-<h3 id="伪装和端口转发"><a class="header-anchor" href="#伪装和端口转发">¶</a>伪装和端口转发</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151043.png" alt="image-20210429134407792"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151047.png" alt="image-20210429134527834"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151051.png" alt="image-20210429134757443"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151054.png" alt="image-20210429134910775"></p>
-<h3 id="管理SElinux端口标记"><a class="header-anchor" href="#管理SElinux端口标记">¶</a>管理SElinux端口标记</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151057.png" alt="image-20210429134944528"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151100.png" alt="image-20210429135029075"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151103.png" alt="image-20210429135035983"></p>
+<h3 id="配置仅发送电子邮件服务"><a class="header-anchor" href="#配置仅发送电子邮件服务">¶</a>配置仅发送电子邮件服务</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151321.png" alt="image-20210429141449903"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151324.png" alt="image-20210429141606619"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151327.png" alt="image-20210429141615600"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151331.png" alt="image-20210429141842386"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151334.png" alt="image-20210429142020560"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151337.png" alt="image-20210429142112584"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151341.png" alt="image-20210429142633279"></p>
 ]]></content>
       <categories>
         <category>linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>redhat</tag>
         <tag>红帽第三章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编写BASH脚本</title>
+    <url>/2021/6A5Z9P/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【判断题】可以多种方式调用shell脚本 正确</p>
+<p>1【判断题】一旦设置了别名就不可以修改了 错误</p>
+<p>1【判断题】echo $? 显示0.代表上一条命令正确执行。正确</p>
+<p>1【判断题】for是一个条件循环语句。 正确</p>
+<p>课后：</p>
+<p>目标：使用Bash的shell扩展功能和for循环结构编写简单且结构良好的shell脚本<br>
+1.使用Bash编写简单的shell脚本</p>
+<p>1【单选题】在bash中，export命令的作用是：  C</p>
+<ul>
+<li>
+<p>A：</p>
+<p>在子shell中运行命令</p>
+</li>
+<li>
+<p>B：</p>
+<p>使在子shell中可以使用命令历史记录</p>
+</li>
+<li>
+<p>C：</p>
+<p>为其它应用程序设置环境变量</p>
+</li>
+<li>
+<p>D：</p>
+<p>提供NFS分区给网络中的其它系统使用</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160920.png" alt="image-20210511104036804"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160924.png" alt="image-20210511104125832"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160928.png" alt="image-20210511104215104"></p>
+<p>windows和linux的换行符不一样</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160930.png" alt="image-20210511104405645"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160941.png" alt="image-20210511104702586"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160945.png" alt="image-20210511104722503"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161348.png" alt="image-20210511105214939"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160948.png" alt="image-20210511105112142"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160951.png" alt="image-20210511105132000"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160955.png" alt="image-20210511105202001"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161003.png" alt="image-20210511105256055"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161005.png" alt="image-20210511105442648"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161012.png" alt="image-20210511105619976"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161017.png" alt="image-20210511105735210"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161023.png" alt="image-20210511105755727"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161029.png" alt="image-20210511110058637"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161032.png" alt="image-20210511110114053"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161038.png" alt="image-20210511110242776"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161041.png" alt="image-20210511110301302"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161045.png" alt="image-20210511110616543"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161049.png" alt="image-20210511111009276"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161059.png" alt="image-20210511111020778"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/20210520192316.png" alt="image-20210511111033024"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161107.png" alt="image-20210511111530793"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161111.png" alt="image-20210511112125285"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161116.png" alt="image-20210511112131423"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161118.png" alt="image-20210511112433961"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1369,8 +1303,74 @@
         <category>linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>红帽第三章</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络端口安全性</title>
+    <url>/2021/3P8B2DQ/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【判断题】在默认的区域中，我们应该将连接外网的接口设置为external区域。 正确</p>
+<p>【判断题】写入防火墙指令可以使用的是firewalld-cmd这个工具  正确</p>
+<p>课后：</p>
+<p>目标：使用高级SElinux和防火墙过滤技术允许和拒绝访问网络服务<br>
+1.复习先前课程中讲述的firewalld概念和管理命令<br>
+2.利用firewalld对“富语言规则”的支持。配置更复杂的防火墙配置<br>
+3.描述和实施网络地址转换（NAT）<br>
+4.确保网络端口具有正确的SELinux类型，以便服务能够与其绑定</p>
+<p>1【单选题】默认情况下面在RedHat Enterprise Linux7.0中使用的防火墙软件是什么（）  C</p>
+<ul>
+<li>
+<p>A：</p>
+<p>iptables</p>
+</li>
+<li>
+<p>B：</p>
+<p>acl</p>
+</li>
+<li>
+<p>C：</p>
+<p>firewalld</p>
+</li>
+<li>
+<p>D：</p>
+<p>etables</p>
+</li>
+</ul>
+<h3 id="管理firewalled"><a class="header-anchor" href="#管理firewalled">¶</a>管理firewalled</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150948.png" alt="image-20210429133000541"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150955.png" alt="image-20210429133038879"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151001.png" alt="image-20210429133209367"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151005.png" alt="image-20210429133316446"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151009.png" alt="image-20210429133345108"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151012.png" alt="image-20210429133440401"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151015.png" alt="image-20210429133555641"></p>
+<h3 id="管理富规则"><a class="header-anchor" href="#管理富规则">¶</a>管理富规则</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151018.png" alt="image-20210429133726693"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151022.png" alt="image-20210429133749778"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151025.png" alt="image-20210429133821299"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151028.png" alt="image-20210429133843590"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151032.png" alt="image-20210429134219144"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151036.png" alt="image-20210429134227808"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151040.png" alt="image-20210429134328919"></p>
+<h3 id="伪装和端口转发"><a class="header-anchor" href="#伪装和端口转发">¶</a>伪装和端口转发</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151043.png" alt="image-20210429134407792"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151047.png" alt="image-20210429134527834"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151051.png" alt="image-20210429134757443"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151054.png" alt="image-20210429134910775"></p>
+<h3 id="管理SElinux端口标记"><a class="header-anchor" href="#管理SElinux端口标记">¶</a>管理SElinux端口标记</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151057.png" alt="image-20210429134944528"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151100.png" alt="image-20210429135029075"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151103.png" alt="image-20210429135035983"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+        <tag>linux</tag>
+        <tag>redhat</tag>
       </tags>
   </entry>
   <entry>
@@ -1657,52 +1657,6 @@
       </tags>
   </entry>
   <entry>
-    <title>管理linux进程的优先级</title>
-    <url>/2021/1SF06D6/</url>
-    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>【填空题】那个用户可以重新调整属于其他用户的进程的nice值 root</p>
-<p>课后：</p>
-<p>目标：影响Linux各进程运行的相对优先级<br>
-1.描述nice级别<br>
-2.设置新进程和现有进程的nice级别</p>
-<p>1【单选题】普通用户nice等级范围是  A</p>
-<ul>
-<li>
-<p>A：</p>
-<p>0~19</p>
-</li>
-<li>
-<p>B：</p>
-<p>0~20</p>
-</li>
-<li>
-<p>C：</p>
-<p>-20~20</p>
-</li>
-<li>
-<p>D：</p>
-<p>-20~19</p>
-</li>
-</ul>
-<p>2【填空题】什么命令可以修改正在运行中的进程的nice等级  renice</p>
-<h3 id="进程优先级和”nice“概念"><a class="header-anchor" href="#进程优先级和”nice“概念">¶</a>进程优先级和”nice“概念</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143857.png" alt="image-20210425224314205"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143901.png" alt="image-20210425224402530"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143905.png" alt="image-20210425224538891"></p>
-<h3 id="使用nice和renice影响进程优先级"><a class="header-anchor" href="#使用nice和renice影响进程优先级">¶</a>使用nice和renice影响进程优先级</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143909.png" alt="image-20210425224747077"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143912.png" alt="image-20210425224911291"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143916.png" alt="image-20210425225004030"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>红帽第二章</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>通过GREP使用正则表达式</title>
     <url>/2021/1MFD5TF/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
@@ -1742,38 +1696,42 @@
       </tags>
   </entry>
   <entry>
-    <title>使用访问控制列表（ACL）控制对文件</title>
-    <url>/2021/XQN3MD/</url>
+    <title>管理linux进程的优先级</title>
+    <url>/2021/1SF06D6/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
-<p>【判断题】可以使用ACL为特定用户设置文件的权限。正确</p>
-<p>11:26【填空题】/tmp/passwd文件对tt这个用户没有任何权限</p>
-<p>setfacl -m u:tt:— /tmp/passwd</p>
-<p>user:tt:—</p>
+<p>【填空题】那个用户可以重新调整属于其他用户的进程的nice值 root</p>
 <p>课后：</p>
-<p>目标：使用POSIX访问控制列表（ACL）管理文件的安全性<br>
-1.描述POSIX访问控制列表<br>
-2.管理POSIX访问控制列表</p>
-<p>1【填空题】查看tmp目录下ks.conf文件的ACL该怎么看</p>
-<p>getfacl /tmp/ks.conf</p>
-<p>2【填空题】用户 natasha 对文件/var/tmp/fstab 有读和写的权限</p>
-<p>setfacl -m u:natasha:rw /var/tmp/fstab</p>
-<p>3【填空题】用户 harry 对文件/var/tmp/fstab 既不能读也不能写</p>
-<p>setfacl -m u:harry:— /var/tmp/fstab</p>
-<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">最常用的有以下2个命令：</span><br><span class="line"></span><br><span class="line">getfacl: 获取文件或目录的ACL设置信息</span><br><span class="line">命令： getfacl [-bkndRLP] &#123; -m|-M|-x|-X <span class="string">...</span> &#125; file <span class="string">...</span></span><br><span class="line">参数：</span><br><span class="line">-a , <span class="params">--access</span>：显示文件或目录的访问控制列表</span><br><span class="line">-d , <span class="params">--default</span>：显示文件或目录的默认（缺省）的访问控制列表</span><br><span class="line">-c , <span class="params">--omit-header</span>：不显示默认的访问控制列表</span><br><span class="line">-R , <span class="params">--recursive</span>：操作递归到子目录</span><br><span class="line"></span><br><span class="line">setfacl: 设置文件或目录的ACL设置信息</span><br><span class="line">命令：setfacl [-bkndRLP] &#123; -m|-M|-x|-X <span class="string">...</span> &#125; file <span class="string">...</span></span><br><span class="line">参数：</span><br><span class="line">-m, <span class="params">--modify=acl</span>：修改文件或目录的扩展ACL设置信息</span><br><span class="line">-x, <span class="params">--remove=acl</span>：从文件或目录删除一个扩展的ACL设置信息</span><br><span class="line">-b, <span class="params">--remove-all</span>：删除所有的扩展的ACL设置信息</span><br><span class="line">-k, <span class="params">--remove-default</span>：删除缺省的acl设置信息</span><br><span class="line">-n, <span class="params">--no-mask</span>：不要重新计算有效权限。setfacl默认会重新计算ACL mask，除非mask被明确的制定</span><br><span class="line">-d, <span class="params">--default</span>：设置默认的ACL设置信息（只对目录有效）</span><br><span class="line">-R, <span class="params">--recursive</span>：操作递归到所有子目录和 文件</span><br></pre></td></tr></table></figure>
-<h3 id="POSIX访问控制列表（ACL）"><a class="header-anchor" href="#POSIX访问控制列表（ACL）">¶</a>POSIX访问控制列表（ACL）</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144016.png" alt="image-20210425225410063"></p>
-<p>网络中的acl：阻止某些流量去访问某些用户或者说允许某些用户或加密某些流量</p>
-<p>linux中的acl：计划分配权限</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144022.png" alt="image-20210425225800629"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144025.png" alt="image-20210425225904334"></p>
-<p>掩码设置使用组的最高权限，给了x也没用</p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144028.png" alt="image-20210425230057940"></p>
-<h3 id="使用ACL保护文件安全"><a class="header-anchor" href="#使用ACL保护文件安全">¶</a>使用ACL保护文件安全</h3>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144033.png" alt="image-20210425230159317"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144035.png" alt="image-20210425230423207"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144038.png" alt="image-20210425230558337"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144041.png" alt="image-20210425230640993"></p>
-<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144044.png" alt="image-20210425231028395"></p>
+<p>目标：影响Linux各进程运行的相对优先级<br>
+1.描述nice级别<br>
+2.设置新进程和现有进程的nice级别</p>
+<p>1【单选题】普通用户nice等级范围是  A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>0~19</p>
+</li>
+<li>
+<p>B：</p>
+<p>0~20</p>
+</li>
+<li>
+<p>C：</p>
+<p>-20~20</p>
+</li>
+<li>
+<p>D：</p>
+<p>-20~19</p>
+</li>
+</ul>
+<p>2【填空题】什么命令可以修改正在运行中的进程的nice等级  renice</p>
+<h3 id="进程优先级和”nice“概念"><a class="header-anchor" href="#进程优先级和”nice“概念">¶</a>进程优先级和”nice“概念</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143857.png" alt="image-20210425224314205"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143901.png" alt="image-20210425224402530"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143905.png" alt="image-20210425224538891"></p>
+<h3 id="使用nice和renice影响进程优先级"><a class="header-anchor" href="#使用nice和renice影响进程优先级">¶</a>使用nice和renice影响进程优先级</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143909.png" alt="image-20210425224747077"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143912.png" alt="image-20210425224911291"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601143916.png" alt="image-20210425225004030"></p>
 ]]></content>
       <categories>
         <category>linux</category>
@@ -1843,6 +1801,48 @@
       </categories>
       <tags>
         <tag>红帽第二章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用访问控制列表（ACL）控制对文件</title>
+    <url>/2021/XQN3MD/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【判断题】可以使用ACL为特定用户设置文件的权限。正确</p>
+<p>11:26【填空题】/tmp/passwd文件对tt这个用户没有任何权限</p>
+<p>setfacl -m u:tt:— /tmp/passwd</p>
+<p>user:tt:—</p>
+<p>课后：</p>
+<p>目标：使用POSIX访问控制列表（ACL）管理文件的安全性<br>
+1.描述POSIX访问控制列表<br>
+2.管理POSIX访问控制列表</p>
+<p>1【填空题】查看tmp目录下ks.conf文件的ACL该怎么看</p>
+<p>getfacl /tmp/ks.conf</p>
+<p>2【填空题】用户 natasha 对文件/var/tmp/fstab 有读和写的权限</p>
+<p>setfacl -m u:natasha:rw /var/tmp/fstab</p>
+<p>3【填空题】用户 harry 对文件/var/tmp/fstab 既不能读也不能写</p>
+<p>setfacl -m u:harry:— /var/tmp/fstab</p>
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">最常用的有以下2个命令：</span><br><span class="line"></span><br><span class="line">getfacl: 获取文件或目录的ACL设置信息</span><br><span class="line">命令： getfacl [-bkndRLP] &#123; -m|-M|-x|-X <span class="string">...</span> &#125; file <span class="string">...</span></span><br><span class="line">参数：</span><br><span class="line">-a , <span class="params">--access</span>：显示文件或目录的访问控制列表</span><br><span class="line">-d , <span class="params">--default</span>：显示文件或目录的默认（缺省）的访问控制列表</span><br><span class="line">-c , <span class="params">--omit-header</span>：不显示默认的访问控制列表</span><br><span class="line">-R , <span class="params">--recursive</span>：操作递归到子目录</span><br><span class="line"></span><br><span class="line">setfacl: 设置文件或目录的ACL设置信息</span><br><span class="line">命令：setfacl [-bkndRLP] &#123; -m|-M|-x|-X <span class="string">...</span> &#125; file <span class="string">...</span></span><br><span class="line">参数：</span><br><span class="line">-m, <span class="params">--modify=acl</span>：修改文件或目录的扩展ACL设置信息</span><br><span class="line">-x, <span class="params">--remove=acl</span>：从文件或目录删除一个扩展的ACL设置信息</span><br><span class="line">-b, <span class="params">--remove-all</span>：删除所有的扩展的ACL设置信息</span><br><span class="line">-k, <span class="params">--remove-default</span>：删除缺省的acl设置信息</span><br><span class="line">-n, <span class="params">--no-mask</span>：不要重新计算有效权限。setfacl默认会重新计算ACL mask，除非mask被明确的制定</span><br><span class="line">-d, <span class="params">--default</span>：设置默认的ACL设置信息（只对目录有效）</span><br><span class="line">-R, <span class="params">--recursive</span>：操作递归到所有子目录和 文件</span><br></pre></td></tr></table></figure>
+<h3 id="POSIX访问控制列表（ACL）"><a class="header-anchor" href="#POSIX访问控制列表（ACL）">¶</a>POSIX访问控制列表（ACL）</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144016.png" alt="image-20210425225410063"></p>
+<p>网络中的acl：阻止某些流量去访问某些用户或者说允许某些用户或加密某些流量</p>
+<p>linux中的acl：计划分配权限</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144022.png" alt="image-20210425225800629"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144025.png" alt="image-20210425225904334"></p>
+<p>掩码设置使用组的最高权限，给了x也没用</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144028.png" alt="image-20210425230057940"></p>
+<h3 id="使用ACL保护文件安全"><a class="header-anchor" href="#使用ACL保护文件安全">¶</a>使用ACL保护文件安全</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144033.png" alt="image-20210425230159317"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144035.png" alt="image-20210425230423207"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144038.png" alt="image-20210425230558337"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144041.png" alt="image-20210425230640993"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601144044.png" alt="image-20210425231028395"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第二章</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
