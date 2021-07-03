@@ -641,6 +641,739 @@
       </categories>
   </entry>
   <entry>
+    <title>提供远程块存储</title>
+    <url>/2021/1J5V5MF/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【判断题】相同速率下,FCSAN比IPSAN效率更高。 正确</p>
+<p>【判断题】ACL可以不设置，也可以连接SAN存储 错误</p>
+<p>课后：</p>
+<p>目标：提供并使用联网的iSCSI块设备作为远程磁盘<br>
+1.在高层次说明iSCSI如何用于提供对块设备的远程访问权限<br>
+2.使用本地磁盘作为iSCSI存储目标的LUN，从而提供远程访问权限<br>
+3.使用iSCSI启动器访问远程存储并做好使用准备</p>
+<p>1【单选题】对NAS设备的描述，哪个是正确的 () B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>需要特殊的线缆连接到以太网中</p>
+</li>
+<li>
+<p>B：</p>
+<p>连接到以太网中使用标准线缆</p>
+</li>
+<li>
+<p>C：</p>
+<p>客户端实验块设备数据</p>
+</li>
+<li>
+<p>D：</p>
+<p>用于应用共享</p>
+</li>
+</ul>
+<h3 id="ISCSI的概念"><a class="header-anchor" href="#ISCSI的概念">¶</a>ISCSI的概念</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155808.png" alt="image-20210429145449294"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155820.png" alt="image-20210429145622791"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155824.png" alt="image-20210429145719140"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155827.png" alt="image-20210429145741898"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155831.png" alt="image-20210429150040719"></p>
+<h3 id="提供ISCSI目标"><a class="header-anchor" href="#提供ISCSI目标">¶</a>提供ISCSI目标</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155834.png" alt="image-20210429150133122"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155837.png" alt="image-20210429150207363"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155840.png" alt="image-20210429150255887"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155844.png" alt="image-20210429150327089"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155847.png" alt="image-20210429150419131"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155850.png" alt="image-20210429150434910"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155940.png" alt="image-20210429150531862"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155944.png" alt="image-20210429150621603"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155947.png" alt="image-20210429150646561"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155950.png" alt="image-20210429150800694"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155953.png" alt="image-20210429150813500"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155956.png" alt="image-20210429152040714"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601155959.png" alt="image-20210429152030293"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160002.png" alt="image-20210429151007402"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160005.png" alt="image-20210429151117320"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160008.png" alt="image-20210429151147737"></p>
+<p>分区</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160011.png" alt="image-20210429151255991"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160013.png" alt="image-20210429151314225"></p>
+<p>格式化：</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160018.png" alt="image-20210429151345927"></p>
+<p>挂载：</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160020.png" alt="image-20210429151533816"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160025.png" alt="image-20210429152018447"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160028.png" alt="image-20210429151610716"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160032.png" alt="image-20210429151637136"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160036.png" alt="image-20210429151829365"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160038.png" alt="image-20210429152110935"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160042.png" alt="image-20210429152117035"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>配置链路聚合和桥接</title>
+    <url>/2021/22HT762/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【判断题】LACP模式可以是服务器连接交换机使用  正确</p>
+<p>【判断题】链路聚合中，主备模式两条链路同时都可以传输数据  错误</p>
+<p>课后：</p>
+<p>目标：配置高级网络接口功能并进行故障排除，包括合作和本地软件桥<br>
+1.使用网络合作提供链路冗余性或更高的吞吐量<br>
+2.管理网络组接口<br>
+3.管理本地软件桥和关联的接口</p>
+<p>1【单选题】下面哪个命令不是用来查看网络故障的（） B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>ping</p>
+</li>
+<li>
+<p>B：</p>
+<p>init</p>
+</li>
+<li>
+<p>C：</p>
+<p>telnet</p>
+</li>
+<li>
+<p>D：</p>
+<p>netstat</p>
+</li>
+</ul>
+<h3 id="配置网络合作"><a class="header-anchor" href="#配置网络合作">¶</a>配置网络合作</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150832.png" alt="image-20210427211359108"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150835.png" alt="image-20210427211759354"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150838.png" alt="image-20210427211902049"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150841.png" alt="image-20210427212018419"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150845.png" alt="image-20210427212132048"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150848.png" alt="image-20210429132328779"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150852.png" alt="image-20210429132335661"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150856.png" alt="image-20210429132458450"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150902.png" alt="image-20210429132636173"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>控制服务和守护进程</title>
+    <url>/2021/W7KRYQ/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【填空题】查看httpd服务systemctl status httpd</p>
+<p>【填空题】开启httpd服务systemctl start httpd</p>
+<p>课后：</p>
+<p>目标：回顾如何适应systcmctl管理服务和启动过程<br>
+1.systcmd如何使用sistemctl管理启动系统守护进程和网络服务<br>
+2.使用systemd目标控制系统启动以及对系统启动进行故障排除</p>
+<p>1【单选题】基本上，守护进程名称后面以什么结尾 A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>d</p>
+</li>
+<li>
+<p>B：</p>
+<p>ctl</p>
+</li>
+</ul>
+<p>2【多选题】查看sshd进程是否是运行状态该如何查 AB</p>
+<ul>
+<li>
+<p>A：</p>
+<p>systemctl is-active sshd</p>
+</li>
+<li>
+<p>B：</p>
+<p>systemctl status sshd</p>
+</li>
+<li>
+<p>C：</p>
+<p>systemctl status ssh</p>
+</li>
+<li>
+<p>D：</p>
+<p>systemctl start sshd</p>
+</li>
+</ul>
+<p>3【单选题】重启进程时,PID是否会更改A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>会</p>
+</li>
+<li>
+<p>B：</p>
+<p>不会</p>
+</li>
+</ul>
+<p>4【填空题】在已启动的界面中，将现在的系统目标设置为命令行界面使用什么命令？</p>
+<p>systemctl isolate multi-user.target</p>
+<h3 id="控制服务和守护进程"><a class="header-anchor" href="#控制服务和守护进程">¶</a>控制服务和守护进程</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150448.png" alt="image-20210426232219964"></p>
+<p><img src="/2021/W7KRYQ/C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210426232228718.png" alt="image-20210426232228718"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150502.png" alt="image-20210426232451995"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150506.png" alt="image-20210426232512779"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150509.png" alt="image-20210426232520654"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150512.png" alt="image-20210426232528510"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150516.png" alt="image-20210426232538603"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150519.png" alt="image-20210426232739778"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150521.png" alt="image-20210426232800838"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150526.png" alt="image-20210426232953977"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150530.png" alt="image-20210426232807929"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150534.png" alt="image-20210426232817163"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150537.png" alt="image-20210426232834446"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150541.png" alt="image-20210426232842632"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150544.png" alt="image-20210426232850086"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>配置MariaDb数据库</title>
+    <url>/2021/22W4C75/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【判断题】mariaDB就是mysql  错误</p>
+<p>【判断题】mariadb使用的指令属于sql指令。     正确</p>
+<p>课后：</p>
+<p>目标：提供MariaDB SQL数据库供程序和数据库管理员使用<br>
+1.安装MariaDB<br>
+2.配置和管理MariaDB<br>
+3.配置用户和访问权限<br>
+4.备份和回复MariaDB数据库</p>
+<p>1【单选题】通过哪个命令可以初始化Mariadb的安全设置（） B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>systemctl enable mariadb</p>
+</li>
+<li>
+<p>B：</p>
+<p>mysql_secure_installation</p>
+</li>
+<li>
+<p>C：</p>
+<p>systemctl status mariadb</p>
+</li>
+<li>
+<p>D：</p>
+<p>mysqld_install_db</p>
+</li>
+</ul>
+<p>本机配置可以不用配置防火墙，外机访问必须配置防火墙</p>
+<h3 id="安装MariaDB数据库"><a class="header-anchor" href="#安装MariaDB数据库">¶</a>安装MariaDB数据库</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160628.png" alt="image-20210511094632645"></p>
+<p>rhel7 中不支持使用NFS和Samb到出同一目录，因为NFS和Samba使用不同的文件锁定机制，这可能导致文件损坏。</p>
+<h3 id="使用MariaDB数据库"><a class="header-anchor" href="#使用MariaDB数据库">¶</a>使用MariaDB数据库</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160632.png" alt="image-20210511094950820"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160635.png" alt="image-20210511095020934"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160650.png" alt="image-20210511095032710"></p>
+<p>设置root密码</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160655.png" alt="image-20210511095134995"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160658.png" alt="image-20210511095155803"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160702.png" alt="image-20210511095249598"></p>
+<p>密码要紧跟-p</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160705.png" alt="image-20210511095324675"></p>
+<p>考试中只考导入数据库和查询数据库</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160708.png" alt="image-20210511095638933"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160711.png" alt="image-20210511095656054"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160714.png" alt="image-20210511100034321"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160717.png" alt="image-20210511100204423"></p>
+<h3 id="MariaDB的用户管理"><a class="header-anchor" href="#MariaDB的用户管理">¶</a>MariaDB的用户管理</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160720.png" alt="image-20210511100247717"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160723.png" alt="image-20210511100348631"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160726.png" alt="image-20210511100424383"></p>
+<h3 id="MariaDB的备份"><a class="header-anchor" href="#MariaDB的备份">¶</a>MariaDB的备份</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160729.png" alt="image-20210511100549737"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>管理IPv6网络</title>
+    <url>/2021/2MGH7CT/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【填空题】本地回环地址::1/128</p>
+<p>【填空题】全球单播地址2000::/3</p>
+<p>课后：</p>
+<p>目标：在红帽企业Linux系统上配置基本的IPv6网络并进行故障排除<br>
+1.复习如何在RHCE7中配置IPv4网络<br>
+2.说明IPv6 网络的基本概念以及读取和写入简化IPv6地址</p>
+<p>【填空题】ipv6有__位组成  128</p>
+<h3 id="复习IPv4联网配置"><a class="header-anchor" href="#复习IPv4联网配置">¶</a>复习IPv4联网配置</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150645.png" alt="image-20210426233352987"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150654.png" alt="image-20210426233501831"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150658.png" alt="image-20210426233557538"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150702.png" alt="image-20210426233714151"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150706.png" alt="image-20210426233957343"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150709.png" alt="image-20210426234010450"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150712.png" alt="image-20210426234015396"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150715.png" alt="image-20210426234030278"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150718.png" alt="image-20210426234049917"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150721.png" alt="image-20210427205731037"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150724.png" alt="image-20210427205740505"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150726.png" alt="image-20210427205800243"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150729.png" alt="image-20210427205859418"></p>
+<h3 id="ipv6地址概念"><a class="header-anchor" href="#ipv6地址概念">¶</a>ipv6地址概念</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150733.png" alt="image-20210427205926130"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150737.png" alt="image-20210427210135714"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150739.png" alt="image-20210427210242478"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150744.png" alt="image-20210427210712156"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150748.png" alt="image-20210427211028261"></p>
+<p>考试配置</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150751.png" alt="image-20210427210918402"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150754.png" alt="image-20210427210933929"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150758.png" alt="image-20210427211140957"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>配置电子邮件传输</title>
+    <url>/2021/17PPF4Q/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【判断题】通过SMTP协议发送邮件给邮件服务器的 正确</p>
+<p>【判断题】可以通过POP3或者IMAP协议下载邮件 正确</p>
+<p>课后：</p>
+<p>目标：通过SMTP网关中继由系统发送的所有电子邮件<br>
+1.配置红帽企业Linux服务器版以通过未验证的SMTP网关传输所有电子邮件</p>
+<p>1【多选题】可以通过以下哪几种方式来管理firewalld？（）ABC</p>
+<ul>
+<li>
+<p>A：</p>
+<p>使用命令行工具fircwalld-cmd</p>
+</li>
+<li>
+<p>B：</p>
+<p>使用图形工具firewalld-config</p>
+</li>
+<li>
+<p>C：</p>
+<p>使用/ctc/fircwalld/中的配置文件</p>
+</li>
+</ul>
+<h3 id="配置仅发送电子邮件服务"><a class="header-anchor" href="#配置仅发送电子邮件服务">¶</a>配置仅发送电子邮件服务</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151321.png" alt="image-20210429141449903"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151324.png" alt="image-20210429141606619"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151327.png" alt="image-20210429141615600"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151331.png" alt="image-20210429141842386"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151334.png" alt="image-20210429142020560"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151337.png" alt="image-20210429142112584"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151341.png" alt="image-20210429142633279"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>管理服务器的DNS</title>
+    <url>/2021/1CFNARG/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【填空题】通过什么命令可以看到自己所在的域名。hostname</p>
+<p>【判断题】NS代表识别区域的权威名称服务器。 正确</p>
+<p>目标：设置并验证系统正确DNS记录并配置安全缓存DNS名称服务<br>
+1.说明DNS如何用于解析名称和地址以及关键DNS资源记录的作用<br>
+2.配置unbound以充当安全的本地缓存名称服务器<br>
+3.描述常见的DNS配置问题以及如何识别和解决这些问题</p>
+<p>1【单选题】对于DNS服务描述不正确的是？（） A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>提供web服务</p>
+</li>
+<li>
+<p>B：</p>
+<p>提供域名解析服务</p>
+</li>
+<li>
+<p>C：</p>
+<p>提供IP反解服务</p>
+</li>
+<li>
+<p>D：</p>
+<p>互联网基础服务</p>
+</li>
+</ul>
+<h3 id="管理服务器的DNS"><a class="header-anchor" href="#管理服务器的DNS">¶</a>管理服务器的DNS</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151147.png" alt="image-20210429135920582"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151150.png" alt="image-20210429135951680"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151153.png" alt="image-20210429140337666"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151157.png" alt="image-20210429140212016"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151201.png" alt="image-20210429140444385"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151204.png" alt="image-20210429140506524"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151207.png" alt="image-20210429140351158"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151212.png" alt="image-20210429140629207"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151215.png" alt="image-20210429140622163"></p>
+<h3 id="缓存DNS服务器"><a class="header-anchor" href="#缓存DNS服务器">¶</a>缓存DNS服务器</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151218.png" alt="image-20210429140734570"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151221.png" alt="image-20210429140839732"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151224.png" alt="image-20210429140857177"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151227.png" alt="image-20210429140951637"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151230.png" alt="image-20210429141018930"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151233.png" alt="image-20210429141136507"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编写BASH脚本</title>
+    <url>/2021/6A5Z9P/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【判断题】可以多种方式调用shell脚本 正确</p>
+<p>1【判断题】一旦设置了别名就不可以修改了 错误</p>
+<p>1【判断题】echo $? 显示0.代表上一条命令正确执行。正确</p>
+<p>1【判断题】for是一个条件循环语句。 正确</p>
+<p>课后：</p>
+<p>目标：使用Bash的shell扩展功能和for循环结构编写简单且结构良好的shell脚本<br>
+1.使用Bash编写简单的shell脚本</p>
+<p>1【单选题】在bash中，export命令的作用是：  C</p>
+<ul>
+<li>
+<p>A：</p>
+<p>在子shell中运行命令</p>
+</li>
+<li>
+<p>B：</p>
+<p>使在子shell中可以使用命令历史记录</p>
+</li>
+<li>
+<p>C：</p>
+<p>为其它应用程序设置环境变量</p>
+</li>
+<li>
+<p>D：</p>
+<p>提供NFS分区给网络中的其它系统使用</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160920.png" alt="image-20210511104036804"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160924.png" alt="image-20210511104125832"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160928.png" alt="image-20210511104215104"></p>
+<p>windows和linux的换行符不一样</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160930.png" alt="image-20210511104405645"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160941.png" alt="image-20210511104702586"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160945.png" alt="image-20210511104722503"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161348.png" alt="image-20210511105214939"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160948.png" alt="image-20210511105112142"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160951.png" alt="image-20210511105132000"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160955.png" alt="image-20210511105202001"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161003.png" alt="image-20210511105256055"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161005.png" alt="image-20210511105442648"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161012.png" alt="image-20210511105619976"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161017.png" alt="image-20210511105735210"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161023.png" alt="image-20210511105755727"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161029.png" alt="image-20210511110058637"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161032.png" alt="image-20210511110114053"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161038.png" alt="image-20210511110242776"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161041.png" alt="image-20210511110301302"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161045.png" alt="image-20210511110616543"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161049.png" alt="image-20210511111009276"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161059.png" alt="image-20210511111020778"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/20210520192316.png" alt="image-20210511111033024"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161107.png" alt="image-20210511111530793"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161111.png" alt="image-20210511112125285"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161116.png" alt="image-20210511112131423"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601161118.png" alt="image-20210511112433961"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>提供基于稳健的存储</title>
+    <url>/2021/244VVTA/</url>
+    <content><![CDATA[<h3 id="题目"><a class="header-anchor" href="#题目">¶</a>题目:</h3>
+<p>【判断题】iscsi属于NAS存储的重要协议。 错误</p>
+<p>【判断题】NAS存储只有NFS一种。 错误</p>
+<p>【单选题】Linux与windows文件共享，需要提供什么守护进程() B</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160116.png" alt="image-20210429161837704"></p>
+<p>课后：</p>
+<p>目标：提供NFS导出和SMB文件共享给特定系统和用户<br>
+1.使用NFS将文件系统导出到客户端系统，从而按IP地址控制访问权限<br>
+2.使用NFS将文件系统导出到客户端，从而使用Kerberos控制访问权限并使用标记的NFS<br>
+3.使用SMB与客户端共享文件系统，从而按用户名和密码控制访问权限<br>
+4.通过multiuser安装选项挂载SMB共享，使用基于密码的验证和cifscreds控制访问权限</p>
+<p>1【单选题】NFS服务的配置共享目录的文件是（）</p>
+<ul>
+<li>
+<p>A：</p>
+<p>/etc/exports</p>
+</li>
+<li>
+<p>B：</p>
+<p>/etc/sysconfig/nfs</p>
+</li>
+<li>
+<p>C：</p>
+<p>/etc/fstab</p>
+</li>
+<li>
+<p>D：</p>
+<p>/etc/nfs</p>
+</li>
+</ul>
+<h3 id="导出NFS文件系统"><a class="header-anchor" href="#导出NFS文件系统">¶</a>导出NFS文件系统</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160119.png" alt="image-20210429152557226"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160123.png" alt="image-20210429152750036"></p>
+<p><img src="/2021/244VVTA/C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210429152744133.png" alt="image-20210429152744133"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160228.png" alt="image-20210429152824429"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160231.png" alt="image-20210429153441441"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160235.png" alt="image-20210429152914585"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160238.png" alt="image-20210429153024456"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160241.png" alt="image-20210429153231927"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160243.png" alt="image-20210429153316053"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160246.png" alt="image-20210429153343738"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160249.png" alt="image-20210429153503020"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160252.png" alt="image-20210429153552732"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160255.png" alt="image-20210429153639297"></p>
+<p>_netdev等网络启动再过载，不然可能会卡死</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160258.png" alt="image-20210429153729638"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160302.png" alt="image-20210429153743479"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160306.png" alt="image-20210429153822410"></p>
+<h3 id="保护NFS导出"><a class="header-anchor" href="#保护NFS导出">¶</a>保护NFS导出</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160309.png" alt="image-20210429153848849"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160313.png" alt="image-20210429154041630"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160317.png" alt="image-20210429154811000"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160321.png" alt="image-20210429154821059"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160324.png" alt="image-20210429154829450"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160329.png" alt="image-20210429154108100"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160332.png" alt="image-20210429154209977"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160336.png" alt="image-20210429154332793"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160338.png" alt="image-20210429154314990"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160341.png" alt="image-20210429154353547"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160344.png" alt="image-20210429154509390"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160347.png" alt="image-20210429154548064"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160350.png" alt="image-20210429154722396"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160354.png" alt="image-20210429155023008"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160357.png" alt="image-20210429155047077"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160401.png" alt="image-20210429154911022"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160406.png" alt="image-20210429154924542"></p>
+<h3 id="SAMBA"><a class="header-anchor" href="#SAMBA">¶</a>SAMBA</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160409.png" alt="image-20210429155108203"></p>
+<p>cifs挂载的，可以使用windows访问</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160413.png" alt="image-20210429155420239"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160418.png" alt="image-20210429155752853"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160420.png" alt="image-20210429155906466"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160423.png" alt="image-20210429155620783"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160426.png" alt="image-20210429155946903"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160430.png" alt="image-20210429155957120"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160432.png" alt="image-20210429160004090"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160436.png" alt="image-20210429160016966"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160439.png" alt="image-20210429160055001"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160443.png" alt="image-20210429160134479"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160446.png" alt="image-20210429160140849"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160449.png" alt="image-20210429160233281"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160451.png" alt="image-20210429160324701"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160455.png" alt="image-20210429160408722"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160458.png" alt="image-20210429160428534"></p>
+<p>用户这边：</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160502.png" alt="image-20210429160512826"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160505.png" alt="image-20210429160539553"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160508.png" alt="image-20210429160556691"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160517.png" alt="image-20210429160647279"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160520.png" alt="image-20210429160758946"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160524.png" alt="image-20210429160814334"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160527.png" alt="image-20210429160832622"></p>
+<h3 id="多用户："><a class="header-anchor" href="#多用户：">¶</a>多用户：</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160531.png" alt="image-20210429160851447"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160534.png" alt="image-20210429160933181"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160538.png" alt="image-20210429161055331"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160541.png" alt="image-20210429161029346"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160545.png" alt="image-20210429161246959"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160548.png" alt="image-20210429161257320"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160552.png" alt="image-20210429161303745"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络端口安全性</title>
+    <url>/2021/3P8B2DQ/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【判断题】在默认的区域中，我们应该将连接外网的接口设置为external区域。 正确</p>
+<p>【判断题】写入防火墙指令可以使用的是firewalld-cmd这个工具  正确</p>
+<p>课后：</p>
+<p>目标：使用高级SElinux和防火墙过滤技术允许和拒绝访问网络服务<br>
+1.复习先前课程中讲述的firewalld概念和管理命令<br>
+2.利用firewalld对“富语言规则”的支持。配置更复杂的防火墙配置<br>
+3.描述和实施网络地址转换（NAT）<br>
+4.确保网络端口具有正确的SELinux类型，以便服务能够与其绑定</p>
+<p>1【单选题】默认情况下面在RedHat Enterprise Linux7.0中使用的防火墙软件是什么（）  C</p>
+<ul>
+<li>
+<p>A：</p>
+<p>iptables</p>
+</li>
+<li>
+<p>B：</p>
+<p>acl</p>
+</li>
+<li>
+<p>C：</p>
+<p>firewalld</p>
+</li>
+<li>
+<p>D：</p>
+<p>etables</p>
+</li>
+</ul>
+<h3 id="管理firewalled"><a class="header-anchor" href="#管理firewalled">¶</a>管理firewalled</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150948.png" alt="image-20210429133000541"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601150955.png" alt="image-20210429133038879"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151001.png" alt="image-20210429133209367"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151005.png" alt="image-20210429133316446"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151009.png" alt="image-20210429133345108"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151012.png" alt="image-20210429133440401"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151015.png" alt="image-20210429133555641"></p>
+<h3 id="管理富规则"><a class="header-anchor" href="#管理富规则">¶</a>管理富规则</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151018.png" alt="image-20210429133726693"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151022.png" alt="image-20210429133749778"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151025.png" alt="image-20210429133821299"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151028.png" alt="image-20210429133843590"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151032.png" alt="image-20210429134219144"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151036.png" alt="image-20210429134227808"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151040.png" alt="image-20210429134328919"></p>
+<h3 id="伪装和端口转发"><a class="header-anchor" href="#伪装和端口转发">¶</a>伪装和端口转发</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151043.png" alt="image-20210429134407792"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151047.png" alt="image-20210429134527834"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151051.png" alt="image-20210429134757443"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151054.png" alt="image-20210429134910775"></p>
+<h3 id="管理SElinux端口标记"><a class="header-anchor" href="#管理SElinux端口标记">¶</a>管理SElinux端口标记</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151057.png" alt="image-20210429134944528"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151100.png" alt="image-20210429135029075"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601151103.png" alt="image-20210429135035983"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>redhat</tag>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>提供Apache httpd web 服务</title>
+    <url>/2021/1SET2WP/</url>
+    <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>1【填空题】http服务的守护进程是？ httpd</p>
+<p>1【填空题】http的属于传输层的TCP协议还是UDP协议。 TCP</p>
+<p>1【填空题】HTTPS的端口多少？ 443</p>
+<p>课后:</p>
+<p>目标：配置Apache HTTPD以提供支持TLS的网站和虚拟主机<br>
+1.识别Apache HTTPD使用的秘钥配置文件、日志文件和内容目录<br>
+2.配置Apache HTTPD以提供基于IP和基于名称的虚拟主机<br>
+3.配置Apache HTTPD以提供TLS加密的虚拟主机<br>
+4.配置Apache HTTPD以提供由动态数据库驱动的Web内容</p>
+<p>1【单选题】HTTP中，虚拟主机的作用是什么？A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>实现多个web站点</p>
+</li>
+<li>
+<p>B：</p>
+<p>提高性能</p>
+</li>
+<li>
+<p>C：</p>
+<p>实现web集群</p>
+</li>
+<li>
+<p>D：</p>
+<p>实现共享服务</p>
+</li>
+</ul>
+<p><img src="https://sontan.borimooc.com/image/teacher/finish-not.png" alt="未完成">2【单选题】要实现HTTPS，下面哪个选项是必需的？B</p>
+<ul>
+<li>
+<p>A：</p>
+<p>Python</p>
+</li>
+<li>
+<p>B：</p>
+<p>CA证书</p>
+</li>
+<li>
+<p>C：</p>
+<p>Nginx</p>
+</li>
+<li>
+<p>D：</p>
+<p>NFS</p>
+</li>
+</ul>
+<h3 id="HTTPD"><a class="header-anchor" href="#HTTPD">¶</a>HTTPD</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160754.png" alt="image-20210511101008187"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160757.png" alt="image-20210511101222732"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160801.png" alt="image-20210511101537316"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160804.png" alt="image-20210511101543418"></p>
+<h3 id="虚拟主机"><a class="header-anchor" href="#虚拟主机">¶</a>虚拟主机</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160807.png" alt="image-20210511101757209"></p>
+<p>rpm -qd httpd查询包</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160810.png" alt="image-20210511101933523"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160814.png" alt="image-20210511102309339"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160827.png" alt="image-20210511102531851"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160830.png" alt="image-20210511102548819"></p>
+<p>出现问题时检查防火墙，selinux有没有问题，看配置文件有没有允许</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160833.png" alt="image-20210511102636539"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160837.png" alt="image-20210511102642487"></p>
+<h3 id="HTTPS"><a class="header-anchor" href="#HTTPS">¶</a>HTTPS</h3>
+<p>yum makecache</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160840.png" alt="image-20210511102729794"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160843.png" alt="image-20210511102927814"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160846.png" alt="image-20210511103317672"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160850.png" alt="image-20210511103323399"></p>
+<h3 id="动态网站"><a class="header-anchor" href="#动态网站">¶</a>动态网站</h3>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160853.png" alt="image-20210511103338525"></p>
+<p>考试使用python</p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160857.png" alt="image-20210511103708569"></p>
+<p><img src="https://gitee.com/limye/pic-bed/raw/master/img/20210601160859.png" alt="image-20210511103714657"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>红帽第三章</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用KICKSTART自动安装</title>
     <url>/2021/DD5K44/</url>
     <content><![CDATA[<h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>

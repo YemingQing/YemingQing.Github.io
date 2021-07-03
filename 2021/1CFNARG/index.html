@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;blog.forlearn.top&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:true,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
+<meta name="description" content="¶题目： 【填空题】通过什么命令可以看到自己所在的域名。hostname 【判断题】NS代表识别区域的权威名称服务器。 正确 目标：设置并验证系统正确DNS记录并配置安全缓存DNS名称服务 1.说明DNS如何用于解析名称和地址以及关键DNS资源记录的作用 2.配置unbound以充当安全的本地缓存名称服务器 3.描述常见的DNS配置问题以及如何识别和解决这些问题 1【单选题】对于DNS服务描述不正">
+<meta property="og:type" content="article">
+<meta property="og:title" content="管理服务器的DNS">
+<meta property="og:url" content="https://blog.forlearn.top/2021/1CFNARG/index.html">
+<meta property="og:site_name" content="记录屋">
+<meta property="og:description" content="¶题目： 【填空题】通过什么命令可以看到自己所在的域名。hostname 【判断题】NS代表识别区域的权威名称服务器。 正确 目标：设置并验证系统正确DNS记录并配置安全缓存DNS名称服务 1.说明DNS如何用于解析名称和地址以及关键DNS资源记录的作用 2.配置unbound以充当安全的本地缓存名称服务器 3.描述常见的DNS配置问题以及如何识别和解决这些问题 1【单选题】对于DNS服务描述不正">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151147.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151150.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151153.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151157.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151201.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151204.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151207.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151212.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151215.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151218.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151221.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151224.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151227.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151230.png">
+<meta property="og:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151233.png">
+<meta property="article:published_time" content="2021-04-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-04-26T16:00:00.000Z">
+<meta property="article:author" content="LimeY">
+<meta property="article:tag" content="红帽第三章">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/limye/pic-bed/raw/master/img/20210601151147.png">
+
+
+<link rel="canonical" href="https://blog.forlearn.top/2021/1CFNARG/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;blog.forlearn.top&#x2F;2021&#x2F;1CFNARG&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;1CFNARG&#x2F;&quot;,&quot;title&quot;:&quot;管理服务器的DNS&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>管理服务器的DNS | 记录屋</title><script src="/js/config.js"></script><script src="/lib/fireworks.js"></script>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?f3799707fbafb7fe095460b4d4974872"></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<link rel="alternate" href="/atom.xml" title="记录屋" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+  <a target="_blank" rel="noopener" href="https://github.com/YemingQing" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">记录屋</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">LimeY</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap/" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%EF%BC%9A"><span class="nav-text">题目：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84DNS"><span class="nav-text">管理服务器的DNS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%93%E5%AD%98DNS%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-text">缓存DNS服务器</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LimeY"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">LimeY</p>
+  <div class="site-description" itemprop="description">后端、记录、分享、总结</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fas fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/YemingQing" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YemingQing" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yemingqing110@gmail.com" title="E-Mail → mailto:yemingqing110@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/avatar.png" data-original="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+	  
+
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.forlearn.top/2021/1CFNARG/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="LimeY">
+      <meta itemprop="description" content="后端、记录、分享、总结">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="记录屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          管理服务器的DNS
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-27 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-27T00:00:00+08:00">2021-04-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>256</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="题目："><a class="header-anchor" href="#题目：">¶</a>题目：</h3>
+<p>【填空题】通过什么命令可以看到自己所在的域名。hostname</p>
+<p>【判断题】NS代表识别区域的权威名称服务器。 正确</p>
+<p>目标：设置并验证系统正确DNS记录并配置安全缓存DNS名称服务<br>
+1.说明DNS如何用于解析名称和地址以及关键DNS资源记录的作用<br>
+2.配置unbound以充当安全的本地缓存名称服务器<br>
+3.描述常见的DNS配置问题以及如何识别和解决这些问题</p>
+<p>1【单选题】对于DNS服务描述不正确的是？（） A</p>
+<ul>
+<li>
+<p>A：</p>
+<p>提供web服务</p>
+</li>
+<li>
+<p>B：</p>
+<p>提供域名解析服务</p>
+</li>
+<li>
+<p>C：</p>
+<p>提供IP反解服务</p>
+</li>
+<li>
+<p>D：</p>
+<p>互联网基础服务</p>
+</li>
+</ul>
+<h3 id="管理服务器的DNS"><a class="header-anchor" href="#管理服务器的DNS">¶</a>管理服务器的DNS</h3>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151147.png" alt="image-20210429135920582"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151150.png" alt="image-20210429135951680"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151153.png" alt="image-20210429140337666"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151157.png" alt="image-20210429140212016"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151201.png" alt="image-20210429140444385"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151204.png" alt="image-20210429140506524"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151207.png" alt="image-20210429140351158"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151212.png" alt="image-20210429140629207"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151215.png" alt="image-20210429140622163"></p>
+<h3 id="缓存DNS服务器"><a class="header-anchor" href="#缓存DNS服务器">¶</a>缓存DNS服务器</h3>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151218.png" alt="image-20210429140734570"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151221.png" alt="image-20210429140839732"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151224.png" alt="image-20210429140857177"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151227.png" alt="image-20210429140951637"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151230.png" alt="image-20210429141018930"></p>
+<p><img src="/images/avatar.png" data-original="https://gitee.com/limye/pic-bed/raw/master/img/20210601151233.png" alt="image-20210429141136507"></p>
+
+    </div>
+	
+
+    
+    
+    
+	
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>LimeY
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.forlearn.top/2021/1CFNARG/" title="管理服务器的DNS">https://blog.forlearn.top/2021/1CFNARG/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/" rel="tag"><i class="fa fa-tag"></i>红帽第三章</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/6A5Z9P/" rel="prev" title="编写BASH脚本">
+                  <i class="fa fa-chevron-left"></i> 编写BASH脚本
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/17PPF4Q/" rel="next" title="配置电子邮件传输">
+                  配置电子邮件传输 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+	<div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+    
+	</div>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="minivaline-comments"></div><script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LimeY</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">50k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:24</span>
+  </span>
+</div>
+<!--
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ab4fbc198a8475" async="async"></script>
+  </div>
+-->
+    </div>
+  </footer>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/love.js"></script>
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+<script>
+NexT.utils.loadComments('#minivaline-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/gh/MiniValine/MiniValine@3.1.5/dist/MiniValine.min.js', () => {
+      new MiniValine(Object.assign({"enable":true,"appId":"09EWPJMabUnX5RJJUvgx6wXR-MdYXbMMI","appKey":"dmidPzAwsGsxDDioseAknVqP","mode":"xCss","placeholder":"欢迎畅所欲言O(∩_∩)O~~","enableQQ":true,"enableFlag":true,"enableUA":true,"region":true,"md":true,"dark":true,"RecordIP":true,"visitor":false,"barrager":1,"cloudflag":false,"master":["1b5e2fe749339260f3477b4846605ab4"],"friends":["b33aa01b50eee8819e466c4c6cfed891","63fbaf5dd6a2619b761cfa0fc188a9e7","9324CD53FFD227E536BC418C89D56A6E","6d684174e7c6af9e3a093949bf056e1d","b8c14a782397b160f2ac4f7c3941867f"],"tagMeta":["管理员","小伙伴","新朋友"],"emoticonUrl":["https://cdn.jsdelivr.net/npm/alus@latest","https://cdn.jsdelivr.net/gh/MiniValine/qq@latest","https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest","https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest","https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest","https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],"cdn":"https://cdn.jsdelivr.net/gh/MiniValine/MiniValine@3.1.5/dist/MiniValine.min.js","index_generator":null,"per_page":5}, {
+      el: '#minivaline-comments',
+      pathname: "/2021/1CFNARG/",
+    }));
+  }, window.MiniValine);
+});
+</script>
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"left","width":180,"height":320},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>

@@ -113,6 +113,295 @@
   </entry>
   
   <entry>
+    <title>提供远程块存储</title>
+    <link href="https://blog.forlearn.top/2021/1J5V5MF/"/>
+    <id>https://blog.forlearn.top/2021/1J5V5MF/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【判断题】相同速率下,FCSAN比IPSAN效率更高。 正确&lt;/p&gt;
+&lt;p&gt;【判断题】ACL可以不设置，也可以连接SAN存储 错误&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：提供并使用联网的iSCSI块设备作为远程磁盘&lt;br&gt;
+1.在高层次说明iSCSI如何用于提供对块设备的远程访问权限&lt;br&gt;
+2.使用本地磁盘作为iSCSI存储目标的LUN，从而提供远程访问权限&lt;br&gt;
+3.使用iSCSI启动器访问远程存储并做好使用准备&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置链路聚合和桥接</title>
+    <link href="https://blog.forlearn.top/2021/22HT762/"/>
+    <id>https://blog.forlearn.top/2021/22HT762/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【判断题】LACP模式可以是服务器连接交换机使用  正确&lt;/p&gt;
+&lt;p&gt;【判断题】链路聚合中，主备模式两条链路同时都可以传输数据  错误&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：配置高级网络接口功能并进行故障排除，包括合作和本地软件桥&lt;br&gt;
+1.使用网络合作提供链路冗余性或更高的吞吐量&lt;br&gt;
+2.管理网络组接口&lt;br&gt;
+3.管理本地软件桥和关联的接口&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>控制服务和守护进程</title>
+    <link href="https://blog.forlearn.top/2021/W7KRYQ/"/>
+    <id>https://blog.forlearn.top/2021/W7KRYQ/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【填空题】查看httpd服务systemctl status httpd&lt;/p&gt;
+&lt;p&gt;【填空题】开启httpd服务systemctl start httpd&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：回顾如何适应systcmctl管理服务和启动过程&lt;br&gt;
+1.systcmd如何使用sistemctl管理启动系统守护进程和网络服务&lt;br&gt;
+2.使用systemd目标控制系统启动以及对系统启动进行故障排除&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置MariaDb数据库</title>
+    <link href="https://blog.forlearn.top/2021/22W4C75/"/>
+    <id>https://blog.forlearn.top/2021/22W4C75/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【判断题】mariaDB就是mysql  错误&lt;/p&gt;
+&lt;p&gt;【判断题】mariadb使用的指令属于sql指令。     正确&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：提供MariaDB SQL数据库供程序和数据库管理员使用&lt;br&gt;
+1.安装MariaDB&lt;br&gt;
+2.配置和管理MariaDB&lt;br&gt;
+3.配置用户和访问权限&lt;br&gt;
+4.备份和回复MariaDB数据库&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>管理IPv6网络</title>
+    <link href="https://blog.forlearn.top/2021/2MGH7CT/"/>
+    <id>https://blog.forlearn.top/2021/2MGH7CT/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【填空题】本地回环地址::1/128&lt;/p&gt;
+&lt;p&gt;【填空题】全球单播地址2000::/3&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：在红帽企业Linux系统上配置基本的IPv6网络并进行故障排除&lt;br&gt;
+1.复习如何在RHCE7中配置IPv4网络&lt;br&gt;
+2.说明IPv6 网络的基本概念以及读取和写入简化IPv6地址&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置电子邮件传输</title>
+    <link href="https://blog.forlearn.top/2021/17PPF4Q/"/>
+    <id>https://blog.forlearn.top/2021/17PPF4Q/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【判断题】通过SMTP协议发送邮件给邮件服务器的 正确&lt;/p&gt;
+&lt;p&gt;【判断题】可以通过POP3或者IMAP协议下载邮件 正确&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：通过SMTP网关中继由系统发送的所有电子邮件&lt;br&gt;
+1.配置红帽企业Linux服务器版以通过未验证的SMTP网关传输所有电子邮件&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>管理服务器的DNS</title>
+    <link href="https://blog.forlearn.top/2021/1CFNARG/"/>
+    <id>https://blog.forlearn.top/2021/1CFNARG/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【填空题】通过什么命令可以看到自己所在的域名。hostname&lt;/p&gt;
+&lt;p&gt;【判断题】NS代表识别区域的权威名称服务器。 正确&lt;/p&gt;
+&lt;p&gt;目标：设置并验证系统正确DNS记录并配置安全缓存DNS名称服务&lt;br&gt;
+1.说明DNS如何用于解析名称和地址以及关键DNS资源记录的作用&lt;br&gt;
+2.配置unbound以充当安全的本地缓存名称服务器&lt;br&gt;
+3.描述常见的DNS配置问题以及如何识别和解决这些问题&lt;/p&gt;
+&lt;p&gt;1【单选题】对于DNS服务描述不正确的是？（） A&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编写BASH脚本</title>
+    <link href="https://blog.forlearn.top/2021/6A5Z9P/"/>
+    <id>https://blog.forlearn.top/2021/6A5Z9P/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;1【判断题】可以多种方式调用shell脚本 正确&lt;/p&gt;
+&lt;p&gt;1【判断题】一旦设置了别名就不可以修改了 错误&lt;/p&gt;
+&lt;p&gt;1【判断题】echo $? 显示0.代表上一条命令正确执行。正确&lt;/p&gt;
+&lt;p&gt;1【判断题】for是一个条件循环语句。 正确&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提供基于稳健的存储</title>
+    <link href="https://blog.forlearn.top/2021/244VVTA/"/>
+    <id>https://blog.forlearn.top/2021/244VVTA/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目&quot;&gt;¶&lt;/a&gt;题目:&lt;/h3&gt;
+&lt;p&gt;【判断题】iscsi属于NAS存储的重要协议。 错误&lt;/p&gt;
+&lt;p&gt;【判断题】NAS存储只有NFS一种。 错误&lt;/p&gt;
+&lt;p&gt;【单选题】Linux与windows文件共享，需要提供什么守护进程() B&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/limye/pic-bed/raw/master/img/20210601160116.png&quot; alt=&quot;image-20210429161837704&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络端口安全性</title>
+    <link href="https://blog.forlearn.top/2021/3P8B2DQ/"/>
+    <id>https://blog.forlearn.top/2021/3P8B2DQ/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;【判断题】在默认的区域中，我们应该将连接外网的接口设置为external区域。 正确&lt;/p&gt;
+&lt;p&gt;【判断题】写入防火墙指令可以使用的是firewalld-cmd这个工具  正确&lt;/p&gt;
+&lt;p&gt;课后：&lt;/p&gt;
+&lt;p&gt;目标：使用高级SElinux和防火墙过滤技术允许和拒绝访问网络服务&lt;br&gt;
+1.复习先前课程中讲述的firewalld概念和管理命令&lt;br&gt;
+2.利用firewalld对“富语言规则”的支持。配置更复杂的防火墙配置&lt;br&gt;
+3.描述和实施网络地址转换（NAT）&lt;br&gt;
+4.确保网络端口具有正确的SELinux类型，以便服务能够与其绑定&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+    <category term="redhat" scheme="https://blog.forlearn.top/tags/redhat/"/>
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提供Apache httpd web 服务</title>
+    <link href="https://blog.forlearn.top/2021/1SET2WP/"/>
+    <id>https://blog.forlearn.top/2021/1SET2WP/</id>
+    <published>2021-04-26T16:00:00.000Z</published>
+    <updated>2021-04-26T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
+&lt;p&gt;1【填空题】http服务的守护进程是？ httpd&lt;/p&gt;
+&lt;p&gt;1【填空题】http的属于传输层的TCP协议还是UDP协议。 TCP&lt;/p&gt;
+&lt;p&gt;1【填空题】HTTPS的端口多少？ 443&lt;/p&gt;
+&lt;p&gt;课后:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
+    
+    <category term="红帽第三章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用KICKSTART自动安装</title>
     <link href="https://blog.forlearn.top/2021/DD5K44/"/>
     <id>https://blog.forlearn.top/2021/DD5K44/</id>
@@ -241,328 +530,6 @@
     
     
     <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过GREP使用正则表达式</title>
-    <link href="https://blog.forlearn.top/2021/1MFD5TF/"/>
-    <id>https://blog.forlearn.top/2021/1MFD5TF/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;6分45【填空题】从/tmp/passwd文件中找到带有root的行&lt;/p&gt;
-&lt;p&gt;grep root /tmp/passwd&lt;/p&gt;
-&lt;p&gt;cat tmp/passwd | grep “root”&lt;/p&gt;
-&lt;p&gt;passwd文件在/etc/passed中&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用访问控制列表（ACL）控制对文件</title>
-    <link href="https://blog.forlearn.top/2021/XQN3MD/"/>
-    <id>https://blog.forlearn.top/2021/XQN3MD/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【判断题】可以使用ACL为特定用户设置文件的权限。正确&lt;/p&gt;
-&lt;p&gt;11:26【填空题】/tmp/passwd文件对tt这个用户没有任何权限&lt;/p&gt;
-&lt;p&gt;setfacl -m u:tt:— /tmp/passwd&lt;/p&gt;
-&lt;p&gt;user:tt:—&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>连接到网络定义的用户和组</title>
-    <link href="https://blog.forlearn.top/2021/1E392MK/"/>
-    <id>https://blog.forlearn.top/2021/1E392MK/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：配置系统以使用集中身份管理服务&lt;/p&gt;
-&lt;p&gt;1【多选题】配置需要安装哪三个软件 ABC&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A：&lt;/p&gt;
-&lt;p&gt;authconfig-gtk&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;B：&lt;/p&gt;
-&lt;p&gt;krb5-workstation&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;C：&lt;/p&gt;
-&lt;p&gt;sssd&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;D：&lt;/p&gt;
-&lt;p&gt;kbr-workstation&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对rhel启动过程进行控制和故障排除</title>
-    <link href="https://blog.forlearn.top/2021/15QCESR/"/>
-    <id>https://blog.forlearn.top/2021/15QCESR/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】临时的启动图形化&lt;/p&gt;
-&lt;p&gt;systemctl isolate graphical.target&lt;/p&gt;
-&lt;p&gt;systemctl isolate查询切换目标&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用firewalld限制网络通信</title>
-    <link href="https://blog.forlearn.top/2021/1NMPZAZ/"/>
-    <id>https://blog.forlearn.top/2021/1NMPZAZ/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】重启防火墙服务systemctl restart firewalld&lt;/p&gt;
-&lt;p&gt;12分56【填空题】查看默认防火墙规则  firewall-cmd --get-default-zone&lt;/p&gt;
-&lt;p&gt;firewall-cmd --state&lt;/p&gt;
-&lt;p&gt;firewall-cmd --list-all&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>管理逻辑卷管理（LVM）存储</title>
-    <link href="https://blog.forlearn.top/2021/WP2Y7K/"/>
-    <id>https://blog.forlearn.top/2021/WP2Y7K/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】创建物理卷的命令pvcreate&lt;/p&gt;
-&lt;p&gt;【填空题】创建卷组命令vgcreate&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：通过命令行管理逻辑卷&lt;br&gt;
-1.描述逻辑卷管理的组件和概念&lt;br&gt;
-2.管理逻辑卷&lt;br&gt;
-3.扩展逻辑卷&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计划将来的linux任务</title>
-    <link href="https://blog.forlearn.top/2021/QS1MBX/"/>
-    <id>https://blog.forlearn.top/2021/QS1MBX/</id>
-    <published>2021-04-25T16:00:00.000Z</published>
-    <updated>2021-04-25T16:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;【填空题】列出当前用户的计划任务 crontab -l&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：计划可在将来自动执行的任务&lt;br&gt;
-1.使用at计划一次性的任务&lt;br&gt;
-2.使用cron计划周期性的作业&lt;br&gt;
-3.计划周期性系统作业&lt;br&gt;
-4.管理临时文件&lt;/p&gt;
-&lt;p&gt;1【填空题】一次性任务使用什么工具？at&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第二章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一章第十四节</title>
-    <link href="https://blog.forlearn.top/2021/1TC64GD/"/>
-    <id>https://blog.forlearn.top/2021/1TC64GD/</id>
-    <published>2021-04-23T14:08:34.000Z</published>
-    <updated>2021-04-23T14:08:34.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;填空题】什么命令以递归的方式显示当前目录树中所有的文件的大小  du&lt;/p&gt;
-&lt;p&gt;【填空题】通过什么命令创建连接   ln&lt;/p&gt;
-&lt;p&gt;课后：目标：访问和检查红帽企业Linux系统上的现有文件系统&lt;br&gt;
-1.访问Linux文件系统层次结构&lt;br&gt;
-2.访问文件系统的内容&lt;br&gt;
-3.使用硬链接和符合链接制作多个名称&lt;br&gt;
-4.搜索挂载的文件系统中的文件&lt;/p&gt;
-&lt;p&gt;1【填空题】将光盘临时挂载在/mnt/iso目录命令  mount  /dev/cdrom  /mnt/iso&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第一章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一章第十三节</title>
-    <link href="https://blog.forlearn.top/2021/31YW2V8/"/>
-    <id>https://blog.forlearn.top/2021/31YW2V8/</id>
-    <published>2021-04-23T13:34:12.000Z</published>
-    <updated>2021-04-23T13:34:12.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【填空题】yum仓库的文件名应该为什么结尾。  .repo&lt;/p&gt;
-&lt;p&gt;1【填空题】清除yum缓存的命令  yum  clean  all&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目录：从红帽和YUM软件包存储库下载、安装、更新和管理软件包&lt;br&gt;
-1.使用您的红帽账户注册系统，授权它们并使用已安装产品的软件更新&lt;br&gt;
-2.解释什么事RPM软件包，以及如何在红帽企业Linux系统上使用RPM软件包管理软件&lt;br&gt;
-3.使用yum命令查找、安装和更新软件包&lt;br&gt;
-4.启用和禁用红帽或第三方YUM存储库&lt;br&gt;
-5.检查和安装下载的软件包文件&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第一章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
-    
-    <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一章第十二节</title>
-    <link href="https://blog.forlearn.top/2021/27F1A1T/"/>
-    <id>https://blog.forlearn.top/2021/27F1A1T/</id>
-    <published>2021-04-23T12:57:40.000Z</published>
-    <updated>2021-04-23T12:57:40.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【填空题】tar命令中添加什么参数是创建归档文件(不需要加-）  c&lt;/p&gt;
-&lt;p&gt;1【填空题】tar命令中添加什么参数显示打包过程(不用带-）  v&lt;/p&gt;
-&lt;p&gt;课后：&lt;/p&gt;
-&lt;p&gt;目标：归档文件并从一个系统复制文件到另一系统&lt;br&gt;
-1.使用tar创建新的压缩存档文件，并从现有的存档文件提前文件&lt;br&gt;
-2.将文件安全复制到运行sshd的远程系统，或从中复制文件&lt;br&gt;
-3.与远程副本安全地同步本地文件或目录的内容&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第一章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一章第十一节</title>
-    <link href="https://blog.forlearn.top/2021/2ZECH72/"/>
-    <id>https://blog.forlearn.top/2021/2ZECH72/</id>
-    <published>2021-04-23T12:37:15.000Z</published>
-    <updated>2021-04-23T12:37:15.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;题目：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题目：&quot;&gt;¶&lt;/a&gt;题目：&lt;/h3&gt;
-&lt;p&gt;1【单选题】常用的稳定可靠的传输层协议是？  TCP&lt;/p&gt;
-&lt;p&gt;1【多选题】那些地址属于B类地址的私网地址    AC&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A：&lt;/p&gt;
-&lt;p&gt;172.16.0.1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;B：&lt;/p&gt;
-&lt;p&gt;172.15.0.1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;C：&lt;/p&gt;
-&lt;p&gt;172.31.0.1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;D：&lt;/p&gt;
-&lt;p&gt;172.33.0.1&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;1【填空题】重启网络服务的命令  systemctl restart network&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://blog.forlearn.top/categories/linux/"/>
-    
-    
-    <category term="红帽第一章" scheme="https://blog.forlearn.top/tags/%E7%BA%A2%E5%B8%BD%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
     
     <category term="linux" scheme="https://blog.forlearn.top/tags/linux/"/>
     
